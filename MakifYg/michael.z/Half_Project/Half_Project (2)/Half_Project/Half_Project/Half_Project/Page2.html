@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fastest Cars</title>
+
+    <link href="StylePage1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body style="background-color: rgb(1 0 20); color: white ">
+    <div>
+        <ul id="ul">
+            <li style="margin-left: 300px"><a href="HomePage.html">Home</a></li>
+            <li><a href="Page1.html">Aventador SVJ</a></li>
+            <li><a class="active">Regera</a></li>
+            <li><a href="Page3.html">Venom F5</a></li>
+            <li><a href="Page4.html">Jesko Absolut</a></li>
+            <li><a href="Page5.html">Chiron Supersport 300+</a></li>
+            <li style="float: right; margin-right: 300px"><button class="button" onclick="document.getElementById('id1').style.display='block'">Sign Up</button></li>
+        </ul>
+    </div>
+    <div style="background-color: rgb(1 0 20); margin-top: 50px; height: 370px">
+        <h1>
+            KOENIGSEGG REGERA
+        </h1>
+    </div>
+
+
+    <div id="id1" class="modal">
+
+        <form class="modal-content animate" onsubmit="return ending()">
+            <div class="containerX">
+                <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <h1 class="h1-model">Sign Up</h1>
+            <div class="container">
+
+                <label class="label">First Name</label>
+                <input class="text" type="text" id="Fname" />
+                <div id="div1"></div>
+
+                <label class="label">Last Name</label>
+                <input class="text" type="text" id="Lname" name="Lname" />
+                <div id="div2"></div>
+
+                <label class="label">Birth Date</label>
+                <input class="text" type="text" id="yborn" maxlength="4">
+                <div id="div3"></div>
+
+                <label class="label">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="gender">Other</label>
+                <div id="div4"></div>
+
+                <label class="label">Email</label>
+                <input class="text" type="email" id="email" />
+                <div id="div5"></div>
+
+                <label class="label">Password</label>
+                <input class="text" type="password" id="password" />
+                <div id="div6"></div>
+
+                <label class="label">Confirm Password</label>
+                <input class="text" type="password" id="Vpassword" />
+                <div id="div7"></div>
+
+                <label class="label">Adress</label>
+                <textarea class="text" rows="5" cols="60" id="Adress"></textarea>
+
+                <label class="label">City</label>
+                <select class="text">
+                    <option></option>
+                    <option>Rishon Lezion</option>
+                    <option>Be'er Sheva</option>
+                    <option>Tel Aviv</option>
+                    <option>Jerusalem</option>
+                    <option>Haifa</option>
+                    <option>Eilat</option>
+                    <option>Other</option>
+                </select>
+
+                <input id="reset" type="reset" value="Reset" />
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <table style="margin-top: 0px">
+        <tr>
+            <td>
+                <img class="img1" src="images/wp2208077.jpg" alt="BUGATTI CHIRON SUPERSPORT 300+ picture" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        About Koenigsegg Regera
+                    </h2>
+                    <p>
+                        The Koenigsegg Regera is a limited production, plug-in hybrid grand touring sports car manufactured by Swedish automotive manufacturer Koenigsegg. It was unveiled at the March 2015 Geneva Motor Show. The name Regera is a Swedish verb, meaning "to reign" or "to rule." Koenigsegg planned to produce only 80 units of the car, many of which were sold upon unveiling, though 84 Regera were actually constructed.
+                    </p>
+                </div>
+            </td>
+            <td><img class="img1" src="images/3ec72d36-2452-4a91-8b74-88e018df7afe.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+        </tr>
+        <tr>
+            <td><img class="img1" src="images/1920px-2015_Koenigsegg_Agera_N_(19886243212).jpg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        Koenigsegg founder Christian von Koenigsegg purchased a Tesla Model S P85+ in 2013 and was impressed by the car's ability to instantly deliver power without the need for a downshift or to wait for turbo lag. He was especially impressed with the direct and intuitive experience provided by an electric car like the Tesla, remarking that the instantaneous response of the motors was something even a Formula One car could not attain with a traditional internal combustion engine. Von Koenigsegg sought to combine this desirable aspect of electric powertrains with the traditional Koenigsegg experience of a lightweight, powerful sports car
+                        Realizing some form of compromise was necessary, von Koenigsegg decided to look to a hybrid solution. By removing the traditional 7-speed dual-clutch transmission and switching to a single-gear direct-drive system, Koenigsegg mitigated the added weight of the three electric motors and a 4.5 kW·h battery pack installed in the Regera as compared to the previous Agera models. The single-gear electrical solution also provided the instant response that von Koenigsegg sought, while the onboard internal combustion engine would then maintain the rapid acceleration and power at higher speeds where the electric motors are less effective.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        
+    </table>
+
+    <hr />
+
+    <table>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Design
+                    </h2>
+                    <p style="width: 700px">
+                        The day-time running lamps on the Regera was designed to resemble a constellation, with the carbon-fibre background resembling the night sky. In addition, the headlamps can actively vent out condensation through two small fans installed in each lamp. Koenigsegg claims that the Regera is the first "fully-robotized" car. All openings and wing mirrors are fitted with proximity sensors to safeguard against the doors striking nearby objects (curb, low roof, etc.) while opening or closing. The vehicle features hydraulic pumps and accumulators to control the active front and rear wings, as well as active chassis control and lifting. Hydraulic lifters were added to the already existing pumps and accumulators to allow for all body panels on the vehicle to be remotely operated.
+                    </p>
+                </div>
+            </td>
+            <td rowspan="2"><img class="img1" src="images/2019-koenigsegg-regera-front-view.jpg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Specifications
+                    </h2>
+                    <p style="width: 700px">
+                        The Regera is a two-door targa top with a detachable roof that can be stowed in the boot. It is the first hybrid car to be produced by Koenigsegg, as well as the first vehicle to use their Direct-Drive System for power delivery. As the company's 'grand touring' oriented offer in their two-car lineup, the Regera focuses more on interior luxury and daily usability instead of hardcore track performance like the Jesko.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

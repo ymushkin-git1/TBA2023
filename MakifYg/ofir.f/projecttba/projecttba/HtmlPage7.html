@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script>
+        function checkValues() {
+            var x = true;
+            x = name() && x;
+            x = familyname() && x;
+            x = checkYear() && x;
+            x = check() && x;
+            x = password3() && x;
+            x = password2() && x;
+            x = gmail() && x;
+            x = nameofuser() && x;
+            return x;
+
+        }
+
+        function name() {
+            if (nameOfperson.value.length < 2) {
+                msg1.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                msg1.innerHTML = "קביל";
+
+                return true;
+            }
+        }
+        function familyname() {
+            if (familynameOfperson.value.length < 3) {
+                msg2.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                msg2.innerHTML = "קביל";
+
+                return true;
+
+            }
+        }
+        function checkYear() {
+            if (bornYear.value < 1900 || bornYear.value > 2023) {
+                msg3.innerHTML = "שנה לא תקינה";
+                return false;
+            }
+            else {
+                msg3.innerHTML = "קביל";
+                return true;
+            }
+        }
+        function check() {
+            if (gender1.checked || gender3.checked || gender2.checked) {
+                msg4.innerHTML = "קביל";
+                return true;
+            }
+
+            else {
+                msg4.innerHTML = "נא לבחור ערך";
+                return false;
+            }
+
+        }
+        function nameofuser() {
+            if (nameuser.value.length < 5) {
+                msg8.innerHTML = "שם משתמש לא תקין";
+                return false;
+            }
+            else {
+                msg8.innerHTML = "קביל";
+                return true;
+
+            }
+        }
+        function password3() {
+            if (password1.value.length < 5) {
+                msg5.innerHTML = "סיסמה לא חזקה";
+                return false;
+            }
+            else {
+                msg5.innerHTML = "קביל";
+                return true;
+
+            }
+        }
+        function password2() {
+            if (password1.value != passwordequal.value) {
+                msg6.innerHTML = "סיסמה לא זהה";
+                return false;
+            }
+            else {
+                if (password1.value.length < 5) {
+                    msg6.innerHTML = "סיסמה 1 לא חזקה";
+                    return false;
+                }
+                else {
+                    msg6.innerHTML = "אימות סיסמה קביל";
+                    return true;
+
+                }
+            }
+        }
+        function gmail() {
+            var check = checkgmail.value.includes("@gmail.com");
+            if (check == false) {
+                msg7.innerHTML = "gmail לא תקין";
+                return false;
+            }
+            else {
+                if (checkgmail.value.indexOf("@") != 0) {
+                    msg7.innerHTML = "קביל";
+                    return true;
+                }
+                else
+                    return false;
+
+
+            }
+        }
+    </script>
+
+</head>
+<body dir="rtl">
+    <ul class="ul">
+        <li><a href="HtmlPage7.html">register</a></li>
+        <li><a href="HtmlPage6.html">Volxwagen</a></li>
+        <li><a href="HtmlPage5.html">Porsche</a></li>
+        <li><a href="HtmlPage4.html">Bmw</a></li>
+
+        <li><a href="HtmlPage3.html">Tesla</a></li>
+        <li><a href="HtmlPage2.html">Mercedes-Benz</a></li>
+
+        <li><a href="HtmlPage1.html">Home</a></li>
+
+    </ul>
+    <form onsubmit="return checkValues()">
+
+        <table>
+            <tr>
+                <td>שם פרטי</td>
+                <td><input type="text" id="nameOfperson" /></td>
+                <td id="msg1">הכנס שם פרטי</td>
+
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td><input id="familynameOfperson" type="text" /></td>
+                <td id="msg2">הכנס שם משפחה</td>
+            </tr>
+
+            <tr>
+                <td>שנת לידה</td>
+                <td><input type="number" id="bornYear" /></td>
+                <td id="msg3">הכנס שנת לידה</td>
+            </tr>
+            <tr>
+                <td>אזרחות ישראלית/ אחרת</td>
+                <td><input type="checkbox" />ישראלית <input type="checkbox" />אחרת</td>
+                <td>הכנס בעל איזו אזרחות אתה</td>
+
+            </tr>
+            <tr>
+                <td>מגדר</td>
+                <td>
+                    <input type="radio" name="name1" id="gender1" />
+                    <label>זכר</label>
+                    <input type="radio" name="name1" id="gender2" />
+                    <label>נקבה</label>
+                    <input type="radio" name="name1" id="gender3" />
+                    <label>אחר</label>
+                </td>
+                <td id="msg4">הכנס מגדר</td>
+
+            </tr>
+            <tr>
+                <td>שם משתמש</td>
+                <td><input type="text" id="nameuser" /></td>
+                <td id="msg8">שם משתמש</td>
+
+            </tr>
+            <tr>
+                <td>סיסמה</td>
+                <td><input type="text" id="password1" /></td>
+                <td id="msg5">הכנס סיסמה</td>
+
+            </tr>
+
+            <tr>
+                <td>אימות סיסמה</td>
+                <td><input type="text" id="passwordequal" /></td>
+                <td id="msg6">אמת סיסמה</td>
+
+            </tr>
+            <tr>
+                <td>עיר</td>
+                <td>
+                    <select>
+                        <option>ראשון לציון</option>
+                        <option>ירושלים</option>
+                        <option>תל אביב</option>
+                    </select>
+                </td>
+                <td>בחר עיר</td>
+
+            </tr>
+
+            <tr>
+                <td>gmail</td>
+                <td><input type="text" id="checkgmail" /></td>
+                <td id="msg7">הכנס gmail</td>
+
+            </tr>
+        </table>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

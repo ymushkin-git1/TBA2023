@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>עוגיות מושלגות</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/cookies1.jpeg" style="width:30%; height:35%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כ20-30 עוגיות
+    </div>
+
+    <br />
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">220 גרם שוקולד מריר</li>
+        <li id="li2" onclick="toggle(li2)">70 גרם מחמאה</li>
+        <li id="li3" onclick="toggle(li3)">2 ביצים</li>
+        <li id="li4" onclick="toggle(li4)">5 טיפות תמצית וניל</li>
+        <li id="li5" onclick="toggle(li5)">100 גרם סוכר ( 1/2 כוס )</li>
+        <li id="li6" onclick="toggle(li6)">200 גרם קמח ( ½1 כוסות פחות כף)</li>
+        <li id="li7" onclick="toggle(li7)">30 גרם קקאו</li>
+        <li id="li8" onclick="toggle(li8)">1 כפית אבקת אפייה</li>
+        <li id="li9" onclick="toggle(li9)">קורט מלח</li>
+    </ul>
+
+    <div class="dives">
+        לגלגול:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li10" onclick="toggle(li10)">1/2 כוס סוכר לבן</li>
+        <li id="li11" onclick="toggle(li11)">150 גרם אבקת סוכר</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                ממיסים בקערה במיקרו (או על בן מארי) שוקולד+מחמאה בפולסים עד להמסה מלאה
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                במיקסר מקציפים ביצים וסוכר עד לקצף בהיר
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                למיקסר מוסיפים את השוקולד המומס ותמצית וניל וממשיכים להקציף
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                מוסיפים את היבשים: קמח, קקאו, אבקת אפיה ומלח. מערבבים עד לאיחוד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                בעזרת מרית מקפלים מעט את הבלילה, מעבירים לקערה, עוטפים אותה בניילון נצמד ומשאירים במקרר כארבעים דקות
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                מסדרים את הסוכר ואבקת הסוכר בקערות נפרדות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                לאחר הקירור של הבלילה מתחילים עם הגלגול. לוקחים מהבלילה כף  , מגלגלים לכדור , מעבירים לקערת הסוכר ומגלגלים עד ציפוי מלא , לאחר מכן מעבירים לקערה עם אבקת הסוכר ומגלגלים לציפוי מלא. מניחים על תבנית אפייה המרופדת בנייר אפייה . את הכדורים מניחים במרווחים קטנים.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                8)
+            </td>
+            <td>
+                את העוגיות אופים כ-10 עד 15 דקות. מוציאים מאפייה ומצננים. את העוגיות שומרים בקופסא אטומה בטמפרטורת החדר.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="cookies1.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

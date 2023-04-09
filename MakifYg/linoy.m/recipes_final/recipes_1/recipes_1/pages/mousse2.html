@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+
+    <br />
+
+    <div class="name">
+        <h1>מוס אוראו</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/mousse2.jpeg" style="width: 70%; height: 75%; float: left;" />
+    </div>
+
+    <br />
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <br />
+
+    <div class="dives">
+        לבסיס:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">100 גרם שוקולד מריר</li>
+        <li id="li2" onclick="toggle(li2)">50 גרם מחמאה</li>
+        <li id="li3" onclick="toggle(li3)">2 ביצים</li>
+        <li id="li4" onclick="toggle(li4)">1/2 כוס סוכר</li>
+        <li id="li5" onclick="toggle(li5)">1/2 כוס קמח</li>
+    </ul>
+
+    <div class="dives">
+        לעוגת אוראו:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li6" onclick="toggle(li6)">16 יחידות עוגיות אוראו</li>
+        <li id="li7" onclick="toggle(li7)">150 גרם שוקולד לבן</li>
+        <li id="li8" onclick="toggle(li8)">250 גרם גבינת מסקרפונה</li>
+        <li id="li9" onclick="toggle(li9)">500 מ״ל שמנת מתוקה</li>
+        <li id="li10" onclick="toggle(li10)">2 כפות אינסטנט פודינג וניל</li>
+        <li id="li11" onclick="toggle(li11)">1/4 כוס סוכר</li>
+    </ul>
+
+
+    <div class="dives">
+        לקישוט:
+    </div>
+
+
+    <ul id="myUL" class="ing">
+        <li id="li12" onclick="toggle(li12)">250 מ״ל שמנת מתוקה</li>
+        <li id="li13" onclick="toggle(li13)">2 כפות אינסטנט פודינג וניל</li>
+        <li id="li14" onclick="toggle(li14)">2 כפות סוכר</li>
+        <li id="li15" onclick="toggle(li15)">**עוגיות אוראו חצויות</li>
+    </ul>
+
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                מתחילים עם התחתית: מחממים תנור ל 180 מעלות. בקערה מניחים חמאה ושוקולד וממיסים במיקרוגל עד המסה מלאה. מוסיפים סוכר , ביצים וקמח ומערבבים עד איחוד. מעבירים את הבלילה לרינג משומן היטב ועטוף ברדיד אלומיניום כדי למנוע מהבלילה לזלוג החוצה. אופים את התחתית במשך כ – 20 דקות או עד שהבלילה אפויה. מוציאים מהתנור ומניחים להצטננות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                ממשיכים עם העוגת אוראו: בקערה עמוקה מניחים שוקולד לבן ו – 150 מ״ל שמנת מתוקה , מחממים עד המסה מלאה. מערבבים לאיחוד, מוסיפים לקערה גבינת שמנת וטורפים היטב עד שנעלמים כל הגושים. מוסיפים את הפודינג וניל וטורפים היטב. טוחנים את העוגיות אוראו עד פירורים דקים, מוסיפים לבלילה וטורפים היטב עד שכל הבלילה אחידה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                בקערת מיקסר עם וו בלון מקציפים 350 מ״ל שמנת מתוקה וסוכר עד קציפה במרקם של יוגורט , לא קציפה יציבה מאוד. מקפלים את הקצפת לתערובת השוקולד לבן , כאשר הבלילה אחידה , מוזגים אותה לרינג עם תחתית השוקולד האפויה , מקפיאים עד התייצבות ( 4 שעות לפחות ) או מקררים לילה במקרר. מחלצים את העוגה אחרי קירור מלא ומניחים על צלחת הגשה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                לקישוט: מקציפים במיקסר עם וובלון שמנת מתוקה , פודינג וניל וסוכר , עד קציפה יציבה מאוד.
+                מעבירים את הקצפת לשקית זילוף עם רינג עגול , מזלפים גבעות עגולות בצידי העוגה, על כל גבעה מניחים חצי עוגיית אוראו. ניתן לזלף שוקולד מומס ולקשט בפירורי עוגיות אוראו.
+                העוגה נשמרת בקירור.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+
+    <a href="mousse2.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

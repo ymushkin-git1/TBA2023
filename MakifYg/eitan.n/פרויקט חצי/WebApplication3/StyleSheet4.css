@@ -1,0 +1,72 @@
+﻿body {
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0.60)), url('pictures/wilt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: inline-flex;
+    border: 1px solid #555;
+    background-color: black;
+}
+
+li a {
+    display: block;
+    padding: 10px 70px;
+    color: white;
+    text-decoration: wavy;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+    li a:hover {
+        background-color: dimgrey;
+    }
+
+#Wilt {
+    color: snow;
+    font-family: 'Guttman Yad';
+    font-size: 25px;
+}
+
+#h1_1 {
+    color: antiquewhite;
+    font-family: 'High Tower Text';
+    font-size: 29px;
+    text-decoration: underline;
+    position: center;
+    margin-left: 615px;
+}
+#imw {
+    float: left;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+button {
+    height: 30px;
+    background-color: grey;
+    color: white;
+    border-radius: 30px;
+}
+
+    button:hover {
+        background-color: darkgray;
+    }
+
+input {
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+

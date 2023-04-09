@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>מיני לחמניות</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/savorypastries2.jpeg" style="width:35%; height:35%; float:left;" />
+    </div>
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">1 קילו קמח</li>
+        <li id="li2" onclick="toggle(li2)">2 כפות שמרים יבשים</li>
+        <li id="li3" onclick="toggle(li3)">2 ביצים</li>
+        <li id="li4" onclick="toggle(li4)">1.5 מלח</li>
+        <li id="li5" onclick="toggle(li5)">6 כפות סוכר</li>
+        <li id="li6" onclick="toggle(li6)">1/2 כוס שמן</li>
+        <li id="li7" onclick="toggle(li7)">2.25 כוסות מים פושרים</li>
+        <li id="li8" onclick="toggle(li8)">1 ביצה</li>
+        <li id="li9" onclick="toggle(li9)">שומשום</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                ללוש במיקסר את המים פושרים מוסיפים בסוף ובהדרגה עד שהמרקם דביק ורך.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                משמנים קערה נקיה,  ובידיים משומנות צורים כדור.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מכסים בנילון נצמד ומעל מגבת מתפיחים כשעה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                מורידים אויר ושוב מתפיחים לחצי שעה צורים כדורים על שיש משומן קלות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                מתפיחים על נייר אפיה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                מורחים ביצה ושומשום ואופים על 170 מעלות עד שהתחתית מתחילה להזהיב מעט.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="savorypastries2.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../StyleSheet1.css" rel="stylesheet" />
+    <script>
+        function nutrition8() {
+            var x = serving.value;
+            cgrams.innerHTML = 70 * x;
+            C.innerHTML = 124 * x;
+            tfgrams.innerHTML = 4.4* x;
+            tfat.innerHTML = 7 * x;
+            Sfgrams.innerHTML = 1* x;
+            Sfat.innerHTML = 5 * x;
+            Pfgrams.innerHTML = 1.4 * x;
+            Mfgrams.innerHTML = 1.2 * x;
+            Chgrams.innerHTML = 3.5 * x;
+            Chole.innerHTML = 1 * x;
+            Sograms.innerHTML = 398 * x;
+            Sod.innerHTML = 17 * x;
+            Pograms.innerHTML = 233 * x;
+            Pota.innerHTML = 7 * x;
+            Tcgrams.innerHTML = 10 * x;
+            Totc.innerHTML = 3 * x;
+            Dief.innerHTML = 3.4 * x;
+            Suga.innerHTML = 0.8 * x;
+            Prot.innerHTML = 11 * x;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="../../pages/HtmlPage1.html">home</a>
+        <a href="../../pages/option.html">Menu</a>
+        <a href="../../pages/combo.html">Create</a>
+        <a class="b" href="../../pages/login.html">log in</a>
+    </div><br /><br /><br /><br /><br />
+    <div>
+        <table class="title">
+            <tr>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>est </strong></td>
+                <td></td>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>urger </strong></td>
+                <td style="color:saddlebrown"><strong>C</strong></td>
+                <td style="color:rosybrown"><strong>ombo</strong></td>
+            </tr>
+        </table>
+        <br /><br />
+        <div class="title3" style="position:relative; left:35px ;">
+            Veggie Burger Patty:
+        </div>
+        <div class="txt1" style="position:relative; left:30px; top:50px;">
+
+            - It contains carbohydrates. <br />
+            - It contains many plant-based ingredients.<br />
+            - It contains vitamins and minerals..<br />
+            - It is compatible with vegan and vegetarian diets<br />
+        </div>
+        <table style="position:relative; left:30px; top:60px;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <b class="txt3">
+                                    Nutrition Facts
+                                </b>
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Veggie Burger Patty
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Serving Size:<select id="serving">
+                                    <option id="option1" value="1">1</option>
+                                    <option id="option2" vlaue="2">2</option>
+                                    <option id="option3" value="3">3</option>
+                                    <option id="option4" value="4">4</option>
+                                    <option id="option5" value="5">5</option>
+                                </select><button id="change" onclick="nutrition8()">change serving</button> roll (<a id="cgrams" >70</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color:black"><hr /></td>
+                        </tr>
+                        <tr><td style="color:black"><hr /></td></tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Calories</b><a class="txt4" id="C">124</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4" style="position:relative; left:300px;">% Daily Value</b>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Fat </b><a id="tfgrams" class="txt4"> 4.4</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <a id="tfat" class="txt5" style="position:relative; left:65px;">7</a><b class="txt5" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Saturated Fat</a> <a class="txt4" id="Sfgrams">1</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b id="Sfat" class="txt5" style="position:relative; left:35px;">5</b><b class="txt4" style="position:relative; left:35px;">%</b>
+                            </td>
+                        </tr>
+                     
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Polyunsaturated Fat</a> <a class="txt4" id="Pfgrams">1.4</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Monounsaturated  Fat</a> <a class="txt4" id="Mfgrams">1.2</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Cholesterol</b> <a class="txt4" id="Chgrams">3.5</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Chole" style="position:relative; left:65px;">1</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Sodium</b> <a class="txt4" id="Sograms">398</a><a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Sod" style="position:relative; left:65px;">17</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Potassium</b><a class="txt4" id="Pograms">233</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Pota" style="position:relative; left:65px;">7</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Carbohydrates</b><a class="txt4" id="Tcgrams">10</a> <a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Totc" style="position:relative; left:65px;">3</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Dietary Fiber</a> <a class="txt4" id="Dief">3.4</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Sugars</a> <a class="txt4" id="Suga">0.8</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Protein </b><a class="txt4" id="Prot"> 11</a> <a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+             
+            </tr>
+          
+        </table>
+
+    </div>
+</body>
+</html>

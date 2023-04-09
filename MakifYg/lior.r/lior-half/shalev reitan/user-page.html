@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>user page</title>
+
+
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="user-page func.js"></script>
+
+</head>
+<body dir="rtl" id="body7">
+
+    <ul>
+        <li><a href="Home.html"> Home</a></li>
+        <li><a href="ActionPage.html"> Action</a></li>
+        <li><a href="ComedyPage.html"> Comedy</a></li>
+        <li><a href="MysteryPage.html"> Mystery</a></li>
+        <li><a href="HorrorPage.html"> Horror</a></li>
+        <li><a href="RomancePage.html"> Romance</a></li>
+        <li><a href="DramaPage.html"> Drama</a></li>
+        <li><a href="user-page.html"> sign up</a></li>
+    </ul>
+
+    <p id="title1">
+        before you are join to our best movie site,you need to sign up
+    </p>
+
+    <button onclick="thankful()" style="height:50px;width:80px" id="colorCh">im a thanks button</button>
+
+    <a href="#botton1" style="margin-right:700px;color:white" >if you had a mistake at the beginning press to go down and click the reset</a>
+   
+    <form onsubmit="return ending()" >
+
+       <p id="colorCh">
+        <table >
+            <tr>
+                <td><input type="text" placeholder="first name" id="fname" name="fname" /></td>
+                <td> <div id="div1"></div></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" placeholder="last name" id="lname" name="lname"/></td>
+                <td> <div id="div2"></div></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" placeholder="email" id="email" name="email" /></td>
+                <td> <div id="div3"></div></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>nationality</p>
+                    <input type="checkbox" name="ezrahut" id="ezrahut" >
+                    <label for="ezrahut">israel</label><br>
+                    <input type="checkbox" name="ezrahut" id="ezrahut1" >
+                    <label for="ezrahut2">other</label><br>
+                </td>
+                <td> <div id="div4"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>gender</p>
+                    <input type="radio" name="gender" id="male" >
+                    <label for="gender">male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="gender">female</label>
+                    <br>
+                    <input type="radio" name="gender" id="other">
+                    <label for="gender">other</label>
+                <td> <div id="div5"></div></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="password" id="password1" name="passowrd"/>
+                </td>
+
+                <td> <div id="div6"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="verified password" id="vipassword" name="verifiedpassword"/>
+
+                </td>
+                <td> <div id="div7"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>type of movie</p>
+                    <input type="radio" name="movie12" id="movie5">
+                    <label for="movie12">action</label>
+                    <br>
+                    <input type="radio" name="movie12" id="movie6">
+                    <label for="movie12">adventure</label>
+                    <br>
+                    <input type="radio" name="movie12" id="movie4">
+                    <label for="movie12">drama</label>
+                    <br>
+                    <input type="radio" name="movie12" id="movie3">
+                    <label for="movie12">nothing in the list</label>
+                </td>
+                <td> <div id="div10"></div></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>username</p>
+                    <input type="text" placeholder="username" id="userName1" name="username" />
+                </td>
+                <td> <div id="div11"></div></td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <p>how much movies did you watched</p>
+                    <input type="number" placeholder="countMovies" id="Movies" name="movies" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p><label for="movies">write your favorite movies :</label></p>
+                    <textarea id="movies1" name="movies1" rows="5" cols="60"></textarea>
+                </td>
+                <td> <div id="div9"></div></td>
+            </tr>
+
+
+        </table>
+        <button id="botton1" style=" margin-right:1000px " type="submit">send</button>
+        <button id="botton1" style=" margin-right: 250px " type="reset">reset</button>
+        <br >
+        <a  id="back" href="Home.html">back to home page</a>
+         <br />
+        </p>
+    </form>
+    
+</body>
+</html>

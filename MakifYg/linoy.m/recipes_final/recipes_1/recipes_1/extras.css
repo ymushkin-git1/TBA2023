@@ -1,0 +1,105 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    direction: rtl;
+    background-attachment: fixed;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    height: 200px;
+}
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+.topnav {
+    overflow: hidden;
+}
+
+.leftcolumn {
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+}
+
+.middlecolumn {
+    width: 30%;
+    float: right;
+    padding-left: 20px;
+}
+
+.rightcolumn {
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.buttonregi {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 100px;
+    width: 290px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.utensils{
+    position: relative;
+    display: inline-block;
+}
+.utensils-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.utensils:hover .utensils-content {
+    display: block;
+    cursor: pointer;
+}

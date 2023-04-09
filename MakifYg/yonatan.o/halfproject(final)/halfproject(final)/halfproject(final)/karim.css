@@ -1,0 +1,32 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: black;
+    text-align: center;
+    position:fixed;
+}
+
+p {
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 25px;
+    color: dodgerblue;
+}
+
+h3 {
+    font-size: 25px;
+    color: dodgerblue;
+}
+
+.info {
+    font-size: 20px;
+    color: white;
+    position: fixed;
+}
+

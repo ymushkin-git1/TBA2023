@@ -1,0 +1,77 @@
+﻿body {
+    color: black;
+    font-family: impact;
+    background-color: darkgrey;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+li a {
+    display: block;
+    padding: 15px 100px;
+    color: white;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: white;
+        color: black;
+    }
+
+.ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+
+
+#body1 {
+    color: black;
+    font-family: impact;
+    background-image: url('backgroud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    height: 300px;
+    width: 600px;
+}
+
+p {
+    float: right;
+    width: 640px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.uldivsnames {
+    list-style-type: none;
+    background-color: black;
+    padding: 10px;
+}
+#pbody1 {
+
+    font-size: 26px;
+    width: 100%;
+}

@@ -1,0 +1,48 @@
+﻿
+body {
+    background-image: url('img/רקע.jpg');
+    direction:rtl;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+p {
+    direction: rtl;
+    color: aliceblue;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+
+h2 {
+    text-align: right;
+    color: antiquewhite;
+}
+
+img.one {
+    height: 260px;
+    width: 200px;
+    float: left;
+}
+
+img.two {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+img.three {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+ul.b {
+    list-style-type: circle;
+    direction: rtl;
+    color: aliceblue;
+    font-family: Geneva, Verdana, sans-serif;
+}
+

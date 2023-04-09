@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<link href="StyleSheet1.css" rel="stylesheet" />
+<script src="JavaScript.js"></script>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="ruler">
+        <div style="margin: auto; margin-left: 0;">
+            <a href="homepage.html" class="linkspace">home</a>
+            <a href="personalstory.html" class="linkspace">personal story</a>
+            <a href="HtmlPage3.html" class="linkspace">No Equipment Exercises</a>
+            <a href="Nutrition.html" class="linkspace">Nutrition</a>
+            <a href="CalorieCalculator.html" class="linkspace">Calorie Calculator</a>
+            <a href="HtmlPage6.html" class="linkspace">General Q&A</a>
+            <a href="login.html" class="linkspace">sign up</a>
+        </div>
+    </div>
+    <h1>Daily Calories Burned Calculator</h1>
+    <p>This calculator is a tool for those of you who want to gain or lose weight. The rules are simple,<br />
+    you burn more than you consume, you lose weight, <br />
+    you consume more than you burn, you gain weight. <br />
+    I would like to note that both being overweight and underweight ARE VERY UNHEALTHY. talk to a doctor or a proffesional about your nutrition and fitness goals.<br />
+    This Page is a tool, use it wisely.
+    </p>
+    <div class="caloriecalc">
+        <div class="calinputs">
+            <div>man<input type="radio" name="sex" value="man" id="man" />woman<input type="radio" name="sex" value="woman" id="woman" /></div>
+        </div>
+        <div class="calinputs"><select id="activity">
+    <option value="1.2">sedentary</option>
+    <option value="1.375">light exercise</option>
+    <option value="1.465">moderate exercise</option>
+    <option value="1.55">active</option>
+    <option value="1.725">very active</option>
+    <option value="1.9">extremely active</option>
+</select></div>
+        <div class="calinputs">weight (kg)<input type="text" id="weight" /></div>
+        <div class="calinputs">height (cm)<input type="text" id="height" /></div>
+        <div class="calinputs">age<input type="text" id="age" /></div>
+        <div class="calinputs"><button onclick="caloriecalc()">calculate!</button></div>
+        <div id="calories"></div>
+    </div>
+</body>
+</html>

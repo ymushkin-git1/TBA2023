@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>עוגת תפוזים</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/cake2.jpeg" style="width:70%; height:75%; float:left;" />
+    </div>
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">4 ביצים</li>
+        <li id="li2" onclick="toggle(li2)">1.5 כוסות או 300 גרם סוכר לבן</li>
+        <li id="li3" onclick="toggle(li3)">1 כוס או 240 מ"ל שמן קנולה</li>
+        <li id="li4" onclick="toggle(li4)">כף גרידת תפוז</li>
+        <li id="li5" onclick="toggle(li5)">1 כוס או 240 מ"ל מיץ תפוזים</li>
+        <li id="li6" onclick="toggle(li6)">2.5 כוסות או 350 גרם קמח לבן</li>
+        <li id="li7" onclick="toggle(li7)">שקית אבקת אפיה</li>
+    </ul>
+
+    <div class="dives">
+        להרטבה אחרי האפיה:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li8" onclick="toggle(li8)">חצי כוס מיץ תפוזים</li>
+    </ul>
+
+    <div class="dives">
+        להגשה:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li9" onclick="toggle(li9)">אבקת סוכר</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                מחממים תנור ל-160 מעלות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                בקערה / קערת מיקסר טורפים ביצים, סוכר, שמן, קליפה מגוררת ומיץ תפוזים לתערובת אחידה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מוסיפים קמח ואבקת אפייה וטורפים לאיחוד.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                משמנים את התבנית ומפזרים מעט סוכר, למניעת הידבקות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                משטחים את התערובת בתבנית ואופים כ-40 דקות, עד שהעוגה זהובה וקיסם הננעץ במרכז יוצא כמעט יבש.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                רק אם רוצים שהעוגה תהיה קצת רטובה: מוזגים על העוגה החמה 1/2 כוס מיץ תפוזים בעזרת כף, באופן אחיד.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                מצננים, מקשטים באבקת סוכר ומגישים.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="cake2.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

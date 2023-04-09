@@ -1,0 +1,43 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 25px;
+    color: dodgerblue;
+}
+
+h3 {
+    font-size: 25px;
+    color: dodgerblue;
+}
+
+.info {
+    font-size: 20px;
+    color: white;
+}
+.img2 {
+    width: 700px;
+    height: 650px;
+    place-content:center
+}
+.video1 {
+    width: 500px;
+    height: 400px;
+    place-content:center;
+}
+a{
+    font-size:larger;
+}

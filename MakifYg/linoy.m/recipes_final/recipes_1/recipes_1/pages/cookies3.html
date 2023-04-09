@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #ecf2f9;
+            color: #12263b;
+        }
+
+        ul.ing li {
+            background: #d8e5f3;
+        }
+
+            ul.ing li:hover {
+                background: #c4d8ed;
+            }
+
+            ul.ing li.checked {
+                background: #b1cbe7;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>עוגיות אמסטרדם</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/cookies3.jpeg" style="width:30%; height:30%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כ18-20 עוגיות
+    </div>
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">150 גרם סוכר לבן</li>
+        <li id="li2" onclick="toggle(li2)">50 גרם סוכר חום</li>
+        <li id="li3" onclick="toggle(li3)">100 גרם מחמאה רכה</li>
+        <li id="li4" onclick="toggle(li4)">2 ביצים</li>
+        <li id="li5" onclick="toggle(li5)">כפית תמצית/מחית וניל</li>
+        <li id="li6" onclick="toggle(li6)">60 גרם קקאו</li>
+        <li id="li7" onclick="toggle(li7)">200 גרם קמח לבן</li>
+        <li id="li8" onclick="toggle(li8)">כפית אבקת אפייה</li>
+        <li id="li9" onclick="toggle(li9)">כפית סודה לשתייה</li>
+        <li id="li10" onclick="toggle(li10)">150 גרם מטבעות/ פרליני שוקולד לבן</li>
+        <li id="li11" onclick="toggle(li11)">קורט מלח</li>
+
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                במיקסר (וו גיטרה) שמים סוכר לבן + סוכר חום + מחמאה עד לקבלת מרקם אחיד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מוסיפים ביצים ותמצית וניל, וממשיכים לערבב
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מוסיפים את היבשים: קמח + אבקת אפייה + סודה לשתייה + קקאו. מערבבים הכל לאיחוד (ערבוב קצר)
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                מעבירים להתייצבות במקרר כשעה לפחות. אם הבצק דביק מידי לאחר הקירור, מומלץ להרטיב מעט את היידים לפני הכדרור
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                הכנת העוגיות: עבור כל עוגיה מגלגלים כדור אחד במשקל 25 גרם, וכדור נוסף במשקל 10 גרם. על גבי תבנית מרופדת בנייר אפייה, משטחים את הכדור הגדול, עליו מניחים את מטבעות השוקולד הלבן במרכז. לאחר מכן משטחים את הכדור השני מעל ומהדקים את הקצוות. מעל כל עוגיה מפזרים מעט מלח
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                לאפות 10-12 דקות 180 מעלות. לא לאפות יותר מידי
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                את העוגיות שומרים בקופסא אטומה בטמפרטורת החדר
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+    <a href="cookies3.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

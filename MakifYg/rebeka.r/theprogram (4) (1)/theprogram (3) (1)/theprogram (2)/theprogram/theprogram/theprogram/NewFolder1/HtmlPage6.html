@@ -1,0 +1,195 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <style>
+        div {
+            color: red;
+        }
+
+        table {
+            margin-top:50px;
+            Margin-left: 50px;
+            Margin-right: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul id="top">
+        <li><a class="active" href="HtmlPage1.html">דף ראשי</a></li>
+        <li><a href="HtmlPage2.html">אקריל</a></li>
+        <li><a href="HtmlPage3.html">צבעי מים</a></li>
+        <li><a href="HtmlPage4.html">גואש</a></li>
+        <li><a href="HtmlPage5.html">עפרונות צבעוניים </a></li>
+        <li><a href="HtmlPage7.html">טיפים</a></li>
+        <li><a href="HtmlPage6.html">תרשמו</a></li>
+    </ul>
+    <h1>תרשמו פו בבקשה:)</h1>
+
+    <form onsubmit="return ending()">
+        <table>
+            <tr>
+                <!-- שם פרטי -->
+                <td>
+                    שם פרטי:
+                </td>
+                <td>
+                    <input type="text" id="iName" name="iName" placeholder="שם פרטי" />
+                </td>
+                <td>
+                    <div id="div1"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- שם משפחה -->
+                <td>
+                    שם משפחה:
+                </td>
+                <td>
+                    <input type="text" id="fName" name="fName" placeholder="שם משפחה" />
+                </td>
+                <td> <div id="div2"></div></td>
+            </tr>
+
+            <tr>
+                <!-- מגדר -->
+                <td>
+                    מגדר:
+                </td>
+                <td>
+                    זכר
+                    <input type="radio" id="Male" name="gender" />
+                    נקבה
+                    <input type="radio" id="Female" name="gender" />
+                    הצייר
+                    <input type="radio" id="Painter" name="gender" />
+                </td>
+                <td>
+                    <div id="div8"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- אימייל -->
+                <td>
+                    אימייל:
+
+                </td>
+                <td>
+                    <input type="text" id="emile" name="emile" placeholder="אימייל" />
+                </td>
+                <td>
+                    <div id="div3"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- שם משתמש -->
+                <td>
+                    שם משתמש:
+
+                </td>
+                <td>
+                    <input type="text" id="code" name="code" placeholder="שם משתמש" />
+
+                </td>
+                <td>
+
+                    <div id="div4"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- סיסמה -->
+                <td>
+                    סיסמה:
+                </td>
+                <td>
+                    <input type="number" id="password" name="password" placeholder="סיסמה" />
+                </td>
+                <td>
+                    <div id="div5"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- אימות -->
+                <td>
+                    אימות:
+                </td>
+                <td>
+                    <input type="number" id="passwordVari" name="passwordVari" placeholder="אימות סיסמה" />
+                </td>
+                <td>
+                    <div id="div6"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- יש ניסיון? -->
+                <td>
+                    יש ניסיון:
+                </td>
+                <td>
+                    לא
+                    <input type="radio" id="No" name="experience" />
+                    אולי קצת
+                    <input type="radio" id="Maybe" name="experience" />
+                    יש
+                    <input type="radio" id="Yes" name="experience" />
+                    כול חיי צירתי מרגע בו יצאתי מבטן אמי
+                    <input type="radio" id="AllLife" name="experience" />
+                    יותר ממך זה בטוח
+                    <input type="radio" id="More" name="experience" />
+                </td>
+                <td>
+                    <div id="div7"></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- חומר טוב -->
+                <td>
+                    חומר אהוב:
+
+                </td>
+                <td>
+                    <select name="TypesColor" id="TypesColor">
+                        <option>אקריל</option>
+                        <option>צבעי מים</option>
+                        <option>גואש</option>
+                        <option>עיפרון</option>
+                        <option>;) אתם יודעים על  איזה חומר אני מדברת </option>
+                        <option>אחר</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <!-- בקשה -->
+                <td>
+                    בקשה:
+                </td>
+                <td>
+                    <textarea id="requests" name="requests" rows="5" cols="50" style="width: 224px; height: 90px;"></textarea>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">אפס</button>
+                </td>
+                <td>
+                    <button type="submit">שלח</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <a href="#top">
+        <img id="arrow" style="height: 100px; width:100px" src="../image/ayr.png" />
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>הגשה</title>
+    <link href="../StyleSheet3.css" rel="stylesheet" />
+    <link href="../common.css" rel="stylesheet" />
+</head>
+<body>
+    <div >
+        <ul class="a">
+            <li><a class="active" href="HtmlPage1.html">ראשי</a></li>
+            <li><a href="HtmlPage2.html">עמוד 1</a></li>
+            <li class="dropdown" >
+                <a href="HtmlPage3.html" class="dropbtn">עמוד 2</a>
+                <div class="dropdown-content">
+                    <a href="HtmlPage3.html#position">עמידה נכונה</a>
+                    <a href="HtmlPage3.html#sweep">תנופה</a>
+                    <a href="HtmlPage3.html#serve">תנועת הגשה</a>
+                </div>
+            </li>
+            <li><a href="HtmlPage4.html">עמוד 3</a></li>
+            <li><a href="HtmlPage5.html">עמוד 4</a></li>
+            <li><a href="HtmlPage6.html">עמוד 5</a></li>
+            <li class="dropdown" >
+                <a href="HtmlPage7.html" class="dropbtn">עמוד 6</a>
+                <div class="dropdown-content">
+                    <a href="HtmlPage7.html#serve">serve</a>
+                    <a href="HtmlPage7.html#Backhand">Backhand</a>
+                    <a href="HtmlPage7.html#topspin">topspin</a>
+                </div>
+            </li>
+        </ul>
+        <h1>שלבים להגשה</h1>
+
+        <table id="div1" style="font-size:150%">
+            <tr><th><h2 id="position">עמידה נכונה</h2></th></tr>
+            <tr>
+                <td >
+                    <ul class="b" style="float:right">
+                        <li>עמוד לצד הרשת ממש מאחורי קו הבסיס</li>
+                        <li>כף הרגל הקדמית שלך צריכה להצביע לכיוון עמוד הרשת</li>
+                        <li>כף הרגל האחורית שלך צריכה להקביל לקו הבסיס </li>
+                        <li>המחבט שלך נמצא בגובה הירכיים מול הגוף ומצביע לכיוון המטרה שלך</li>
+                    </ul>
+                </td>
+                <td><img class="one" src="../img/Serve_01.jpg" /></td>
+            </tr>
+            <tr><th><h2> האחיזה הנכונה עבור הגשה</h2></th></tr>
+            <tr>
+                <td>
+                    <p>אחוז את המחבט כמו פטיש והחזק את המחבט</p>
+                </td>
+                <td>
+                    <img src="../img/serve_02.jpg" />
+                </td>
+            </tr>
+            <tr><th><h2>לקיחת המחבט לאחור</h2></th></tr>
+            <tr>
+                <td>
+                    <p>
+                        מעמדת ההתחלה, תפיל את שתי הידיים, תפריד אותן כשהן מגיעות לירך הפנימית של הרגל הקדמית שלך ותעיף את הכדור תוך כדי העלאת המחבט שלך לעמדת זריקה.
+
+                    </p>
+                </td>
+                <td>
+                    <img src="../img/serve_03.jpg" />
+                </td>
+            </tr>
+            <tr><th><h2>הרמת הכדור</h2></th></tr>
+            <tr>
+                <td>
+                    <ul class="b" style="float:right">
+                        <li>זרוק את הכדור עם זרוע ישרה</li>
+                        <li>שחרר את הכדור בגובה העיניים שלך והמשיכו להרים את הזרוע למעלה בעקבות הכדור.</li>
+                    </ul>
+                </td>
+                <td><img src="../img/serve_04.jpg" /></td>
+            </tr>
+            <tr><th><h2 id="sweep">תנופה</h2> </th></tr>
+            <tr>
+                <td>
+                    <p>
+                        הושיט יד כדי להכות בכדור - ככל שתיצור מגע גבוה יותר כך תוכל לייצר יותר כוח וכפף ברכיים
+                    </p>
+                </td>
+                <td>
+                    <img src="../img/serve_05.jpg" />
+                </td>
+            </tr>
+            <tr><th><h2 id="serve">תנועת הגשה</h2></th></tr>
+            <tr>
+                <td>
+                    <p>
+                        זרוע ההגשה כפופה בזווית של כ-90 מעלות.
+
+                        . הכתפיים מסובבות והברכיים כפופות
+                        .ודחוף מעט את הירכיים שלך ותעביר את המשקל לכף הרגל הקדמית, ועקל את הגב התחתון.
+                    </p>
+                </td>
+                <td>
+                    <img src="../img/serve_06.jpg" />
+                </td>
+            </tr>
+
+
+        </table>
+
+        <button onclick="zoomintext()">+ הגדל </button>
+        <button onclick="zoomouttext()">- הקטן</button>
+    </div>
+    <script>
+        fontSize = 26;
+        function zoomintext() {
+            newfontSize = fontSize * (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext() {
+            newfontSize = fontSize / (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+
+
+    </script>
+
+</body>
+</html>

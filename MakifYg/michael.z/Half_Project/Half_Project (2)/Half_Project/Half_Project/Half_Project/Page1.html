@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fastest Cars</title>
+
+    <link href="StylePage1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body style="background-color: rgb(1 0 20); color: white ">
+    <div>
+        <ul id="ul">
+            <li style="margin-left: 300px"><a href="HomePage.html">Home</a></li>
+            <li><a class="active">Aventador SVJ</a></li>
+            <li><a href="Page2.html">Regera</a></li>
+            <li><a href="Page3.html">Venom F5</a></li>
+            <li><a href="Page4.html">Jesko Absolut</a></li>
+            <li><a href="Page5.html">Chiron Supersport 300+</a></li>
+            <li style="float: right; margin-right: 300px"><button class="button" onclick="document.getElementById('id1').style.display='block'">Sign Up</button></li>
+        </ul>
+    </div>
+    <div style="background-color: rgb(1 0 20); margin-top: 50px; height: 370px">
+        <h1>
+            LAMBORGHINI AVENTADOR SVJ
+        </h1>
+    </div>
+
+
+    <div id="id1" class="modal">
+
+        <form class="modal-content animate" onsubmit="return ending()">
+            <div class="containerX">
+                <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <h1 class="h1-model">Sign Up</h1>
+            <div class="container">
+
+                <label class="label">First Name</label>
+                <input class="text" type="text" id="Fname" />
+                <div id="div1"></div>
+
+                <label class="label">Last Name</label>
+                <input class="text" type="text" id="Lname" name="Lname" />
+                <div id="div2"></div>
+
+                <label class="label">Birth Date</label>
+                <input class="text" type="text" id="yborn" maxlength="4">
+                <div id="div3"></div>
+
+                <label class="label">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="gender">Other</label>
+                <div id="div4"></div>
+
+                <label class="label">Email</label>
+                <input class="text" type="email" id="email" />
+                <div id="div5"></div>
+
+                <label class="label">Password</label>
+                <input class="text" type="password" id="password" />
+                <div id="div6"></div>
+
+                <label class="label">Confirm Password</label>
+                <input class="text" type="password" id="Vpassword" />
+                <div id="div7"></div>
+
+                <label class="label">Adress</label>
+                <textarea class="text" rows="5" cols="60" id="Adress"></textarea>
+
+                <label class="label">City</label>
+                <select class="text">
+                    <option></option>
+                    <option>Rishon Lezion</option>
+                    <option>Be'er Sheva</option>
+                    <option>Tel Aviv</option>
+                    <option>Jerusalem</option>
+                    <option>Haifa</option>
+                    <option>Eilat</option>
+                    <option>Other</option>
+                </select>
+
+                <input id="reset" type="reset" value="Reset" />
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <table style="margin-top: 0px">
+        <tr>
+            <td>
+                <img class="img1" src="images/aventador_svj_overview_m.jpeg" alt="BUGATTI CHIRON SUPERSPORT 300+ picture" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        About Lamborghini Aventador
+                    </h2>
+                    <p>
+                        The Lamborghini Aventador is a two-seat coupe and roadster supercar produced by Lamborghini between 2011 and 2021. It was revealed in first images on February 24, 2011 and was shown to the public at the Geneva International Motor Show on February 28, 2011.
+                        The Aventador is the successor to the Lamborghini Murcielago as Lamborghini's flagship car. Its price in Europe was 450,000 euros. The Aventador is named after a bull that fought in a battle arena in 1993.
+                    </p>
+                </div>
+            </td>
+            <td><img class="img1" src="images/LAMBORGHINI AVENTADOR SVJ.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+
+        </tr>
+        <tr>
+            <td><img class="img1" src="images/2020-Lamborghini-Aventador-SVJ-Roadster-45.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The Aventador was unveiled at the Geneva Motor Show on February 28, 2011 and was designed to replace the Lamborghini Murcielago that served for 10 years as Lamborghini's flagship car.
+                        Shortly after the unveiling of the Aventador, Lamborghini announced that it had sold 12 units, with deliveries to customers beginning in the second half of 2011. In March 2016, Lamborghini finished building 5,000 units of the model in five years, after production was basically limited to 4,000 units.
+                        At the end of 2017, Lamborghini announced that the production of the regular Aventador will stop and only the production of the S version will continue, so that the Aventador Coupe will be replaced by the Aventador S and the Aventador Roadster will be replaced by the Aventador S Roadster and the Aventador SV will be replaced by the Aventador SVJ which was revealed in 2018.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        
+    </table>
+
+    <hr />
+
+    <table>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Design
+                    </h2>
+                    <p style="width: 700px">
+                        The exterior design combines many elements from the Lamborghini Sesto Elemento and the Lamborghini Revanton. The two air intakes on the sides of the vehicle are designed to improve the aerodynamic power of the vehicle. The interior of the car is sporty and luxurious, the seats and the dashboard are made of lightweight materials such as carbon fiber to reduce weight.
+                    </p>
+                </div>
+            </td>
+            <td rowspan="2"><img class="img1" src="images/lamborghini_aventador_svj_yellow_road_27.jpg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Specifications
+                    </h2>
+                    <p style="width: 700px">
+                        LP-700: 6.5-liter atmospheric V12 gasoline engine that delivers 700 hp at 8,250 rpm and a maximum torque of 70.3 kgm between 5,500 rpm. A seven-speed dual-clutch robotic gearbox with dual drive. The acceleration figure from 0 to 100 km/h is 2.9 seconds and a maximum speed of 350 km/h. The combined fuel consumption is 5.8 km per liter and the CO2 emissions are 398 grams per km.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

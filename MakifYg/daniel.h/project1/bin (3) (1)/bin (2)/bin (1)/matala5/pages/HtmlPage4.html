@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>טניס</title>
+    <link href="../StyleSheet4.css" rel="stylesheet" />
+    <link href="../common.css" rel="stylesheet" />
+</head>
+<body>
+    <ul class="a">
+        <li><a class="active" href="HtmlPage1.html">ראשי</a></li>
+        <li><a href="HtmlPage2.html">עמוד 1</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage3.html" class="dropbtn">עמוד 2</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html#position">עמידה נכונה</a>
+                <a href="HtmlPage3.html#sweep">תנופה</a>
+                <a href="HtmlPage3.html#serve">תנועת הגשה</a>
+            </div>
+        </li>
+        <li><a href="HtmlPage4.html">עמוד 3</a></li>
+        <li><a href="HtmlPage5.html">עמוד 4</a></li>
+        <li><a href="HtmlPage6.html">עמוד 5</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage7.html" class="dropbtn">עמוד 6</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage7.html#serve">serve</a>
+                <a href="HtmlPage7.html#Backhand">Backhand</a>
+                <a href="HtmlPage7.html#topspin">topspin</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="div1" style="font-size:150%">
+        <h1> מגרש מחימר</h1>
+
+        <p >
+            משטח חימר הוא אחד משלושה סוגי המגרשים המשמשים למשחק טניס.
+
+            משטח החימר מיוצר מתערובת מעוכה של אבן פצלתית ולבנים או סלעים. מגרשי החמר מכונים גם 'מגרשים איטיים', וזאת משום שפגיעת הכדור במשטח גורמת להאטה משמעותית במהירותו. מהירות הכדור האיטית מצמצמת את היתרון היחסי של שחקנים בעלי הגשה חזקה ומהירה ומאפשרת לשחקנים שמולם זמן תגובה ארוך יותר וסיכוי רב יותר להחזיר את הכדור לשטח היריב.הנקודות על המשטח בדרך כלל ארוכות מה שדורש מצד השחקן יכולות ריכוז, כושר ויציבות גבוהות (המאפיינים של שחקני הגנה) ולעיתים השחקנים חובטים חבטות קצרות כדי להוציא את היריב מקצב המשחק ולהפתיעו. למגרשי החמר יתרון בריאותי משמעותי: הם סופגים זעזועים טוב יותר מסוגי משטחים אחרים ומפחיתים בכך את הלחץ המצטבר על מפרקי הרגליים של השחקנים. טורניר החמר המפורסם בעולם הוא אליפות צרפת הפתוחה, הרולאן גארוס, המתקיים בפריז. בישראל ניתן למצוא מגרשי חמר בשני מתקנים בלבד.
+        </p>
+
+        <button onclick="zoomintext()"> + הגדל </button>
+        <button onclick="zoomouttext()">- הקטן</button>
+    </div>
+    <script>
+
+        fontSize = 26;
+        function zoomintext() {
+            newfontSize = fontSize * (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext() {
+            newfontSize = fontSize / (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+
+    </script>
+</body>
+</html>

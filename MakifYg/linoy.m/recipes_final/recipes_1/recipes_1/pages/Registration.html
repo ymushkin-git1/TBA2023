@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../Registration.js"></script>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link href="../topnavhome.css" rel="stylesheet" />
+
+    <style>
+        div {
+            color: blue;
+        }
+        body {
+            font-family: Calibri;
+            background-color: #e6f2ff;
+        }
+
+    </style>
+</head>
+
+<body style="direction:rtl">
+
+
+    <div>
+        <ul>
+            <li><a href="home.html">בית</a></li>
+            <li class="cakes">
+                <a href="allcakes.html" class="dropbtn">עוגות</a>
+                <div class="cakes-content">
+                    <a href="cake1.html">עוגת שוקולד</a>
+                    <a href="cake2.html">עוגת תפוזים</a>
+                    <a href="cake3.html">עוגת מייפל</a>
+
+                </div>
+            </li>
+            <li class="cookies">
+                <a href="allcookies.html" class="dropbtn">עוגיות</a>
+                <div class="cookies-content">
+                    <a href="cookies1.html">מושלגות</a>
+                    <a href="cookies2.html">שוקולד צ'יפס</a>
+                    <a href="cookies3.html">אמסטרדם</a>
+                </div>
+            </li>
+            <li class="sweetpastries">
+                <a href="allsweet.html" class="dropbtn">מאפים מתוקים</a>
+                <div class="sweetpastries-content">
+                    <a href="sweetpastries1.html">שוקטים(פחזניות קטנות)</a>
+                    <a href="sweetpastries2.html">רוגעלך שוקולד</a>
+                    <a href="sweetpastries3.html">טארט גבינה, תפוחים ושטרוייזל</a>
+                </div>
+            </li>
+            <li class="savorypastries">
+                <a href="allsavory.html" class="dropbtn">מאפים מלוחים</a>
+                <div class="savorypastries-content">
+                    <a href="savorypastries1.html">לחמניות שום</a>
+                    <a href="savorypastries2.html">מיני לחמניות</a>
+                    <a href="savorypastries3.html">סמבוסק פיצה</a>
+                </div>
+            </li>
+            <li class="moses">
+                <a href="allmousse.html" class="dropbtn">מוסים וקינוחי כוסות</a>
+                <div class="moses-content">
+                    <a href="mousse1.html">טריקולד</a>
+                    <a href="mousse2.html">מוס אוראו</a>
+                    <a href="mousse3.html">תותים ומסקרפונה</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <div style="text-align:center; font-size:32px; font:bold;">
+        טופס רישום לאתר
+    </div>
+
+    <br />
+    <br />
+
+    <form onsubmit="return ending()">
+        <table style="margin-left: auto; margin-right: auto; border-spacing: 12px;">
+            <tr>
+                <!-- שם פרטי -->
+                <td>
+                    שם פרטי
+                </td>
+                <td>
+                    <input type="text" id="fName" name="fName" placeholder="שם פרטי" />
+                </td>
+                <td> <div id="div1"></div></td>
+            </tr>
+            <tr>
+                <!-- שם משפחה -->
+                <td>
+                    שם משפחה
+                </td>
+                <td>
+                    <input type="text" id="lName" name="lName" placeholder="שם משפחה" />
+                </td>
+                <td> <div id="div2"></div></td>
+            </tr>
+            <tr>
+                <!-- שנת לידה -->
+                <td>
+                    שנת לידה
+                </td>
+                <td>
+                    <input type="number" id="year" name="year" placeholder="שנת לידה" />
+                </td>
+                <td> <div id="div3"></div></td>
+            </tr>
+            <tr>
+                <!-- אזרחות ישראלית -->
+                <td>
+                    אזרחות:
+                </td>
+                <td>
+                    אזרחות ישראלית:
+                    <input type="checkbox" id="nationality1" name="nationality1" />
+                    אזרחות אחרת:
+                    <input type="checkbox" id="nationality2" name="nationality2" />
+
+                </td>
+                <td> <div id="div4"></div></td>
+            </tr>
+            <tr>
+                <!-- מגדר -->
+                <td>
+                    מגדר:
+                </td>
+                <td>
+                    נקבה:
+                    <input type="radio" id="female" name="gender" />
+                    זכר:
+                    <input type="radio" id="male" name="gender" />
+                    אחר:
+                    <input type="radio" id="other" name="gender" />
+                </td>
+                <td> <div id="div5"></div></td>
+            </tr>
+            <tr>
+                <!-- סיסמה -->
+                <td>
+                    סיסמה:
+                </td>
+                <td>
+                    <input type="password" id="password1" name="password1" placeholder="סיסמה" />
+                </td>
+                <td> <div id="div6"></div></td>
+            </tr>
+            <tr>
+                <!-- אימות -->
+                <td>
+                    אימות
+                </td>
+                <td>
+                    <input type="password" id="passwordVari1" name="passwordVari1" placeholder="אימות סיסמה" />
+                </td>
+                <td> <div id="div7"></div></td>
+            </tr>
+            <tr>
+                <!-- עיר -->
+                <td>
+                    הכנס עיר:
+                </td>
+                <td>
+                    <select name="city" id="city">
+                        <option>תל אביב</option>
+                        <option>ראשון לציון</option>
+                        <option>חיפה</option>
+                        <option>עכו</option>
+                    </select>
+                </td>
+                <td> <div id="div8"></div></td>
+            </tr>
+            <tr>
+                <!-- גיל -->
+                <td>
+                    הכנס את הגיל שלך:
+                </td>
+                <td>
+                    <input type="number" id="age1" name="age1" />
+                </td>
+                <td> <div id="div10"></div></td>
+            </tr>
+            <tr>
+                <!--אימייל-->
+                <td> אימייל :</td>
+                <td>
+                    <input type="email" name="email" />
+                </td>
+            </tr>
+            <tr>
+                <!-- טלפון -->
+                <td>
+                    הכנס מספר טלפון:
+                </td>
+                <td>
+                    <input type="number" id="phone1" name="phone1" />
+                </td>
+                <td> <div id="div11"></div></td>
+            </tr>
+            <tr>
+                <!-- תחביבים -->
+                <td>
+                    הכנס את התחביבים שלך:
+                </td>
+                <td>
+                    <textarea id="hobbies1" name="hobbies1" rows="4" cols="50" style="width: 164px; height: 91px;"></textarea>
+                </td>
+                <td> <div id="div9"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <button style="margin-left:auto; margin-right:auto;" type="submit">שלח</button>
+                    <button style="margin-left:auto; margin-right:auto;" type="reset">אפס</button>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Movies WebSite</title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script>
+        function checkFname() {
+            hiddenFname.innerHTML = " ";
+            if (firstName.value.length <= 2) {
+                hiddenFname.innerHTML = "חייב להיות ארוך מ-2 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkLname() {
+            hiddenLname.innerHTML = " ";
+            if (lastName.value.length <= 3) {
+                hiddenLname.innerHTML = "חייב להיות ארוך מ-3 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkUsername() {
+            hiddenUsername.innerHTML = " ";
+            if (username.value.length <= 3) {
+                hiddenUsername.innerHTML = "חייב להיות ארוך מ-3 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkYear() {
+            hiddenYear.innerHTML = " ";
+            if (year.value < 1900 || hiddenYear.value > 2023) {
+                hiddenYear.innerHTML = "יש למלא ערך בין 1900 ל 2023";
+                return false;
+            }
+            else if (year.value < 1) {
+                hiddenYear.innerHTML = "יש להכניס שנת לידה";
+                return false;   
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkEmail() {
+            hiddenEmail.innerHTML = " ";
+            var size = email.value.length - 10;
+            if (email.value.indexOf("@gmail.com") == size) {
+                return true;
+            }
+            else {
+                hiddenEmail.innerHTML = "חייב להיות עם סיומת @gmail.com";
+                return false;
+            }
+        }
+
+        function checkEzrahot() {
+            hiddenEzrahot.innerHTML = " ";
+            if (firstOption1.checked || secondOption1.checked) {
+                return true;
+            }
+            else {
+                hiddenEzrahot.innerHTML = "יש לבחור באחת מן האפשרויות";
+                return false;
+            }
+        }
+
+        function checkGender() {
+            hiddenGender.innerHTML = " ";
+            if (firstOption2.checked || secondOption2.checked || thirdOption2.checked) {
+                return true;
+            }
+            else {
+                hiddenGender.innerHTML = "יש לבחור באחת מן האפשרויות";
+                return false;
+            }
+        }
+
+        function checkPassword() {
+            hiddenPassword.innerHTML = " ";
+            if (password.value.length <= 5) {
+                hiddenPassword.innerHTML = "חייב להיות ארוך מ-5 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkVerifyPassword() {
+            hiddenVerifyPassword.innerHTML = " ";
+            if (verifyPassword.value == password.value) {
+                return true;
+            }
+            else if (verifyPassword.value.length < 1) {
+                hiddenVerifyPassword.innerHTML = "יש להזין אימות סיסמא";
+                return false;
+            }
+            else {
+                hiddenVerifyPassword.innerHTML = "חייב להיות זהה לסיסמא";
+                return false;
+            }
+        }
+
+        function checkHobbies() {
+            hiddenHobbies.innerHTML = " ";
+            if (hobbies.value.length < 30) {
+                hiddenHobbies.innerHTML = "חייב להיות לפחות 30 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkGrade() {
+            hiddenGrade.innerHTML = " ";
+            if (grade.value.length != 1) {
+                hiddenGrade.innerHTML = "חייב להיות תו אחד בלבד";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkFavorite() {
+            hiddenFavorite.innerHTML = " ";
+            if (favorite.value.length < 4) {
+                hiddenFavorite.innerHTML = "חייב להיות לפחות 4 תווים";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function checkAll() {
+            var check = true;
+            check = checkFname() && check;
+            check = checkLname() && check;
+            check = checkUsername() && check;
+            check = checkEmail() && check;
+            check = checkYear() && check;
+            check = checkEzrahot() && check;
+            check = checkGender() && check;
+            check = checkPassword() && check;
+            check = checkVerifyPassword() && check;
+            check = checkHobbies() && check;
+            check = checkGrade() && check;
+            check = checkFavorite() && check;
+            return check;
+        }
+    </script>
+</head>
+<body id="eighthBody">
+    <ul>
+        <li><a class="active" href="Page1.html">Home</a></li>
+        <li><a class="navBar" href="Page2.html">Page2</a></li>
+        <li><a class="navBar" href="Page3.html">Page3</a></li>
+        <li><a class="navBar" href="Page4.html">Page4</a></li>
+        <li><a class="navBar" href="Page5.html">Page5</a></li>
+        <li><a class="navBar" href="Page6.html">Page6</a></li>
+        <li><a class="navBar" href="Page7.html">Page7</a></li>
+        <li><a class="navBar" href="Register.html">Register</a></li>
+    </ul>
+    <h1 id="firstHeader">The Movies WebSite</h1>
+    <h2 id="secondHeader">Sign Up Page</h2>
+    <br /><br />
+    <form onsubmit="return checkAll()">
+        <table>
+            <tr>
+                <td>שם פרטי</td>
+                <td><input type="text" class="fullLine" placeholder="שם פרטי" id="firstName" name="firstName" /></td>
+                <td> <div id="hiddenFname"></div> </td>
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td><input type="text" class="fullLine" placeholder="שם משפחה" id="lastName" name="lastName" /></td>
+                <td> <div id="hiddenLname"></div> </td>
+            </tr>
+            <tr>
+                <td>שם משתמש</td>
+                <td><input type="text" class="fullLine" placeholder="שם משתמש" id="username" name="username" /></td>
+                <td> <div id="hiddenUsername"></div> </td>
+            </tr>
+            <tr>
+                <td>שנת לידה</td>
+                <td><input type="number" class="fullLine" placeholder="שנת לידה" id="year" name="year" /></td>
+                <td> <div id="hiddenYear"></div> </td>
+            </tr>
+            <tr>
+                <td>אימייל</td>
+                <td><input type="text" class="fullLine" placeholder="אימייל" id="email" name="email" /></td>
+                <td> <div id="hiddenEmail"></div> </td>
+            </tr>
+            <tr>
+                <td>אזרחות ישראלית או אחרת</td>
+                <td style="text-align:center;">
+                    אזרחות ישראלית<input type="checkbox" id="firstOption1" name="fistOption1" value="ישראלית">
+                    אחר<input type="checkbox" id="secondOption1" name="secondOption1" value="אחר">
+                </td>
+                <td> <div id="hiddenEzrahot"></div> </td>
+            </tr>
+            <tr>
+                <td>מגדר</td>
+                <td style="text-align:center;">
+                    זכר<input type="radio" id="firstOption2" name="Gender" value="זכר">
+                    נקבה<input type="radio" id="secondOption2" name="Gender" value="נקבה">
+                    אחר<input type="radio" id="thirdOption2" name="Gender" value="אחר">
+                </td>
+                <td> <div id="hiddenGender"></div> </td>
+            </tr>
+            <tr>
+                <td>סיסמא</td>
+                <td><input type="password" class="fullLine" placeholder="סיסמא" id="password" name="password"></td>
+                <td> <div id="hiddenPassword"></div> </td>
+            </tr>
+            <tr>
+                <td>אימות סיסמא</td>
+                <td><input type="password" class="fullLine" placeholder="אימות סיסמא" id="verifyPassword" name="password"></td>
+                <td> <div id="hiddenVerifyPassword"></div> </td>
+            </tr>
+            <tr>
+                <td>עיר</td>
+                <td>
+                    <select name="Cities" id="cars">
+                        <option value="ראשון לציון">ראשון לציון</option>
+                        <option value="באר שבע">באר שבע</option>
+                        <option value="תל אביב">תל אביב</option>
+                        <option value="ירושלים">ירושלים</option>
+                        <option value="חיפה">חיפה</option>
+                        <option value="אילת">אילת</option>
+                        <option value="אחר">אחר</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>תחביבים</td>
+                <td><textarea id="hobbies" class="fullLine" name="w3review" rows="4" cols="50"></textarea></td>
+                <td> <div id="hiddenHobbies"></div> </td>
+            </tr>
+            <tr>
+                <td>כיתה</td>
+                <td><input type="text" class="fullLine" placeholder="כיתה" id="grade" name="grade" maxlength="1"></td>
+                <td> <div id="hiddenGrade"></div> </td>
+            </tr>
+            <tr>
+                <td>מקצוע אהוב</td>
+                <td><input type="text" class="fullLine" placeholder="מקצוע אהוב" id="favorite" name="favoriteSubject"></td>
+                <td> <div id="hiddenFavorite"></div> </td>
+            </tr>
+            <tr>
+                <td> <button id="resetButton" type="reset">איפוס</button> </td>
+                <td> <button id="submitButton" type="submit">שליחה</button> </td>
+                <td></td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>

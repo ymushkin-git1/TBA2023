@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>half project</title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i }; 
+            return i;
+        }
+    </script>
+</head>
+<body onload="startTime()">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="HtmlPage1.html">Chevrolet Camaro</a></li>
+            <li><a href="HtmlPage2.html">Nissan Skyline GT-R</a></li>
+            <li><a href="HtmlPage3.html">Toyota Supra</a></li>
+            <li><a href="HtmlPage4.html">Bugatti Divo</a></li>
+            <li><a href="HtmlPage5.html">Audi R8</a></li>
+            <li style="float:right"><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <br />
+    <div style="font-size:25px">
+        Welcome to my half project, this project is going to deal with cars, a new hobby that I discovered not long ago and immediately fell in love with.
+        Something about these machines, the muscularity, the noise, the beautiful appearance, the amount of investment, and the amazing engineering really do it for me.
+        I love technology, when I see how humanity advances it amazes me.<br /><br />
+
+        The progress that humans have gone through, from being in the dark when the sun goes down to the discovery of electricity and the light bulb, from how we once looked at birds in the sky and dreamed of doing it too, wondering how it feels up there, and what the place we live in looks like from a bird's eye view.
+        And of course how in the past in order to get to a certain place we had to either walk or ride in a horse-drawn carriage until the invention of the automobile in the industrial revolution.<br /><br />
+
+        The car changed humanity completely, fuel became an important commodity and therefore became more expensive, the steel production industry became much more alloyed, it was possible to go not only farther but also faster.
+        Of course, it has also made the earth a much more polluted place, and it has a major factor in the climate crisis, but many companies are looking for a solution to this as well and there are already many that sell electric vehicles.<br /><br />
+        So that was a little introduction to the project, so on this site I will show you some of my favorite cars, hope you enjoy.
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td></td>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/31kplxJn6nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td></td>
+        </tr>
+    </table>
+    <div id="clock"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>עוגת מייפל</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/cake3.jpeg" style="width:70%; height:75%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כמות ל-2 תבניות אינגליש קייק
+    </div>
+
+    <br />
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">4 ביצים</li>
+        <li id="li2" onclick="toggle(li2)">כוס סוכר</li>
+        <li id="li3" onclick="toggle(li3)">2 כוסות קמח</li>
+        <li id="li4" onclick="toggle(li4)">שקית אבקת אפייה</li>
+        <li id="li5" onclick="toggle(li5)">1/4 כפית מלח</li>
+        <li id="li6" onclick="toggle(li6)">3/4 כוס מיץ תפוזים סחוט</li>
+        <li id="li7" onclick="toggle(li7)">1 כוס שמן</li>
+        <li id="li8" onclick="toggle(li8)">1 כפית תמצית וניל</li>
+    </ul>
+
+    <div class="dives">
+        לפיזור מעל:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li9" onclick="toggle(li9)">1 כוס אגוזי מלק קצוצים דק</li>
+        <li id="li10" onclick="toggle(li10)">1/2 כוס מייפל</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                מחממים תנור ל-180 מעלות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                קערת מיקסר עם בלון הקצפה שמים ביצים וסוכר על המהירות הכי גבוהה עד לקבלת תערובת תפוחה ובהירה (כ3-4 דקות).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                בנתיים מערבבים בקערה נפרדת קמח, אבקת אפייה ומלח
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                להנמיך את המהירות במיקסר ולהוסיף בהדרגה את השמן, מיץ תפוזים ותמצית וניל. ממשיכים במיקסר בעזרת וו גיטרה עד לתערובת אחידה
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                מוסיפים למיקסר את תערובת הקמח ומערבבים כמעט עד לאיחוד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                בעזרת לקקן מקפלים את התערובת לתערובת אחידה, ולא מעבר לזה
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                9)
+            </td>
+            <td>
+                יוצקים את הבלילה לתבניות משומנות (בעזרת משקל אפשר לחלק במדויק את הבלילה לשני התבניות, כך שגובהן יהיה שווה)
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                10)
+            </td>
+            <td>
+                לפזר מעל את האגוזים הקצוצים ולהכניס לתנור לאפייה של כ-30-40 דקות או עד שקיסם הננעץ במרכז העוגה יוצא יבש.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                11)
+            </td>
+            <td>
+                להוציא מהתנור ומיד לשפוך עליה את סירופ המייפל. לצנן ולהגיש.
+            </td>
+        </tr>
+        <tr> </tr>
+
+    </table>
+
+
+
+    <a href="cake3.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

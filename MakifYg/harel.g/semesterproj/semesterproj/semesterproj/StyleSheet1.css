@@ -1,0 +1,73 @@
+﻿body {
+    font-family: Arial;
+    background-color: #395B64;
+}
+#ruler {
+    background-color: #2C3333;
+    height: 40px;
+    display: flex;
+}
+.linkspace {
+    padding-right: 7px;
+    padding-left: 7px;
+    color: #A5C9CA;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #395B64;
+}
+
+a:active {
+    text-decoration: none;
+}
+h1 {
+    color: #A5C9CA;
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+    border:solid;
+    border-collapse: collapse;
+}
+table{
+    border-collapse: collapse;
+}
+.caloriecalc {
+    display: flex;
+    flex-direction:column;
+    background-color: #A5C9CA;
+    margin-top: 70px;
+    padding: 30px;
+    border:none;
+    align-items:center
+
+}
+.calinputs {
+    margin-top: 8px;
+}
+.nuttd{
+    padding: 7px;
+}
+#shoppinglist {
+    background-color: #A5C9CA;
+    padding:6px;
+    display: inline-block;
+    border: dashed;
+    border-color: gray;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+h2 {
+    color: #A5C9CA;
+}
+.signup {
+    border-color: #395B64;
+}

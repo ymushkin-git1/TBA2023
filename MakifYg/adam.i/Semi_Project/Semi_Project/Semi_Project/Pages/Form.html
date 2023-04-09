@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Football Players - Sign Up</title>
+    <link href="Form.css" rel="stylesheet" />
+    <script src="Form.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="Messi.html">Messi</a>
+        <a href="Ronaldo.html">Ronaldo</a>
+        <a href="Maradona.html">Maradona</a>
+        <a href="Pele.html">Pele</a>
+        <a href="Neymar.html">Neymer</a>
+        <a href="HM.html">Honourable Mentions</a>
+        <a class="active" href="Form.html">Sign Up</a>
+    </div>
+
+    <h1> Sign Up </h1>
+
+    <div class="formdiv">
+        <form onsubmit="return CheckValues()">
+            <table>
+                <tr>
+                    <td>
+                        First Name:<input type="text" name="FirstName" id="FirstName" required><br><br>
+                    </td>
+                    <td>
+                        <div id="div1"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:<input type="text" name="LastName" id="LastName" required><br><br>
+                    </td>
+                    <td>
+                        <div id="div2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-Mail Adress:<input type="email" id="Email" name="Email" required><br><br>
+                    </td>
+                    <td>
+                        <div id="div3"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        UserName: <input type="text" id="UserName" name="UserName"><br><br>
+                    </td>
+                    <td>
+                        <div id="div4"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:<input type="password" id="Password" name="Password" required><br>
+                    </td>
+                    <td>
+                        <div id="div5"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password Authentication:<input type="password" id="CheckPassword" name="CheckPassword" required><br><br>
+                    </td>
+                    <td>
+                        <div id="div6"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:<br>
+                        Male<input type="radio" id="idMale" name="Gender" value="Male">
+                        Female<input type="radio" id="idFemale" name="Gender" value="Female"><br><br>
+                    </td>
+                    <td>
+                        <div id="div7"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City:<select name="City" id="City">
+                            <option value=" "> </option>
+                            <option id="Rishon"value="rishon">Rishon Le Zion</option>
+                            <option id="Jerusalem" value="jerusalem">Jerusalem</option>
+                            <option id="Telaviv" value="telaviv">Tel Aviv</option>
+                            <option id="Ashdod" value="ashdod">Ashdod</option>
+                        </select><br><br>
+                    </td>
+                    <td>
+                        <div id="div8"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        type of citizenship:<br>
+                        Israeli<input type="checkbox" id="idIsraeli" value="israeli">
+                        Other<input type="checkbox" id="idOther" value="other"><br><br>
+                    </td>
+                    <td>
+                        <div id="div9"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rate Our Website(1-10):<input type="number" id="myNumber" name="Number" value="number"><br><br>
+                    </td>
+                    <td>
+                        <div id="div10"></div>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="subbutton" onclick="return CheckValues()">Submit</button>
+            <button type="reset" id="resetbutton">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

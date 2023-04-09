@@ -1,0 +1,17 @@
+﻿*{
+    margin-right:100%;
+}
+body {
+    background-color: black;
+    justify-content: space-between;
+    
+}
+td {
+    color: dodgerblue;
+    justify-content: space-between;
+    padding:10px;
+}
+h2{
+    color:dodgerblue;
+    font-size:25px;
+}

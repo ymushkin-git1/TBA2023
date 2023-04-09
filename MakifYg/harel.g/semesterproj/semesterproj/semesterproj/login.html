@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<link href="StyleSheet1.css" rel="stylesheet" />
+<script src="JavaScript.js"></script>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="ruler">
+        <div style="margin: auto; margin-left: 0;">
+            <a href="homepage.html" class="linkspace">home</a>
+            <a href="personalstory.html" class="linkspace">personal story</a>
+            <a href="HtmlPage3.html" class="linkspace">No Equipment Exercises</a>
+            <a href="Nutrition.html" class="linkspace">Nutrition</a>
+            <a href="CalorieCalculator.html" class="linkspace">Calorie Calculator</a>
+            <a href="HtmlPage6.html" class="linkspace">General Q&A</a>
+            <a href="login.html" class="linkspace">sign up</a>
+        </div>
+    </div>
+    <h1>SIGN UP!</h1>
+    <form onsubmit=" return checkvalues()">
+        <table style="border-color: #395B64; margin-left: 30% ">
+            <tr style="border-color: #395B64">
+                <td style="border-color: #395B64">
+                    <input type="text" placeholder="name" name="pname" id="pname" />
+                </td>
+                <td id="pnamecheck" class="signup">
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="text" placeholder="last name" name="lastname" id="lname" />
+                </td>
+                <td id="lnamecheck" class="signup"></td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="radio" name="sexx" id="dude" />male<input type="radio" name="sexx" id="girl" />female
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="text" name="mail" id="mail" placeholder="email" required />
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="text" name="username" id="username" placeholder="user name" required />
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="text" name="password" id="password" placeholder="password" /><input type="text" name="passwordver" id="passwordver" placeholder="password verification" />
+                </td>
+                <td id="passwordcheck" class="signup"></td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <select name="city">
+                        <option>enter the city you live in</option>
+                        <option value="holon">holon</option>
+                        <option value="bat yam">bat yam</option>
+                        <option value="tel aviv">tel aviv</option>
+                        <option value="rishon le zion">rishon le zion</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <textarea placeholder="tell us about yourself" name="hobbies"></textarea>
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup">
+                    <input type="checkbox" value="has-equipment" name="equipment" />mark if you have basic equipment at home<input type="checkbox" value="has-membership" name="gym" />mark if you have a gym membership
+                </td>
+            </tr>
+            <tr class="signup">
+                <td class="signup"><input type="text" name="age" id="age" placeholder="age" required /></td>
+            </tr>
+        </table>
+        <button type="submit">submit</button><button type="reset" onclick="clearsign()">clear</button>
+    </form>
+</body>
+</html>

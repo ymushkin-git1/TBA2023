@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fff0e6;
+            color: #4d1f00;
+        }
+
+        ul.ing li {
+            background: #ffe0cc;
+        }
+
+            ul.ing li:hover {
+                background: #ffd1b3;
+            }
+
+            ul.ing li.checked {
+                background: #ffc299;
+                color: #fff;
+            }
+    </style>
+
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>סמבוסק פיצה</h1>
+        
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/savorypastries3.jpeg" style="width:35%; height:35%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כ-8 יחידות
+    </div>
+
+    <br />
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">4 כוסות קמח שמרים או 560 גרם</li>
+        <li id="li2" onclick="toggle(li2)">2 כפות שטוחות סוכר לבן או 30 גרם</li>
+        <li id="li3" onclick="toggle(li3)">כפית שטוחה מלח</li>
+        <li id="li4" onclick="toggle(li4)">2 כפות שמן זית או 20 מ"ל</li>
+        <li id="li5" onclick="toggle(li5)">1.5 כוסות מים או 360 מ"ל</li>
+    </ul>
+
+    <div class="dives">
+        למילוי ולרוטב:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li6" onclick="toggle(li6)">290 מ"ל רוטב עגבניות</li>
+        <li id="li7" onclick="toggle(li7)">375 גרם גבינה צהוגה מגורדת</li>
+        <li id="li8" onclick="toggle(li8)">כל תוספת שתרצו להוסיף: גבינה בולגרית, זיתים, פטריות...</li>
+    </ul>
+
+    <div class="dives">
+        לציפוי:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li9" onclick="toggle(li9)">ביצה להברשה</li>
+        <li id="li10" onclick="toggle(li10)">שומשום</li>
+    </ul>
+
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                לערבל את כל מצרכי הבצק (את המים להוסיף בהדרגה) ולהתפיח כשעה עד להכפלת הנפח (אפשר גם למינימום חצי שעה ואפשר גם שלא בכלל, אך מומלץ).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                לחלק את הבצק לכדורים בגודל כדור טניס ולקמח את משטח העבודה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                לרדד כל כדור לעיגול, למרוח רוטב פיצה, לפזר את הגבינה המגורדת והתוספות שאוהבים, לסגור למשולש, למרוח ביצה טרופה ולפזר מעל שומשום.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                לאפות בתנור שחומם מראש לחום של 180 מעלות למשך כחצי שעה או עד שמוכן (תלוי בסוג התנור).
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="savorypastries3.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

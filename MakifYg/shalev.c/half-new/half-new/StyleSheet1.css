@@ -1,0 +1,123 @@
+﻿#shalevTitle {
+    color: black;
+    font-size: 37px;
+    text-align: center;
+    background-color: orangered;
+}
+
+#body1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.6)), url(https://wallpapercave.com/wp/wp2825243.jpg);
+    margin: 0;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+#body2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgba(0, 0, 0, 0.60)), url(https://images3.alphacoders.com/770/thumb-1920-770758.jpg);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#body3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0.9), rgba(0, 0, 0, 0.60)), url(https://img.bleacherreport.net/img/images/photos/001/975/893/hi-res-155603545_crop_exact.jpg?w=3072&h=2048&q=75);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#body4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgba(0, 0, 0, 0.60)), url(https://wallpapercave.com/wp/wp9516261.jpg);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#body5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgba(0, 0, 0, 0.6)), url(https://wallpapercave.com/wp/wp5850702.jpg);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#body6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgba(0, 0, 0, 0.60)), url(https://www.pixelstalk.net/wp-content/uploads/images6/Giannis-Antetokounmpo-Wallpaper-for-Windows.jpg);
+    margin: 0;
+    background-attachment: fixed;
+}
+
+#body7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgb(0,0,0,0), rgba(0, 0, 0, 0.60)), url(https://cdn.wallpapersafari.com/63/81/Y2OlTi.jpg);
+    margin: 0;
+    background-attachment: fixed;
+}
+*{
+    margin:0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    position:fixed;
+    top:0;
+    width: 100% ;
+}
+
+li {
+    float: left;
+    font-size:12px;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 30px 40px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+        li a:hover {
+            background-color:red;
+        }
+
+h1{
+    color: aliceblue;
+    font-size:50px;
+    text-align:center;
+    margin-top:200px;
+
+
+}
+table{
+    color:aliceblue ;
+    font-size:42px ;
+    margin-left:40px ;
+}
+.sr {
+    margin-left: 40px;
+   font-size:15px
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+}
+p2 {
+    color: white;
+    font-size: 20px;
+}

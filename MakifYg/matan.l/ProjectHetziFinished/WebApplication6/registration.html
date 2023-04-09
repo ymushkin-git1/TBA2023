@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Page</title>
+    <style>
+        h1 {
+            margin-right: 850px;
+            font-size: 50px;
+        }
+        table, td {
+            margin-right: 450px;
+            <!-- border:1px solid black; -->
+        }
+        #submitButton {
+            margin-top:20px;
+            margin-right: 850px;
+            color: black;
+            font-size: 25px;
+        }
+        #resetButton {
+            color: black;
+            font-size: 25px;
+        }
+        .fullLine {
+            width: 95%;
+        }
+    </style>
+</head>
+<body style="direction:rtl; font-size:25px; font-weight:700">
+    <h1> טופס רישום</h1>
+    <form>
+        <table>
+            <tr>
+                <td>שם פרטי</td>
+                <td><input type="text" class="fullLine" placeholder="שם פרטי" id="firstName" name="firstName" /></td>
+                <td>חייב להיות ארוך מ-2 תווים</td>
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td><input type="text" class="fullLine" placeholder="שם משפחה" id="lastName" name="lastName" /></td>
+                <td>חייב להיות ארוך מ-3 תווים</td>
+            </tr>
+            <tr>
+                <td>שנת לידה</td>
+                <td><input type="text" class="fullLine" placeholder="שנת לידה" id="year" name="year" maxlength="4" /></td>
+                <td>יש למלא ערך בין 1900 ל 2023</td>
+            </tr>
+            <tr>
+                <td>אזרחות ישראלית או אחרת</td>
+                <td style="text-align:center;">
+                    אזרחות ישראלית<input type="checkbox" id="firstOption1" name="fistOption1" value="ישראלית">
+                    אחר<input type="checkbox" id="secondOption1" name="secondOption1" value="אחר">
+                </td>
+                <td>יש למלא בריבועים המתאימים</td>
+            </tr>
+            <tr>
+                <td>מגדר</td>
+                <td style="text-align:center;">
+                    זכר<input type="radio" id="firstOption2" name="Gender" value="זכר">
+                    נקבה<input type="radio" id="secondOption2" name="Gender" value="נקבה">
+                    אחר<input type="radio" id="thirdOption2" name="Gender" value="אחר">
+                </td>
+                <td>יש לבחור את המגדר המתאים</td>
+            </tr>
+            <tr>
+                <td>סיסמא</td>
+                <td><input type="password" class="fullLine" placeholder="סיסמא" id="password" name="password"></td>
+                <td>יש להזין סיסמא תקינה</td>
+            </tr>
+            <tr>
+                <td>אימות סיסמא</td>
+                <td><input type="password" class="fullLine" placeholder="אימות סיסמא" id="password" name="password"></td>
+                <td>יש להזין את הסיסמא שהוזנה</td>
+            </tr>
+            <tr>
+                <td>עיר</td>
+                <td>
+                    <select name="Cities" id="cars">
+                        <option value="ראשון לציון">ראשון לציון</option>
+                        <option value="באר שבע">באר שבע</option>
+                        <option value="תל אביב">תל אביב</option>
+                        <option value="ירושלים">ירושלים</option>
+                        <option value="חיפה">חיפה</option>
+                        <option value="אילת">אילת</option>
+                        <option value="אחר">אחר</option>
+                    </select>
+                </td>
+                <td>יש לבחור את העיר המתאימה</td>
+            </tr>
+            <tr>
+                <td>תחביבים</td>
+                <td><textarea id="" class="fullLine"  name="w3review" rows="4" cols="50"></textarea></td>
+                <td>יש לפרט ולכתוב את התחביבים שלך</td>
+            </tr>
+            <tr>
+                <td>כיתה</td>
+                <td><input type="text" class="fullLine" placeholder="כיתה" id="grade" name="grade" maxlength="1"></td>
+                <td>הכנס באיזה כיתה אתה לומד (אות בלבד)</td>
+            </tr>
+            <tr>
+                <td>מקצוע אהוב</td>
+                <td><input type="text" class="fullLine" placeholder="מקצוע אהוב" id="favoriteSubject" name="favoriteSubject"></td>
+                <td>הכנס את המקצוע האהוב עליך בבית הספר</td>
+            </tr>
+        </table>
+        <button id="submitButton" type="submit">שליחה</button>
+        <button id="resetButton" type="reset">איפוס</button>
+    </form>
+</body>
+</html>

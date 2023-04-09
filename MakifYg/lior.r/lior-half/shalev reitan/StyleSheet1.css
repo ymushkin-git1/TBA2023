@@ -1,0 +1,167 @@
+﻿
+
+
+
+
+
+
+/*home*/
+#body1 {
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('ldf5Bx.jpg');
+    background-size: cover;
+}
+
+/*action*/
+#body2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('ESCNY12.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*mystery*/
+#body4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('141215-r25902-1671481077895.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*comedy*/
+#body3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('dr-1-min.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+/*horror*/
+#body5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('TheWitch_R2__2.10.1-copy1.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*romance*/
+#body6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('best-romantic-movies-on-netflix-last-letter-from-your-lover-1641417896.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*sign up*/
+#body7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('הוט-סינמה-קריון-2.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*drama*/
+
+#body8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('In-The-Heat-of-the-Night-Feature-Image.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+#title1 {
+    color: white;
+    font-size: 35px;
+    text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:grey;
+}
+
+li {
+    float: left;
+    width:250px;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 100px;
+        text-decoration: none;
+    }
+
+       
+#sign {
+    color: white;
+    font-size: 35px
+}
+
+
+table{
+  font-size:37px;
+   margin-right:1000px;
+   color:wheat;
+}
+
+#botton1{
+    height:auto;
+    width:auto;
+    font-size:18px;
+}
+
+#inLines{
+    color:white;
+    font-size:27px;
+}
+
+#title{
+    font-size:55px;
+    color:white;
+    text-align:center;
+}
+
+#sectitle {
+    color: white;
+    font-size: 35px;
+}
+
+#plot{
+    color:white;
+    font-size:27px;
+}
+#pic{
+    height:450px;
+    width:380px;
+}
+
+#back{
+    color:white;
+    font-size:27px;
+}
+
+#pic1{
+    height:450px;
+    width:750px;
+}
+
+
+#trailer {
+    color: white;
+    font-size: 35px;
+}

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>טארט גבינה, תפוחים ושטרוייזל</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/sweetpastries3.jpeg" style="width:45%; height:50%; float:left;" />
+    </div>
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">200 גרם קמח (1.5 כוסות פחות כף אחת)</li>
+        <li id="li2" onclick="toggle(li2)">50 גרם אבקת סוכר (1/2 כוס פחות כף אחת)</li>
+        <li id="li3" onclick="toggle(li3)">100 גרם חמאה קרה</li>
+        <li id="li4" onclick="toggle(li4)">1 כפית תמצית וניל</li>
+        <li id="li5" onclick="toggle(li5)">1 ביצה</li>
+    </ul>
+
+    <div class="dives">
+        למלית תפוחים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li6" onclick="toggle(li6)">5-6 תפוחי עץ (ירוקים)</li>
+        <li id="li7" onclick="toggle(li7)">2-3 כפות סוכר</li>
+        <li id="li8" onclick="toggle(li8)">30 גרם חמאה</li>
+    </ul>
+
+    <div class="dives">
+        למלית גבינה:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li9" onclick="toggle(li9)">500 גרם גבינה לבנה 5% שומן</li>
+        <li id="li10" onclick="toggle(li10)">2 ביצים גדולות</li>
+        <li id="li11" onclick="toggle(li11)">1/2 כוס סוכר לבן</li>
+        <li id="li12" onclick="toggle(li12)">1/2 כוס אינסטנט פודינג וניל</li>
+        <li id="li13" onclick="toggle(li13)">גרידה מחצי לימון</li>
+        <li id="li14" onclick="toggle(li14)">1 כפית תמצית וניל</li>
+    </ul>
+
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td style="width:10px ; text-align:center">
+                1)
+            </td>
+            <td>
+                הבצק: שמים במעבד מזון קמח , אבקת סוכר וחמאה חתוכה לקוביות ומעבדים לפירורים. מוסיפים תמצית וניל וביצה ומעבדים עוד כמה שניות רק עד שמתגבש בצק. אוספים את הבצק לגוש, מניחים על ניילון נצמד, משטחים מעט עם ידיים מקומחות, עוטפים ומכניסים למקרר לשעה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                2)
+            </td>
+            <td>
+                מחלקים את הבצק לשליש ושני שליש. את השליש שישמש לשטרוייזל מחזירים למקרר. את שאר הבצק מקמחים קלות, מניחים על נייר אפייה שגם הוא קומח קלות  ומרדדים את הבצק לעלה עגול גדול יותר מקוטר התבנית, נעזרים בנייר האפייה ומעבירים את הבצק לתבנית, מהדקים היטב את השוליים והבסיס ומחוררים את הבסיס עם מזלג, מעבירים למקפיא לחצי שעה..
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                3)
+            </td>
+            <td>
+                מלית תפוחים: קולפים את התפוחים וחותכים לשמיניות. מניחים במחבת תפוחים, סוכר וחמאה ומבשלים כמה דקות רק עד שהתפוחים התרככו מעט ונעטפו בחמאה וסוכר. מניחים במסננת עד לשימוש.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                4)
+            </td>
+            <td>
+                מלית גבינה: שמים בקערה את כל חומרי המלית וטורפים במטרפה ידנית לאיחוד.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                5)
+            </td>
+            <td>
+                הרכבה ואפייה: מחממים תנור לחום של 160 מעלות. מוציאים את התבנית עם הבצק מהמקפיא ומסדרים עליו את התפוחים, מוזגים מעל את מלית הגבינה, את הבצק שהשארנו במקרר לשטרוייזל מגררים במגרדת דקה מעל מלית הגבינה. אופים 50-60 דקות. העוגה נשארת מאוד בהירה אבל יציבה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                6)
+            </td>
+            <td>
+                מקררים שעתיים לפני שפורסים.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                7)
+            </td>
+            <td>
+                שומרים את העוגה במקרר, היא נשמרת 4-5 ימים אבל הכי טעימה ביומיים הראשונים.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                8)
+            </td>
+            <td>
+                אפשר לקשט בצ'יפס תפוחים: פורסים תפוח הכי דק שאפשר ומניחים בתנור על חום של 160 מעלות כחצי שעה על מצב טורבו.
+            </td>
+        </tr>
+    </table>
+
+
+    <a href="sweetpastries3.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Register</title>
+    <script src="JavaScriptRegister.js"></script>
+    <link href="StyleSheetRegister.css" rel="stylesheet" />
+</head>
+<body>
+    <ul>
+        <li><a href="MainHtmlPage.html">Home</a></li>
+        <li><a href="HtmlPage1.html">LeBron James</a></li>
+        <li><a href="HtmlPage2.html">Michael Jordan</a></li>
+        <li><a href="HtmlPage3.html">Magic Johnson</a></li>
+        <li><a href="HtmlPage4.html">Wilt Chamberlain</a></li>
+        <li><a href="HtmlPage5.html">Oscar Robertson</a></li>
+        <li><a href="Register.html">Register</a></li>
+    </ul>
+    <img id="imr" src="pictures/reg1.png" />
+
+    <div id="h1_1"><h1>Ragister To Fans Club : </h1></div>
+
+    <form onsumit="return Check()">
+        <table>
+            <tr>
+                <td class="reg_word">
+                    First Name: 
+                </td>
+                <td>
+                    <input class="regstyle" type="text" name="FN" id="fn" required />                
+                </td>
+                <td>
+                    <div class="abc" id="a"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="reg_word">
+                    <br />Last Name: 
+                </td>
+                <td>
+                    <input class="regstyle" type="text" name="LN" id="ln" required />
+                </td>
+                <td>
+                    <div class="abc" id="b"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="reg_word">
+                    <br />Gender: 
+                </td>
+                <td class="reg_word">
+                     Male<input class="regstyle" type="radio" name="GE" id="gm" /> Femal<input class="regstyle" type="radio" name="GE" id="gf" />
+                </td>
+                <td>
+                    <div class="abc" id="c"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="reg_word">
+                    <br />Email: 
+                </td>
+                <td class="reg_word">
+                    <input class="regstyle" type="email" name="EM" id="em" />
+                </td>
+                <td>
+                    <div class="abc" id="d"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="reg_word">
+                    <br />User Name: 
+                </td>
+                <td class="reg_word">
+                    <input class="regstyle" type="text" name="UN" id="un" />
+                </td>
+                <td>
+                    <div class="abc" id="e"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="reg_word">
+                    <br />Password: 
+                </td>
+                <td class="reg_word">
+                    <input class="regstyle" type="password" name="PA1" id="pa1" />
+                </td>
+                <td>
+                    <div class="abc" id="f"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="reg_word">
+                    <br />Password: 
+                </td>
+                <td class="reg_word">
+                    <input class="regstyle" type="password" name="PA2" id="pa2" />
+                </td>
+                <td>
+                    <div class="abc" id="g"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="reg_word">
+                    <br />Country: 
+                </td>
+                <td>
+                    <select class="regstyle"><option value="U.S.A">U.S.A</option><option value="=israel">Israel</option><option value="canada">Canada</option><option value="U.K">U.K</option> </select>
+                </td>
+                <td>
+                    <div class="abc" id="h"></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="reg_word">
+                    <br />Why do you want<br /> to be member?
+                </td>
+                <td><textarea class="regstyle" id="wh" name="wh" rows="5" cols="28">I want to be member because... </textarea></td>
+                <td>
+                    <div class="abc" id="i"></div>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" id="sub" onclick="return Check()"> Submit </button>
+        <button type="reset" id="res"> Reset </button>
+    </form>
+
+
+
+</body>
+</html>

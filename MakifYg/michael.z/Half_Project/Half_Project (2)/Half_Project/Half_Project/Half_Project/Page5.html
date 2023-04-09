@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fastest Cars</title>
+
+    <link href="StylePage1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body style="background-color: rgb(1 0 20); color: white ">
+    <div>
+        <ul id="ul">
+            <li style="margin-left: 300px"><a href="HomePage.html">Home</a></li>
+            <li><a href="Page1.html">Aventador SVJ</a></li>
+            <li><a href="Page2.html">Regera</a></li>
+            <li><a href="Page3.html">Venom F5</a></li>
+            <li><a href="Page4.html">Jesko Absolut</a></li>
+            <li><a class="active" >Chiron Supersport 300+</a></li>
+            <li style="float: right; margin-right: 300px"><button class="button" onclick="document.getElementById('id1').style.display='block'">Sign Up</button></li>
+        </ul>
+    </div>
+    <div style="background-color: rgb(1 0 20); margin-top: 50px; height: 370px">
+        <h1>
+            BUGATTI CHIRON SUPERSPORT 300+
+        </h1>
+    </div>
+
+
+    <div id="id1" class="modal">
+
+        <form class="modal-content animate" onsubmit="return ending()">
+            <div class="containerX">
+                <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <h1 class="h1-model">Sign Up</h1>
+            <div class="container">
+
+                <label class="label">First Name</label>
+                <input class="text" type="text" id="Fname" />
+                <div id="div1"></div>
+
+                <label class="label">Last Name</label>
+                <input class="text" type="text" id="Lname" name="Lname" />
+                <div id="div2"></div>
+
+                <label class="label">Birth Date</label>
+                <input class="text" type="text" id="yborn" maxlength="4">
+                <div id="div3"></div>
+
+                <label class="label">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="gender">Other</label>
+                <div id="div4"></div>
+
+                <label class="label">Email</label>
+                <input class="text" type="email" id="email" />
+                <div id="div5"></div>
+
+                <label class="label">Password</label>
+                <input class="text" type="password" id="password" />
+                <div id="div6"></div>
+
+                <label class="label">Confirm Password</label>
+                <input class="text" type="password" id="Vpassword" />
+                <div id="div7"></div>
+
+                <label class="label">Adress</label>
+                <textarea class="text" rows="5" cols="60" id="Adress"></textarea>
+
+                <label class="label">City</label>
+                <select class="text">
+                    <option></option>
+                    <option>Rishon Lezion</option>
+                    <option>Be'er Sheva</option>
+                    <option>Tel Aviv</option>
+                    <option>Jerusalem</option>
+                    <option>Haifa</option>
+                    <option>Eilat</option>
+                    <option>Other</option>
+                </select>
+
+                <input id="reset" type="reset" value="Reset" />
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <table style="margin-top: 0px">
+        <tr>
+            <td>
+                <img class="img1" src="images/Bugatti-Chiron-Super-Sport-300-plus-main.jpg" alt="BUGATTI CHIRON SUPERSPORT 300+ picture" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        About Lamborghini Aventador
+                    </h2>
+                    <p>
+                        The Bugatti Chiron Super Sport 300+ is a two-seater coupe supercar produced in limited production (30 units) by the French car manufacturer Bugatti between 2020 and 2022. The car was presented at the Los Angeles International Auto Show in November 2019. The car is an improved model of the Bugatti Chiron.
+                        At the Milan Motor Show in Italy, Bugatti presented a limited and standard version of the Chiron Super-Sport 300+, this one is produced with almost no changes from the 300+, and produced with a limit of 9 units, it is produced under the name Bugatti Chiron Super-Sport.
+                    </p>
+                </div>
+            </td>
+            <td><img class="img1" src="images/2022-Bugatti-Chiron-Super-Sport_BI_8.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+
+        </tr>
+        <tr>
+            <td><img class="img1" src="images/chironss_108.jpg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+            <td colspan="2">
+                <div class="div1">
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The Bugatti Chiron Super-Sport 300+ was considered the fastest car in the world. Its maximum speed is 490.484 km/h (304.773 miles per hour). It held the title until 2020, when the Bugatti Bolide was developed whose maximum speed is about 500 km/h (310 miles per hour).
+                        Customers who ordered the model with a roll cage from the factory will be able to drive the model on the Volkswagen Wolfsburg test track, where the model set the speed record. On September 23, 2021, Bugatti announced that the launch of the Super Sport 300+ to customers begins. Although all Bugatti models are produced with a speed limiter, which limits the speed to 420 km/h, the Sport Sport 300+ comes without a limiter.
+                        Production officially ended on July 21, 2022.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        
+    </table>
+
+    <hr />
+
+    <table>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Design
+                    </h2>
+                    <p style="width: 700px">
+                        The Bugatti Chiron Super Sport 300+ has received a special design, because it is intended for racing. It is covered in carbon fiber, designed to reduce weight, with two orange stripes located in the center of the car. The carbon fibers are coated with boronite. The wheels and tires are from the Michelin company, which were specially manufactured to meet the vehicle's requirements.
+                    </p>
+                </div>
+            </td>
+            <td rowspan="2"><img class="img1" src="images/BUGATTI-Chiron-Super-Sport-300-6665_13.jpg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 50%">
+                <div class="div1" style="width: 700px">
+                    <h2 style="width: 700px">
+                        Specifications
+                    </h2>
+                    <p style="width: 700px">
+                        The vehicle includes an 8.0-liter W16 gasoline engine with four turbochargers that delivers 1,600 hp (1,200 kW) at 7,100 rpm. Seven-speed dual-clutch transmission. The acceleration from 0 to 200 km/h takes 5.8 seconds and from 0 to 300 km/h takes 12.1 seconds, the official maximum speed is 490.484 kilometers per hour. The combined fuel consumption is 21.470 liters per 100 km. The carbon dioxide emission is 486.723 grams per km.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            color: #001933;
+        }
+
+        ul.ing li {
+            background: #cce5ff;
+        }
+
+            ul.ing li:hover {
+                background: #b3d7ff;
+            }
+
+            ul.ing li.checked {
+                background: #99c9ff;
+                color: #fff;
+            }
+    </style>
+
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+
+    <br />
+
+    <div class="name">
+        <h1>קינוחי כוסות: תותים ומסקרפונה</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/mousse3.jpeg" style="width: 70%; height: 75%; float: left;" />
+    </div>
+
+    <br />
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <br />
+
+    <div class="dives">
+        לקראמבל:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">125 גר' חמאה</li>
+        <li id="li2" onclick="toggle(li2)">150 גר' קמח (1 כוס + 1 כף)</li>
+        <li id="li3" onclick="toggle(li3)">40 גר' סוכר (4 כפות)</li>
+        <li id="li4" onclick="toggle(li4)">קורט מלח</li>
+    </ul>
+
+    <div class="dives">
+        לקרם מסקרפונה:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li5" onclick="toggle(li5)">170 גר' שמנת מתוקה (חצי חבילה)</li>
+        <li id="li6" onclick="toggle(li6)">75 גר' אבקת סוכר</li>
+        <li id="li7" onclick="toggle(li7)">320 גר' גבינת מסקרפונה</li>
+    </ul>
+
+
+    <div class="dives">
+        לקולי תותים:
+    </div>
+    <ul id="myUL" class="ing">
+        <li id="li8" onclick="toggle(li8)">150 גר' תותים טריים</li>
+        <li id="li9" onclick="toggle(li9)">1 כף סוכר</li>
+        <li id="li10" onclick="toggle(li10)">1 כף מיץ לימון</li>
+    </ul>
+
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                מכינים את הקראמבל - מחממים תנור לטמפרטורה של 150 מעלות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מכניסים את כל החומרים היבשים לקערה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                בסיר קטן ממיסים על להבה נמוכה את החמאה (בזהירות שלא תקציף), ושופכים אותה על שאר החומרים. מערבבים בעזרת כף עד לקבלת בצק אחיד.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                כאשר התקבל בצק אחיד מיישרים אותו עם הידיים למשטח אחיד ומחוררים עם מזלג על כל פני השטח.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                אופים את הקרמבל במשך 30 דקות. כאשר ה"עוגיה" שלנו זהובה ומעט קשיחה מוציאים אותה מהתנור ומניחים בצד להצטנן, לאחר הצינון בעזרת סכין שוברים את העוגיה לקרמבל דק.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                מכינים את קרם המסקרפונה - בקערת המיקסר מקציפים יחד את האבקת סוכר והשמנת המתוקה עד להתייצבות (שימו לב - לא לקצף קשה אלא לקצף רך).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                מוסיפים פנימה את המסקרפונה וממשיכים להקציף עד לקבלת קצף קשה. מעבירים את הקרם לשק זילוף.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                8)
+            </td>
+            <td>
+                מכינים את הקולי תותים - מסירים את העלים הירוקים וטוחנים את כל החומרים יחד לנוזל.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                9)
+            </td>
+            <td>
+                הרכבת הקינוח - בכוסות אישיות מניחים קודם שתי כפות של קרמבל חמאה. לאחר מכן מזלפים שכבה של קרם מסקרפונה, לאחר מכן מפזרים תותים.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                10)
+            </td>
+            <td>
+                חוזרים על אותה פעולה פעם נוספת בכדי לבנות שכבות ומסיימים עם שכבת תותים שעליה מוזגים מעט מהקולי תות. מקררים מעט, ומגישים.
+            </td>
+        </tr>
+        <tr> </tr>
+
+    </table>
+
+
+
+
+    <a href="mousse3.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

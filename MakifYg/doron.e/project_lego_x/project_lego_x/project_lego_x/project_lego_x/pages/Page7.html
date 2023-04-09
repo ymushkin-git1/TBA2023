@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>page 7</title>
+    <script>
+        function checkValues() {
+            var x = true;
+            x = price() && x;
+            return x;
+        }
+
+        function price() {
+            if (pricekit.value < 30 || pricekit.value > 630) {
+                msg.innerHTML = "אין ערכה במחיר זה";
+                return false;
+            }
+            else {
+                msg.innerHTML = "ישנה ערכה במחיר זה";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="Mainpage.html">Home</a></li>
+        <li><a href="Page2.html">History</a></li>
+        <li><a href="Page3.html">Lego kits</a></li>
+        <li><a href="Page4.html">Advanced Kits</a></li>
+        <li><a href="Page5.html">Lego Land + Art</a></li>
+        <li><a href="Page6.html">10 Facts you didn't know</a></li>
+        <li><a href="Page7.html">Lego shop</a></li>
+    </ul>
+    <h1>Lego shop</h1>
+    <form onsubmit="return checkValues()">
+        <table style="background-color:white">
+            <tr>
+                <td>הכנס את המחיר המקסימלי שאתה רוצה להוציא בדולרים</td>
+                <td><input type="text" id="pricekit" /></td>
+                <td id="msg"> יש/אין את המחיר </td>
+            </tr>
+        </table>
+        <button type="submit">Send</button>
+    </form>
+    <img src="https://www.lego.com/cdn/cs/set/assets/blt46a07a9b068b46c2/40174.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="400" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://www.lego.com/cdn/cs/set/assets/blt525e2b3d100ed80a/21326_alt2.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="400" /> <a href="" id="shop-link"> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://www.lego.com/cdn/cs/set/assets/blt86423e4ec25d4312/10276.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="400" /> <a href="" id="shop-link"> </a>
+    <br />
+    <a href="https://www.lego.com/en-us/product/lego-iconic-chess-set-40174" id="shop-link"> Lego chess set - 64.99$</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.lego.com/en-us/product/winnie-the-pooh-21326" id="shop-link"> Winnie the Pooh - 99.99$</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.lego.com/en-us/product/colosseum-10276" id="shop-link"> Colosseum - 549.99$</a>
+    <br />
+    <img src="https://www.lego.com/cdn/cs/set/assets/blt78935c3f9677145f/60369.png?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="400" /> <a href="" id="shop-link"> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://www.lego.com/cdn/cs/set/assets/bltb357374dc682597e/10497.png?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="400" /> <a href="" id="shop-link"> </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://www.lego.com/cdn/cs/set/assets/blt0e2b04c977a2dc2a/10307.png?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1" width="200" /> <a href="" id="shop-link"> </a>
+    <br />
+    <a href="https://www.lego.com/en-us/product/mobile-police-dog-training-60369" id="shop-link"> lego police - 29.99$</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.lego.com/en-us/product/galaxy-explorer-10497" id="shop-link">Galaxy explorer - 99.99$</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.lego.com/en-us/product/eiffel-tower-10307" id="shop-link">Eiffel tower - 629.99$</a>
+    <br />
+</body>
+</html>

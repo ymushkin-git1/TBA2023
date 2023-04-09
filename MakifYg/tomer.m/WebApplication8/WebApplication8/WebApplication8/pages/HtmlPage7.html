@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../files/StyleSheet1.css" rel="stylesheet" />
+    <script src="../files/JavaScript.js"></script>
+</head>
+<body id="body">
+    <div id="navbar">
+        <h1 id="title"> &nbsp&nbsp THE JOKIEST JOKES- by Tomer </h1>
+        <p>
+            <a href="MainPage.html"> &nbsp&nbsp ראשי &nbsp&nbsp&nbsp </a>
+
+            <a href="HtmlPage2.html"> &nbsp&nbsp בדיחות קרש &nbsp&nbsp</a>
+
+            <a href="HtmlPage3.html">&nbsp&nbsp  הומור שחור &nbsp&nbsp</a>
+
+            <a href="HtmlPage4.html">&nbsp&nbsp ממים &nbsp&nbsp</a>
+
+            <a href="HtmlPage5.html">&nbsp&nbsp  בדיחות אמאשך &nbsp&nbsp</a>
+
+            <a href="HtmlPage6.html">&nbsp&nbsp  שירים &nbsp&nbsp</a>
+
+            <a href="HtmlPage7.html" id="open"> &nbsp&nbsp   הרשמה &nbsp&nbsp </a>
+        </p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+     <h1 style="color: red"> &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp  הרשמה לאתר</h1>    <br /><br />
+    <form onsubmit="return Checks()">
+        <table id="table2">
+            <tr style="color:blue">
+                <td> נושא </td>
+                <td> קליטה </td>
+                <td> הערה </td>
+            </tr>
+
+            <tr>
+                <td> :שם פרטי </td>
+                <td> <input type="text" placeholder="enter first name" id="firstname" name="firstname" /> </td>
+                <td id="msg1"> </td>
+            </tr>
+
+            <tr>
+                <td> :שם משפחה </td>
+                <td> <input type="text" placeholder="enter last name" id="lastname" name="lastname" /> </td>
+                <td id="msg2"> </td>
+            </tr>
+
+            <tr>
+                <td>  :אזרחות ישראלית <br /> ו/או אחרת  </td>
+                <td>
+                    ישראלית <input type="checkbox" id="israel" />
+                    אחרת <input type="checkbox" id="other" />
+                </td>
+                <td id="msg3">  </td>
+            </tr>
+
+            <tr>
+                <td> :מגדר </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                    <input type="radio" id="othergender" name="gender" value="other">
+                    <label for="other">other</label>
+                </td>
+                <td id="msg4">  </td>
+            </tr>
+
+            <tr>
+                <td> :סיסמה </td>
+                <td> <input type="password" placeholder="enter password" id="password" /> </td>
+                <td id="msg5"> </td>
+            </tr>
+
+            <tr>
+                <td> :אימות סיסמה </td>
+                <td> <input type="password" placeholder="enter password again" id="check_password" /> </td>
+                <td id="msg6"> </td>
+            </tr>
+
+            <tr>
+                <td> :עיר </td>
+                <td>
+                    <select name="city">
+                        <option value="ראשון לציון" id="rishonLeZion">ראשון לציון</option>
+                        <option value="תל אביב" id="TelAviv">תל אביב</option>
+                        <option value="באר שבע" id="BeerSheva">באר שבע</option>
+                        <option value="נס ציונה" id="NesZiona">נס ציונה</option>
+                        <option value="אשקלון" id="Ashkelon">אשקלון</option>
+                        <option value="ירושלים" id="Jerosalem">ג'רוזלם</option>
+                        <option value="בוזולנד" id="Bozoland">בוזולנד</option>
+                    </select>
+                </td>
+                <td id="msg7"> </td>
+            </tr>
+
+            <tr>
+                <td> :תחביבים </td>
+                <td> <textarea placeholder="write about your hobbies" id="hobbies" name="hobbies"></textarea> </td>
+                <td id="msg8"> </td>
+            </tr>
+
+            <tr>
+                <td> :דוא"ל </td>
+                <td> <input type="text" id="mail" name="mail" /> </td>
+                <td id="msg9"> </td>
+            </tr>
+
+            <tr>
+                <td> :מילה אהובה </td>
+                <td> <input type="text" placeholder="enter a word" id="FavWord" name="FavWord" /> </td>
+                <td id="msg10"> </td>
+            </tr>
+
+            <tr>
+                <td> :מקצוע </td>
+                <td>
+                    <select name="city">
+                        <option value="עורך דין" id="oreh">עורך דין</option>
+                        <option value="דייג" id="dayag">דייג</option>
+                        <option value="טבח" id="taba">טבח</option>
+                        <option value="מלצר" id="mel">מלצר</option>
+                        <option value="מובטל" id="mov">מובטל</option>
+                        <option value="גנב" id="ganav">גנב</option>
+                        <option value="אחר" id="other">אחר</option>
+                    </select>
+                </td>
+                <td id="msg11"> </td>
+            </tr>
+
+        </table>
+
+        <button input type="reset"> Reset </button>
+        <button input type="submit"> Submit </button>
+    </form>
+
+
+    <br />
+</body>
+</html>

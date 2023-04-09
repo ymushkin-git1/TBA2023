@@ -1,0 +1,30 @@
+﻿body {
+    
+    background-image: url('img/טניס דשא.jpg');
+}
+
+
+h2{
+    text-align:center;
+    color:lightskyblue;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: Highlight;
+    text-shadow: 0 0 3px Highlight, 0 0 5px cadetblue;
+}
+
+p{
+    
+    line-height: 1.6;
+    direction: rtl;
+    color: white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+    font-weight: 400;
+    display: block;
+    font-family: Geneva, Verdana, sans-serif;
+}
+

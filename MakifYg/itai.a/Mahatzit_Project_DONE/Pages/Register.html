@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <style>
+        button {
+            margin: 50px;
+            width: 100px;
+            height: 85px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .Note {
+            color: red;
+        }
+
+        #button1 {
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 55%;
+        }
+
+        #button2 {
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 35%;
+        }
+    </style>
+
+    <script>
+
+       function checkFirstName() {
+           var x = firstname.value;
+
+           if (x.length >= 2)
+               return true;
+           else {
+               msg1.innerHTML = "First Name must be long than 2 characters";
+               return false;
+           }
+       }
+
+       function checkLastName() {
+           var x = lastname.value;
+
+           if (x.length >= 2)
+               return true;
+           else {
+               msg2.innerHTML = "Last Name must be long than 2 characters";
+               return false;
+           }
+       }
+
+       function BornYear() {
+           var x = bornyear.value;
+
+           if (x > 1900 && x < 2023)
+               return true;
+           else {
+               msg3.innerHTML = "choose a number between 1900-2023";
+               return false;
+           }
+       }
+
+       function country() {
+           if (israel.checked || other.checked)
+               return true;
+           else {
+               msg4.innerHTML = "Must Choose at least one option";
+               return false;
+           }
+       }
+
+       function genderr() {
+           if (male.checked || female.checked || othergender.checked)
+               return true;
+           else {
+               msg5.innerHTML = "Must Choose an option";
+               return false;
+           }
+       }
+
+       function PassWord() {
+           var p = password.value;
+           if (p.length >= 2)
+               return true;
+           else {
+               msg6.innerHTML = "Password must be long than 2 characters";
+               return false;
+           }
+       }
+
+       function CheckPassword() {
+           if (password.value == check_password.value)
+               return true;
+           else {
+               msg7.innerHTML = "does not match with the previous password";
+               return false;
+           }
+       }
+
+       function Mail() {
+           var x = mail.value;
+           if (x.includes("@"))
+               return true;
+           else {
+               msg9.innerHTML = "iligal mail";
+               return false;
+           }
+       }
+
+       function hobbie() {
+           var x = hobbies.value;
+           if (x.length >= 3)
+               return true;
+           else {
+               msg10.innerHTML = "must write more than 3 characters";
+               return false;
+           }
+       }
+
+       function Checks() {
+           var result = checkFirstName();
+           result = checkLastName() && result;
+           result = BornYear() && result;
+           result = country() && result;
+           result = genderr() && result;
+           result = PassWord() && result;
+           result = CheckPassword() && result;
+           result = hobbie() && result;
+           result = Mail() && result;
+           return result;
+       }
+
+    </script>
+
+</head>
+<body dir="rtl" class="background" style="background-image: url('../images/register_back.jpg')">
+
+    <ul>
+        <li style="background-color:gold;"><a href="Main.html">Main</a></li>
+        <li style="background-color:gold;"><a href="Register.html">Register</a></li>
+        <li><a href="Page 1 - guns and roses.html">Guns N' Roses</a></li>
+        <li><a href="Page 2 - iron maiden.html">Iron Maiden</a></li>
+        <li><a href="Page 3 - doors down.html">3 Doors Down</a></li>
+        <li><a href="Page 4 - U2.html">U2</a></li>
+        <li><a href="Page 5 - pearl jam.html">Pearl Jam</a></li>
+        <li><a href="Page 6 - lostprophets.html">Editor's recommendation</a></li>
+        <li style="float:right"><img height="50px" width="50px" src="../images/logo.jpg" /></li>
+
+    </ul>
+
+    <form onsubmit="return Checks()">
+
+        <table dir="rtl" align="center" width="600px">
+
+            <tr>
+                <td> שם פרטי: </td>
+                <td> <input type="text" placeholder="enter first name" id="firstname" name="firstname" /> </td>
+                <td id="msg1" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> שם משפחה: </td>
+                <td> <input type="text" placeholder="enter last name" id="lastname" name="lastname" /> </td>
+                <td id="msg2" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> שנת לידה: </td>
+                <td> <input type="number" id="bornyear" name="bornyear" /></td>
+                <td id="msg3" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> אזרחות ישראלית: <br /> ו/או אחרת  </td>
+                <td>
+                    ישראלית <input type="checkbox" id="israel" />
+                    אחרת <input type="checkbox" id="other" />
+                </td>
+                <td id="msg4" class="Note">  </td>
+            </tr>
+
+            <tr>
+                <td> מגדר: </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                    <input type="radio" id="othergender" name="gender" value="other">
+                    <label for="other">other</label>
+                </td>
+                <td id="msg5" class="Note">  </td>
+            </tr>
+
+            <tr>
+                <td> סיסמה: </td>
+                <td> <input type="password" placeholder="enter password" id="password" /> </td>
+                <td id="msg6" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> אימות סיסמה: </td>
+                <td> <input type="password" placeholder="enter password again" id="check_password" /> </td>
+                <td id="msg7" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> עיר: </td>
+                <td>
+                    <select name="city">
+                        <option value="ראשון לציון" id="rishonLeZion">ראשון לציון</option>
+                        <option value="תל אביב" id="TelAviv">תל אביב</option>
+                        <option value="באר שבע" id="BeerSheva">באר שבע</option>
+                        <option value="נס ציונה" id="NesZiona">נס ציונה</option>
+                        <option value="אשקלון" id="Ashkelon">אשקלון</option>
+                        <option value="ירושלים" id="Jerosalem">ירושלים</option>
+                        <option value="חיפה" id="Bozoland">חיפה</option>
+                    </select>
+                </td>
+                <td id="msg8" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> הכנס מייל: </td>
+                <td> <input type="text" placeholder="enter your mail" id="mail" name="mail" /> </td>
+                <td id="msg9" class="Note"> </td>
+            </tr>
+
+            <tr>
+                <td> תחביבים: </td>
+                <td> <textarea placeholder="write about your hobbies" id="hobbies" name="hobbies"></textarea> </td>
+                <td id="msg10" class="Note"> </td>
+            </tr>
+
+        </table>
+
+        <button id="button1" input type="reset"> Reset </button>
+        <button id="button2" input type="submit"> Submit </button>
+
+    </form>
+
+    <div>
+
+    </div>
+</body>
+</html>

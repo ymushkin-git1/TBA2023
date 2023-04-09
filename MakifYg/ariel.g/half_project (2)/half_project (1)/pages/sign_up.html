@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script>
+        function checkValues() {
+            var x = true;
+            x = name() && x;
+            x = familyname() && x;
+            x = Year() && x;
+            x = check() && x;
+            x = password3() && x;
+            x = password2() && x;
+            x = gmail() && x;
+            x = user() && x;
+            return x;
+
+        }
+
+        function name() {
+            if (name1.value.length < 2) {
+                ms1.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                ms1.innerHTML = "בסדר";
+
+                return true;
+            }
+        }
+        function familyname() {
+            if (family_name.value.length < 3) {
+                ms2.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                ms2.innerHTML = "בסדר";
+
+                return true;
+
+            }
+        }
+        function Year() {
+            if (bornYear.value < 1900 || bornYear.value > 2023) {
+                ms3.innerHTML = "שנה לא תקינה";
+                return false;
+            }
+            else {
+                ms3.innerHTML = "בסדר";
+                return true;
+            }
+        }
+        function check() {
+            if (gender1.checked || gender2.checked) {
+                ms4.innerHTML = "בסדר";
+                return true;
+            }
+
+            else {
+                ms4.innerHTML = "נא לבחור ערך";
+                return false;
+            }
+
+        }
+        function user() {
+            if (username.value.length < 5) {
+                ms8.innerHTML = "שם משתמש לא תקין";
+                return false;
+            }
+            else {
+                ms8.innerHTML = "בסדר";
+                return true;
+
+            }
+        }
+        function password3() {
+            if (password1.value.length < 5) {
+                ms5.innerHTML = "סיסמה לא חזקה";
+                return false;
+            }
+            else {
+                ms5.innerHTML = "בסדר";
+                return true;
+
+            }
+        }
+        function password2() {
+            if (password1.value != passwordconfirmation.value) {
+                ms6.innerHTML = "סיסמה לא זהה";
+                return false;
+            }
+            else {
+                if (password1.value.length < 5) {
+                    ms6.innerHTML = "סיסמה 1 לא חזקה";
+                    return false;
+                }
+                else {
+                    ms6.innerHTML = "בסדר";
+                    return true;
+
+                }
+            }
+        }
+        function gmail() {
+            var check = checkgmail.value.includes("@gmail.com");
+            if (check == false) {
+                ms7.innerHTML = "gmail לא תקין";
+                return false;
+            }
+            else {
+                if (checkgmail.value.indexOf("@") != 0) {
+                    ms7.innerHTML = "בסדר";
+                    return true;
+                }
+                else {
+                    return false;
+                }
+
+
+            }
+        }
+    </script>
+</head>
+<body dir="rtl">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="HtmlPage1.html">Chevrolet Camaro</a></li>
+                <li><a href="HtmlPage2.html">Nissan Skyline GT-R</a></li>
+                <li><a href="HtmlPage3.html">Toyota Supra</a></li>
+                <li><a href="HtmlPage4.html">Bugatti Divo</a></li>
+                <li><a href="HtmlPage5.html">Audi R8</a></li>
+                <li style="float:right"><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    <div>
+        <form onsubmit="return checkValues()">
+
+            <table>
+                <tr>
+                    <td>שם פרטי</td>
+                    <td><input type="text" id="name1" /></td>
+                    <td id="ms1"></td>
+
+                </tr>
+                <tr>
+                    <td>שם משפחה</td>
+                    <td><input id="family_name" type="text" /></td>
+                    <td id="ms2"></td>
+                </tr>
+
+                <tr>
+                    <td>שנת לידה</td>
+                    <td><input type="number" id="bornYear" /></td>
+                    <td id="ms3"></td>
+                </tr>
+                <tr>
+                    <td>אזרחות ישראלית/ אחרת</td>
+                    <td><input type="checkbox" />ישראלית <input type="checkbox" />אחרת</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>מגדר</td>
+                    <td>
+                        <input type="radio" name="name1" id="gender1" />
+                        <label>זכר</label>
+                        <input type="radio" name="name1" id="gender2" />
+                        <label>נקבה</label>
+                    </td>
+                    <td id="ms4"></td>
+
+                </tr>
+                <tr>
+                    <td>שם משתמש</td>
+                    <td><input type="text" id="username" /></td>
+                    <td id="ms8"></td>
+
+                </tr>
+                <tr>
+                    <td>סיסמה</td>
+                    <td><input type="text" id="password1" /></td>
+                    <td id="ms5"></td>
+
+                </tr>
+
+                <tr>
+                    <td>אימות סיסמה</td>
+                    <td><input type="text" id="passwordconfirmation" /></td>
+                    <td id="ms6"></td>
+
+                </tr>
+                <tr>
+                    <td>מקום מגורים</td>
+                    <td>
+                        <select>
+                            <option>ראשון לציון</option>
+                            <option>ירושלים</option>
+                            <option>תל אביב</option>
+                            <option>אננס מתחת לים</option>
+                        </select>
+                    </td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td>gmail</td>
+                    <td><input type="text" id="checkgmail" /></td>
+                    <td id="ms7"></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Send</button></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f2e6d9;
+            color: #4d2400;
+        }
+
+        ul.ing li {
+            background: #e4cdb4;
+        }
+
+            ul.ing li:hover {
+                background: #d6b48f;
+            }
+
+            ul.ing li.checked {
+                background: #cfa77d;
+                color: #fff;
+            }
+    </style>
+
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+
+    <br />
+
+    <div class="name">
+        <h1>טריקולד</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/mousse1.jpeg" style="width: 70%; height: 75%; float: left;" />
+    </div>
+
+    <br />
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <br />
+
+    <div class="dives">
+        לבסיס בראוניז:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">100 גרם שוקולד מריר</li>
+        <li id="li2" onclick="toggle(li2)">100 גרם מחמאה</li>
+        <li id="li3" onclick="toggle(li3)">2 ביצים</li>
+        <li id="li4" onclick="toggle(li4)">2/3 כוס או 120 גרם סוכר לבן</li>
+        <li id="li5" onclick="toggle(li5)">4 כפות או 40 גרם קמח לבן</li>
+        <li id="li6" onclick="toggle(li6)">3 כפות או 30 גרם אבקת קקאו</li>
+        <li id="li7" onclick="toggle(li7)">1/4 כפית מלח דק</li>
+    </ul>
+
+    <div class="dives">
+        מוס שוקולד מריר:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li8" onclick="toggle(li8)">1 1/2 מיכלים שמנת מתוקה 38%</li>
+        <li id="li9" onclick="toggle(li9)">200 גרם שוקולד מריר</li>
+    </ul>
+
+
+    <div class="dives">
+        מוס שוקולד חלב:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li10" onclick="toggle(li10)">1 1/2 מיכלים שמנת מתוקה 38%</li>
+        <li id="li11" onclick="toggle(li11)">200 גרם שוקולד חלב</li>
+    </ul>
+
+    <div class="dives">
+        מוס שוקולד לבן:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li12" onclick="toggle(li12)">1 1/2 מיכלים שמנת מתוקה 38%</li>
+        <li id="li13" onclick="toggle(li13)">200 גרם שוקולד לבן</li>
+    </ul>
+
+    <div class="dives">
+        לציפוי (גאנש):
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li14" onclick="toggle(li14)">1/3 כוס או 80 מ"ל שמנת מתוקה 38%</li>
+        <li id="li15" onclick="toggle(li15)">80 גרם שוקולד מריר</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                מתחילים את הכנת המוסים 4 שעות קודם (או לילה לפני): מרתיחים 3/4 מיכל שמנת מתוקה. יוצקים על השוקולד המריר ומערבבים עד שהשוקולד נמס. חוזרים על הפעולה עם השוקולדים האחרים - חלב ולבן.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מכינים את התחתית: ממיסים יחד שוקולד וחמאה. מערבבים פנימה ביצים וסוכר. מוסיפים קמח, קקאו ומלח וטורפים לתערובת אחידה. יוצקים לתחתית של תבנית בקוטר 26 ס”מ ואופים ב-190 מעלות למשך 10-15 דקות עד להתייצבות (לא לייבש, צריך להישאר עסיסי במרקם של בראוניז).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מסיימים את הכנת המוסים: מעבירים את תערובת השוקולד המריר הקרה למיקסר, יוצקים עליה את יתרת השמנת המתוקה (עוד 3/4 כוס) ומקציפים יחד לקצפת שוקולד יציבה אך לא נוקשה. מורחים על התחתית (מומלץ לרפד את התבנית בשקף כדי להקל על החילוץ). מקפיאים להתייצבות כ-20 דקות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                חוזרים על הפעולה שוקולד החלב ומורחים את המוס מעל השוקולד המריר הקפוא. מקפיאים שוב ל-20 דקות ומסיימים בהכנת השוקולד הלבן באותו אופן. מקפיאים שעתיים להתקשות.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                מכינים את הציפוי: מרתיחים שמנת מתוקה עם מעט מלח. יוצקים על השוקולד המריר ומערבבים עד שהשוקולד נמס. מצננים מעט ויוצקים על העוגה הקפואה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                מחזירים למקפיא ל 10 דקות התייצבות, משחררים בזהירות מהתבנית מקלפים את השקף ומעבירים למקרר להפשרה של שעתיים לפני ההגשה.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+
+    <a href="mousse1.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

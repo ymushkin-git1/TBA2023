@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>מגרש קשיח</title>
+    <link href="../StyleSheet6.css" rel="stylesheet" />
+    <link href="../common.css" rel="stylesheet" />
+</head>
+<body>
+
+    <ul class="a">
+        <li><a class="active" href="../pages/HtmlPage1.html">ראשי</a></li>
+        <li><a href="HtmlPage2.html">עמוד 1</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage3.html" class="dropbtn">עמוד 2</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html#position">עמידה נכונה</a>
+                <a href="HtmlPage3.html#sweep">תנופה</a>
+                <a href="HtmlPage3.html#serve">תנועת הגשה</a>
+            </div>
+        </li>
+        <li><a href="HtmlPage4.html">עמוד 3</a></li>
+        <li><a href="HtmlPage5.html">עמוד 4</a></li>
+        <li><a href="HtmlPage6.html">עמוד 5</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage7.html" class="dropbtn">עמוד 6</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage7.html#serve">serve</a>
+                <a href="HtmlPage7.html#Backhand">Backhand</a>
+                <a href="HtmlPage7.html#topspin">topspin</a>
+            </div>
+        </li>
+    </ul>
+    <div id="div1" style="font-size:150%">
+        <h2>מגרש קשיח</h2>
+        <p >מגרש טניס קשיח הוא המגרש הנפוץ ביותר, מגרש זה בדרך כלל עשוי מלט ואספלט,הכדור נוטה לקפוץ גבוה ושחקנים מסוגלים להפעיל סוגים רבים של ספין במהלך המשחק. כדורים שטוחים מועדפים במגרשים קשים בגלל סגנון המשחק המהיר במיוחד.. </p>
+        <h2>אצטדיון טניס</h2>
+
+        <p class="one">
+            אצטדיון טניס הוא מבנה בו נערכים טורנירי טניס, תחרויות ספורט ומשחקי ראווה, המורכב משדה או במה המוקפים בחלקם או לגמרי במבנה שנועד לאפשר לצופים לעמוד או לשבת אל מול האירוע. האצטדיון מכיל מגרש בודד או כמה מגרשי טניס בהם משחקים את ספורט הטניס.
+
+            אצטדיוני הטניס הראשונים הוקמו בבריטניה, מולדת הטניס. הראשונים שבהם נבנו כמגרשים פתוחים תחת כיפת השמים, חלקם עם מושבים מסביב למגרש הטניס ומיעוטם עם יציעי עמידה.
+
+            כיום ישנם ברחבי העולם אלפי אצטדיוני טניס מודרניים. לחלקם ישנם גגות נעים, המאפשרים לקיים משחק עם גג פתוח בתנאי מזג אוויר נוחים ומשחק עם גג סגור בתנאי מזג אוויר קשים דוגמת גשם וחום כבד. מרבית אצטדיוני הטניס כיום הם אצטדיונים פתוחים ותוכננו עבור "ספורט של חוץ" וישנם אצטדיונים הנבנים כאולמות. בנוסף, אצטדיוני הטניס כיום מאפשרים לקיים משחקים גם בשעות הלילה באמצעות תאורת זרקורים מלאכותית אך עדיין ישנם אצטדיונים הנבנים ללא אמצעי תאורה ומיועדים למשחקי יום בלבד.
+
+            בתחרויות הגראנד סלאם הגדולות, ישנה בכל אליפות מספר רב של אצטדיוני טניס המאפשרים לקהל הצופים לראות את שחקני הטניס הפופולריים במספר מוקדים עיקריים. מספר המושבים באצטדיוני הגראנד סלאם נע בין 10,000 - 20,000 צופים.
+        </p>
+
+        <hr />
+
+    </div>
+    <button onclick="zoomintext()">+ הגדל </button>
+    <button onclick="zoomouttext()">- הקטן</button>
+    <script>
+ 
+        fontSize = 26;
+        function zoomintext() {
+            newfontSize = fontSize * (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext() {
+            newfontSize = fontSize / (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+    </script>
+</body>
+</html>

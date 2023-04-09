@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>עמוד ראשי</title>
+    <link href="../common.css" rel="stylesheet" />
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <ul class="a">
+        <li><a class="active" href="HtmlPage1.html">ראשי</a></li>
+        <li><a href="HtmlPage2.html">עמוד 1</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage3.html" class="dropbtn">עמוד 2</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html#position">עמידה נכונה</a>
+                <a href="HtmlPage3.html#sweep">תנופה</a>
+                <a href="HtmlPage3.html#serve">תנועת הגשה</a>
+            </div>
+        </li>
+        <li><a href="HtmlPage4.html">עמוד 3</a></li>
+        <li><a href="HtmlPage5.html">עמוד 4</a></li>
+        <li><a href="HtmlPage6.html">עמוד 5</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage7.html" class="dropbtn">עמוד 6</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage7.html#serve">serve</a>
+                <a href="HtmlPage7.html#Backhand">Backhand</a>
+                <a href="HtmlPage7.html#topspin">topspin</a>
+            </div>
+        </li>
+        <li><a href="registration.html"> הירשם</a></li>
+    </ul>
+
+    <div>
+        <h2>טניס - פרויקט מחצית </h2>
+        <img class="two" src="../img/טניס עומד1.jpg" />
+        <h3>
+            פרויקט זה במסגרת שיעור תכנות יוצרת :דניאל היללי
+        </h3>
+        <p class="one" id="zoomtextdiv">
+            טניס הוא משחק כדור הנערך בין שני שחקנים (במסגרת משחק יחידים) או שני זוגות שחקנים (משחק זוגות). מטרת המשחק היא לחבוט כדור גומי חלול באמצעות מחבט אל עבר צדו השני של המגרש.
+
+            הטניס, המכונה גם "הספורט הלבן", הוא ספורט אולימפי הנחשב לפופולרי במדינות רבות ברחבי העולם. טניס נכלל במשחקים האולימפיים. מהווה ענף אולימפי קבוע.
+
+            הגוף המנהל את הענף בעולם הוא הפדרציה הבינלאומית לטניס (ITF ראשי תיבות של International Tennis Federation) בה חברות 206 מדינות. הגוף המנהל את הענף בישראל הוא איגוד הטניס בישראל, החבר ב-ITF מאז 1950.
+        </p>
+        <button onclick="zoomintext('zoomtextdiv')">+ הגדל </button>
+        <button onclick="zoomouttext('zoomtextdiv')">- הקטן</button>
+    </div>
+
+    <script>
+        fontSize = 26;
+        function zoomintext(idText) {
+            newfontSize = fontSize * (1.1);
+            document.getElementById(idText).style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext(idText) {
+            newfontSize = fontSize / (1.1);
+            document.getElementById(idText).style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+
+
+    </script>
+</body>
+</html>

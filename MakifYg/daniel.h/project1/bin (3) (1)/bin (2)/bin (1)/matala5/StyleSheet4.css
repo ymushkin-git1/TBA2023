@@ -1,0 +1,20 @@
+﻿body {
+    
+    background-image: url('img/טניס חימר.jpg');
+}
+
+
+h1 {
+    text-align: center;
+    
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    direction: rtl;
+    color: white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+    font-family: Geneva, Verdana, sans-serif;
+}

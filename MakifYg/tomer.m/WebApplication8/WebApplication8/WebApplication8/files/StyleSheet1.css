@@ -1,0 +1,102 @@
+﻿body {
+    direction: rtl;
+    background-image: url('../images/1-56.jpg');
+}
+
+
+#navbar {
+    border-bottom: 3px solid black;
+    padding-top: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkcyan;
+    background-color: lightblue;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin-bottom: 100px;
+  
+}
+
+p{
+    font-weight: bold;
+}
+
+#title{
+    direction: ltr;
+
+}
+#open{
+    background-color: white;
+    color: dodgerblue;
+}
+
+a:hover {
+    background-color: cornflowerblue;
+}
+
+a{
+    text-align: right;
+    background-color: lightblue;
+    text-decoration: none;
+    margin: 5px;
+
+}
+
+
+#info {
+    background-color: white;
+    text-align: center;
+    color: green;
+    margin: 20px;
+
+}
+
+#jokes {
+    background-color: transparent;
+    text-align: right;
+    margin: 50px;
+}
+
+#like{
+    color: white;
+    background-color: forestgreen;
+}
+
+td{
+    border: 7px solid black;
+    
+}
+#table1 {
+    border-collapse: collapse;
+}
+
+#txt{
+    margin: 5px;
+    background-color: white;
+    width: fit-content;
+}
+
+#question1 {
+    width: 80px;
+}
+
+#kish {
+    width: 1000px;
+    margin: 50px;
+    text-align: center;
+    color: black;
+    text-decoration: none; 
+}
+
+#songs{
+    text-align:center;
+}
+
+#table2 {
+    direction: rtl;
+    border-collapse: collapse;
+    height: 700px;
+    width: 80%;
+    align-items: center;
+    margin-right: 100px;
+}

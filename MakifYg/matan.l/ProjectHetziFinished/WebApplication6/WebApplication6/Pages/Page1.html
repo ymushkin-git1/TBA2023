@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Movies WebSite</title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+    </script>
+</head>
+<body id="firstBody" onload="startTime()">
+    <ul>
+        <li><a class="active" href="Page1.html">Home</a></li>
+        <li><a class="navBar" href="Page2.html">Page2</a></li>
+        <li><a class="navBar" href="Page3.html">Page3</a></li>
+        <li><a class="navBar" href="Page4.html">Page4</a></li>
+        <li><a class="navBar" href="Page5.html">Page5</a></li>
+        <li><a class="navBar" href="Page6.html">Page6</a></li>
+        <li><a class="navBar" href="Page7.html">Page7</a></li>
+        <li><a class="navBar" href="Register.html">Register</a></li>
+    </ul>
+    <h1 id="firstHeader">The Movies WebSite</h1>
+    <div id="clock"> </div>
+    <p style="text-align:center; color:white; font-size:35px">
+        <b>
+            Welcome to our amazing movies website! Here you can find the best movies to watch with friends and family. <br />
+            We offer a wide range of different movies to choose from, so you will find something interesting to watch for sure :) <br />
+            You can now see top 5 most viewed movies ever! <br />
+            And you will have an option to watch many movies for free! <br />
+            With our website, you can watch movies for free, even from the couch or your bed. <br />
+            All you need is a good internet connection and a device (phone/computer)! <br />
+            Use the navigation bar above to move between pages! <br />
+            So how is this going to work, at the 5 first pages (Page2 - Page6) <br />
+            you will be shown the 5 most popular websites ever! <br />
+            And on the next pages (Page7) you will be able to watch movies for free and get the url for each movie! <br />
+            In addition, you will be able to sign up to our website! (Page8) <br /><br />
+            <h style="font-size:60px;"> Enjoy! :) </h>
+        </b>
+    </p>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function f1() {
+            alert(txt1.value);
+        }
+    </script>
+    <style>
+        body{
+            direction:rtl;
+            text-align:center;
+        }
+        table{
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>שם</td>
+                    <td><input id="txt1" type="text" name="fname" required /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>משפחה</td>
+                    <td><input id="txt2" name="family" type="text" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>מגדר</td>
+                    <td>
+                        Male<input type="radio" value="male" name="gender" />
+                        Female<input type="radio" value="female" name="gender" />
+                        Other<input type="radio" value="other" name="gender" />
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <button>Click Me</button>
+        </form>
+    </div>
+</body>
+</html>

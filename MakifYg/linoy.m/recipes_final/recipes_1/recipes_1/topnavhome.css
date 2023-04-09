@@ -1,0 +1,167 @@
+﻿ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+}
+
+li {
+    float: right;
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover, .cakes:hover .dropbtn, cookies:hover, sweetpastries:hover, savorypastries:hover, moses:hover {
+            background-color: #ffcc99;
+        }
+
+    li.cakes {
+        display: inline-block;
+    }
+
+    li.cookies {
+        display: inline-block;
+    }
+
+    li.sweetpastries {
+        display: inline-block;
+    }
+
+    li.savorypastries {
+        display: inline-block;
+    }
+
+    li.moses {
+        display: inline-block;
+    }
+
+
+.cakes-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.cookies-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.sweetpastries-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.savorypastries-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.moses-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.cakes-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.cookies-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.sweetpastries-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.savorypastries-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.moses-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+
+.cakes-content a:hover {
+    background-color: #ffb366;
+}
+
+.cookies-content a:hover {
+    background-color: #ffb366;
+}
+
+.sweetpastries-content a:hover {
+    background-color: #ffb366;
+}
+
+.savorypastries-content a:hover {
+    background-color: #ffb366;
+}
+
+.moses-content a:hover {
+    background-color: #ffb366;
+}
+
+
+.cakes:hover .cakes-content {
+    display: block;
+}
+
+.cookies:hover .cookies-content {
+    display: block;
+}
+
+.sweetpastries:hover .sweetpastries-content {
+    display: block;
+}
+
+.savorypastries:hover .savorypastries-content {
+    display: block;
+}
+
+.moses:hover .moses-content {
+    display: block;
+}

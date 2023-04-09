@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fastest Cars</title>
+    <link href="HomeStyle.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body style="background-color: rgb(1 0 20); color: white ">
+    <div>
+        <ul id="ul">
+            <li style="margin-left: 300px"><a class="active">Home</a></li>
+            <li><a href="Page1.html">Aventador SVJ</a></li>
+            <li><a href="Page2.html">Regera</a></li>
+            <li><a href="Page3.html">Venom F5</a></li>
+            <li><a href="Page4.html">Jesko Absolut</a></li>
+            <li><a href="Page5.html">Chiron Supersport 300+</a></li>
+            <li style="float: right; margin-right: 300px"><button class="button" onclick="document.getElementById('id1').style.display='block'">Sign Up</button></li>
+        </ul>
+    </div>
+    <div style="background-color: rgb(1 0 20); margin-top: 50px; height: 370px">
+        <h1>
+            THE FASTEST CARS IN THE WORLD.
+        </h1>
+    </div>
+
+
+    <div id="id1" class="modal">
+
+        <form class="modal-content animate" onsubmit="return ending()">
+            <div class="containerX">
+                <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <h1 class="h1-model">Sign Up</h1>
+            <div class="container">
+
+                <label class="label">First Name</label>
+                <input class="text" type="text" id="Fname" />
+                <div id="div1"></div>
+
+                <label class="label">Last Name</label>
+                <input class="text" type="text" id="Lname" name="Lname" />
+                <div id="div2"></div>
+
+                <label class="label">Birth Date</label>
+                <input class="text" type="text" id="yborn" maxlength="4">
+                <div id="div3"></div>
+
+                <label class="label">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="gender">Other</label>
+                <div id="div4"></div>
+
+                <label class="label">Email</label>
+                <input class="text" type="email" id="email" />
+                <div id="div5"></div>
+
+                <label class="label">Password</label>
+                <input class="text" type="password" id="password" />
+                <div id="div6"></div>
+
+                <label class="label">Confirm Password</label>
+                <input class="text" type="password" id="Vpassword" />
+                <div id="div7"></div>
+
+                <label class="label">Adress</label>
+                <textarea class="text" rows="5" cols="60" id="Adress"></textarea>
+
+                <label class="label">City</label>
+                <select class="text">
+                    <option></option>
+                    <option>Rishon Lezion</option>
+                    <option>Be'er Sheva</option>
+                    <option>Tel Aviv</option>
+                    <option>Jerusalem</option>
+                    <option>Haifa</option>
+                    <option>Eilat</option>
+                    <option>Other</option>
+                </select>
+
+                <input id="reset" type="reset" value="Reset" />
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div>
+        <video autoplay muted loop style="width: 100%">
+            <source src="images/Untitled%20video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <hr />
+    <table>
+        <tr>
+            <td>
+                <div class="div1">
+                    <h2>
+                        LAMBORGHINI AVENTADOR SVJ
+                    </h2>
+                    <p>
+                        Lamborghini created the Aventador SVJ to embrace challenges head-on, combining cutting-edge technology with extraordinary design, while always refusing to compromise. In a future driven by technology, it’s easy to lose the genuine thrill of driving. But in the future shaped by Lamborghini, this won’t be left behind, because there will always be a driver behind the wheel.
+                    </p>
+                </div>
+            </td>
+            <td><img class="img1" src="images/LAMBORGHINI AVENTADOR SVJ.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+        </tr>
+        <tr>
+            <td><img class="img1" src="images/KOENIGSEGG REGERA.jpeg" alt="LAMBORGHINI AVENTADOR SVJ picture" /></td>
+            <td>
+                <div class="div1">
+                    <h2>
+                        KOENIGSEGG REGERA
+                    </h2>
+                    <p>
+                        The Regera was specifically designed to be a luxury megacar alternative to Koenigsegg’s traditional extreme, lightweight, race-like road-legal cars. It combines a powerful twin-turbo V8 combustion engine with three electric motors and cutting-edge battery power via new powertrain technology     called the Koenigsegg Direct Drive.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table>
+        <tr>
+            <td>
+                <div class="div1">
+                    <h2>
+                        HENNESSEY VENOM F5
+                    </h2>
+                    <p>
+                        The exterior design of the F5 revels in simplicity, combining minimal sharp lines with smooth-flowing surfaces. Every part of the car’s sculpted body is designed to follow the form of the car’s function – to be fast, agile, and stable at all speeds.
+                        Visually, the F5 is shaped by aerodynamics and motivated by the pursuit of velocity. As a result, the hypercar exudes determination, purpose, and drama from every angle. Sculpted aerodynamic ducting complemented by sharp, powerful lines deliver a sense of speed and intent, even while stationary.
+                    </p>
+                </div>
+            </td>
+            <td><img class="img1" src="images/HENNESSEY VENOM F5.jpeg" alt="HENNESSEY VENOM F5 picture" /></td>
+        </tr>
+        <tr>
+            <td><img class="img1" src="images/KOENIGSEGG JESKO ABSOLUT.jpeg" alt="KOENIGSEGG JESKO ABSOLUT picture" /></td>
+            <td>
+                <div class="div1">
+                    <h2>
+                        KOENIGSEGG JESKO ABSOLUT
+                    </h2>
+                    <p>
+                        The Koenigsegg Jesko Absolut has been unveiled. It is the fastest Koenigsegg ever made and the company will never endeavor to make a faster series-production road car – ever. Customers will be able to choose between the Jesko Absolut and the more track-oriented Jesko version that was presented a year ago. Every surface element on the Jesko Absolut has been purposefully constructed to reduce drag or surrounding turbulence around the car while increasing high-speed stability. Although just as powerful, the Jesko Absolut is a more seamless and stealthier interpretation of the Jesko, its track-focused sibling.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <table>
+        <tr>
+
+            <td>
+                <div class="div2">
+                    <h2 class="h2">
+                        BUGATTI CHIRON SUPERSPORT 300+
+                    </h2>
+                    <p class="p">
+                        To mark the sensational record-breaking run that exceeded the magical threshold of 300 miles (482,80 km) per hour for the first time, Bugatti proudly presents the Chiron Super Sport 300+. Limited to 30 units, this very special edition of the Chiron is visually and technically inspired by the record-breaking vehicle.
+                        The Chiron Super Sport 300+ bodywork has been extended and aerodynamically optimized for extremely high speed performance. The perfect balance between low drag and downforce improves performance and stability, even at speeds over 420 km/h. The iconic W16 8.0-liter engine now delivers an output of 1.176 kW/1.600 HP, exceeding the Chiron by 100 HP.
+                        Air curtains located at the corners of the front bumper and air outlets on the front wheel housings release excess pressure, generating slight downforce and reducing resistance. The new rear design is also sure to turn heads. The so-called Longtail extends the body 25 centimeters, allowing the laminar flow to pass over a longer surface, and reducing the aerodynamic stall by more than 40 percent. The new exhaust tailpipe configuration and the diffuser in the rear end also generate negative lift, while further reducing the drag.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="img2" src="https://www.bugatti.com/fileadmin/_processed_/sei/p426/se-image-f4b77537792aeca5d3742cf9f7e48c83.webp" alt="BUGATTI CHIRON SUPERSPORT 300+ picture" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+    

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="home.html"><li>Home</li></a>
+        <a href="Eyal.html"><li>איל קיציס</li></a>
+        <a href="Mariano.html"><li>מריאנו אידלמן</li></a>
+        <a href="Eli.html"><li>אלי פיניש</li></a>
+        <a href="Tal.html"><li>טל פרידמן</li></a>
+        <a href="Asi.html"><li>אסי כהן</li></a>
+        <a href="Music.html"><li>מערכונים</li></a>
+        <a href="register.html"><li>Register</li></a>
+    </nav>
+    <h2>
+        <p style="font-size: 25px; display: inline-block; margin-right: 5px;">Local time:</p>
+        <p id="demo" style="display: inline-block; font-size: 25px;"></p>
+    </h2>
+    <div id="form" style="direction: rtl;">
+        <h2>Please enter your details here:</h2>
+        <form onsubmit="return checkAll()" style="font-size: 20px;">
+            <table>
+                <tr>
+                    <td>שם פרטי</td>
+                    <td><input type="text" class="fullLine" placeholder="שם פרטי" id="firstName" name="firstName" /></td>
+                    <td> <div id="hiddenFname"></div> </td>
+                </tr>
+                <tr>
+                    <td>שם משפחה</td>
+                    <td><input type="text" class="fullLine" placeholder="שם משפחה" id="lastName" name="lastName" /></td>
+                    <td> <div id="hiddenLname"></div> </td>
+                </tr>
+                <tr>
+                    <td>שם משתמש</td>
+                    <td><input type="text" class="fullLine" placeholder="שם משתמש" id="username" name="username" /></td>
+                    <td> <div id="hiddenUsername"></div> </td>
+                </tr>
+                <tr>
+                    <td>שנת לידה</td>
+                    <td><input type="number" class="fullLine" placeholder="שנת לידה" id="year" name="year" /></td>
+                    <td> <div id="hiddenYear"></div> </td>
+                </tr>
+                <tr>
+                    <td>אימייל</td>
+                    <td><input type="text" class="fullLine" placeholder="אימייל" id="email" name="email" /></td>
+                    <td> <div id="hiddenEmail"></div> </td>
+                </tr>
+                <tr>
+                    <td>אזרחות ישראלית או אחרת</td>
+                    <td style="text-align:center;">
+                        אזרחות ישראלית<input type="checkbox" id="firstOption1" name="fistOption1" value="ישראלית">
+                        אחר<input type="checkbox" id="secondOption1" name="secondOption1" value="אחר">
+                    </td>
+                    <td> <div id="hiddenEzrahot"></div> </td>
+                </tr>
+                <tr>
+                    <td>מגדר</td>
+                    <td style="text-align:center;">
+                        זכר<input type="radio" id="firstOption2" name="Gender" value="זכר">
+                        נקבה<input type="radio" id="secondOption2" name="Gender" value="נקבה">
+                        אחר<input type="radio" id="thirdOption2" name="Gender" value="אחר">
+                    </td>
+                    <td> <div id="hiddenGender"></div> </td>
+                </tr>
+                <tr>
+                    <td>סיסמא</td>
+                    <td><input type="password" class="fullLine" placeholder="סיסמא" id="password" name="password"></td>
+                    <td> <div id="hiddenPassword"></div> </td>
+                </tr>
+                <tr>
+                    <td>אימות סיסמא</td>
+                    <td><input type="password" class="fullLine" placeholder="אימות סיסמא" id="verifyPassword" name="password"></td>
+                    <td> <div id="hiddenVerifyPassword"></div> </td>
+                </tr>
+                <tr>
+                    <td>עיר</td>
+                    <td>
+                        <select name="Cities" id="cars">
+                            <option value="ראשון לציון">ראשון לציון</option>
+                            <option value="באר שבע">באר שבע</option>
+                            <option value="תל אביב">תל אביב</option>
+                            <option value="ירושלים">ירושלים</option>
+                            <option value="חיפה">חיפה</option>
+                            <option value="אילת">אילת</option>
+                            <option value="אחר">אחר</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>תחביבים</td>
+                    <td><textarea id="hobbies" class="fullLine" name="w3review" rows="4" cols="50"></textarea></td>
+                    <td> <div id="hiddenHobbies"></div> </td>
+                </tr>
+                <tr>
+                    <td>כיתה</td>
+                    <td><input type="text" class="fullLine" placeholder="כיתה" id="grade" name="grade" maxlength="1"></td>
+                    <td> <div id="hiddenGrade"></div> </td>
+                </tr>
+                <tr>
+                    <td>מקצוע אהוב</td>
+                    <td><input type="text" class="fullLine" placeholder="מקצוע אהוב" id="favorite" name="favoriteSubject"></td>
+                    <td> <div id="hiddenFavorite"></div> </td>
+                </tr>
+                <tr>
+                    <td> <button id="resetButton" type="reset">איפוס</button> </td>
+                    <td> <button id="submitButton" type="submit">שליחה</button> </td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+        </form>
+    </div>
+</body>
+</html>

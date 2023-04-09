@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: #fff0e6;
+            color: #4d1f00;
+        }
+
+        ul.ing li {
+            background: #ffe0cc;
+        }
+
+            ul.ing li:hover {
+                background: #ffd1b3;
+            }
+
+            ul.ing li.checked {
+                background: #ffc299;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>עוגיות שוקולד צ'יפס</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/cookies2.jpeg" style="width:30%; height:30%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כ30-40 עוגיות
+    </div>
+
+    <br />
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">200 גרם מחמאה מומסת</li>
+        <li id="li2" onclick="toggle(li2)">3/4 כוס סוכר חום</li>
+        <li id="li3" onclick="toggle(li3)">1/4 כוס סוכר לבן</li>
+        <li id="li4" onclick="toggle(li4)">2 ביצים</li>
+        <li id="li5" onclick="toggle(li5)">4 טיפות תמצית וניל</li>
+        <li id="li6" onclick="toggle(li6)">2 כוסות קמח + 4 כפות</li>
+        <li id="li7" onclick="toggle(li7)">1 כפית אבקת אפיה</li>
+        <li id="li8" onclick="toggle(li8)">1/2 כפית סודה לשתייה</li>
+        <li id="li9" onclick="toggle(li9)">קורט מלח</li>
+        <li id="li10" onclick="toggle(li10)">1 כוס שבבי שוקולד צ'יפס (חלב/מריר/לבן)</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                בקעת המיקסר (וו גיטרה), שמים סוכר חום + סוכר לבן + מחמאה מומסת ומערבבים לאיחוד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מוסיפים ביצים ותמצית וניל, וממשיכים לערבב
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מוסיפים את היבשים: קמח + אבקת אפייה + סודה לשתייה + מלח. מערבבים הכל לאיחוד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                בשלב זה, עוברים ללישה ידנית ומוסיפים את השוקולד צ'יפס (מומלץ לשלב כמה סוגים ביחד)
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                מכדררים את הבצק לכדורים, ומכניסים למקפיא למשך שעתיים לפחות
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                אופים את העוגיות על 170 מעלות כרבע שעה. העוגיות מוכנות כאשר הן זהובות. אפיית יתר, תגרום להן להתקשות יותר מידי, לכן זה לא מומלץ
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                .מוציאים מאפייה ומצננים. את העוגיות שומרים בקופסא אטומה בטמפרטורת החדר
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="cookies2.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

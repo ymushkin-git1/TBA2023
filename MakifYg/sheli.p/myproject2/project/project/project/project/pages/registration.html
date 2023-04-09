@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title>הרשמה</title>
+    <style>
+        .bg-image {
+            background-image: url('../three.jpg');
+            filter: blur(6px);
+            -webkit-filter: blur(3.5px);
+            height: 100%;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <link href="../Sregistration.css" rel="stylesheet" />
+    <script src="../java script/registrationScript.js"></script>
+</head>
+<body style="direction:rtl">
+    <div class="topnav">
+        <a href="home.html">דף בית</a>
+    </div>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+            <form onsubmit="return ending()">
+                <table class="container">
+                    <tr>
+                        <td>
+                            שם פרטי
+                        </td>
+                        <td>
+                            <input type="text" id="fName" name="fName" placeholder="שם פרטי" />
+                        </td>
+                        <td> <div id="div40"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            שם משפחה
+                        </td>
+                        <td>
+                            <input type="text" id="lName" name="lName" placeholder="שם משפחה" />
+                        </td>
+                        <td> <div id="div41"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            שנת לידה
+                        </td>
+                        <td>
+                            <input type="number" id="year" name="year" placeholder="שנת לידה" />
+                        </td>
+                        <td> <div id="div42"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            אזרחות
+                        </td>
+                        <td>
+                            אזרחות ישראלית
+                            <input type="checkbox" id="nationality1" name="nationality1" />
+                            אזרחות אחרת
+                            <input type="checkbox" id="nationality2" name="nationality2" />
+
+                        </td>
+                        <td> <div id="div43"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            מגדר
+                        </td>
+                        <td>
+                            נקבה
+                            <input type="radio" id="female" name="gender" />
+                            זכר
+                            <input type="radio" id="male" name="gender" />
+                            אחר
+                            <input type="radio" id="other" name="gender" />
+                        </td>
+                        <td> <div id="div44"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            סיסמה
+                        </td>
+                        <td>
+                            <input type="password" id="password1" name="password1" placeholder="סיסמה" />
+                        </td>
+                        <td> <div id="div45"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            אימות סיסמה
+                        </td>
+                        <td>
+                            <input type="password" id="passwordVari1" name="passwordVari1" placeholder="אימות סיסמה" />
+                        </td>
+                        <td> <div id="div46"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            אימייל
+                        </td>
+                        <td><input type="email" id="email" name="email" placeholder="אימייל" /></td>
+                        <td><div id="div500"></div></td>
+                    </tr>
+                    <tr>
+                        <td>שם משתמש</td>
+                        <td><input type="email" id="user1" name="user1" placeholder="שם משתמש"></td>
+                        <td><div id="div501"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            הכנס עיר
+                        </td>
+                        <td>
+                            <select name="city" id="city">
+                                <option>תל אביב</option>
+                                <option>ראשון לציון</option>
+                                <option>ירושלים</option>
+                                <option>אילת</option>
+                                <option>אשדוד</option>
+                                <option>בת ים</option>
+                                <option>באר יעקב</option>
+                                <option>חולון</option>
+                                <option>פתח תקווה</option>
+                                <option>כפר סבא</option>
+                                <option>הרצליה</option>
+                                <option>חיפה</option>
+                                <option>עכו</option>
+                            </select>
+                        </td>
+                        <td> <div id="div10"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            הכנס את התחביבים שלך
+                        </td>
+                        <td>
+                            <textarea id="hobbies1" name="hobbies1" rows="4" cols="50" style="width: 160px; height: 80px;"></textarea>
+                        </td>
+                        <td> <div id="div47"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            הכנס את הגיל שלך
+                        </td>
+                        <td>
+                            <input type="number" id="age1" name="age1" />
+                        </td>
+                        <td> <div id="div48"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            הכנס מספר טלפון
+                        </td>
+                        <td>
+                            <input type="number" id="phone1" name="phone1" />
+                        </td>
+                        <td> <div id="div49"></div></td>
+                    </tr>
+                </table>
+                <div class="clearfix">
+                    <button type="reset" class="cancelbtn">אפס</button>
+                    <button type="submit" class="signupbtn">שלח</button>
+                </div>
+            </form>
+    </div>
+
+</body>
+</html>

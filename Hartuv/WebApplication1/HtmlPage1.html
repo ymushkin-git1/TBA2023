@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <script>
+        function func1() {
+            div1.innerHTML = div1.innerHTML + "1";
+        }
+        function func2() {
+            //document.getElementById("div1").innerHTML = "2";;
+            div1.innerHTML = div1.innerHTML + "2";
+        }
+        function funcMult() {
+            div1.innerHTML = div1.innerHTML + "*";
+        }
+    </script>
+</head>
+<body>
+ 
+    <button onclick="func1()">1</button>
+    <button onclick="func2()">2</button>
+    <button onclick="funcMult()">*</button>
+
+    <div id="div1"></div>
+
+
+</body>
+</html>

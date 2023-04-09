@@ -1,0 +1,206 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Register page</title>
+    <script>
+        function checkValues() {
+            var x = true;
+            x = name() && x;
+            x = familyname() && x;
+            x = checkYear() && x;
+            x = check() && x;
+            x = password3() && x;
+            x = password2() && x;
+            return x;
+        }
+
+        function name() {
+            if (nameOfperson.value.length < 2) {
+                msg1.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                msg1.innerHTML = "תקין";
+
+                return true;
+            }
+        }
+        function familyname() {
+            if (familynameOfperson.value.length < 2) {
+                msg2.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                msg2.innerHTML = "תקין";
+
+                return true;
+
+            }
+        }
+        function checkYear() {
+            if (bornYear.value < 1900 || bornYear.value > 2023) {
+                msg3.innerHTML = "שנה לא תקינה";
+                return false;
+            }
+            else {
+                msg3.innerHTML = "תקין";
+                return true;
+            }
+        }
+        function check() {
+            if (gender1.checked || gender3.checked || gender2.checked) {
+                msg4.innerHTML = "תקין";
+                return true;
+            }
+
+            else {
+                msg4.innerHTML = "נא לבחור ערך";
+                return false;
+            }
+
+        }
+
+        function password3() {
+            if (password1.value.length < 5) {
+                msg5.innerHTML = "סיסמה לא חזקה";
+                return false;
+            }
+            else {
+                msg5.innerHTML = "תקין";
+                return true;
+
+            }
+        }
+        function password2() {
+            if (password1.value != passwordequal.value) {
+                msg6.innerHTML = "סיסמה לא זהה";
+                return false;
+            }
+            else {
+                msg6.innerHTML = "תקין";
+                return true;
+
+            }
+        }
+    </script>
+
+    <style>
+        #table {
+            border: solid;
+            margin-right: 600px;
+            margin-top: 220px;
+            background-color:tan;
+            width:800px;
+            height:500px;
+        }
+    </style>
+</head>
+<body dir="rtl">
+
+    <form onsubmit="return checkValues()">
+
+        <table id="table">
+            <tr>
+                <td>שם פרטי</td>
+                <td><input type="text" id="nameOfperson" name="name"/></td>
+                <td id="msg1">הכנס שם פרטי</td>
+
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td><input id="familynameOfperson" type="text" name="fname"/></td>
+                <td id="msg2">הכנס שם משפחה</td>
+            </tr>
+
+            <tr>
+                <td>שנת לידה</td>
+                <td><input type="text" id="bornYear" name="born"/></td>
+                <td id="msg3">הכנס שנת לידה</td>
+            </tr>
+            <tr>
+                <td>אזרחות ישראלית/ אחרת</td>
+                <td><input type="checkbox" name="id"/>ישראלית <input type="checkbox" />אחרת</td>
+                <td>הכנס בעל איזו אזרחות אתה</td>
+
+            </tr>
+            <tr>
+                <td>מגדר</td>
+                <td>
+                    <input type="radio" name="name1" id="gender1" />
+                    <label>זכר</label>
+                    <input type="radio" name="name1" id="gender2" />
+                    <label>נקבה</label>
+                    <input type="radio" name="name1" id="gender3" />
+                    <label>אחר</label>
+                </td>
+                <td id="msg4">הכנס מגדר</td>
+
+            </tr>
+            <tr>
+                <td>סיסמה</td>
+                <td><input type="password" id="password1" name="password"/></td>
+                <td id="msg5">הכנס סיסמה</td>
+
+            </tr>
+
+            <tr>
+                <td>אימות סיסמה</td>
+                <td><input type="password" id="passwordequal" name="checkpassword"/></td>
+                <td id="msg6">אמת סיסמה</td>
+
+            </tr>
+            <tr>
+                <td>עיר</td>
+                <td>
+                    <select>
+                        <option>ראשון לציון</option>
+                        <option>ירושלים</option>
+                        <option>תל אביב</option>
+                    </select>
+                </td>
+                <td>בחר עיר</td>
+
+            </tr>
+            <tr>
+                <td>תחביבים</td>
+                <td><input type="text" name="hobbies"/></td>
+                <td>הכנס תחביבים</td>
+            </tr>
+            <tr>
+                <td>מעל גיל 18</td>
+                <td>
+                    <select>
+                        <option> כן</option>
+                        <option>לא</option>
+                    </select>
+                </td>
+                <td>האם את/ה מעל גיל 18</td>
+
+            </tr>
+            <tr>
+                <td>נשוי</td>
+                <td>
+                    <select>
+                        <option>כן</option>
+                        <option>לא</option>
+                    </select>
+                </td>
+                <td>נשוי או רווק</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Send</button>
+                </td>
+                <td>
+                    <a href = "Mainpage.html">Go to main page</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

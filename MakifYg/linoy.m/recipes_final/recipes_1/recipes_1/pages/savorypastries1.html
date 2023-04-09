@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #fff0e6;
+            color: #4d1f00;
+        }
+
+        ul.ing li {
+            background: #ffe0cc;
+        }
+
+            ul.ing li:hover {
+                background: #ffd1b3;
+            }
+
+            ul.ing li.checked {
+                background: #ffc299;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>לחמניות שום נתלשות במילוי גבינה</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/savorypastries1.jpeg" style="width:30%; height:30%; float:left;" />
+    </div>
+
+    <div class="dives">
+        כ25 יחידות
+    </div>
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+
+    <ul id="myUL" class="ing" style="width:120%">
+        <li id="li1" onclick="toggle(li1)">500 גרם (3 כוסות וחצי ועוד כף) קמח</li>
+        <li id="li2" onclick="toggle(li2)">8 גרם (שלושת רבעי כף) שמרים יבשים או 25 גרם שמרים טריים</li>
+        <li id="li3" onclick="toggle(li3)">40 גרם (4 כפות) סוכר</li>
+        <li id="li4" onclick="toggle(li4)">כפית ושליש מלח</li>
+        <li id="li5" onclick="toggle(li5)">3-4 שיני שום כתושות</li>
+        <li id="li6" onclick="toggle(li6)">60 מ"ל (רבע כוס) שמן זית</li>
+        <li id="li7" onclick="toggle(li7)">120 מ"ל (חצי כוס) מים</li>
+        <li id="li8" onclick="toggle(li8)">160 מ"ל (שני שליש כוס) חלב (או עוד מים לגירסת פרווה)</li>
+        <li id="li9" onclick="toggle(li9)">250 גרם גבינת מוצרלה או קשקבל למילוי (לא חובה)</li>
+    </ul>
+
+    <div class="dives">
+        לציפוי חמאה, שום ובזיליקום:
+    </div>
+
+    <ul id="myUL" class="ing" style="width:120%">
+        <li id="li10" onclick="toggle(li10)">1 ביצה, להברשה</li>
+        <li id="li11" onclick="toggle(li11)">מעט מלח גס</li>
+        <li id="li12" onclick="toggle(li12)">100 גרם חמאה מומסת (אפשר גם שמן זית לגירסת פרווה)</li>
+        <li id="li13" onclick="toggle(li13)">3-4 שיני שום כתושות</li>
+        <li id="li14" onclick="toggle(li14)">2 כפות בזיליקום טרי, קצוץ דק דק</li>
+        <li id="li15" onclick="toggle(li15)">פרמז'ן מגורר</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                בקערת מערבל חשמלי עם וו הלישה מערבבים קמח, שמרים, סוכר ומלח.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מוסיפים שיני שום כתושות, שמן זית, מים וחלב בהדרגה, לשים 10-12 דקות לבצק אלסטי ורך. במידה והבצק דביק מדי ניתן להוסיף עוד קצת קמח.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מפזרים על הבצק מעט קמח, מעצבים לכדור רך, מעבירים לקערה גדולה, מכסים במגבת נקייה או בניילון נצמד ומתפיחים עד להכפלת הנפח.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                מוציאים אוויר מהבצק ומחלקים אותו על משטח מקומח קלות ל-25 חלקים לקבלת לחמניות בינוניות, או לכ-50 חלקים לקבלת כדורי ביס. חותכים את המוצרלה/הקשקבל ל-25-50 קוביות בהתאם.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                משטחים קלות בכל פעם כדור בצק בכף היד, מניחים במרכז קוביית מוצרלה, סוגרים את קצוות הבצק מעל ומגלגלים לכדור. הקפידו לאטום את הבצק היטב כדי שהמוצרלה לא תימס ותנזול החוצה בזמן האפייה. חוזרים על הפעולה עד למילוי הכדורים כולם.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                מסדרים את הכדורים בתבנית עגולה כרצונכם: אפשר להניס כלי עגול במרכז ומסביבו להניח את הכדורים. אפשר גם למלא את כל התבנית בכדורים
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                מכסים את הכדורים בניילון נצמד רופף ומתפיחים כמעט עד שמכפילים את נפחם.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                8)
+            </td>
+            <td>
+                מחממים תנור ל-180 מעלות. מברישים את הכדורים בביצה טרופה עם כפית מים ומפזרים מעל כל לחמניה מעט מלח גס.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                9)
+            </td>
+            <td>
+                אופים 20-25 דקות עד שהלחמניות מקבלות גוון זהוב-שחום יפה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                10)
+            </td>
+            <td>
+                בזמן האפייה מערבבים בקערה חמאה מומסת עם שיני שום כתושות ובזיליקום קצוץ, מברישים את הלחמניות החמות בתערובת בעזרת מברשת אפייה מיד כשיוצאות מהתנור.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                11)
+            </td>
+            <td>
+                מסירים את הכלי ממרכז המאפה בעדינות, מצננים מעט וזוללים. אם רוצים מניחים במרכז המאפה קערת רוטב עגבניות לטבילה בעת ההגשה.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+    <a href="savorypastries1.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+</body>
+</html>

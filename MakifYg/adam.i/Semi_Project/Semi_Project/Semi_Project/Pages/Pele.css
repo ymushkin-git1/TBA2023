@@ -1,0 +1,46 @@
+﻿body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../Images/130401212740-pele-brazil-single-image-cutjpg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 20;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.P1 {
+    color: white;
+}
+
+#clock {
+    color: white;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 43px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #04AA6D;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }

@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script>
+
+        function checkValues() {
+            var result = checkFirstName();
+            result = checkYear() && result;
+            result = checkLastName() && result;
+            result = checkmail() && result;
+            result = checksex() && result;
+            result = checkpass() && result;
+            result = verpass() && result;
+            result = checkphone() && result;
+            return result;
+        }
+
+        function checkFirstName() {
+            if (fname.value.length < 2) {
+                fname1.innerHTML = "השם הפרטי צריך להיות שתי אותיות או יותר";
+                return false;
+            }
+            else {
+                fname1.innerHTML = "";
+                return true;
+
+            }
+        }
+        function checkLastName() {
+            if (lname.value.length < 2) {
+                divlname.innerHTML = "שם המשפחה צריך להיות שתי אותיות או יותר";
+                return false;
+            }
+            else {
+                divlname.innerHTML = "";
+                return true;
+
+            }
+        }
+
+        function checkYear() {
+            if (idbdate.value < 1900 || idbdate.value > 2023) {
+                idbdatecheck.innerHTML = "השנה חייבת להיות בין 1900 ל2023";
+                return false;
+            }
+            else {
+                idbdatecheck.innerHTML = "";
+                return true;
+            }
+        }
+        function checkmail() {
+            if (gmail.value.length = 0) {
+                divmail.innerHTML = "זהו שדה חובה";
+                return false;
+            }
+            else {
+                divmail.innerHTML = "";
+                return true;
+            }
+
+        }
+        function checksex() {
+            if (idFemale.checked) {
+                divsex.innerHTML = "";
+                return true;
+
+            }
+            else {
+                if (idMale.checked)
+                {
+                    divsex.innerHTML = "";
+                    return true;
+                }
+                else {
+                    if (idOther.checked) {
+                        divsex.innerHTML = ""
+                        return true;
+                    }
+
+                    else {
+                        divsex.innerHTML = "זהו שדה חובה";
+                        return false;
+                    }
+                }
+            }
+
+
+        }
+        function checkpass() {
+            if (pass.value.length=0) {
+                divpass.innerHTML = "נדרשת ששמה";
+                return false;
+            }
+            else
+                return true;
+        }
+        function verpass() {
+            if (passver.value != pass.value) {
+                divpassver.innerHTML = "אימות הסיסמא אינו מתאים לסיסמא";
+                return false;
+            }
+            else
+                return true;
+        }
+        function checkphone() {
+            if (phone.value < 1000000000) {
+                divphone.innerHTML = "מספר הטלפון חייב להיות ארוך יותר
+                return false;
+            }
+            else {
+
+                divphone.innerHTML = "";
+                return true;
+            }
+        }
+            
+
+        
+    </script>
+
+    <style>
+        .hobbies {
+            width: 350px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <form dir="rtl" onsubmit="return checkValues()">
+        <table dir="rtl" style="text-align:right; font-weight:800; font-size:150%">
+            <tr>
+        <td>
+            שם פרטי: <input type="text" placeholder="הכנס שם פרטי" id="fname" name="fname" />
+        </td>
+        <td>
+            <div id="fname1"> </div>
+        </td>
+            </tr>
+            <tr>
+                <td>
+                    שם משפחה: <input type="text" placeholder="הכנס שם משפחה" id="lname" name="lname" />
+
+                </td>
+                <td>
+                    <div id="divlname"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    אימייל: <input type="text" name="gmail" id="gmail" placeholder="הכנס אימייל" />
+                </td>
+                <td>
+                    <div id="divmail"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    תאריך לידה: <input type="date" id="idbdate" name="idbdate" />
+                </td>
+                <td>
+                    <div id="idbdatecheck"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    מין: <div id="div1"></div>
+
+                </td>
+                <td>
+                </td>
+
+            </tr>
+            <tr style="font-size:70%">
+                <td>
+                    זכר <input type="radio" id="idMale" name=" gender" value="male" />
+                </td>
+                <td>
+                    <div id="divsex"></div>
+                </td>
+            </tr>
+            <tr style="font-size:70%">
+                <td>
+                    נקבה <input type="radio" id="idFemale" name=" gender" value="female" />
+                </td>
+                <td>
+                </td>
+            </tr>
+
+            <tr style="font-size:70%">
+                <td>
+                    אחר <input type="radio" id="idOther" name=" gender" value=" other" />
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    סיסמא: <input type="password" id="pass" placeholder="הכנס סיסמא" name="pass" />
+
+                </td>
+                <td>
+                    <div id="divpass"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    אימות סיסמא: <input type="password" id="passver" placeholder="הכנס סיסמא שוב" name=" =passver" />
+                </td>
+                <td>
+                    <div id="divpassver"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    עיר:
+                    <select name="cityselect">
+                        <option> select city </option>
+                        <option value=" Rishon Letzion ">rishon letzion</option>
+                        <option value=" Tel Aviv"> Tel Aviv</option>
+                        <option value=" Jerusalem"> Jerusalem</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    תחביבים:
+                    <input type="text" class="hobbies" name="hobbies" id="hobbies" placeholder="הכנס תחביבים" />
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    מספר טלפון: <input type="number" placeholder="הכנס מפר טלפון" id="phone" name="phone" />
+                </td>
+                <td>
+                    <div id="divphone"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit"> שלח</button>
+                </td>
+                <td>
+                    <button type="reset"> מחק הכל</button>
+                </td>
+            </tr>
+
+
+        </table>
+        <a href="main.html">כנס לאתר ללא הרשמה</a>
+        
+
+    </form>
+
+</body>
+</html>

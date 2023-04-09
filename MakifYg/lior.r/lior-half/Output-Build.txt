@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: shalev reitan, Configuration: Debug Any CPU ------
+1>  shalev reitan -> C:\Users\gil\Desktop\‏‏תיקיה חדשה\shalev reitan\shalev reitan\bin\shalev reitan.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

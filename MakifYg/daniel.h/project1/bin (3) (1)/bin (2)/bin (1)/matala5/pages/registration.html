@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../ragistration.css" rel="stylesheet" />
+
+    <script>
+
+        //בדיקה סופית
+        function checkAllFields() {
+            var result = checkFirstName();
+            result = checkLastName() && result;
+            result = checkYear() && result;
+            result = checkAzarachot() && result;
+            result = checkgender() && result;
+            result = checkPassword() && result;
+            result = checkright() && result;
+            result = checkcity() && result;
+            result = checkhobbies() && result;
+            result = email() && result;
+            result = checkphone() && result;
+            return result;
+        }
+
+
+        /*שם פרטי*/
+        function checkFirstName() {
+            if (firstname.value.length < 2) {
+                div1.innerHTML = "חייב להיות יותר ארוך מתו אחד";
+                return false;
+            }
+            else
+                div1.innerHTML = "";
+                return true;
+        }
+
+        //שם משפחה
+        function checkLastName() {
+            if (lastname.value.length < 3) {
+                div2.innerHTML = "חייב להיות יותר ארוך מ-3  תווים";
+                return false;
+            }
+            else
+                div2.innerHTML = "";
+                return true;
+        }
+
+        //שנת לידה
+        function checkYear() {
+            if (bornYear.value < 1900 || bornYear.value > 2023) {
+                div3.innerHTML = "יש למלא ערך בין 1900 ל 2023";
+                return false;
+            }
+            else
+                div3.innerHTML = "";
+                return true;
+        }
+
+        /*אזרחות*/
+        function checkAzarachot() {
+            if (azarachotI.checked || other.checked) {
+                div4.innerHTML = "";
+                return true;
+            }
+            else {
+                div4.innerHTML = "בחר אחת מהאופציות";
+                return false;
+            }
+        }
+
+        /*מגדר*/
+        function checkgender() {
+            if (female.checked || male.checked ) {
+                div5.innerHTML = " ";
+                return true;
+            }
+            else {
+                div5.innerHTML = "בחר אחת מהאופציות";
+                return false;
+            }
+        }
+
+
+        //סיסמה
+        function checkPassword() {
+            if (password1.value < 7) {
+                div6.innerHTML = "הסיסמה צריכה להיות מעל 7 תווים ";
+                return false;
+            }
+            else
+                div6.innerHTML = "";
+                return true;
+        }
+        /*אימות סיסמה*/
+        function checkright() {
+            if (password1.value != password2.value) {
+                div7.innerHTML = "אימות סיסמה לא תואם";
+                return false;
+            }
+            else
+                div7.innerHTML = "";
+                return true;
+        }
+        /*עיר*/
+        function checkcity() {
+            if (city.selectedIndex == 0 ) {
+                div8.innerHTML = "חובה לבחור";
+                return false;
+            }
+            else
+                div8.innerHTML = "";
+                return true;
+        }
+        /*תחביבים*/
+        function checkhobbies() {
+            if (hobbies.value == "") {
+                div9.innerHTML = "שדה חובה";
+                return false;
+            }
+            else
+                div9.innerHTML = "";
+                return true;
+        }
+        /*אימייל*/
+        function email() {
+            if (email1.value == "") {
+                div10.innerHTML = "חובה למלא אימייל";
+                return false;
+            }
+            if (email1.value.indexOf("@") <= 0) {
+                div10.innerHTML = "לא נמצא הסימן @";
+                return false;
+            }
+            else
+                div10.innerHTML = "";
+                return true;
+        }
+        /*טלפון*/
+        function checkphone() {
+            if (phone1.value.length != 10 || isNaN(phone1.value)) {
+                div11.innerHTML = "מספר טלפון לא תקין";
+                return false;
+            }
+            else
+                div11.innerHTML = "";
+                return true;
+        }
+
+  
+
+    </script>
+
+</head>
+<body>
+
+    
+
+    <div id="header">
+
+        <a href="../pages/HtmlPage1.html"><img src="../img/בית.gif" alt="home" style=" float: left; padding-left: 20px;"></a>
+
+        <h1>טופס הרשמה לאתר</h1>
+    </div>
+    <form id="formregister" onsubmit="return checkAllFields()" >
+        <table id="table">
+            <tr>
+                <td>שם פרטי:</td>
+                <td>
+                    <input type="text" id="firstname" name="firstname" placeholder="שם פרטי" />
+                </td>
+                <td>
+                    <div id="div1" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>שם משפחה: </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" placeholder="שם משפחה " />
+                </td>
+                <td>
+                    <div id="div2" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td> שנת לידה : </td>
+                <td>
+                    <input type="number" id="bornYear" name="bornYear" /><br />
+                </td>
+                <td>
+                    <div id="div3" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td> אזרחות </td>
+                <td>
+                    אזרחות ישראלית : <input type="checkbox" id="azarachotI" name="azarachot" value="אזרחות ישראלית"/>
+                    אחר : <input type="checkbox"  id="other" name="azarachot" value="אחר"/>
+                </td>
+                <td><div id="div4" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> מגדר :</td>
+                <td>
+                    נקבה: <input type="radio" id="female" name="gender" />
+                    זכר: <input type="radio" id="male" name="gender" />
+                </td>
+                <td><div id="div5" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> סיסמא : </td>
+                <td>
+                    <input type="password" id="password1" name="password1" />
+                </td>
+                <td><div id="div6" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> אימות סיסמא : </td>
+                <td>
+                    <input type="password" id="password2" name="password2" />
+                </td>
+                <td><div id="div7" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> עיר :</td>
+                <td>
+                    <select id="city" name="city">
+                        <option value="choose ">בחר עיר </option>
+                        <option value="ראשון לציון ">ראשון לציון</option>
+                        <option value="תל אביב ">תל אביב</option>
+                        <option value="באר שבע">באר שבע</option>
+                        <option value="אשדוד">אשדוד</option>
+                        <option value="אחר">אחר</option>
+
+                    </select>
+                </td>
+                <td><div id="div8" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> תחביבים :</td>
+                <td>
+                    <textarea id="hobbies" name="hobbies" rows="4" cols="40"></textarea>
+                </td>
+                <td><div id="div9" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> אימייל :</td>
+                <td>
+                    <input type="email" id="email1" name="email1" />
+                </td>
+                <td><div id="div10" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td>טלפון  : </td>
+                <td>
+                    <input type="number" id="phone1" name="phone1" />
+                </td>
+                <td><div id="div11" style="color:red"></div></td>
+            </tr>
+
+        </table>
+        <button type="submit">שלח</button>
+        <button type="reset">אפס</button>
+    </form>
+</body>
+</html>

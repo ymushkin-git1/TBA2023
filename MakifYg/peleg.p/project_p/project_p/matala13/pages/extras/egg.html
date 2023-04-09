@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../StyleSheet1.css" rel="stylesheet" />
+    <script >
+        function nutrition9() {
+            var x = serving.value;
+            cgrams.innerHTML = 46 * x;
+            C.innerHTML = 90 * x;
+            tfgrams.innerHTML = 6.8 * x;
+            tfat.innerHTML = 10 * x;
+            Sfgrams.innerHTML = 2 * x;
+            Sfat.innerHTML = 10 * x;
+            Tfgrams.innerHTML = 0 * x;
+            Pfgrams.innerHTML = 1.5 * x;
+            Mfgrams.innerHTML = 2.8 * x;
+            Chgrams.innerHTML = 184 * x;
+            Chole.innerHTML = 61 * x;
+            Sograms.innerHTML = 95 * x;
+            Sod.innerHTML = 4 * x;
+            Pograms.innerHTML = 70 * x;
+            Pota.innerHTML = 2 * x;
+            Tcgrams.innerHTML = 0.4 * x;
+            Totc.innerHTML = 0* x;
+            Dief.innerHTML = 0 * x;
+            Suga.innerHTML = 0.2 * x;
+            Prot.innerHTML = 6.3 * x;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="../../pages/HtmlPage1.html">home</a>
+        <a href="../../pages/option.html">Menu</a>
+        <a href="../../pages/combo.html">Create</a>
+        <a class="b" href="../../pages/login.html">log in</a>
+    </div><br /><br /><br /><br /><br />
+    <div>
+        <table class="title">
+            <tr>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>est </strong></td>
+                <td></td>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>urger </strong></td>
+                <td style="color:saddlebrown"><strong>C</strong></td>
+                <td style="color:rosybrown"><strong>ombo</strong></td>
+            </tr>
+        </table>
+        <br /><br />
+        <div class="title3" style="position:relative; left:35px ;">
+           Sunny Side Up:
+        </div>
+        <div class="txt1" style="position:relative; left:30px; top:50px;">
+            <b>The Sunny Side Up has a lot of benefits for your body.<br /></b>
+            - It Supports Bone Health. <br />
+            - It can also help you control your weight.<br />
+            - They are inexpensive good quality protein rich foods.<br />
+            - They are rich in vitamins.<br />
+        </div>
+        <table style="position:relative; left:30px; top:60px;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <b class="txt3">
+                                    Nutrition Facts
+                                </b>
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Sunny Side Up
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Serving Size:<select id="serving">
+                                    <option id="option1" value="1">1</option>
+                                    <option id="option2" vlaue="2">2</option>
+                                    <option id="option3" value="3">3</option>
+                                    <option id="option4" value="4">4</option>
+                                    <option id="option5" value="5">5</option>
+                                </select><button id="change" onclick="nutrition9()">change serving</button> roll (<a id="cgrams">46</a>)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color:black"><hr /></td>
+                        </tr>
+                        <tr><td style="color:black"><hr /></td></tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Calories</b><a class="txt4" id="C">90</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4" style="position:relative; left:300px;">% Daily Value</b>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Fat </b><a id="tfgrams" class="txt4">6.8</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <a id="tfat" class="txt5" style="position:relative; left:65px;">10</a><b class="txt5" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Saturated Fat</a> <a class="txt4" id="Sfgrams">2</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b id="Sfat" class="txt5" style="position:relative; left:35px;">10</b><b class="txt4" style="position:relative; left:35px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Trans Fat</a> <a class="txt4" id="Tfgrams">0</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Polyunsaturated Fat</a> <a class="txt4" id="Pfgrams">1.5</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Monounsaturated  Fat</a> <a class="txt4" id="Mfgrams">2.8</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Cholesterol</b> <a class="txt4" id="Chgrams">184</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Chole" style="position:relative; left:65px;">61</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Sodium</b> <a class="txt4" id="Sograms">95</a><a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Sod" style="position:relative; left:65px;">4</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Potassium</b><a class="txt4" id="Pograms">70</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Pota" style="position:relative; left:65px;">2</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Carbohydrates</b><a class="txt4" id="Tcgrams">0.4</a> <a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Totc" style="position:relative; left:65px;">0</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Dietary Fiber</a> <a class="txt4" id="Dief">0</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Sugars</a> <a class="txt4" id="Suga">0.2</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Protein </b><a class="txt4" id="Prot"> 6.3</a> <a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+               
+            </tr>
+         
+        </table>
+
+    </div>
+</body>
+</html>

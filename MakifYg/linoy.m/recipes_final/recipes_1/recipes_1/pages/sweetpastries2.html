@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+
+
+    <style>
+        body {
+            background-color: #fff0e6;
+            color: #4d1f00;
+        }
+
+        ul.ing li {
+            background: #ffe0cc;
+        }
+
+            ul.ing li:hover {
+                background: #ffd1b3;
+            }
+
+            ul.ing li.checked {
+                background: #ffc299;
+                color: #fff;
+            }
+    </style>
+
+</head>
+<body dir="rtl">
+
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+    <br />
+
+    <div class="name">
+        <h1>רוגעלך שוקולד</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left:60px;">
+        <img src="../img/sweetpastries2.jpeg" style="width:35%; height:35%; float:left;" />
+    </div>
+
+    <div class="dives">
+        20 יחידות גדולות / 40 יחידות קטנות
+    </div>
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">470 גרם קמח</li>
+        <li id="li2" onclick="toggle(li2)">21 גרם שמרים טריים ( 8 גרם יבשים)</li>
+        <li id="li3" onclick="toggle(li3)">1/2 כוס סוכר ( 100 גרם )</li>
+        <li id="li4" onclick="toggle(li4)">1 ביצה</li>
+        <li id="li5" onclick="toggle(li5)">240 מ"ל חלב/ מים</li>
+        <li id="li6" onclick="toggle(li6)">60 גרם חמאה/ נטורינה</li>
+        <li id="li7" onclick="toggle(li7)">קורט מלח</li>
+        <li id="li8" onclick="toggle(li8)">*ביצה להברשה</li>
+    </ul>
+
+    <div class="dives">
+        למלית קקאו:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li9" onclick="toggle(li9)">200 גרם חמאה/ נטורינה מומסת</li>
+        <li id="li10" onclick="toggle(li10)">1 כוס קקאו</li>
+        <li id="li11" onclick="toggle(li11)">1/2 כוס סוכר לבן</li>
+        <li id="li12" onclick="toggle(li12)">1/2 כוס סוכר חום בהיר</li>
+    </ul>
+
+    <div class="dives">
+        למלית שקדים:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li13" onclick="toggle(li13)">100 גרם חמאה/ נטורינה מומסת</li>
+        <li id="li14" onclick="toggle(li14)">100 גרם אבקת סוכר</li>
+        <li id="li15" onclick="toggle(li15)">100 גרם שקדים טחונים</li>
+        <li id="li16" onclick="toggle(li16)">1 ביצה</li>
+        <li id="li16" onclick="toggle(li16)">1 כף קמח</li>
+    </ul>
+
+    <div class="dives">
+        מי סוכר:
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li17" onclick="toggle(li17)">1 כוס מים</li>
+        <li id="li18" onclick="toggle(li18)">1/2 כוס סוכר לבן</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td style="width:10px ; text-align:center">
+                1)
+            </td>
+            <td>
+                בקערת המיקסר מניחים קמח, שמרים , סוכר ומתחילים לערבב עם וו לישה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                2)
+            </td>
+            <td>
+                מוסיפים תוך כדי את הביצה , החלב והחמאה. ממשיכים ללוש כ-10 דקות נוספות ולקראת הסוף מוסיפים קורט מלח.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                3)
+            </td>
+            <td>
+                מניחים את הבצק בקערה משומנת ומניחים להתפחה עד הכפלת הנפח או לילה במקרר.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                4)
+            </td>
+            <td>
+                ממשיכים למילוי קקאו: ממיסים את החמאה במיקרוגל ונותנים לה מעט להתקרר ( חשוב שלא תהיה חמה מידי) מוסיפים את הקקאו והסוכר הלבן והחום. מערבבים היטב עד מלית אחידה וגרגירית , מניחים בצד עד השימוש ( תשימו לב שאם היא ממש מתייצבת ופחות נוחה למריחה – ניתן לחמם 30 שניות במיקרוגל ).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                5)
+            </td>
+            <td>
+                למילוי שקדים: בקערת המיקסר מניחים חמאה, אבקת סוכר ושקדים טחונים , בעזרת וו גיטרה מערבלים היטב עד שהופך לקרם. מוסיפים לבסוף את הביצה והקמח וממשיכים לערבב היטב עד קרם יציב ( תשימו לב שלא נשארו גושי חמאה ושכל התחתית התערבבה היטב עם הקרם ).
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                6)
+            </td>
+            <td>
+                עיצוב הרוגלך: מניחים את הבצק שתפח לנו על משטח עבודה מקומח , מחלקים לחצי ועובדים כל פעם עם חצי.
+
+                את מחצית הבצק מניחים על משטח עבודה מקומח , מרדדים מלבן דק. מעל המלבן מורחים מלית קקאו בשכבה דקה.
+
+                מקפלים את המלבן לחצי ( מניחים אחד על השני ), מרדדים את המלבן שוב, כך שיהיה מעט שקוף ושנקבל מלבן דק. בשלב זה ניתן להתחיל לגלגל לרוגלך ואפשר גם למרוח מילוי פעם נוספת , זה לבחירתכם.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                7)
+            </td>
+            <td>
+                אם בחרתם לא למרוח מלית , זה הזמן לחתוך למשולשים קטנים ולגלג , מהבסיס אל השפיץ.
+
+                אם בחרתם למרוח מילוי נוסף, מורחים שכבה דקה ובזהירות רבה חותכים למשולשים קטנים. יש סיכוי שהסכין מעט תדבק לכם, מומלץ מידי פעם לנקות עם נייר.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                8)
+            </td>
+            <td>
+                אחרי שגלגלנו למשולשים , מניחים על מגש אפייה מרופד בנייר אפייה , מניחים את הרוגלך במרווחים קטנים ומניחים להתפחה כחצי שעה עד שעה.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                9)
+            </td>
+            <td>
+                מחממים תנור ל-170 מעלות מצב סטטי.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                10)
+            </td>
+            <td>
+                מכניסים לתנור ל-20 דקות עד שהפחזניות יתנפחו ויזהיבו.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                11)
+            </td>
+            <td>
+                לאחר התפחה מברישים את הרוגלך עם ביצה ומכניסים לאפייה , כ-25 עד 30 דקות או עד שהרוגלך מזהיבים.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                12)
+            </td>
+            <td>
+                מכינים מי סוכר: בקלחת מניחים סוכר ומים, מביאים לרתיחה ומניחים בצד עד השימוש.
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td style="width:10px ; text-align:center">
+                13)
+            </td>
+            <td>
+                מוציאים את הרוגלך מאפייה, לאחר אפייה מברישים עם מי סוכר. מניחים בצד להצטנן ואוכלים!
+
+                את הרוגלך ניתן לשמור בקופסא אטומה בטמפרטורת החדר.
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    <a href="sweetpastries2.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

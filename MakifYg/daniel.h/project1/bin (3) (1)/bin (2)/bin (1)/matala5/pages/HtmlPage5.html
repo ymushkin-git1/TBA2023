@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>מגרש דשא</title>
+    <link href="../StyleSheet5.css" rel="stylesheet" />
+    <link href="../common.css" rel="stylesheet" />
+</head>
+<body>
+
+    <ul class="a">
+        <li><a class="active" href="HtmlPage1.html">ראשי</a></li>
+        <li><a href="HtmlPage2.html">עמוד 1</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage3.html" class="dropbtn">עמוד 2</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html#position">עמידה נכונה</a>
+                <a href="HtmlPage3.html#sweep">תנופה</a>
+                <a href="HtmlPage3.html#serve">תנועת הגשה</a>
+            </div>
+        </li>
+        <li><a href="HtmlPage4.html">עמוד 3</a></li>
+        <li><a href="HtmlPage5.html">עמוד 4</a></li>
+        <li><a href="HtmlPage6.html">עמוד 5</a></li>
+        <li class="dropdown">
+            <a href="HtmlPage7.html" class="dropbtn">עמוד 6</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage7.html#serve">serve</a>
+                <a href="HtmlPage7.html#Backhand">Backhand</a>
+                <a href="HtmlPage7.html#topspin">topspin</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="div1" style="font-size:150%">
+        <h1> מגרש מדשא</h1>
+        <br />
+        <p>
+            משטח דשא הוא אחד משלושת הסוגים השונים של משטחי טניס בהם משחקים את ספורט הטניס, בנוסף למשטח קשה ומשטח חימר. מגרשי דשא עשויים מדשאים בהרכבים שונים בהתאם לטורניר.
+
+            אף על פי שמגרשי דשא ותיקים יותר מאשר סוגי המשטחים האחרים, עלויות התחזוקה של מגרשי דשא גבוהות מאלו של מגרשים קשים ומגרשי חימר. יש להשאיר מגרשי דשא (בהיעדר כיסויים מתאימים) להתייבש במשך היום אם יש גשם, מכיוון שהדשא הופך לחלקלק מאוד כשהוא רטוב.
+
+            מגרשי דשא הם הנפוצים ביותר בממלכה המאוחדת, אם כי בצפון-מזרח ארצות הברית יש גם כמה מגרשי דשא פרטיים.
+        </p>
+        <h2 >סגנון משחק</h2>
+
+        <p> מכיוון שמגרשי הדשא נוטים להיות חלקלקים, הכדור מחליק ומקפץ לעיתים קרובות נמוך יותר תוך שמירה על מרבית המהירות שלו, ורק לעיתים רחוקות עולה מעל גובה הברך. בנוסף, לעיתים קרובות קורות עליו הקפצות שגויות. כתוצאה מכך, שחקנים חייבים להגיע לכדור מהר יותר, במיוחד בהשוואה למשטחים איטיים יותר כמו חימר או מגרשים קשים, לכן סביר להניח שהנקודות יהיו קצרות יחסית. מהירות וכוח הן התכונות החשובות ביותר למשחק על הדשא. על הדשא, ההגשה והחזרה ממלאות תפקיד מרכזי בקביעת תוצאת הנקודה. הגשה, החזרה ומיקוד אינטנסיבי הם קריטיים לזכייה בנקודות, ומגרש דשא מעדיף סגנון משחק של הגשה וחבטה מהאוויר (וולי).</p>
+
+    </div>
+    <button onclick="zoomintext()">+ הגדל </button>
+    <button onclick="zoomouttext()">- הקטן</button>
+    <script>
+
+
+        fontSize = 26;
+        function zoomintext() {
+            newfontSize = fontSize * (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext() {
+            newfontSize = fontSize / (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+
+    </script>
+</body>
+</html>

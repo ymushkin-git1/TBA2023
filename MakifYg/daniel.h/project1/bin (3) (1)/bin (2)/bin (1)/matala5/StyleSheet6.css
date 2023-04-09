@@ -1,0 +1,27 @@
+﻿body {
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('img/אצטדיון1.jpg');
+}
+
+
+h2{
+    text-align: center;
+    color:antiquewhite;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    direction: rtl;
+    color:white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+    font-weight: 400;
+    display: block;
+    font-family: Geneva, Verdana, sans-serif;
+}
+

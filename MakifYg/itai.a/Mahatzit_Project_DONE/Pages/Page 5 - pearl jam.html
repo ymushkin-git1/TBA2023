@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+
+    <script>
+        function picswitch() {
+            var x = document.getElementById("pic1").src;
+            if (x.endsWith("images/pearl.jpg")) {
+                document.getElementById("pic1").src = "../images/jam.jpg";
+            }
+            else
+            var x = document.getElementById("pic1").src;
+            if (x.endsWith("images/jam.jpg")) {
+                document.getElementById("pic1").src = "../images/pearl.jpg";
+            }
+        }
+    </script>
+
+</head>
+<body class="background" style="background-image: url('../images/pearl jam_back.jpg');">
+
+    <ul>
+        <li style="background-color:gold;"><a href="Main.html">Main</a></li>
+        <li style="background-color:gold;"><a href="Register.html">Register</a></li>
+        <li><a href="Page 1 - guns and roses.html">Guns N' Roses</a></li>
+        <li><a href="Page 2 - iron maiden.html">Iron Maiden</a></li>
+        <li><a href="Page 3 - doors down.html">3 Doors Down</a></li>
+        <li><a href="Page 4 - U2.html">U2</a></li>
+        <li><a href="Page 5 - pearl jam.html">Pearl Jam</a></li>
+        <li><a href="Page 6 - lostprophets.html">Editor's recommendation</a></li>
+        <li style="float:right"><img height="50px" width="50px" src="../images/logo.jpg" /></li>
+    </ul>
+
+    <marquee>
+        <img height="300px" width="400px" src="../logos/pearl jam_logo.jpg" />/>
+    </marquee>
+
+    <table>
+
+        <tr>
+            <td>
+                <div dir="rtl" class="font">
+                    Pearl Jam (תרגום: "ריבת פנינים") היא להקת רוק משפיעה שהוקמה ב-1990 בסיאטל, וושינגטון, ארצות הברית. בצוותא עם נירוונה, אליס אין צ'יינס וסאונדגארדן הובילה הלהקה את פריצתו של ז'אנר הגראנג' לתודעה בתחילת שנות התשעים. פרל ג'אם נחשבת לאחת מלהקות סצנת הגראנג' הגדולות היחידות שנותרו פעילות עד היום, והיא נהנית מבסיס מעריצים גדול שמסייע להופעותיה של הלהקה להיות מהפופולריות ביותר בעולם.
+                    פרל ג'אם הפכה לאחת מהלהקות המזוהות ביותר עם פריצתה של מוזיקת הגראנג'. קורט קוביין התבטא בזעם כנגד פרל ג'אם בראיונות מאותה התקופה ותיאר את המוזיקה שלה כממוסחרת, כאשר יש המאמינים כי קוביין דיבר מתוך קינאה מאחר שהלהקה עברה במצעדי מכירות האלבומים את נירוונה.
+                    אלבום הבכורה של פרל גאם, Ten, כולל אחד עשר שירים העוסקים בנושאים אפלים כגון דיכאון, התאבדות, בדידות ורצח. האלבום יצא ב-1991 והפיק שלושה להיטים גדולים: "Even Flow" ,"Alive" ו-"Jeremy". הווידאו קליפ ל"Jeremy" היה להיט גדול ב-MTV וזכה בארבעה פרסי "וידאו מיוזיק" בטקס המסורתי של הערוץ.
+                    אלבומה השני של הלהקה, .Vs, קבע שיא כאשר מכר 950,000 עותקים בשבוע הראשון לצאתו וכלל את הלהיטים "Daughter" ,"Dissident" ,"Go" ו-"Animal". האלבום נקרא במקור Five Against One, שם שנלקח מתוך מילות השיר "Animal", אך שמו שונה ל-.Vs מעט לפני צאתו.
+                    האלבום השלישי, Vitalogy, יצא ב-1994 והפך לשני הנמכר ביותר בהיסטוריה כשמכר מעל 877,000 עותקים בשבוע הראשון לצאתו. השיר "Spin The Black Circle" זכה בפרס גראמי ב-1996 על שיר ההארד רוק הטוב ביותר. להיטים נוספים מתוך האלבום היו "Not For You" ,"Corduroy" ,"Immortality" ו-"Betterman". <br />
+                </div>
+
+                <div dir="rtl" style="text-align:center" class="font">
+                    <br />
+                    חברי הלהקה:
+                    <br />
+                    ג'ף אמנט - גיטרה בס
+                    <br />
+                    אדי ודר - גיטרה, שירה
+                    <br />
+                    סטון גוסארד - גיטרה
+                    <br />
+                    מייק מק'ריידי - גיטרה
+                    <br />
+                    מאט קמרון - תופים
+                </div>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <audio controls autoplay src="../audio/Pearl Jam - Even Flow.mp3">
+                    <source src="../audio/Pearl Jam - Even Flow.mp3" type="audio/mpeg">
+                </audio>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button class="button1" onclick="window.open('https://open.spotify.com/album/5B4PYA7wNN4WdEXdIJu58a')">
+                    <img src="../albums/pearl jam_album.jpg" height="300px" width="300px" />
+                </button>
+            </td>
+
+            <td>
+                <button class="button2" onclick="window.open('https://open.spotify.com/album/5pd9B3KQWKshHw4lnsSLNy')">
+                    <img src="../albums/pearl jam_album2.jpg" height="300px" width="300px" />
+                </button>
+            </td>
+        </tr>
+
+    </table>
+
+    <button onclick="picswitch()"> switch the image </button>
+
+    <div>
+        <img id="pic1" src="../images/pearl.jpg" style="height:200px; width:265px;"/> 
+    </div>
+
+</body>
+</html>

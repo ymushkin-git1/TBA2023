@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>recipes</title>
+    <link href="../pages.css" rel="stylesheet" />
+    <link href="../Ingredients.css" rel="stylesheet" />
+    <script>
+        var prev = null;
+        function toggle(e) {
+            //if (prev != null)
+            //    prev.classList.toggle('checked');
+            e.classList.toggle('checked');
+            prev = e;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f2e6d9;
+            color: #4d2400;
+        }
+        ul.ing li {
+            background: #e4cdb4;
+        }
+
+            ul.ing li:hover {
+                background: #d6b48f;
+            }
+
+            ul.ing li.checked {
+                background: #cfa77d;
+                color: #fff;            
+            }
+    </style>
+    
+
+</head>
+<body dir="rtl">
+
+    <ul class="b">
+        <li class="nav"><a href="home.html">דף הבית</a></li>
+        <li class="nav"><a href="allcakes.html">לכל העוגות</a></li>
+        <li class="nav"><a href="allcookies.html">לכל העוגיות</a></li>
+        <li class="nav"><a href="allsavory.html">לכל המאפים המלוחים</a></li>
+        <li class="nav"><a href="allsweet.html">לכל המאפים המתוקים</a></li>
+        <li class="nav"><a href="allmousse.html">לכל המוסים וקינוחי כוסות</a></li>
+        <li class="nav"><a href="extras.html">תוספות</a></li>
+    </ul>
+
+
+    <br />
+
+    <div class="name">
+        <h1>עוגת שוקולד</h1>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div style="float:left; margin-left:60px;">
+        <img src="../img/cake1.jpeg" style="width: 70%; height: 75%; float: left;" />
+    </div>
+
+    <br />
+
+
+    <div class="dives">
+        המצרכים:
+    </div>
+
+
+    <ul id="myUL" class="ing">
+        <li id="li1" onclick="toggle(li1)">1 כוס / 200 גרם סוכר לבן</li>
+        <li id="li2" onclick="toggle(li2)">4 ביצים</li>
+        <li id="li3" onclick="toggle(li3)">1 מיכל / 200 מ"ל שמנת חמוצה 15%</li>
+        <li id="li4" onclick="toggle(li4)">1 כוס/  240 מ"ל שמן קנולה</li>
+        <li id="li5" onclick="toggle(li5)">קמח</li>
+        <li id="li6" onclick="toggle(li6)">כפית אבקת אפיה</li>
+        <li id="li7" onclick="toggle(li7)">1 כוס שוקולית</li>
+    </ul>
+
+    <div class="dives">
+        לציפוי (גנאש):
+    </div>
+
+    <ul id="myUL" class="ing">
+        <li id="li8" onclick="toggle(li8)">2/1 כוס שמנת מתוקה</li>
+        <li id="li9" onclick="toggle(li9)">120 גרם שוקולד חלב</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <div class="dives">
+        אופן הכנה:
+    </div>
+
+    <br />
+
+
+    <table style="border-spacing: 5px;">
+        <tr>
+            <td class="td">
+                1)
+            </td>
+            <td>
+                בקערת המיקסר, מקציפים ביצים וסוכר
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                2)
+            </td>
+            <td>
+                מחליפים לוו גיטרה, וממשיכים לערבב מעט
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                3)
+            </td>
+            <td>
+                מוסיפים שמן קנולה תוך כדי ערבוב בהדרגה
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                4)
+            </td>
+            <td>
+                מוסיפים את היבשים: קמח, שוקולית ואבקת אפיה
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                5)
+            </td>
+            <td>
+                מקפלים על לאיחוד
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                6)
+            </td>
+            <td>
+                יוצקים את הבלילה לתבנית משומנת (כדי שהעוגה לא תידבק לתבנית)
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                7)
+            </td>
+            <td>
+                אופים על 180 מעלות כ-חצי שעה (מידי פעם בודקים עם קיסם את העוגה, אם יש עליו פירורים אז העוגה מוכנה)
+            </td>
+        </tr>
+        <tr> </tr>
+        <tr>
+            <td class="td">
+                8)
+            </td>
+            <td>
+                ממיסים במיקרו שמנת + שוקולד עד שיהיה נוזלי ומאוחד. יוצקים על העוגה ומיישרים בעזרת פלטה
+            </td>
+        </tr>
+        <tr> </tr>
+    </table>
+
+
+
+    
+    <a href="cake1.html"><img style="float:left; height:90px; width:70px" src="../img/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" /></a>
+
+</body>
+</html>

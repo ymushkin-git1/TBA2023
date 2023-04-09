@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Register page</title>
+    <script>
+        function checkValues() {
+            var x = true;
+            x = name2() && x;
+            x = pw() && x;
+            return x;
+        }
+
+        function name2() {
+            if (nameOfperson2.value.length < 2) {
+                msg6.innerHTML = "שם קצר מדי";
+                return false;
+            }
+            else {
+                msg6.innerHTML = "תקין";
+                return false;
+            }
+        }
+
+        function pw() {
+            if (password5.value.length < 5) {
+                msg7.innerHTML = "סיסמה לא תקינה";
+                return false;
+            }
+            else {
+                msg7.innerHTML = "תקין";
+                return false;
+            }
+        }
+
+    </script>
+
+    <style>
+        #table {
+            border: solid;
+            margin-right: 750px;
+            margin-top: 350px;
+            background-color: tan;
+            width: 450px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body dir="rtl">
+
+    <form onsubmit="return checkValues()">
+
+        <table id="table">
+            <tr>
+                <td>שם פרטי</td>
+                <td><input type="text" id="nameOfperson2" /></td>
+                <td id="msg6">הכנס שם פרטי</td>
+            </tr>
+
+            <tr>
+                <td>סיסמה</td>
+                <td><input type="text" id="password5" /></td>
+                <td id="msg7">הכנס סיסמה</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit"> send </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="Mainpage.html">Go to main page</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
