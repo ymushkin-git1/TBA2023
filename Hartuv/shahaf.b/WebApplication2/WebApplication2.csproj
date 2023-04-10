@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,7 +67,73 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Back.html" />
+    <Content Include="Biceps.html" />
+    <Content Include="Chest.html" />
+    <Content Include="FrontPage.html" />
+    <Content Include="images\backextensionbackpage.jpg" />
+    <Content Include="images\backphotomainpage.jpg" />
+    <Content Include="images\barbelloverheadshoulderpressshoulderpage.jpg" />
+    <Content Include="images\benchpresschestpage.jpeg" />
+    <Content Include="images\bentoverbarbellrowbackpage.jpg" />
+    <Content Include="images\bicepphotomainpage.jpg" />
+    <Content Include="images\borderformainpageimg.png" />
+    <Content Include="images\cablecrossoverchestpage.jpg" />
+    <Content Include="images\cablecurlbiceppage.jpg" />
+    <Content Include="images\cablefacepullshoulderpage.jpg" />
+    <Content Include="images\cableflychestpage.jpg" />
+    <Content Include="images\chestphotomainpage.jpg" />
+    <Content Include="images\chinupbiceppage.jpg" />
+    <Content Include="images\closegripbenchpresschestpage.jpg" />
+    <Content Include="images\closegripbenchprestriceppage.jpg" />
+    <Content Include="images\closegrippuchestpage.jpg" />
+    <Content Include="images\closegripseatedcablerow.jpg" />
+    <Content Include="images\concentrationcurlbiceppage.jpg" />
+    <Content Include="images\declinepuchestpage.jpg" />
+    <Content Include="images\diamondputriceppage.jpg" />
+    <Content Include="images\dipstriceppage.jpg" />
+    <Content Include="images\dumbellflychestpage.jpg" />
+    <Content Include="images\dumbelllateralraiseshoulderpage.jpg" />
+    <Content Include="images\dumbellrowbackpage.jpg" />
+    <Content Include="images\ezbarpreachercurlbiceppage.jpg" />
+    <Content Include="images\frontraiseshoulderpage.jpg" />
+    <Content Include="images\hammercurlbiceppage.jpg" />
+    <Content Include="images\inclinebpchestpage.jpg" />
+    <Content Include="images\inclinedpchestpage.jpg" />
+    <Content Include="images\inclinedumbellcurlbiceppage.jpg" />
+    <Content Include="images\inclinepuchestpage.jpg" />
+    <Content Include="images\IpageBackround.jpg" />
+    <Content Include="images\Ipagebackroundnew.jpg" />
+    <Content Include="images\legsphotomainpage.jpg" />
+    <Content Include="images\lowerchestchestpage.jpg" />
+    <Content Include="images\lthcableflychestpage.jpg" />
+    <Content Include="images\mainpageimage.jpg" />
+    <Content Include="images\mainpageimage2.jpg" />
+    <Content Include="images\mainpageimagelow.jpg" />
+    <Content Include="images\middlechestchestpage.jpg" />
+    <Content Include="images\musclesbackground.png" />
+    <Content Include="images\onearmlateralraiseshoulderpage.jpg" />
+    <Content Include="images\pararelldipschestpage.jpg" />
+    <Content Include="images\Pullupwidegripbackpage.jpg" />
+    <Content Include="images\reversepecdeckshoulderpage.jpg" />
+    <Content Include="images\reversgrippulldownbackpage.jpg" />
+    <Content Include="images\ropepushdowntriceppage.jpg" />
+    <Content Include="images\seateddumbellshoulderpresshoulderpage.jpg" />
+    <Content Include="images\shoulderphotomainpage.jpg" />
+    <Content Include="images\skullcrusherstriceppage.jpg" />
+    <Content Include="images\stifflegdeadliftbackpage.jpg" />
+    <Content Include="images\tricepphotomainpage.jpg" />
+    <Content Include="images\underbentoverrowbackpage.jpg" />
+    <Content Include="images\upperchestphotochestpage.jpg" />
+    <Content Include="images\yourworkoutphoto.jpg" />
+    <Content Include="JavaScript.js" />
+    <Content Include="Legs.html" />
+    <Content Include="LoginPage.html" />
+    <Content Include="Shoulders.html" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Triceps.html" />
     <Content Include="Web.config" />
+    <Content Include="YourWorkout.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,7 +162,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>62250</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62250/</IISUrl>
+          <IISUrl>https://localhost:44363/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
