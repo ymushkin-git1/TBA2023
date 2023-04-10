@@ -17,8 +17,8 @@
     } if (page5.value > max) {
         max = page5.value;
 
-    } if (page7.value > max) {
-        max = page7.value;
+    } if (page6.value > max) {
+        max = page6.value;
 
     }
     if (max = page2.value) {
@@ -36,6 +36,7 @@
     if (max = page5.value) {
         div100.innerHTML = "דף עפרונות צבעוניים אהוב עליך ";
     }
-    if (max = page7.value) {
+    if (max = page6.value) {
         div100.innerHTML = "דף טיפים אהוב עליך ";
     }
+}

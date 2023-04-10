@@ -1,0 +1,666 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C030BF4E-3785-43A0-83FB-44EE41636225}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SciFi</RootNamespace>
+    <AssemblyName>SciFi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio and video\2001 A Space Odyssey Opening in 1080 HD.mp3" />
+    <Content Include="audio and video\David Bowie Life On Mars_ %28Official Video%29.mp3" />
+    <Content Include="audio and video\David Bowie Space Oddity %28Official Video%29.mp3" />
+    <Content Include="audio and video\Doctor Who Theme Tune 2005-2007 By Murray Gold.mp3" />
+    <Content Include="audio and video\Neoni MACHINE %28Official Lyric Video%29.mp3" />
+    <Content Include="audio and video\Nothing But Thieves - Unperson %28Official Video%29.mp3" />
+    <Content Include="audio and video\Star Trek Original Series Intro %28HQ%29.mp3" />
+    <Content Include="audio and video\Star Wars Main Theme %28Full%29.mp3" />
+    <Content Include="audio and video\The Rolling Stones - 2000 Light Years From Home %28Official Lyric Video%29.mp3" />
+    <Content Include="audio and video\Three Days Grace - Strange Days %28Official%29.mp3" />
+    <Content Include="audio and video\wormhole-animation-easysave.net.mp4" />
+    <Content Include="pages\history.html" />
+    <Content Include="pages\form.html" />
+    <Content Include="pages\me.html" />
+    <Content Include="pages\pic3.html" />
+    <Content Include="pages\minus.html" />
+    <Content Include="pages\main.html" />
+    <Content Include="pages\ind.html" />
+    <Content Include="pages\when.html" />
+    <Content Include="pages\watchtv.html" />
+    <Content Include="pages\social.html" />
+    <Content Include="pages\watchf.html" />
+    <Content Include="pages\home.html" />
+    <Content Include="pages\chek.html" />
+    <Content Include="pages\what.html" />
+    <Content Include="pic\bac05.jpg" />
+    <Content Include="pic\bac1.jpeg" />
+    <Content Include="pic\bac2.png" />
+    <Content Include="pic\bac3.jpg" />
+    <Content Include="pic\bac4.jpg" />
+    <Content Include="pic\bac5.jpg" />
+    <Content Include="pic\characteristics\ai.jpg" />
+    <Content Include="pic\characteristics\alien.jfif" />
+    <Content Include="pic\characteristics\future.jpg" />
+    <Content Include="pic\characteristics\sh1.jpg" />
+    <Content Include="pic\characteristics\space.jpg" />
+    <Content Include="pic\characteristics\SVSF.jpg" />
+    <Content Include="pic\characteristics\tech.jpg" />
+    <Content Include="pic\characteristics\time travel.jfif" />
+    <Content Include="pic\characteristics\univers.png" />
+    <Content Include="pic\history\a true story.jpg" />
+    <Content Include="pic\history\bigs.jpg" />
+    <Content Include="pic\history\Epic of Gilgamesh.jpg" />
+    <Content Include="pic\history\GOLDEN.jpg" />
+    <Content Include="pic\history\middle age.jpg" />
+    <Content Include="pic\history\pulp.jpg" />
+    <Content Include="pic\history\t.jpg" />
+    <Content Include="pic\history\utopia.jpg" />
+    <Content Include="pic\history\writers\Arthur C. Clarke.jpg" />
+    <Content Include="pic\history\writers\arthurp.jpg" />
+    <Content Include="pic\history\writers\asimovp.jpg" />
+    <Content Include="pic\history\writers\Christopher Nolan.jpg" />
+    <Content Include="pic\history\writers\Frank Herbert.jpg" />
+    <Content Include="pic\history\writers\george.jpg" />
+    <Content Include="pic\history\writers\H. G. Wells.jpg" />
+    <Content Include="pic\history\writers\hugop.jpg" />
+    <Content Include="pic\history\writers\Isaac Asimov.jpg" />
+    <Content Include="pic\history\writers\James Cameron.jpg" />
+    <Content Include="pic\history\writers\Jules Verne.jpg" />
+    <Content Include="pic\history\writers\Julesp.jpg" />
+    <Content Include="pic\history\writers\rudly scott.jpg" />
+    <Content Include="pic\history\writers\Stanley Kubrick.jpg" />
+    <Content Include="pic\history\writers\Steven Spielberg.jpg" />
+    <Content Include="pic\history\writers\The Wachowskis.jpg" />
+    <Content Include="pic\history\writers\Ursula K. Le Guin.jpg" />
+    <Content Include="pic\history\writers\wellsp.jpg" />
+    <Content Include="pic\main\award.jpg" />
+    <Content Include="pic\me\cwall.jpeg" />
+    <Content Include="pic\me\pop.jpeg" />
+    <Content Include="pic\me\scifi.jpeg" />
+    <Content Include="pic\me\st.jpeg" />
+    <Content Include="pic\me\cinemaw.jpeg" />
+    <Content Include="pic\me\vr.jpeg" />
+    <Content Include="pic\me\matrix.jpeg" />
+    <Content Include="pic\me\dwho.jpeg" />
+    <Content Include="pic\me\hitch.jpeg" />
+    <Content Include="pic\me\mecwall.jpeg" />
+    <Content Include="pic\minus\3dprint.jpg" />
+    <Content Include="pic\minus\airpods.jpg" />
+    <Content Include="pic\minus\credit card.jpg" />
+    <Content Include="pic\minus\dna.jpg" />
+    <Content Include="pic\minus\doly.gif" />
+    <Content Include="pic\minus\internet.jpg" />
+    <Content Include="pic\minus\paternitytest.png" />
+    <Content Include="pic\minus\robot.jpg" />
+    <Content Include="pic\minus\SUBMARINE.jpg" />
+    <Content Include="pic\minus\vr.jpg" />
+    <Content Include="pic\quiz\pic3\brazil.jpg" />
+    <Content Include="pic\main\comic con.jpg" />
+    <Content Include="pic\main\critic.jpg" />
+    <Content Include="pic\main\geek.jpg" />
+    <Content Include="pic\quiz\pic3.png" />
+    <Content Include="pic\quiz\book.jpg" />
+    <Content Include="pic\quiz\film.jpg" />
+    <Content Include="pic\quiz\ind.jpg" />
+    <Content Include="pic\quiz\ind\Arnold J Rimmer.jpg" />
+    <Content Include="pic\quiz\ind\Arthur Dent.jpg" />
+    <Content Include="pic\quiz\ind\ava.jpg" />
+    <Content Include="pic\quiz\ind\Captain Jean-Luc Picard.jpg" />
+    <Content Include="pic\quiz\ind\Darth Vader.jpeg" />
+    <Content Include="pic\quiz\ind\dib.png" />
+    <Content Include="pic\quiz\ind\Ellen Ripley.jpg" />
+    <Content Include="pic\quiz\ind\flexo.jpg" />
+    <Content Include="pic\quiz\ind\Fox Mulder.jpg" />
+    <Content Include="pic\quiz\ind\Furiosa.jpg" />
+    <Content Include="pic\quiz\ind\Godzilla.jpg" />
+    <Content Include="pic\quiz\ind\hal 9000.png" />
+    <Content Include="pic\quiz\ind\Khan.jpg" />
+    <Content Include="pic\quiz\ind\Klaatu.jpg" />
+    <Content Include="pic\quiz\ind\lilo.jpg" />
+    <Content Include="pic\quiz\ind\malcolm.jpg" />
+    <Content Include="pic\quiz\ind\Maria the Robot.jpg" />
+    <Content Include="pic\quiz\ind\Marty McFly and doc.jpg" />
+    <Content Include="pic\quiz\ind\Marty McFly.jpg" />
+    <Content Include="pic\quiz\ind\R.J. MacReady.jpg" />
+    <Content Include="pic\quiz\ind\River Song.png" />
+    <Content Include="pic\quiz\ind\Sarah Connor.jpg" />
+    <Content Include="pic\quiz\ind\snake.jpg" />
+    <Content Include="pic\quiz\ind\spock.jpg" />
+    <Content Include="pic\quiz\ind\T-800.jpg" />
+    <Content Include="pic\quiz\ind\the doctor.jpg" />
+    <Content Include="pic\quiz\ind\Tron.jpg" />
+    <Content Include="pic\quiz\pic3\brazil1.jpg" />
+    <Content Include="pic\quiz\pic3\brazil2.jpg" />
+    <Content Include="pic\quiz\pic3\brazil3.jpg" />
+    <Content Include="pic\quiz\pic3\donnie.jpg" />
+    <Content Include="pic\quiz\pic3\donnie1.jpg" />
+    <Content Include="pic\quiz\pic3\donnie2.jpg" />
+    <Content Include="pic\quiz\pic3\donnie3.jpg" />
+    <Content Include="pic\quiz\pic3\et.jpg" />
+    <Content Include="pic\quiz\pic3\et1.jpg" />
+    <Content Include="pic\quiz\pic3\et2.jpg" />
+    <Content Include="pic\quiz\pic3\et3.jpg" />
+    <Content Include="pic\quiz\pic3\eternal.png" />
+    <Content Include="pic\quiz\pic3\eternal1.jpg" />
+    <Content Include="pic\quiz\pic3\eternal2.png" />
+    <Content Include="pic\quiz\pic3\eternal3.jpg" />
+    <Content Include="pic\quiz\pic3\getout.jpg" />
+    <Content Include="pic\quiz\pic3\getout1.jpg" />
+    <Content Include="pic\quiz\pic3\getout2.jpg" />
+    <Content Include="pic\quiz\pic3\getout3.jpg" />
+    <Content Include="pic\quiz\pic3\her.jpg" />
+    <Content Include="pic\quiz\pic3\her1.jpg" />
+    <Content Include="pic\quiz\pic3\her2.jpg" />
+    <Content Include="pic\quiz\pic3\her3.jpg" />
+    <Content Include="pic\quiz\pic3\inception.jpg" />
+    <Content Include="pic\quiz\pic3\inception1.jpg" />
+    <Content Include="pic\quiz\pic3\inception2.jpg" />
+    <Content Include="pic\quiz\pic3\inception3.jpg" />
+    <Content Include="pic\quiz\pic3\matrix.jpg" />
+    <Content Include="pic\quiz\pic3\matrix1.jpg" />
+    <Content Include="pic\quiz\pic3\matrix2.jpg" />
+    <Content Include="pic\quiz\pic3\matrix3.jpg" />
+    <Content Include="pic\quiz\pic3\twelve.jpg" />
+    <Content Include="pic\quiz\pic3\twelve1.jpg" />
+    <Content Include="pic\quiz\pic3\twelve2.jpg" />
+    <Content Include="pic\quiz\pic3\twelve3.jpg" />
+    <Content Include="pic\quiz\pic3\walle.jpg" />
+    <Content Include="pic\quiz\pic3\walle1.jpg" />
+    <Content Include="pic\quiz\pic3\walle2.jpg" />
+    <Content Include="pic\quiz\pic3\walle3.jpg" />
+    <Content Include="pic\quiz\series.jpg" />
+    <Content Include="pic\quiz\watchb\112263.jpg" />
+    <Content Include="pic\quiz\watchb\1984.jpg" />
+    <Content Include="pic\quiz\watchb\1985 ab.jpg" />
+    <Content Include="pic\quiz\watchb\1985.jpg" />
+    <Content Include="pic\quiz\watchb\2001 A Space Odyssey.jpg" />
+    <Content Include="pic\quiz\watchb\A Clockwork Orange.jpg" />
+    <Content Include="pic\quiz\watchb\a fire upon.jpg" />
+    <Content Include="pic\quiz\watchb\A WRINKLE IN TIME.jpg" />
+    <Content Include="pic\quiz\watchb\All Systems Red.jpg" />
+    <Content Include="pic\quiz\watchb\anathem.jpg" />
+    <Content Include="pic\quiz\watchb\blindsight.jpg" />
+    <Content Include="pic\quiz\watchb\blood music.jpg" />
+    <Content Include="pic\quiz\watchb\brave new world.jpg" />
+    <Content Include="pic\quiz\watchb\childhoods end.jpg" />
+    <Content Include="pic\quiz\watchb\Children of Time.jpg" />
+    <Content Include="pic\quiz\watchb\city.jpg" />
+    <Content Include="pic\quiz\watchb\consider phlebas.jpg" />
+    <Content Include="pic\quiz\watchb\Contact.jpg" />
+    <Content Include="pic\quiz\watchb\Dark Matter.png" />
+    <Content Include="pic\quiz\watchb\Delirium.jpg" />
+    <Content Include="pic\quiz\watchb\Do Androids Dream of Electric Sheep.jpg" />
+    <Content Include="pic\quiz\watchb\Dragonflight.jpg" />
+    <Content Include="pic\quiz\watchb\dune.jpg" />
+    <Content Include="pic\quiz\watchb\earth abides.jpg" />
+    <Content Include="pic\quiz\watchb\ender%27s game.jpg" />
+    <Content Include="pic\quiz\watchb\eon.jpg" />
+    <Content Include="pic\quiz\watchb\exo.jpg" />
+    <Content Include="pic\quiz\watchb\fahrenheit 451.jpg" />
+    <Content Include="pic\quiz\watchb\flowers for algernon.jpg" />
+    <Content Include="pic\quiz\watchb\Foundation.jpg" />
+    <Content Include="pic\quiz\watchb\FRANKENSTEIN.jpg" />
+    <Content Include="pic\quiz\watchb\girlfriend in a coma.jpg" />
+    <Content Include="pic\quiz\watchb\hothouse.jpg" />
+    <Content Include="pic\quiz\watchb\house of suns.jpg" />
+    <Content Include="pic\quiz\watchb\Hyperion.jfif" />
+    <Content Include="pic\quiz\watchb\I, Robot.jpg" />
+    <Content Include="pic\quiz\watchb\inversion.jpg" />
+    <Content Include="pic\quiz\watchb\journey to the center of the earth.jpg" />
+    <Content Include="pic\quiz\watchb\jurassic park.jpg" />
+    <Content Include="pic\quiz\watchb\Kindred.jpg" />
+    <Content Include="pic\quiz\watchb\labrith of alosion.jpg" />
+    <Content Include="pic\quiz\watchb\leggend.jpg" />
+    <Content Include="pic\quiz\watchb\leviathan wakes.jpg" />
+    <Content Include="pic\quiz\watchb\Matched.jpg" />
+    <Content Include="pic\quiz\watchb\midworld.jpg" />
+    <Content Include="pic\quiz\watchb\Neuromancer.jpg" />
+    <Content Include="pic\quiz\watchb\norstrilia.jpg" />
+    <Content Include="pic\quiz\watchb\Oryx and Crake.jpg" />
+    <Content Include="pic\quiz\watchb\pandora%27s star.jpg" />
+    <Content Include="pic\quiz\watchb\planet of the apes.jpg" />
+    <Content Include="pic\quiz\watchb\project hail mary.jpg" />
+    <Content Include="pic\quiz\watchb\Ready Player One.jpg" />
+    <Content Include="pic\quiz\watchb\Recursion.jpg" />
+    <Content Include="pic\quiz\watchb\red dwarf.jpg" />
+    <Content Include="pic\quiz\watchb\Red Mars.jpg" />
+    <Content Include="pic\quiz\watchb\Red Rising.jpg" />
+    <Content Include="pic\quiz\watchb\red shirts.jpg" />
+    <Content Include="pic\quiz\watchb\replay.jpg" />
+    <Content Include="pic\quiz\watchb\revelation space.jpg" />
+    <Content Include="pic\quiz\watchb\roadside picnic.jpg" />
+    <Content Include="pic\quiz\watchb\skyward.jpg" />
+    <Content Include="pic\quiz\watchb\slaughterhouse 5.jpg" />
+    <Content Include="pic\quiz\watchb\snow crash.jpg" />
+    <Content Include="pic\quiz\watchb\Solaris.jpg" />
+    <Content Include="pic\quiz\watchb\spin.jpg" />
+    <Content Include="pic\quiz\watchb\Station Eleven.jpg" />
+    <Content Include="pic\quiz\watchb\stranger in a strange land.jpg" />
+    <Content Include="pic\quiz\watchb\the body snatchers.jpg" />
+    <Content Include="pic\quiz\watchb\the book with new sun.jpg" />
+    <Content Include="pic\quiz\watchb\The Children of Men.jpg" />
+    <Content Include="pic\quiz\watchb\the chrysalids.jpg" />
+    <Content Include="pic\quiz\watchb\The Complete Robot.jpg" />
+    <Content Include="pic\quiz\watchb\the dispossessed.jpg" />
+    <Content Include="pic\quiz\watchb\The Fifth Season.jpg" />
+    <Content Include="pic\quiz\watchb\The Forever War.jpg" />
+    <Content Include="pic\quiz\watchb\the handmaids tale.jpg" />
+    <Content Include="pic\quiz\watchb\the hitchhikers guide to the galaxy.jpg" />
+    <Content Include="pic\quiz\watchb\the hunger games.jpg" />
+    <Content Include="pic\quiz\watchb\the invisible man.jpg" />
+    <Content Include="pic\quiz\watchb\THE LAST MAN.jpg" />
+    <Content Include="pic\quiz\watchb\the left hand of darkness.jpg" />
+    <Content Include="pic\quiz\watchb\The Long Way to a Small, Angry Planet.jpg" />
+    <Content Include="pic\quiz\watchb\the man in the high castle.jpg" />
+    <Content Include="pic\quiz\watchb\the martian chronicles.jpg" />
+    <Content Include="pic\quiz\watchb\THE MARTIAN.jpg" />
+    <Content Include="pic\quiz\watchb\the mote god%27s eye.jpg" />
+    <Content Include="pic\quiz\watchb\The Patternist.jpg" />
+    <Content Include="pic\quiz\watchb\the road.jpg" />
+    <Content Include="pic\quiz\watchb\the shadow of the torturer.jpg" />
+    <Content Include="pic\quiz\watchb\the sparrow.jpg" />
+    <Content Include="pic\quiz\watchb\the stand.jpg" />
+    <Content Include="pic\quiz\watchb\the stars my destination.jpg" />
+    <Content Include="pic\quiz\watchb\The Three-Body Problem.jpg" />
+    <Content Include="pic\quiz\watchb\THE TIME MACHINE.jpg" />
+    <Content Include="pic\quiz\watchb\the time traveler%27s wife.jpg" />
+    <Content Include="pic\quiz\watchb\The War of the Worlds.jpg" />
+    <Content Include="pic\quiz\watchb\to sleep in a sea of stars.jpg" />
+    <Content Include="pic\quiz\watchb\to your scattered bodies.jpg" />
+    <Content Include="pic\quiz\watchb\under the dome.jpg" />
+    <Content Include="pic\quiz\watchb\warcross.jpg" />
+    <Content Include="pic\quiz\watchb\watchers.jpg" />
+    <Content Include="pic\quiz\watchb\We Are Legion.jpg" />
+    <Content Include="pic\quiz\watchb\wool.jpg" />
+    <Content Include="pic\quiz\watchb\world war z.jpg" />
+    <Content Include="pic\quiz\watchb\Xenogenesis.jpg" />
+    <Content Include="pic\quiz\watchf\2001 A Space Odyssey.jpg" />
+    <Content Include="pic\quiz\watchf\2010.jfif" />
+    <Content Include="pic\quiz\watchf\ad astra.jpg" />
+    <Content Include="pic\quiz\watchf\AI.jpg" />
+    <Content Include="pic\quiz\watchf\Akira.jpg" />
+    <Content Include="pic\quiz\watchf\Alien.jpg" />
+    <Content Include="pic\quiz\watchf\alita.jpg" />
+    <Content Include="pic\quiz\watchf\annihilation.jpg" />
+    <Content Include="pic\quiz\watchf\Arrival.jpg" />
+    <Content Include="pic\quiz\watchf\Atlantis The Lost Empire.jpg" />
+    <Content Include="pic\quiz\watchf\Attack the block.jpg" />
+    <Content Include="pic\quiz\watchf\Avatar.jpg" />
+    <Content Include="pic\quiz\watchf\a clockwork.jpg" />
+    <Content Include="pic\quiz\watchf\journey center of the earth.jpg" />
+    <Content Include="pic\quiz\watchf\mars attack.jpg" />
+    <Content Include="pic\quiz\watchf\repo man.jpg" />
+    <Content Include="pic\quiz\watchf\v for ven.jpg" />
+    <Content Include="pic\quiz\watchf\Back To The Future Trilogy.jpg" />
+    <Content Include="pic\quiz\watchf\Being John Malkovich.jpg" />
+    <Content Include="pic\quiz\watchf\Big Hero 6.jpg" />
+    <Content Include="pic\quiz\watchf\Blade Runner 2049.jfif" />
+    <Content Include="pic\quiz\watchf\blade runner.jpg" />
+    <Content Include="pic\quiz\watchf\Brazil.jpg" />
+    <Content Include="pic\quiz\watchf\butterfly effect.jpg" />
+    <Content Include="pic\quiz\watchf\Children Of Men.jpg" />
+    <Content Include="pic\quiz\watchf\Close Encounters Of The Third Kind.jpg" />
+    <Content Include="pic\quiz\watchf\cloud atlas.jpg" />
+    <Content Include="pic\quiz\watchf\Cloudy With A Chance Of Meatballs.jpg" />
+    <Content Include="pic\quiz\watchf\cloverfilrd.jfif" />
+    <Content Include="pic\quiz\watchf\exis.jpg" />
+    <Content Include="pic\quiz\watchf\fantstic p.jpg" />
+    <Content Include="pic\quiz\watchf\sor code.jfif" />
+    <Content Include="pic\quiz\watchf\Coherence.jpg" />
+    <Content Include="pic\quiz\watchf\contact.jpg" />
+    <Content Include="pic\quiz\watchf\dark city.jfif" />
+    <Content Include="pic\quiz\watchf\District 9.jpg" />
+    <Content Include="pic\quiz\watchf\Donnie Darko.jpg" />
+    <Content Include="pic\quiz\watchf\dredd.jfif" />
+    <Content Include="pic\quiz\watchf\Dune.jfif" />
+    <Content Include="pic\quiz\watchf\E.T.jpg" />
+    <Content Include="pic\quiz\watchf\mEarth.jpg" />
+    <Content Include="pic\quiz\watchf\Edge Of Tomorrow.jpg" />
+    <Content Include="pic\quiz\watchf\Escape From New York.jfif" />
+    <Content Include="pic\quiz\watchf\Eternal Sunshine Of The Spotless Mind.jpg" />
+    <Content Include="pic\quiz\watchf\event.jfif" />
+    <Content Include="pic\quiz\watchf\Everything everywhere at once.jpg" />
+    <Content Include="pic\quiz\watchf\Ex Machina.jpg" />
+    <Content Include="pic\quiz\watchf\sunshine.jpg" />
+    <Content Include="pic\quiz\watchf\the blob.jpg" />
+    <Content Include="pic\quiz\watchf\the fith.jpg" />
+    <Content Include="pic\quiz\watchf\the fly.jpg" />
+    <Content Include="pic\quiz\watchf\Forbidden Planet.jpg" />
+    <Content Include="pic\quiz\watchf\frankenstein.jpg" />
+    <Content Include="pic\quiz\watchf\the hunger.jpg" />
+    <Content Include="pic\quiz\watchf\the iron gaint.jpg" />
+    <Content Include="pic\quiz\watchf\galaxy quest.jpg" />
+    <Content Include="pic\quiz\watchf\gattaca.jpg" />
+    <Content Include="pic\quiz\watchf\Get Out.jpg" />
+    <Content Include="pic\quiz\watchf\Ghost In The Shell.jpg" />
+    <Content Include="pic\quiz\watchf\Ghostbusters.jpg" />
+    <Content Include="pic\quiz\watchf\Gravity.jfif" />
+    <Content Include="pic\quiz\watchf\Guardians Of The Galaxy Vol. 1 and 2.jpg" />
+    <Content Include="pic\quiz\watchf\Her.jpg" />
+    <Content Include="pic\quiz\watchf\Inception.jpg" />
+    <Content Include="pic\quiz\watchf\Independence Day.jpg" />
+    <Content Include="pic\quiz\watchf\Invader Zim Enter The Florest.jpg" />
+    <Content Include="pic\quiz\watchf\Invasion Of The Body Snatchers.jpg" />
+    <Content Include="pic\quiz\watchf\Ironman.jpg" />
+    <Content Include="pic\quiz\watchf\Island Of Lost Souls.jpg" />
+    <Content Include="pic\quiz\watchf\Jurassic Park.jpg" />
+    <Content Include="pic\quiz\watchf\Lilo And Stitch.jpg" />
+    <Content Include="pic\quiz\watchf\logan run.jfif" />
+    <Content Include="pic\quiz\watchf\Looper.jpg" />
+    <Content Include="pic\quiz\watchf\mad max fr.jfif" />
+    <Content Include="pic\quiz\watchf\Mad Max Trilogy.jpg" />
+    <Content Include="pic\quiz\watchf\Man In Black.jpg" />
+    <Content Include="pic\quiz\watchf\maze runner.jfif" />
+    <Content Include="pic\quiz\watchf\Meet The Robinsons.jpg" />
+    <Content Include="pic\quiz\watchf\Megamind.jpg" />
+    <Content Include="pic\quiz\watchf\Metropolis.jpg" />
+    <Content Include="pic\quiz\watchf\Minority Report.jfif" />
+    <Content Include="pic\quiz\watchf\Moon.png" />
+    <Content Include="pic\quiz\watchf\Mr. Nobody.jpg" />
+    <Content Include="pic\quiz\watchf\the in.jpg" />
+    <Content Include="pic\quiz\watchf\pacific rim.jfif" />
+    <Content Include="pic\quiz\watchf\panther.jpg" />
+    <Content Include="pic\quiz\watchf\Paprika.jpg" />
+    <Content Include="pic\quiz\watchf\Paul.jpg" />
+    <Content Include="pic\quiz\watchf\Planet Of The Apes.jpg" />
+    <Content Include="pic\quiz\watchf\Predator.jpg" />
+    <Content Include="pic\quiz\watchf\Predestination.jpg" />
+    <Content Include="pic\quiz\watchf\Primer.jpg" />
+    <Content Include="pic\quiz\watchf\the stepf.jpeg" />
+    <Content Include="pic\quiz\watchf\the termi.jpg" />
+    <Content Include="pic\quiz\watchf\RoboCop.jpg" />
+    <Content Include="pic\quiz\watchf\run lola run.jfif" />
+    <Content Include="pic\quiz\watchf\Serenity.jpg" />
+    <Content Include="pic\quiz\watchf\Signs.jfif" />
+    <Content Include="pic\quiz\watchf\Snowpiercer.jfif" />
+    <Content Include="pic\quiz\watchf\Solaris.jpeg" />
+    <Content Include="pic\quiz\watchf\Soylent green.jpg" />
+    <Content Include="pic\quiz\watchf\Spaceballs.jpg" />
+    <Content Include="pic\quiz\watchf\SpidermanInto The Spider-Vers.jpg" />
+    <Content Include="pic\quiz\watchf\Stalker.jfif" />
+    <Content Include="pic\quiz\watchf\Star Trek 2.jpg" />
+    <Content Include="pic\quiz\watchf\starship troopers.jpg" />
+    <Content Include="pic\quiz\watchf\inter.jpg" />
+    <Content Include="pic\quiz\watchf\the day STOOD.jpg" />
+    <Content Include="pic\quiz\watchf\Superman.jpg" />
+    <Content Include="pic\quiz\watchf\The Abyss.jpeg" />
+    <Content Include="pic\quiz\watchf\The Avengers.jpg" />
+    <Content Include="pic\quiz\watchf\The Invisible Man %282020%29.jpg" />
+    <Content Include="pic\quiz\watchf\The last man on earth.jpg" />
+    <Content Include="pic\quiz\watchf\The martian.jfif" />
+    <Content Include="pic\quiz\watchf\The Matrix.jpg" />
+    <Content Include="pic\quiz\watchf\star Wars.jpg" />
+    <Content Include="pic\quiz\watchf\The Prestige.jpg" />
+    <Content Include="pic\quiz\watchf\The Thing.jpg" />
+    <Content Include="pic\quiz\watchf\The World%27s End.jpg" />
+    <Content Include="pic\quiz\watchf\They live.jpg" />
+    <Content Include="pic\quiz\watchf\THX 1138.jpg" />
+    <Content Include="pic\quiz\watchf\the time mac.jfif" />
+    <Content Include="pic\quiz\watchf\Total Recall.jpg" />
+    <Content Include="pic\quiz\watchf\tr planet.jpg" />
+    <Content Include="pic\quiz\watchf\tron.jpg" />
+    <Content Include="pic\quiz\watchf\Twelve Monkeys.jpg" />
+    <Content Include="pic\quiz\watchf\UNDER.jpg" />
+    <Content Include="pic\quiz\watchf\upgrade.jfif" />
+    <Content Include="pic\quiz\watchf\Wall E.jpg" />
+    <Content Include="pic\quiz\watchf\the War Of the worlds.jpg" />
+    <Content Include="pic\quiz\watchf\X-Men and X2.jpg" />
+    <Content Include="pic\quiz\watchtv\Aeon Flux.jpg" />
+    <Content Include="pic\quiz\watchtv\Agents Of Shield.jpg" />
+    <Content Include="pic\quiz\watchtv\alf.jfif" />
+    <Content Include="pic\quiz\watchtv\Alias.jpg" />
+    <Content Include="pic\quiz\watchtv\Alice in Borderland.jpg" />
+    <Content Include="pic\quiz\watchtv\almost human.jpg" />
+    <Content Include="pic\quiz\watchtv\alphas.jpg" />
+    <Content Include="pic\quiz\watchtv\Arcane.jpg" />
+    <Content Include="pic\quiz\watchtv\ascension.jpg" />
+    <Content Include="pic\quiz\watchtv\Astroboy.jpg" />
+    <Content Include="pic\quiz\watchtv\babylon 5.jpg" />
+    <Content Include="pic\quiz\watchtv\battlestar galactica.jfif" />
+    <Content Include="pic\quiz\watchtv\Black Mirror.jpg" />
+    <Content Include="pic\quiz\watchtv\blake 7.jpg" />
+    <Content Include="pic\quiz\watchtv\caprica.jpg" />
+    <Content Include="pic\quiz\watchtv\colony.jfif" />
+    <Content Include="pic\quiz\watchtv\Cowboy Bebop.jpg" />
+    <Content Include="pic\quiz\watchtv\Danny Fhantom.jpg" />
+    <Content Include="pic\quiz\watchtv\Devs.jpg" />
+    <Content Include="pic\quiz\watchtv\Dexter Laboratory.jpg" />
+    <Content Include="pic\quiz\watchtv\Doctor Who.jpg" />
+    <Content Include="pic\quiz\watchtv\Dollhouse.jpg" />
+    <Content Include="pic\quiz\watchtv\dune.jpg" />
+    <Content Include="pic\quiz\watchtv\Eureka.jpg" />
+    <Content Include="pic\quiz\watchtv\farscape.jpg" />
+    <Content Include="pic\quiz\watchtv\fear of the walking dead.jpg" />
+    <Content Include="pic\quiz\watchtv\Final Space.jpg" />
+    <Content Include="pic\quiz\watchtv\firefly.jpg" />
+    <Content Include="pic\quiz\watchtv\For All Mankind.jfif" />
+    <Content Include="pic\quiz\watchtv\Foundation.jpg" />
+    <Content Include="pic\quiz\watchtv\Fringe.jpg" />
+    <Content Include="pic\quiz\watchtv\Futurama.jpg" />
+    <Content Include="pic\quiz\watchtv\Get Blake!.jpg" />
+    <Content Include="pic\quiz\watchtv\Halo.jpg" />
+    <Content Include="pic\quiz\watchtv\heroes.jpg" />
+    <Content Include="pic\quiz\watchtv\Humans.jpg" />
+    <Content Include="pic\quiz\watchtv\inside job.jpg" />
+    <Content Include="pic\quiz\watchtv\invader zim.jpg" />
+    <Content Include="pic\quiz\watchtv\Jessica Jones.jpg" />
+    <Content Include="pic\quiz\watchtv\knight rider.jpg" />
+    <Content Include="pic\quiz\watchtv\legion.jpg" />
+    <Content Include="pic\quiz\watchtv\Life on Mars.jpg" />
+    <Content Include="pic\quiz\watchtv\loki.jpg" />
+    <Content Include="pic\quiz\watchtv\lost.jpg" />
+    <Content Include="pic\quiz\watchtv\Love, Death &amp; Robots.jfif" />
+    <Content Include="pic\quiz\watchtv\the Mandalorian.jpg" />
+    <Content Include="pic\quiz\watchtv\Manifest.jpg" />
+    <Content Include="pic\quiz\watchtv\Max Headroom.jpg" />
+    <Content Include="pic\quiz\watchtv\Misfits.jpg" />
+    <Content Include="pic\quiz\watchtv\mork &amp; mindy.jpg" />
+    <Content Include="pic\quiz\watchtv\My Hero Academia.jpg" />
+    <Content Include="pic\quiz\watchtv\Now and Again.jpg" />
+    <Content Include="pic\quiz\watchtv\Orphan Black.jpg" />
+    <Content Include="pic\quiz\watchtv\other space.jpg" />
+    <Content Include="pic\quiz\watchtv\Phineas And Ferb.jpg" />
+    <Content Include="pic\quiz\watchtv\Quantum Leap.jpg" />
+    <Content Include="pic\quiz\watchtv\Red Dwarf.jpg" />
+    <Content Include="pic\quiz\watchtv\Rick and Morty.jpg" />
+    <Content Include="pic\quiz\watchtv\see.jpg" />
+    <Content Include="pic\quiz\watchtv\SENSE8.jpg" />
+    <Content Include="pic\quiz\watchtv\Severance.jpg" />
+    <Content Include="pic\quiz\watchtv\Smallville.jpg" />
+    <Content Include="pic\quiz\watchtv\Space 1999.jpg" />
+    <Content Include="pic\quiz\watchtv\star trek deep space 9.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Trek Discovery.jpg" />
+    <Content Include="pic\quiz\watchtv\star trek enterprise.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Trek Picard.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Trek Strange New Worlds.jfif" />
+    <Content Include="pic\quiz\watchtv\star trek the animated.jfif" />
+    <Content Include="pic\quiz\watchtv\Star Trek The Next Generation.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Trek The Original Series.jpg" />
+    <Content Include="pic\quiz\watchtv\star trek voyager.jpg" />
+    <Content Include="pic\quiz\watchtv\Star TrekLower Deck.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Wars Rebel.jpg" />
+    <Content Include="pic\quiz\watchtv\Star Wars The Clone Wars.jpg" />
+    <Content Include="pic\quiz\watchtv\stargate atlantis.jpg" />
+    <Content Include="pic\quiz\watchtv\stargate cg.jfif" />
+    <Content Include="pic\quiz\watchtv\Stranger Things.jpg" />
+    <Content Include="pic\quiz\watchtv\TERMINATOR THE SARAH CONNOR CHRONICLES.jpg" />
+    <Content Include="pic\quiz\watchtv\the 100.jpg" />
+    <Content Include="pic\quiz\watchtv\The Adventures Of Jimmy NeutronBoy Genius.jpg" />
+    <Content Include="pic\quiz\watchtv\the avengers.jpg" />
+    <Content Include="pic\quiz\watchtv\The Boys PresentsDiabolical.jpg" />
+    <Content Include="pic\quiz\watchtv\The Boys.jpg" />
+    <Content Include="pic\quiz\watchtv\THE EXPANSE.jfif" />
+    <Content Include="pic\quiz\watchtv\The Flash.jpg" />
+    <Content Include="pic\quiz\watchtv\The Handmaids Tale.jpg" />
+    <Content Include="pic\quiz\watchtv\The Hitchhikers Guide to the Galaxy.jpg" />
+    <Content Include="pic\quiz\watchtv\The Hollow.jpg" />
+    <Content Include="pic\quiz\watchtv\the jetsons.jfif" />
+    <Content Include="pic\quiz\watchtv\THE MAN IN THE HIGH CASTLE.jpg" />
+    <Content Include="pic\quiz\watchtv\The OA.jfif" />
+    <Content Include="pic\quiz\watchtv\The Orville.jfif" />
+    <Content Include="pic\quiz\watchtv\The Outer Limits.jpg" />
+    <Content Include="pic\quiz\watchtv\The Peripheral.jpg" />
+    <Content Include="pic\quiz\watchtv\THE PRISONER.jpg" />
+    <Content Include="pic\quiz\watchtv\The Quatermass Experiment.jpg" />
+    <Content Include="pic\quiz\watchtv\THE SIX MILLION DOLLAR MAN.jpg" />
+    <Content Include="pic\quiz\watchtv\The Twilight Zone.jpg" />
+    <Content Include="pic\quiz\watchtv\The Umbrella Academy.jpg" />
+    <Content Include="pic\quiz\watchtv\The Venture Brothers.jpg" />
+    <Content Include="pic\quiz\watchtv\The X-Files.jpg" />
+    <Content Include="pic\quiz\watchtv\thunderbirds.jpg" />
+    <Content Include="pic\quiz\watchtv\torchwood.jpg" />
+    <Content Include="pic\quiz\watchtv\Upload.jpg" />
+    <Content Include="pic\quiz\watchtv\utopia.jpg" />
+    <Content Include="pic\quiz\watchtv\v.jpg" />
+    <Content Include="pic\quiz\watchtv\Watchmen.jpg" />
+    <Content Include="pic\quiz\watchtv\Westworld.jpg" />
+    <Content Include="pic\quiz\watchtv\Wynonna Earp.jpg" />
+    <Content Include="pic\quiz\WHEN.jpg" />
+    <Content Include="pic\social\a1984.jpg" />
+    <Content Include="pic\social\aaa1984.jpg" />
+    <Content Include="pic\social\aavatar.jpg" />
+    <Content Include="pic\social\ahand.jpg" />
+    <Content Include="pic\social\amirror.jpeg" />
+    <Content Include="pic\social\aplanet.png" />
+    <Content Include="pic\social\arur.jpg" />
+    <Content Include="pic\social\avatar.png" />
+    <Content Include="pic\social\black mirror.jpg" />
+    <Content Include="pic\social\handmaid.jpg" />
+    <Content Include="pic\social\hungerex.jpg" />
+    <Content Include="pic\social\planet.jpg" />
+    <Content Include="pic\social\rur.jpg" />
+    <Content Include="pic\social\The Hunger Games.jpg" />
+    <Content Include="pic\social\V FOR.jpg" />
+    <Content Include="pic\social\V.jpg" />
+    <Content Include="sheets\chek.js" />
+    <Content Include="pages\watchb.html" />
+    <Content Include="sheets\history.js" />
+    <Content Include="sheets\form.js" />
+    <Content Include="sheets\ind.js" />
+    <Content Include="sheets\me.js" />
+    <Content Include="sheets\minus.js" />
+    <Content Include="sheets\pic3.js" />
+    <Content Include="sheets\main.js" />
+    <Content Include="sheets\StyleF.css" />
+    <Content Include="sheets\when.js" />
+    <Content Include="sheets\watchb.js" />
+    <Content Include="sheets\watchtv.js" />
+    <Content Include="sheets\social.js" />
+    <Content Include="sheets\watchf.js" />
+    <Content Include="sheets\StyleQ.css" />
+    <Content Include="sheets\what.js" />
+    <Content Include="sheets\Style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54859</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿body {
+    direction: rtl;
+    font-size: larger;
+    color: peru;
+    background-color: #742727;
+    font-family: 'Guttman Frank';
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 3px brown;
+    font-style: italic;
+}
+h2{
+    color:chocolate;
+}
+ul {
+    list-style-image: url(https://www.lev-hamisrad.co.il/ProductsImages/thumbs/T414101_40_40.png);
+    list-style-position:inside;
+}
+table{
+    width:100%;
+}
+.tafrit {
+    border-radius: 500px;
+    background-color: burlywood;
+    border: double;
+    font-weight: 200;
+    text-align: center;
+}

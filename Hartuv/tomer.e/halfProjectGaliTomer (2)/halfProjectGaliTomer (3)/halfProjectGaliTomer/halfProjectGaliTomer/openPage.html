@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>דף בית</title>
+    <link href="openCSS.css" rel="stylesheet" />
+    <script>
+        function happy() {
+            div1.innerHTML = "איזה כיף!! שימשיך ככה:)";
+        }
+        function sad() {
+            div1.innerHTML = "מצטערות לשמוע, נקווה שהאתר יעלה לך את המצב רוח:)"
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr><td><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></td></tr>
+        <tr>
+            <td width="35%"></td>
+            <td style="text-align:center">
+                <div class="tafrit">
+                    <a href="france.html">
+                        <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/J471871_400_400.png" width="80" />
+                    </a>
+                    <a href="maroco.html">
+                        <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/T414101_400_400.png" width="80" />
+                    </a>
+                    <a href="italyPage.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1024px-Flag_of_Italy.svg.png" width="80" />
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                איך את.ה מרגיש.ה היום?<br />
+                <button onclick="happy()">
+                    <img src="https://www.kids-world.org.il/wp-content/uploads/Smiley-0018.jpg" width="50" />
+                </button>
+                <button onclick="sad()">
+                    <img src="https://www.yo-yoo.co.il/coolpics/images/uploads/yellow15.png" width="50" />
+                </button>
+                <div id="div1"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

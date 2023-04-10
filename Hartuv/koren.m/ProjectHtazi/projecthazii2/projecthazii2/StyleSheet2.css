@@ -1,0 +1,344 @@
+﻿/*mainpage*/
+
+.* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100VH;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.spectruminteriors.co.in/wp-content/uploads/2020/12/Office-Interior-12.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: ltr;
+}
+
+.title {
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 13.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Garamond;
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+.contect {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+    .contect h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+
+    .contect p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    top: 80px;
+    left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.images {
+    font-family: Aharoni;
+    font-size: large;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://imgix.bustle.com/inverse/56/f2/06/cd/5e07/4d32/91f4/b8023a93e7d7/desert-17484621920jpg.jpeg?w=2000&h=640&fit=crop&crop=faces&auto=format%2Ccompress&blend=000000&blendAlpha=45&blendMode=normal);
+    background-size: cover;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+.navbar2 {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+button1 {
+    width: 18px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(athunepic.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(athunepic.jpg);
+}
+
+.card2 {
+    background-image: url(uroguay.jpg);
+}
+
+.card3 {
+    background-image: url(Qatar.jpg);
+}
+
+.card4 {
+    background-image: url(Tokyo.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+
+/*htmlpage1- football*/
+.button1 {
+    position: absolute;
+    top: 20%;
+    left: 50.1%;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 7.5px 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    background-color: deepskyblue;
+    color: black;
+    margin: 7px;
+}
+
+    .btn:hover {
+        background-color: blue;
+        color: black;
+    }
+
+
+.title {
+    font-size: 70px;
+    color: black;
+    position: absolute;
+    top: 13.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 114.6vh;
+}
+
+
+
+
+.class {
+    border: 2px solid black;
+    outline: 5px dotted blue;
+    background: white;
+}
+
+body {
+    background-color: white;
+    direction: rtl;
+}
+
+.background {
+    background-image: url();
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.information {
+    top: 20%;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightsteelblue;
+    padding: 0;
+    right: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+
+li {
+    float: right;
+}
+
+    li a {
+        text-decoration: none;
+        display: block;
+        padding: 24px 16px;
+        width: 100px;
+        color: dimgray;
+    }
+
+        li a:hover:not(.active) {
+            background-color: cornflowerblue;
+        }
+
+.active {
+    background-color: black;
+}
+
+.btn2 {
+    top: 50%;
+    background-color: #2E4053;
+    color: azure;
+    border: double #4b0f1b;
+    border-radius: 5px;
+    padding: 8px;
+    transition: background 0.5s;
+}
+
+    .btn2:hover {
+        font-weight: 500;
+        background: #211d6f;
+        color: #fff;
+    }

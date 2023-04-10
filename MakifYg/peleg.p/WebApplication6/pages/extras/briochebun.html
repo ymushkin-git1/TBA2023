@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../../StyleSheet1.css" rel="stylesheet" />
+    <script src="../../script/JavaScript2.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="../../pages/HtmlPage1.html">home</a>
+        <a href="../../pages/option.html">Menu</a>
+        <a href="../../pages/combo.html">Create</a>
+        <a class="b" href="../../pages/login.html">log in</a>
+    </div><br /><br />
+    <div>
+        <table class="title">
+            <tr>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>est </strong></td>
+                <td></td>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>urger </strong></td>
+                <td style="color:saddlebrown"><strong>C</strong></td>
+                <td style="color:rosybrown"><strong>ombo</strong></td>
+            </tr>
+        </table>
+        <br /><br />
+        <div class="title3" style="position:relative; left:35px ;">
+            Brioche bun:
+        </div>
+        <div class="txt1" style="position:relative; left:30px; top:50px;">
+            <b>The Brioche bread is a slightly sweet bread.<br /></b>
+            - It has a light and airy texture. <br />
+            - Due to the taste and texture of this French pastry, it goes so well with both sweet and savory dishes.<br />
+            - It is a great source of energy ( When you eat foods like brioche bread, your body breaks down the carbs in the bread into glucose.)<br />
+        </div>
+        <table style="position:relative; left:30px; top:60px;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <b class="txt3">
+                                    Nutrition Facts
+                                </b>
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Whole Wheat Hamburger Buns
+                            </td>
+                        </tr>
+                        <tr class="txt4">
+                            <td>
+                                Serving Size:<select id="serving">
+                                    <option id="option1" value="1">1</option>
+                                    <option id="option2" vlaue="2">2</option>
+                                    <option id="option3" value="3">3</option>
+                                    <option id="option4" value="4">4</option>
+                                    <option id="option5" value="5">5</option>
+                                </select><button id="change" onclick="nutrition2()">change serving</button> roll (<a id="cgrams">85</a>)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="color:black"><hr /></td>
+                        </tr>
+                        <tr><td style="color:black"><hr /></td></tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Calories</b><a class="txt4" id="C">292</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4" style="position:relative; left:300px;">% Daily Value</b>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Fat </b><a id="tfgrams" class="txt4"> 14</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <a id="tfat" class="txt5" style="position:relative; left:65px;">22</a><b class="txt5" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Saturated Fat</a> <a class="txt4" id="Sfgrams">8.1</a><a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b id="Sfat" class="txt5" style="position:relative; left:35px;">41</b><b class="txt4" style="position:relative; left:35px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Trans Fat</a> <a class="txt4" id="Tfgrams">0.5</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Polyunsaturated Fat</a> <a class="txt4" id="Pfgrams">0</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Monounsaturated  Fat</a> <a class="txt4" id="Mfgrams">0</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Cholesterol</b> <a class="txt4" id="Chgrams">109</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Chole" style="position:relative; left:65px;">36</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Sodium</b> <a class="txt4" id="Sograms">319</a><a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Sod" style="position:relative; left:65px;">13</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Potassium</b><a class="txt4" id="Pograms">87</a> <a class="txt4">mg</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Pota" style="position:relative; left:65px;">2</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Total Carbohydrates</b><a class="txt4" id="Tcgrams">34</a> <a class="txt4">g</a><hr />
+                            </td>
+                            <td>
+                                <b class="txt4" id="Totc" style="position:relative; left:65px;">11</b><b class="txt4" style="position:relative; left:65px;">%</b>
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Dietary Fiber</a> <a class="txt4" id="Dief">1.2</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr style="position:relative; left:30px;">
+                            <td>
+                                <a class="txt4">Sugars</a> <a class="txt4" id="Suga">6</a><a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b class="txt4">Protein </b><a class="txt4" id="Prot"> 7</a> <a class="txt4">g</a><hr />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div class="txt1" style="position:relative; left:400px; top:60px;">
+                        <b>The ingredients:</b>
+                        Enriched Wheat Flour (Wheat Flour, Malted Barley Flour, Niacin,<br />
+                        Iron, Thiamin Mononitrate, Riboflavin, Folic Acid), Water, Eggs, <br />
+                        Sugar, High Fructose Corn Syrup, Soybean and/or Palm Oil, Wheat Gluten,<br />
+                        Contains 2% or less of the following: Soft White Wheat Flour, Oat Flour, <br />
+                        Potato Flakes, Yeast, Salt, Natural Flavors, Dough Conditioners <br />
+                        (Mono & Diglycerides, Ascorbic Acid, Calcium Peroxide, Enzymes), <br />
+                        Corn Flour, Spices (Turmeric and Paprika), Yeast Nutrients <br />
+                        (Monocalcium Phosphate, Calcium Sulfate, Ammonium Sulfate), <br />
+                        Calcium Propionate and Potassium Sorbate (Preservatives), <br />
+                        Vegetable Proteins, Maltodextrins, Starch.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="txt1" style="position:relative; left:400px; top:-180px; color:red;">
+                    <b>Contains: GLUTEN</b>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

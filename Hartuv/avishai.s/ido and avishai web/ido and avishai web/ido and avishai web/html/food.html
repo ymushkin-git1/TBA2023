@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../heder.css" rel="stylesheet" />
+    <title>Nutrition Content of Foods</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="NavigationBar">
+        <div id="NavigationBar1">
+            <a href="homepage.html">HOME</a>
+            <a href="recepie.html">RECPIE</a>
+            <a href="snacks.html">SNAKS</a>
+            <a href="food.html">FOOD</a>
+            <a href="sleep.html">SLEEP</a>
+            <a href="muscle.html">MUSCLE</a>
+            <a href="workouts.html">WORKOUTS</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <!--------------------------------------->
+    <h1>Nutrition Content of Foods</h1>
+    <label>
+        Select a food:
+        <select id="food-select">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="chicken">Chicken</option>
+            <option value="steak">Steak</option>
+            <option value="tofu">Tofu</option>
+            <option value="eggs">eggs</option>
+            <option value="salmon">salmon</option>
+            <option value="rice">rice</option>
+            <option value="potato">potato</option>
+            <option value="yogurt">yogurt</option>
+            <option value="granola">granola</option>
+        </select>
+    </label>
+    <br>
+    <table id="food-table">
+        <tr>
+            <th>Food(100g)</th>
+            <th>Calories (kcal)</th>
+            <th>Protein (g)</th>
+            <th>Carbs (g)</th>
+            <th>Fat (g)</th>
+            
+        </tr>
+    </table>
+    <script>
+// ערכים תזונתיים
+var foodData = {
+            apple: {
+                calories: 95,
+        protein: 1.5,
+                            carbs: 25,
+                fat: 0.3                           
+            },
+            banana: {
+                calories: 105,
+        protein: 1.5,
+                            carbs: 27,
+                fat: 0.3
+            },
+            chicken: {
+                calories: 239,
+                protein: 26,
+                carbs: 0,
+                fat: 13
+            },
+            steak: {
+                calories: 250,
+                protein: 26,
+                carbs: 0,
+                fat: 17
+            },
+            tofu: {
+                calories: 94,
+                protein: 8,
+                carbs: 2,
+                fat: 6
+            },
+            eggs: {
+                calories: 143,
+                protein: 13,
+                carbs: 0.7,
+                fat: 9.5
+            },
+            salmon: {
+                calories: 206,
+                protein: 22,
+                carbs: 0,
+                fat: 12
+            },
+            rice: {
+                calories: 130,
+                protein: 2.7,
+                carbs: 28,
+                fat: 0.3
+            },
+            potato: {
+                calories: 93,
+                protein: 2.5,
+                carbs: 21,
+                fat: 0.1
+            },
+            yogurt: {
+                calories: 59,
+                protein: 10,
+                carbs: 3.6,
+                fat: 0.4
+            },
+            granola: {
+                calories: 471,
+                protein: 10,
+                carbs: 64,
+                fat: 20
+            },
+};
+
+var select = document.getElementById("food-select");
+var table = document.getElementById("food-table");
+
+select.addEventListener("change", function () {
+            // לנקות טאבל
+            while (table.rows.length > 1) {
+                table.deleteRow(-1);
+            }
+
+            // להשיג אוכל שהוקלק
+            var food = select.value;
+            var foodInfo = foodData[food];
+
+            // ראו חדש לאוכל הנבחר
+            var row = table.insertRow(-1);
+            var foodCell = row.insertCell(0);
+            var caloriesCell = row.insertCell(1);
+            var proteinCell = row.insertCell(2);
+            var carbsCell = row.insertCell(3);
+            var fat = row.insertCell(4);
+
+
+            foodCell.innerHTML = food;
+            caloriesCell.innerHTML = foodInfo.calories;
+            proteinCell.innerHTML = foodInfo.protein;
+            carbsCell.innerHTML = foodInfo.carbs;
+            fat.innerHTML = foodInfo.fat;
+});</script>
+</body>
+
+</html>

@@ -1,0 +1,1856 @@
+﻿
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 1px;
+    top: 0;
+    width: 100%;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: black;
+        padding: 18px 338px;
+        text-decoration: none;
+    }
+
+        li a:hover, .topic:hover {
+            background-color: dimgray;
+        }
+
+.v {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+    height: 100%;
+}
+.h {
+    position: relative;
+}
+#ex {
+    font-size: 21px;
+    font-weight: bold;
+    position: relative;
+}
+#bac {
+    opacity: 0.4;
+    position: fixed;
+    right: 1px;
+    width: 100%;
+}
+
+#home, .nq {
+    position: relative;
+}
+
+* {
+    text-align: center;
+    
+}
+.poster {
+    width: 180px;
+    height: 270px;
+    position: relative;
+}
+.posl {
+    width: 280px;
+    height: 400px;
+    float: left;
+    left: 20px;
+    position: relative;
+    filter: blur(10px);
+}
+.img {
+    width: 700px;
+    height: 300px;
+    position: relative;
+}
+#m1 {
+    background-image: url('../pic/quiz/watchf/2001 A Space Odyssey.jpg');
+    background-size: cover;
+    position: relative;
+}
+#m2 {
+    background-image: url('../pic/quiz/watchf/2010.jfif');
+    background-size: cover;
+    
+}
+#m3 {
+    background-image: url('../pic/quiz/watchf/ad astra.jpg');
+    background-size: cover;
+    
+}
+#m4 {
+    background-image: url('../pic/quiz/watchf/ai.jpg');
+    background-size: cover;
+    
+}
+#m5 {
+    background-image: url('../pic/quiz/watchf/akira.jpg');
+    background-size: cover;
+    
+}
+#m6 {
+    background-image: url('../pic/quiz/watchf/alien.jpg');
+    background-size: cover;
+    
+}
+#m7 {
+    background-image: url('../pic/quiz/watchf/alita.jpg');
+    background-size: cover;
+    
+}
+#m8 {
+    background-image: url('../pic/quiz/watchf/annihilation.jpg');
+    background-size: cover;
+    
+}
+#m9 {
+    background-image: url('../pic/quiz/watchf/arrival.jpg');
+    background-size: cover;
+    
+}
+#m10 {
+    background-image: url('../pic/quiz/watchf/atlantis the lost empire.jpg');
+    background-size: cover;
+    
+}
+#m11 {
+    background-image: url('../pic/quiz/watchf/attack the block.jpg');
+    background-size: cover;
+    
+}
+#m12 {
+    background-image: url('../pic/quiz/watchf/avatar.jpg');
+    background-size: cover;
+    
+}
+#m13 {
+    background-image: url('../pic/quiz/watchf/back to the future trilogy.jpg');
+    background-size: cover;
+    
+}
+#m14 {
+    background-image: url('../pic/quiz/watchf/being john malkovich.jpg');
+    background-size: cover;
+    
+}
+#m15 {
+    background-image: url('../pic/quiz/watchf/big hero 6.jpg');
+    background-size: cover;
+    
+}
+#m16 {
+    background-image: url('../pic/quiz/watchf/blade runner.jpg');
+    background-size: cover;
+    
+}
+#m17 {
+    background-image: url('../pic/quiz/watchf/Blade Runner 2049.jfif');
+    background-size: cover;
+    
+}
+#m18 {
+    background-image: url('../pic/quiz/watchf/brazil.jpg');
+    background-size: cover;
+    
+}
+#m19 {
+    background-image: url('../pic/quiz/watchf/butterfly effect.jpg');
+    background-size: cover;
+    
+}
+#m20 {
+    background-image: url('../pic/quiz/watchf/children of men.jpg');
+    background-size: cover;
+    
+}
+#m21 {
+    background-image: url('../pic/quiz/watchf/close encounters of the third kind.jpg');
+    background-size: cover;
+    
+}
+#m22 {
+    background-image: url('../pic/quiz/watchf/cloud atlas.jpg');
+    background-size: cover;
+    
+}
+#m23 {
+    background-image: url('../pic/quiz/watchf/cloudy with a chance of meatballs.jpg');
+    background-size: cover;
+    
+}
+#m24 {
+    background-image: url('../pic/quiz/watchf/cloverfilrd.jfif');
+    background-size: cover;
+    
+}
+#m25 {
+    background-image: url('../pic/quiz/watchf/coherence.jpg');
+    background-size: cover;
+    
+}
+#m26 {
+    background-image: url('../pic/quiz/watchf/contact.jpg');
+    background-size: cover;
+    
+}
+#m27 {
+    background-image: url('../pic/quiz/watchf/dark city.jfif');
+    background-size: cover;
+    
+}
+#m28 {
+    background-image: url('../pic/quiz/watchf/district 9.jpg');
+    background-size: cover;
+    
+}
+#m29 {
+    background-image: url('../pic/quiz/watchf/donnie darko.jpg');
+    background-size: cover;
+    
+}
+#m30 {
+    background-image: url('../pic/quiz/watchf/dredd.jfif');
+    background-size: cover;
+    
+}
+#m31 {
+    background-image: url('../pic/quiz/watchf/Dune.jfif');
+    background-size: cover;
+    
+}
+#m32 {
+    background-image: url('../pic/quiz/watchf/e.t.jpg');
+    background-size: cover;
+    
+}
+#m33 {
+    background-image: url('../pic/quiz/watchf/edge of tomorrow.jpg');
+    background-size: cover;
+    
+}
+#m34 {
+    background-image: url('../pic/quiz/watchf/Escape From New York.jfif');
+    background-size: cover;
+    
+}
+#m35 {
+    background-image: url('../pic/quiz/watchf/eternal sunshine of the spotless mind.jpg');
+    background-size: cover;
+    
+}
+#m36 {
+    background-image: url('../pic/quiz/watchf/event.jfif');
+    background-size: cover;
+    
+}
+#m37 {
+    background-image: url('../pic/quiz/watchf/everything everywhere at once.jpg');
+    background-size: cover;
+    
+}
+#m38 {
+    background-image: url('../pic/quiz/watchf/ex machina.jpg');
+    background-size: cover;
+    
+}
+#m39 {
+    background-image: url('../pic/quiz/watchf/forbidden planet.jpg');
+    background-size: cover;
+    
+}
+#m40 {
+    background-image: url('../pic/quiz/watchf/frankenstein.jpg');
+    background-size: cover;
+    
+}
+#m41 {
+    background-image: url('../pic/quiz/watchf/galaxy quest.jpg');
+    background-size: cover;
+    
+}
+#m42 {
+    background-image: url('../pic/quiz/watchf/gattaca.jpg');
+    background-size: cover;
+    
+}
+#m43 {
+    background-image: url('../pic/quiz/watchf/get out.jpg');
+    background-size: cover;
+    
+}
+#m44 {
+    background-image: url('../pic/quiz/watchf/ghost in the shell.jpg');
+    background-size: cover;
+    
+}
+#m45 {
+    background-image: url('../pic/quiz/watchf/ghostbusters.jpg');
+    background-size: cover;
+    
+}
+#m46 {
+    background-image: url('../pic/quiz/watchf/Gravity.jfif');
+    background-size: cover;
+    
+}
+#m47 {
+    background-image: url('../pic/quiz/watchf/guardians of the galaxy vol. 1 and 2.jpg');
+    background-size: cover;
+    
+}
+#m48 {
+    background-image: url('../pic/quiz/watchf/her.jpg');
+    background-size: cover;
+    
+}
+#m49 {
+    background-image: url('../pic/quiz/watchf/inception.jpg');
+    background-size: cover;
+    
+}
+#m50 {
+    background-image: url('../pic/quiz/watchf/independence day.jpg');
+    background-size: cover;
+    
+}
+#m51 {
+    background-image: url('../pic/quiz/watchf/inter.jpg');
+    background-size: cover;
+    
+}
+#m52 {
+    background-image: url('../pic/quiz/watchf/invader zim enter the florest.jpg');
+    background-size: cover;
+    
+}
+#m53 {
+    background-image: url('../pic/quiz/watchf/invasion of the body snatchers.jpg');
+    background-size: cover;
+    
+}
+#m54 {
+    background-image: url('../pic/quiz/watchf/ironman.jpg');
+    background-size: cover;
+    
+}
+#m55 {
+    background-image: url('../pic/quiz/watchf/island of lost souls.jpg');
+    background-size: cover;
+    
+}
+#m56 {
+    background-image: url('../pic/quiz/watchf/lilo and stitch.jpg');
+    background-size: cover;
+    
+}
+#m57 {
+    background-image: url('../pic/quiz/watchf/logan run.jfif');
+    background-size: cover;
+    
+}
+#m58 {
+    background-image: url('../pic/quiz/watchf/looper.jpg');
+    background-size: cover;
+    
+}
+#m59 {
+    background-image: url('../pic/quiz/watchf/Mad Max Trilogy.jpg');
+    background-size: cover;
+    
+}
+#m60 {
+    background-image: url('../pic/quiz/watchf/mad max fr.jfif');
+    background-size: cover;
+    
+}
+#m61 {
+    background-image: url('../pic/quiz/watchf/man in black.jpg');
+    background-size: cover;
+    
+}
+#m62 {
+    background-image: url('../pic/quiz/watchf/maze runner.jfif');
+    background-size: cover;
+    
+}
+#m63 {
+    background-image: url('../pic/quiz/watchf/mearth.jpg');
+    background-size: cover;
+    
+}
+#m64 {
+    background-image: url('../pic/quiz/watchf/meet the robinsons.jpg');
+    background-size: cover;
+    
+}
+#m65 {
+    background-image: url('../pic/quiz/watchf/megamind.jpg');
+    background-size: cover;
+    
+}
+#m66 {
+    background-image: url('../pic/quiz/watchf/metropolis.jpg');
+    background-size: cover;
+    
+}
+#m67 {
+    background-image: url('../pic/quiz/watchf/Minority Report.jfif');
+    background-size: cover;
+    
+}
+#m68 {
+    background-image: url('../pic/quiz/watchf/Moon.png');
+    background-size: cover;
+    
+}
+#m69 {
+    background-image: url('../pic/quiz/watchf/mr. nobody.jpg');
+    background-size: cover;
+    
+}
+#m70 {
+    background-image: url('../pic/quiz/watchf/pacific rim.jfif');
+    background-size: cover;
+    
+}
+#m71 {
+    background-image: url('../pic/quiz/watchf/panther.jpg');
+    background-size: cover;
+    
+}
+#m72 {
+    background-image: url('../pic/quiz/watchf/paprika.jpg');
+    background-size: cover;
+    
+}
+#m73 {
+    background-image: url('../pic/quiz/watchf/paul.jpg');
+    background-size: cover;
+    
+}
+#m74 {
+    background-image: url('../pic/quiz/watchf/planet of the apes.jpg');
+    background-size: cover;
+    
+}
+#m75 {
+    background-image: url('../pic/quiz/watchf/predator.jpg');
+    background-size: cover;
+    
+}
+#m76 {
+    background-image: url('../pic/quiz/watchf/predestination.jpg');
+    background-size: cover;
+    
+}
+#m77 {
+    background-image: url('../pic/quiz/watchf/primer.jpg');
+    background-size: cover;
+    
+}
+#m78 {
+    background-image: url('../pic/quiz/watchf/robocop.jpg');
+    background-size: cover;
+    
+}
+#m79 {
+    background-image: url('../pic/quiz/watchf/run lola run.jfif');
+    background-size: cover;
+    
+}
+#m80 {
+    background-image: url('../pic/quiz/watchf/serenity.jpg');
+    background-size: cover;
+    
+}
+#m81 {
+    background-image: url('../pic/quiz/watchf/Signs.jfif');
+    background-size: cover;
+    
+}
+#m82 {
+    background-image: url('../pic/quiz/watchf/Snowpiercer.jfif');
+    background-size: cover;
+    
+}
+#m83 {
+    background-image: url('../pic/quiz/watchf/solaris.jpeg');
+    background-size: cover;
+    
+}
+#m84 {
+    background-image: url('../pic/quiz/watchf/sor code.jfif');
+    background-size: cover;
+    
+}
+#m85 {
+    background-image: url('../pic/quiz/watchf/soylent green.jpg');
+    background-size: cover;
+    
+}
+#m86 {
+    background-image: url('../pic/quiz/watchf/spaceballs.jpg');
+    background-size: cover;
+    
+}
+#m87 {
+    background-image: url('../pic/quiz/watchf/spidermaninto the spider-vers.jpg');
+    background-size: cover;
+    
+}
+#m88 {
+    background-image: url('../pic/quiz/watchf/Stalker.jfif');
+    background-size: cover;
+    
+}
+#m89 {
+    background-image: url('../pic/quiz/watchf/star trek 2.jpg');
+    background-size: cover;
+    
+}
+#m90 {
+    background-image: url('../pic/quiz/watchf/starship troopers.jpg');
+    background-size: cover;
+    
+}
+#m91 {
+    background-image: url('../pic/quiz/watchf/sunshine.jpg');
+    background-size: cover;
+    
+}
+#m92 {
+    background-image: url('../pic/quiz/watchf/superman.jpg');
+    background-size: cover;
+    
+}
+#m93 {
+    background-image: url('../pic/quiz/watchf/star wars.jpg');
+    background-size: cover;
+    
+}
+#m94 {
+    background-image: url('../pic/quiz/watchf/the abyss.jpeg');
+    background-size: cover;
+    
+}
+#m95 {
+    background-image: url('../pic/quiz/watchf/the avengers.jpg');
+    background-size: cover;
+    
+}
+#m96 {
+    background-image: url('../pic/quiz/watchf/the day stood.jpg');
+    background-size: cover;
+    
+}
+#m97 {
+    background-image: url('../pic/quiz/watchf/the fith.jpg');
+    background-size: cover;
+    
+}
+#m98 {
+    background-image: url('../pic/quiz/watchf/the fly.jpg');
+    background-size: cover;
+    
+}
+#m99 {
+    background-image: url('../pic/quiz/watchf/the in.jpg');
+    background-size: cover;
+    
+}
+#m100 {
+    background-image: url('../pic/quiz/watchf/the invisible man (2020).jpg');
+    background-size: cover;
+    
+}
+#m101 {
+    background-image: url('../pic/quiz/watchf/the iron gaint.jpg');
+    background-size: cover;
+    
+}
+#m102 {
+    background-image: url('../pic/quiz/watchf/the last man on earth.jpg');
+    background-size: cover;
+    
+}
+#m103 {
+    background-image: url('../pic/quiz/watchf/the martian.jfif');
+    background-size: cover;
+    
+}
+#m104 {
+    background-image: url('../pic/quiz/watchf/the matrix.jpg');
+    background-size: cover;
+    
+}
+#m105 {
+    background-image: url('../pic/quiz/watchf/the prestige.jpg');
+    background-size: cover;
+    
+}
+#m106 {
+    background-image: url('../pic/quiz/watchf/the termi.jpg');
+    background-size: cover;
+    
+}
+#m107 {
+    background-image: url('../pic/quiz/watchf/the thing.jpg');
+    background-size: cover;
+    
+}
+#m108 {
+    background-image: url('../pic/quiz/watchf/the time mac.jfif');
+    background-size: cover;
+    
+}
+#m109 {
+    background-image: url('../pic/quiz/watchf/the war of the worlds.jpg');
+    background-size: cover;
+    
+}
+#m110 {
+    background-image: url("../pic/quiz/watchf/the world's end.jpg");
+    background-size: cover;
+    
+}
+#m111 {
+    background-image: url('../pic/quiz/watchf/they live.jpg');
+    background-size: cover;
+    
+}
+#m112 {
+    background-image: url('../pic/quiz/watchf/thx 1138.jpg');
+    background-size: cover;
+    
+}
+#m113 {
+    background-image: url('../pic/quiz/watchf/total recall.jpg');
+    background-size: cover;
+    
+}
+#m114 {
+    background-image: url('../pic/quiz/watchf/tr planet.jpg');
+    background-size: cover;
+    
+}
+#m115 {
+    background-image: url('../pic/quiz/watchf/tron.jpg');
+    background-size: cover;
+    
+}
+#m116 {
+    background-image: url('../pic/quiz/watchf/twelve monkeys.jpg');
+    background-size: cover;
+    
+}
+#m117 {
+    background-image: url('../pic/quiz/watchf/under.jpg');
+    background-size: cover;
+    
+}
+#m118 {
+    background-image: url('../pic/quiz/watchf/upgrade.jfif');
+    background-size: cover;
+    
+}
+#m119 {
+    background-image: url('../pic/quiz/watchf/wall e.jpg');
+    background-size: cover;
+    
+}
+#m120 {
+    background-image: url('../pic/quiz/watchf/x-men and x2.jpg');
+    background-size: cover;
+    
+}
+#m121 {
+    background-image: url('../pic/quiz/watchf/jurassic park.jpg');
+    background-size: cover;
+    
+}
+#m122 {
+    background-image: url('../pic/quiz/watchf/the blob.jpg');
+    background-size: cover;
+    
+}
+#m123 {
+    background-image: url('../pic/quiz/watchf/fantstic p.jpg');
+    background-size: cover;
+    
+}
+#m124 {
+    background-image: url('../pic/quiz/watchf/exis.jpg');
+    background-size: cover;
+    
+}
+#m125 {
+    background-image: url('../pic/quiz/watchf/the stepf.jpeg');
+    background-size: cover;
+    
+}
+#m126 {
+    background-image: url('../pic/quiz/watchf/the hunger.jpg');
+    background-size: cover;
+}
+#m127 {
+    background-image: url('../pic/quiz/watchf/a clockwork.jpg');
+    background-size: cover;
+}
+#m128 {
+    background-image: url('../pic/quiz/watchf/journey center of the earth.jpg');
+    background-size: cover;
+}
+#m129 {
+    background-image: url('../pic/quiz/watchf/mars attack.jpg');
+    background-size: cover;
+}
+#m130 {
+    background-image: url('../pic/quiz/watchf/repo man.jpg');
+    background-size: cover;
+}
+#m131 {
+    background-image: url('../pic/quiz/watchf/v for ven.jpg');
+    background-size: cover;
+}
+#tv1 {
+    background-image: url('../pic/quiz/watchtv/aeon flux.jpg');
+    background-size: cover;
+    
+}
+#tv2 {
+    background-image: url('../pic/quiz/watchtv/agents of shield.jpg');
+    background-size: cover;
+    
+}
+#tv3 {
+    background-image: url('../pic/quiz/watchtv/alf.jfif');
+    background-size: cover;
+    
+}
+#tv4 {
+    background-image: url('../pic/quiz/watchtv/alias.jpg');
+    background-size: cover;
+    
+}
+#tv5 {
+    background-image: url('../pic/quiz/watchtv/alice in borderland.jpg');
+    background-size: cover;
+    
+}
+#tv6 {
+    background-image: url('../pic/quiz/watchtv/almost human.jpg');
+    background-size: cover;
+    
+}
+#tv7 {
+    background-image: url('../pic/quiz/watchtv/alphas.jpg');
+    background-size: cover;
+    
+}
+#tv8 {
+    background-image: url('../pic/quiz/watchtv/arcane.jpg');
+    background-size: cover;
+    
+}
+#tv9 {
+    background-image: url('../pic/quiz/watchtv/ascension.jpg');
+    background-size: cover;
+    
+}
+#tv10 {
+    background-image: url('../pic/quiz/watchtv/astroboy.jpg');
+    background-size: cover;
+    
+}
+#tv11 {
+    background-image: url('../pic/quiz/watchtv/babylon 5.jpg');
+    background-size: cover;
+    
+}
+#tv12 {
+    background-image: url('../pic/quiz/watchtv/battlestar galactica.jfif');
+    background-size: cover;
+    
+}
+#tv13 {
+    background-image: url('../pic/quiz/watchtv/black mirror.jpg');
+    background-size: cover;
+    
+}
+#tv14 {
+    background-image: url('../pic/quiz/watchtv/blake 7.jpg');
+    background-size: cover;
+    
+}
+#tv15 {
+    background-image: url('../pic/quiz/watchtv/caprica.jpg');
+    background-size: cover;
+    
+}
+#tv16 {
+    background-image: url('../pic/quiz/watchtv/colony.jfif');
+    background-size: cover;
+    
+}
+#tv17 {
+    background-image: url('../pic/quiz/watchtv/cowboy bebop.jpg');
+    background-size: cover;
+    
+}
+#tv18 {
+    background-image: url('../pic/quiz/watchtv/danny fhantom.jpg');
+    background-size: cover;
+    
+}
+#tv19 {
+    background-image: url('../pic/quiz/watchtv/devs.jpg');
+    background-size: cover;
+    
+}
+#tv20 {
+    background-image: url('../pic/quiz/watchtv/dexter laboratory.jpg');
+    background-size: cover;
+    
+}
+#tv21 {
+    background-image: url('../pic/quiz/watchtv/doctor who.jpg');
+    background-size: cover;
+    
+}
+#tv22 {
+    background-image: url('../pic/quiz/watchtv/dollhouse.jpg');
+    background-size: cover;
+    
+}
+#tv23 {
+    background-image: url('../pic/quiz/watchtv/dune.jpg');
+    background-size: cover;
+    
+}
+#tv24 {
+    background-image: url('../pic/quiz/watchtv/eureka.jpg');
+    background-size: cover;
+    
+}
+#tv25 {
+    background-image: url('../pic/quiz/watchtv/fear of the walking dead.jpg');
+    background-size: cover;
+    
+}
+#tv26 {
+    background-image: url('../pic/quiz/watchtv/final space.jpg');
+    background-size: cover;
+    
+}
+#tv27 {
+    background-image: url('../pic/quiz/watchtv/firefly.jpg');
+    background-size: cover;
+    
+}
+#tv28 {
+    background-image: url('../pic/quiz/watchtv/For All Mankind.jfif');
+    background-size: cover;
+    
+}
+#tv29 {
+    background-image: url('../pic/quiz/watchtv/foundation.jpg');
+    background-size: cover;
+    
+}
+#tv30 {
+    background-image: url('../pic/quiz/watchtv/fringe.jpg');
+    background-size: cover;
+    
+}
+#tv31 {
+    background-image: url('../pic/quiz/watchtv/futurama.jpg');
+    background-size: cover;
+    
+}
+#tv32 {
+    background-image: url('../pic/quiz/watchtv/get blake!.jpg');
+    background-size: cover;
+    
+}
+#tv33 {
+    background-image: url('../pic/quiz/watchtv/halo.jpg');
+    background-size: cover;
+    
+}
+#tv34 {
+    background-image: url('../pic/quiz/watchtv/heroes.jpg');
+    background-size: cover;
+    
+}
+#tv35 {
+    background-image: url('../pic/quiz/watchtv/humans.jpg');
+    background-size: cover;
+    
+}
+#tv36 {
+    background-image: url('../pic/quiz/watchtv/inside job.jpg');
+    background-size: cover;
+    
+}
+#tv37 {
+    background-image: url('../pic/quiz/watchtv/invader zim.jpg');
+    background-size: cover;
+    
+}
+#tv38 {
+    background-image: url('../pic/quiz/watchtv/jessica jones.jpg');
+    background-size: cover;
+    
+}
+#tv39 {
+    background-image: url('../pic/quiz/watchtv/knight rider.jpg');
+    background-size: cover;
+    
+}
+#tv40 {
+    background-image: url('../pic/quiz/watchtv/legion.jpg');
+    background-size: cover;
+    
+}
+#tv41 {
+    background-image: url('../pic/quiz/watchtv/life on mars.jpg');
+    background-size: cover;
+    
+}
+#tv42 {
+    background-image: url('../pic/quiz/watchtv/Love, Death & Robots.jfif');
+    background-size: cover;
+    
+}
+#tv43 {
+    background-image: url('../pic/quiz/watchtv/manifest.jpg');
+    background-size: cover;
+    
+}
+#tv44 {
+    background-image: url('../pic/quiz/watchtv/max headroom.jpg');
+    background-size: cover;
+    
+}
+#tv45 {
+    background-image: url('../pic/quiz/watchtv/misfits.jpg');
+    background-size: cover;
+    
+}
+#tv46 {
+    background-image: url('../pic/quiz/watchtv/mork & mindy.jpg');
+    background-size: cover;
+    
+}
+#tv47 {
+    background-image: url('../pic/quiz/watchtv/my hero academia.jpg');
+    background-size: cover;
+    
+}
+#tv48 {
+    background-image: url('../pic/quiz/watchtv/now and again.jpg');
+    background-size: cover;
+    
+}
+#tv49 {
+    background-image: url('../pic/quiz/watchtv/orphan black.jpg');
+    background-size: cover;
+    
+}
+#tv50 {
+    background-image: url('../pic/quiz/watchtv/other space.jpg');
+    background-size: cover;
+    
+}
+#tv51 {
+    background-image: url('../pic/quiz/watchtv/phineas and ferb.jpg');
+    background-size: cover;
+    
+}
+#tv52 {
+    background-image: url('../pic/quiz/watchtv/quantum leap.jpg');
+    background-size: cover;
+    
+}
+#tv53 {
+    background-image: url('../pic/quiz/watchtv/red dwarf.jpg');
+    background-size: cover;
+    
+}
+#tv54 {
+    background-image: url('../pic/quiz/watchtv/rick and morty.jpg');
+    background-size: cover;
+    
+}
+#tv55 {
+    background-image: url('../pic/quiz/watchtv/see.jpg');
+    background-size: cover;
+    
+}
+#tv56 {
+    background-image: url('../pic/quiz/watchtv/sense8.jpg');
+    background-size: cover;
+    
+}
+#tv57 {
+    background-image: url('../pic/quiz/watchtv/severance.jpg');
+    background-size: cover;
+    
+}
+#tv58 {
+    background-image: url('../pic/quiz/watchtv/smallville.jpg');
+    background-size: cover;
+    
+}
+#tv59 {
+    background-image: url('../pic/quiz/watchtv/space 1999.jpg');
+    background-size: cover;
+    
+}
+#tv60 {
+    background-image: url('../pic/quiz/watchtv/star trek the original series.jpg');
+    background-size: cover;
+    
+}
+#tv61 {
+    background-image: url('../pic/quiz/watchtv/star trek the animated.jfif');
+    background-size: cover;
+    
+}
+#tv62 {
+    background-image: url('../pic/quiz/watchtv/star trek the next generation.jpg');
+    background-size: cover;
+    
+}
+#tv63 {
+    background-image: url('../pic/quiz/watchtv/star trek deep space 9.jpg');
+    background-size: cover;
+    
+}
+#tv64 {
+    background-image: url('../pic/quiz/watchtv/star trek voyager.jpg');
+    background-size: cover;
+    
+}
+#tv65 {
+    background-image: url('../pic/quiz/watchtv/star trek enterprise.jpg');
+    background-size: cover;
+    
+}
+#tv66 {
+    background-image: url('../pic/quiz/watchtv/star trek discovery.jpg');
+    background-size: cover;
+    
+}
+#tv67 {
+    background-image: url('../pic/quiz/watchtv/star trek picard.jpg');
+    background-size: cover;
+    
+}
+#tv68 {
+    background-image: url('../pic/quiz/watchtv/star treklower deck.jpg');
+    background-size: cover;
+    
+}
+#tv69 {
+    background-image: url('../pic/quiz/watchtv/Star Trek Strange New Worlds.jfif');
+    background-size: cover;
+    
+}
+#tv70 {
+    background-image: url('../pic/quiz/watchtv/star wars the clone wars.jpg');
+    background-size: cover;
+    
+}
+#tv71 {
+    background-image: url('../pic/quiz/watchtv/star wars rebel.jpg');
+    background-size: cover;
+    
+}
+#tv72 {
+    background-image: url('../pic/quiz/watchtv/stargate cg.jfif');
+    background-size: cover;
+    
+}
+#tv73 {
+    background-image: url('../pic/quiz/watchtv/stargate atlantis.jpg');
+    background-size: cover;
+    
+}
+#tv74 {
+    background-image: url('../pic/quiz/watchtv/stranger things.jpg');
+    background-size: cover;
+    
+}
+#tv75 {
+    background-image: url('../pic/quiz/watchtv/terminator the sarah connor chronicles.jpg');
+    background-size: cover;
+    
+}
+#tv76 {
+    background-image: url('../pic/quiz/watchtv/the 100.jpg');
+    background-size: cover;
+    
+}
+#tv77 {
+    background-image: url('../pic/quiz/watchtv/the adventures of jimmy neutronboy genius.jpg');
+    background-size: cover;
+    
+}
+#tv78 {
+    background-image: url('../pic/quiz/watchtv/the avengers.jpg');
+    background-size: cover;
+    
+}
+#tv79 {
+    background-image: url('../pic/quiz/watchtv/the boys.jpg');
+    background-size: cover;
+    
+}
+#tv80 {
+    background-image: url('../pic/quiz/watchtv/the boys presentsdiabolical.jpg');
+    background-size: cover;
+    
+}
+#tv81 {
+    background-image: url('../pic/quiz/watchtv/the expanse.jfif');
+    background-size: cover;
+    
+}
+#tv82 {
+    background-image: url('../pic/quiz/watchtv/the flash.jpg');
+    background-size: cover;
+    
+}
+#tv83 {
+    background-image: url("../pic/quiz/watchtv/The Handmaids Tale.jpg");
+    background-size: cover;
+    
+}
+#tv84 {
+    background-image: url('../pic/quiz/watchtv/the hitchhikers guide to the galaxy.jpg');
+    background-size: cover;
+    
+}
+#tv85 {
+    background-image: url('../pic/quiz/watchtv/the hollow.jpg');
+    background-size: cover;
+    
+}
+#tv86 {
+    background-image: url('../pic/quiz/watchtv/the jetsons.jfif');
+    background-size: cover;
+    
+}
+#tv87 {
+    background-image: url('../pic/quiz/watchtv/the man in the high castle.jpg');
+    background-size: cover;
+    
+}
+#tv88 {
+    background-image: url('../pic/quiz/watchtv/the mandalorian.jpg');
+    background-size: cover;
+    
+}
+#tv89 {
+    background-image: url('../pic/quiz/watchtv/the oa.jfif');
+    background-size: cover;
+    
+}
+#tv90 {
+    background-image: url('../pic/quiz/watchtv/the orville.jfif');
+    background-size: cover;
+    
+}
+#tv91 {
+    background-image: url('../pic/quiz/watchtv/the outer limits.jpg');
+    background-size: cover;
+    
+}
+#tv92 {
+    background-image: url('../pic/quiz/watchtv/the peripheral.jpg');
+    background-size: cover;
+    
+}
+#tv93 {
+    background-image: url('../pic/quiz/watchtv/the prisoner.jpg');
+    background-size: cover;
+    
+}
+#tv94 {
+    background-image: url('../pic/quiz/watchtv/the quatermass experiment.jpg');
+    background-size: cover;
+    
+}
+#tv95 {
+    background-image: url('../pic/quiz/watchtv/the six million dollar man.jpg');
+    background-size: cover;
+    
+}
+#tv96 {
+    background-image: url('../pic/quiz/watchtv/the twilight zone.jpg');
+    background-size: cover;
+    
+}
+#tv97 {
+    background-image: url('../pic/quiz/watchtv/the umbrella academy.jpg');
+    background-size: cover;
+    
+}
+#tv98 {
+    background-image: url('../pic/quiz/watchtv/the venture brothers.jpg');
+    background-size: cover;
+    
+}
+#tv99 {
+    background-image: url('../pic/quiz/watchtv/the x-files.jpg');
+    background-size: cover;
+    
+}
+#tv100 {
+    background-image: url('../pic/quiz/watchtv/thunderbirds.jpg');
+    background-size: cover;
+    
+}
+#tv101 {
+    background-image: url('../pic/quiz/watchtv/torchwood.jpg');
+    background-size: cover;
+    
+}
+#tv102 {
+    background-image: url('../pic/quiz/watchtv/upload.jpg');
+    background-size: cover;
+    
+}
+#tv103 {
+    background-image: url('../pic/quiz/watchtv/utopia.jpg');
+    background-size: cover;
+    
+}
+#tv104 {
+    background-image: url('../pic/quiz/watchtv/v.jpg');
+    background-size: cover;
+    
+}
+#tv105 {
+    background-image: url('../pic/quiz/watchtv/watchmen.jpg');
+    background-size: cover;
+    
+}
+#tv106 {
+    background-image: url('../pic/quiz/watchtv/westworld.jpg');
+    background-size: cover;
+    
+}
+#tv107 {
+    background-image: url('../pic/quiz/watchtv/wynonna earp.jpg');
+    background-size: cover;
+    
+}
+#tv108 {
+    background-image: url('../pic/quiz/watchtv/loki.jpg');
+    background-size: cover;
+    
+}
+#tv109 {
+    background-image: url('../pic/quiz/watchtv/farscape.jpg');
+    background-size: cover;
+    
+}
+#tv110 {
+    background-image: url('../pic/quiz/watchtv/lost.jpg');
+    background-size: cover;
+}
+
+#b1 {
+    background-image: url('../pic/quiz/watchb/112263.jpg');
+    background-size: cover;
+    
+}
+#b2 {
+    background-image: url('../pic/quiz/watchb/1984.jpg');
+    background-size: cover;
+    
+}
+#b3 {
+    background-image: url('../pic/quiz/watchb/1985.jpg');
+    background-size: cover;
+    
+}
+#b4 {
+    background-image: url('../pic/quiz/watchb/1985 ab.jpg');
+    background-size: cover;
+    
+}
+#b5 {
+    background-image: url('../pic/quiz/watchb/2001 a space odyssey.jpg');
+    background-size: cover;
+    
+}
+#b6 {
+    background-image: url('../pic/quiz/watchb/a clockwork orange.jpg');
+    background-size: cover;
+    
+}
+#b7 {
+    background-image: url('../pic/quiz/watchb/a fire upon.jpg');
+    background-size: cover;
+    
+}
+#b8 {
+    background-image: url('../pic/quiz/watchb/a wrinkle in time.jpg');
+    background-size: cover;
+    
+}
+#b9 {
+    background-image: url('../pic/quiz/watchb/all systems red.jpg');
+    background-size: cover;
+    
+}
+#b10 {
+    background-image: url('../pic/quiz/watchb/anathem.jpg');
+    background-size: cover;
+    
+}
+#b11 {
+    background-image: url('../pic/quiz/watchb/the last man.jpg');
+    background-size: cover;
+}
+#b12 {
+    background-image: url('../pic/quiz/watchb/blindsight.jpg');
+    background-size: cover;
+    
+}
+#b13 {
+    background-image: url('../pic/quiz/watchb/blood music.jpg');
+    background-size: cover;
+    
+}
+#b14 {
+    background-image: url('../pic/quiz/watchb/brave new world.jpg');
+    background-size: cover;
+    
+}
+#b15 {
+    background-image: url('../pic/quiz/watchb/childhoods end.jpg');
+    background-size: cover;
+    
+}
+#b16 {
+    background-image: url('../pic/quiz/watchb/children of time.jpg');
+    background-size: cover;
+    
+}
+#b17 {
+    background-image: url('../pic/quiz/watchb/city.jpg');
+    background-size: cover;
+    
+}
+#b18 {
+    background-image: url('../pic/quiz/watchb/consider phlebas.jpg');
+    background-size: cover;
+    
+}
+#b19 {
+    background-image: url('../pic/quiz/watchb/contact.jpg');
+    background-size: cover;
+    
+}
+#b20 {
+    background-image: url('../pic/quiz/watchb/dark matter.png');
+    background-size: cover;
+    
+}
+#b21 {
+    background-image: url('../pic/quiz/watchb/delirium.jpg');
+    background-size: cover;
+    
+}
+#b22 {
+    background-image: url('../pic/quiz/watchb/do androids dream of electric sheep.jpg');
+    background-size: cover;
+    
+}
+#b23 {
+    background-image: url('../pic/quiz/watchb/dragonflight.jpg');
+    background-size: cover;
+    
+}
+#b24 {
+    background-image: url('../pic/quiz/watchb/dune.jpg');
+    background-size: cover;
+    
+}
+#b25 {
+    background-image: url('../pic/quiz/watchb/earth abides.jpg');
+    background-size: cover;
+    
+}
+#b26 {
+    background-image: url("../pic/quiz/watchb/ender's game.jpg");
+    background-size: cover;
+    
+}
+#b27 {
+    background-image: url('../pic/quiz/watchb/eon.jpg');
+    background-size: cover;
+    
+}
+#b28 {
+    background-image: url('../pic/quiz/watchb/exo.jpg');
+    background-size: cover;
+    
+}
+#b29 {
+    background-image: url('../pic/quiz/watchb/fahrenheit 451.jpg');
+    background-size: cover;
+    
+}
+#b30 {
+    background-image: url('../pic/quiz/watchb/flowers for algernon.jpg');
+    background-size: cover;
+    
+}
+#b31 {
+    background-image: url('../pic/quiz/watchb/foundation.jpg');
+    background-size: cover;
+    
+}
+#b32 {
+    background-image: url('../pic/quiz/watchb/frankenstein.jpg');
+    background-size: cover;
+    
+}
+#b33 {
+    background-image: url('../pic/quiz/watchb/girlfriend in a coma.jpg');
+    background-size: cover;
+    
+}
+#b34 {
+    background-image: url('../pic/quiz/watchb/hothouse.jpg');
+    background-size: cover;
+    
+}
+#b35 {
+    background-image: url('../pic/quiz/watchb/house of suns.jpg');
+    background-size: cover;
+    
+}
+#b36 {
+    background-image: url('../pic/quiz/watchb/Hyperion.jfif');
+    background-size: cover;
+    
+}
+#b37 {
+    background-image: url('../pic/quiz/watchb/i, robot.jpg');
+    background-size: cover;
+    
+}
+#b38 {
+    background-image: url('../pic/quiz/watchb/inversion.jpg');
+    background-size: cover;
+    
+}
+#b39 {
+    background-image: url('../pic/quiz/watchb/journey to the center of the earth.jpg');
+    background-size: cover;
+    
+}
+#b40 {
+    background-image: url('../pic/quiz/watchb/jurassic park.jpg');
+    background-size: cover;
+    
+}
+#b41 {
+    background-image: url('../pic/quiz/watchb/kindred.jpg');
+    background-size: cover;
+    
+}
+#b42 {
+    background-image: url('../pic/quiz/watchb/labrith of alosion.jpg');
+    background-size: cover;
+    
+}
+#b43 {
+    background-image: url('../pic/quiz/watchb/leggend.jpg');
+    background-size: cover;
+    
+}
+#b44 {
+    background-image: url('../pic/quiz/watchb/leviathan wakes.jpg');
+    background-size: cover;
+    
+}
+#b45 {
+    background-image: url('../pic/quiz/watchb/matched.jpg');
+    background-size: cover;
+    
+}
+#b46 {
+    background-image: url('../pic/quiz/watchb/midworld.jpg');
+    background-size: cover;
+    
+}
+#b47 {
+    background-image: url('../pic/quiz/watchb/neuromancer.jpg');
+    background-size: cover;
+    
+}
+#b48 {
+    background-image: url('../pic/quiz/watchb/norstrilia.jpg');
+    background-size: cover;
+    
+}
+#b49 {
+    background-image: url('../pic/quiz/watchb/oryx and crake.jpg');
+    background-size: cover;
+    
+}
+#b50 {
+    background-image: url("../pic/quiz/watchb/pandora's star.jpg");
+    background-size: cover;
+    
+}
+#b51 {
+    background-image: url('../pic/quiz/watchb/planet of the apes.jpg');
+    background-size: cover;
+    
+}
+#b52 {
+    background-image: url('../pic/quiz/watchb/project hail mary.jpg');
+    background-size: cover;
+    
+}
+#b53 {
+    background-image: url('../pic/quiz/watchb/ready player one.jpg');
+    background-size: cover;
+    
+}
+#b54 {
+    background-image: url('../pic/quiz/watchb/recursion.jpg');
+    background-size: cover;
+    
+}
+#b55 {
+    background-image: url('../pic/quiz/watchb/red dwarf.jpg');
+    background-size: cover;
+    
+}
+#b56 {
+    background-image: url('../pic/quiz/watchb/red mars.jpg');
+    background-size: cover;
+    
+}
+#b57 {
+    background-image: url('../pic/quiz/watchb/red rising.jpg');
+    background-size: cover;
+    
+}
+#b58 {
+    background-image: url('../pic/quiz/watchb/red shirts.jpg');
+    background-size: cover;
+    
+}
+#b59 {
+    background-image: url('../pic/quiz/watchb/replay.jpg');
+    background-size: cover;
+    
+}
+#b60 {
+    background-image: url('../pic/quiz/watchb/revelation space.jpg');
+    background-size: cover;
+    
+}
+#b61 {
+    background-image: url('../pic/quiz/watchb/roadside picnic.jpg');
+    background-size: cover;
+    
+}
+#b62 {
+    background-image: url('../pic/quiz/watchb/skyward.jpg');
+    background-size: cover;
+    
+}
+#b63 {
+    background-image: url('../pic/quiz/watchb/slaughterhouse 5.jpg');
+    background-size: cover;
+    
+}
+#b64 {
+    background-image: url('../pic/quiz/watchb/snow crash.jpg');
+    background-size: cover;
+    
+}
+#b65 {
+    background-image: url('../pic/quiz/watchb/solaris.jpg');
+    background-size: cover;
+    
+}
+#b66 {
+    background-image: url('../pic/quiz/watchb/spin.jpg');
+    background-size: cover;
+    
+}
+#b67 {
+    background-image: url('../pic/quiz/watchb/station eleven.jpg');
+    background-size: cover;
+    
+}
+#b68 {
+    background-image: url('../pic/quiz/watchb/stranger in a strange land.jpg');
+    background-size: cover;
+    
+}
+#b69 {
+    background-image: url('../pic/quiz/watchb/the body snatchers.jpg');
+    background-size: cover;
+    
+}
+#b70 {
+    background-image: url('../pic/quiz/watchb/the book with new sun.jpg');
+    background-size: cover;
+    
+}
+#b71 {
+    background-image: url('../pic/quiz/watchb/the children of men.jpg');
+    background-size: cover;
+    
+}
+#b72 {
+    background-image: url('../pic/quiz/watchb/the chrysalids.jpg');
+    background-size: cover;
+    
+}
+#b73 {
+    background-image: url('../pic/quiz/watchb/the complete robot.jpg');
+    background-size: cover;
+    
+}
+#b74 {
+    background-image: url('../pic/quiz/watchb/the dispossessed.jpg');
+    background-size: cover;
+    
+}
+#b75 {
+    background-image: url('../pic/quiz/watchb/the fifth season.jpg');
+    background-size: cover;
+    
+}
+#b76 {
+    background-image: url('../pic/quiz/watchb/the forever war.jpg');
+    background-size: cover;
+    
+}
+#b77 {
+    background-image: url("../pic/quiz/watchb/The Handmaids Tale.jpg");
+    background-size: cover;
+    
+}
+#b78 {
+    background-image: url("../pic/quiz/watchb/The Hitchhikers Guide to the Galaxy.jpg");
+    background-size: cover;
+    
+}
+#b79 {
+    background-image: url('../pic/quiz/watchb/the hunger games.jpg');
+    background-size: cover;
+    
+}
+#b80 {
+    background-image: url('../pic/quiz/watchb/the invisible man.jpg');
+    background-size: cover;
+    
+}
+#b81 {
+    background-image: url('../pic/quiz/watchb/the left hand of darkness.jpg');
+    background-size: cover;
+    
+}
+#b82 {
+    background-image: url('../pic/quiz/watchb/the long way to a small, angry planet.jpg');
+    background-size: cover;
+    
+}
+#b83 {
+    background-image: url('../pic/quiz/watchb/the man in the high castle.jpg');
+    background-size: cover;
+    
+}
+#b84 {
+    background-image: url('../pic/quiz/watchb/the martian.jpg');
+    background-size: cover;
+    
+}
+#b85 {
+    background-image: url('../pic/quiz/watchb/the martian chronicles.jpg');
+    background-size: cover;
+    
+}
+#b86 {
+    background-image: url("../pic/quiz/watchb/the mote god's eye.jpg");
+    background-size: cover;
+    
+}
+#b87 {
+    background-image: url('../pic/quiz/watchb/the patternist.jpg');
+    background-size: cover;
+    
+}
+#b88 {
+    background-image: url('../pic/quiz/watchb/the road.jpg');
+    background-size: cover;
+    
+}
+#b89 {
+    background-image: url('../pic/quiz/watchb/the shadow of the torturer.jpg');
+    background-size: cover;
+    
+}
+#b90 {
+    background-image: url('../pic/quiz/watchb/the sparrow.jpg');
+    background-size: cover;
+    
+}
+#b91 {
+    background-image: url('../pic/quiz/watchb/the stand.jpg');
+    background-size: cover;
+    
+}
+#b92 {
+    background-image: url('../pic/quiz/watchb/the stars my destination.jpg');
+    background-size: cover;
+    
+}
+#b93 {
+    background-image: url('../pic/quiz/watchb/the three-body problem.jpg');
+    background-size: cover;
+    
+}
+#b94 {
+    background-image: url('../pic/quiz/watchb/the time machine.jpg');
+    background-size: cover;
+    
+}
+#b95 {
+    background-image: url("../pic/quiz/watchb/the time traveler's wife.jpg");
+    background-size: cover;
+    
+}
+#b96 {
+    background-image: url('../pic/quiz/watchb/the war of the worlds.jpg');
+    background-size: cover;
+    
+}
+#b97 {
+    background-image: url('../pic/quiz/watchb/to sleep in a sea of stars.jpg');
+    background-size: cover;
+    
+}
+#b98 {
+    background-image: url('../pic/quiz/watchb/to your scattered bodies.jpg');
+    background-size: cover;
+     
+}
+#b99 {
+    background-image: url('../pic/quiz/watchb/under the dome.jpg');
+    background-size: cover;
+     
+}
+#b100 {
+    background-image: url('../pic/quiz/watchb/warcross.jpg');
+    background-size: cover;
+     
+}
+#b101 {
+    background-image: url('../pic/quiz/watchb/watchers.jpg');
+    background-size: cover;
+     
+}
+#b102 {
+    background-image: url('../pic/quiz/watchb/we are legion.jpg');
+    background-size: cover;
+     
+}
+#b103 {
+    background-image: url('../pic/quiz/watchb/wool.jpg');
+    background-size: cover;
+     
+}
+#b104 {
+    background-image: url('../pic/quiz/watchb/world war z.jpg');
+    background-size: cover;
+     
+}
+#b105 {
+    background-image: url('../pic/quiz/watchb/xenogenesis.jpg');
+    background-size: cover;
+     
+}
+
+.enter {
+    width: 450px;
+    padding: 15px;
+    font-size: 21px;
+    position: relative;
+}
+.qi {
+    font-size: 30px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.qp {
+    font-size: 30px;
+    width: 350px;
+    height: 100px;
+    position: relative;
+}
+.q {
+    font-size:30px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+}
+.qu {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    width: 60%;
+    height: 630px;
+    border-radius: 40px
+}
+.qus {
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+#pr {
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+#prl {
+    width: 0%;
+    height: 30px;
+    background-color: darkred;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#finish {
+    height: 40px;
+    width: 200px;
+    position: relative;
+}

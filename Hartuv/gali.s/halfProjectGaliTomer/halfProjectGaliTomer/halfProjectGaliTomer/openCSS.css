@@ -1,0 +1,22 @@
+﻿body{
+    direction:rtl;
+    font-family: 'Guttman Hatzvi';
+    font-size: medium;
+    text-align:end;
+    color: #A45656;
+}
+html {
+    background: url('openImg2.png');
+    background-size: cover;
+}
+
+.tafrit {
+    border-radius: 500px;
+    background-color: antiquewhite;
+    font-weight: 200;
+    text-align: center;
+    width: 400px;
+}
+table{
+    width:100%;
+}

@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <script src="JavaScript.js"></script>
+    <link rel="StyleSheet" href="StyleSheet1.css">
+    
+</head>
+<body class="loginpagebody">
+    <!--HEADER-->
+    <div class="NavigationBar">
+        <div id="NavigationBar1">
+            <a href="FrontPage.html" id="MainPage">Fit&Health</a>
+            <a href="Chest.html">Chest</a>
+            <a href="Back.html">Back</a>
+            <a href="Triceps.html">Triceps</a>
+            <a href="Biceps.html">Biceps</a>
+            <a href="Shoulders.html">Shoulders</a>
+            <a href="Legs.html">Legs</a>
+            <a href="YourWorkout.html">Your Workout</a>
+
+        </div>
+        <div id="NavigationBar2">
+            <a href="LoginPage.html" id="LoginPage">Login</a>
+        </div>
+    </div>
+    <!--------------------------------------------------------->
+    <!--<br />
+    <br />
+    <div id="LoginPagediv" align="center">
+        <form id="LoginForm" onsubmit="return checkright()">-->
+    <!-- שם/ משתמש -->
+    <!--<input type="text" id="firstname" name="fname" value="First Name" />
+    <br />
+    <input type="text" id="lastname" name="lname" value="Last Name" />
+    <br />
+    <input type="text" id="username" name="uname" value="username" />
+    <br />-->
+    <!-- סיסמא -->
+    <!--<input type="password" id="password1" name="password" value="password" formmethod="post" />
+    <div id="notmatchingp" style="color:red"> </div>
+    <br />
+    <input type="password" id="password2" name="password" value="Match password" formmethod="post" />
+    <br />-->
+    <!--תאריך לידה-->
+    <!--Date Of Birth: <input type="date" id="dateofbirth" name="birthdate" value="1111-01-01" />
+    <div id="datemsg1" style="color:red"></div>
+    <br />-->
+    <!--אימייל-->
+    <!--<input type="email" id="email" name="email" value="youremail@email.com" />
+    <br />-->
+    <!--מין-->
+    <!--Male: <input type="radio" id="gendermale" name="gender" value="male" />
+    <br />
+    Female: <input type="radio" id="genderfemale" name="gender" value="female" />
+    <br />
+    <br />-->
+    <!--אזרחות-->
+    <!--Nationality: <select id="nationality" name="nat">
+                <option value="Israeli">Israeli</option>
+                <option value="Other">Other</option>
+            </select>
+            <br />
+            <br />
+            <textarea id="Remarks" name="Remarks" rows="5" cols="50"> Text us</textarea><br />
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </form>
+    </div>-->
+    <!------------NEW TABLE -------------------->
+
+    <form onsubmit="return checkright()">
+        <table>
+
+                <tr>
+                    <td>
+                        <input type="text" id="firstname" name="fname" value="First Name" />
+                        <div id="firstnamecheck" style="color:red"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="lastname" name="lname" value="Last Name" />
+                        <div id="lastnamecheck" style="color:red"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="username" name="uname" value="username" />
+                        <div id="usernamediv" style="color:red"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="namesloginpage">Password:</div>
+                        <input type="password" id="password1" name="password" value="password" formmethod="post" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="notmatchingp" style="color:red"> </div>
+                        <input type="password" id="password2" name="password" value="Match password" formmethod="post" />
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="namesloginpage">Year of Birth:</div>
+                        <input type="number" id="yearofbirth" name="birthyear" value="0000" />
+                        <div id="datemsg1" style="color:red"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="email" name="email" value="Enter your email!"  />
+                        <div id="notvalidemail" style="color:red"></div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="namesloginpage">Male:</div>
+                        <input type="radio" id="gendermale" name="gender" value="male" />
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <div class="namesloginpage">Female:</div>
+                        <input type="radio" id="genderfemale" name="gender" value="female" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="namesloginpage">Nationality:</div>
+                        <select id="nationality" name="nat">
+                            <option value="Other">Other</option>
+                            <option value="Israeli">Israeli</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="Remarks" name="Remarks" rows="5" cols="50"> Text us</textarea><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="submitbutton" value="submit" />
+                        <input type="reset" id="resetbutton" value="reset" />
+                    </td>
+                </tr>
+
+        </table>
+    </form>
+
+
+
+    <!--<table>
+        <tr>
+            <th>your name</th>
+            <th><input type="text" id="firstname" name="fname" value="First Name" /></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>last name</td>
+            <td><input type="text" id="lastname" name="lname" value="Last Name" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>username</td>
+            <td><input type="text" id="username" name="uname" value="username" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>
+                <input type="password" id="password1" name="password" value="password" formmethod="post" />
+                <div id="notmatchingp" style="color:red"> </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Match password</td>
+            <td><input type="password" id="password2" name="password" value="Match password" formmethod="post" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>yearofbirth</td>
+            <td>
+                <input type="number" id="yearofbirth" name="birthyear" value="0000" />
+                <div id="datemsg1" style="color:red"></div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="email" id="email" name="email" value="youremail@email.com" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td> Male: <input type="radio" id="gendermale" name="gender" value="male" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td>Female: <input type="radio" id="genderfemale" name="gender" value="female" /></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>nationality</td>
+            <td>
+                <select id="nationality" name="nat">
+                    <option value="Israeli">Israeli</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Remarks</td>
+            <td><textarea id="Remarks" name="Remarks" rows="5" cols="50"> Text us</textarea><br /></td>
+        <tr>
+
+
+        <tr>
+
+            <td>
+                <input type="submit" id="submitbutton" value="submit" />
+                <input type="reset" id="resetbutton" value="reset" />
+        </tr>
+
+
+    </table>-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+        

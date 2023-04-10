@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            background-color: lightgray;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 5px 5px 10px gray;
+            text-align: left;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body style="background-color:  lightsteelblue ">
+
+
+
+    
+    <h1>Peaky Blinders actors</h1>
+
+    <div class="container">
+
+        <div class="card" id="tommy">
+            <h2>Tommy Shelby</h2>
+            <p>Played by Cillian Murphy</p>
+            <p class="description">The leader of the Peaky Blinders and the Shelby family, Tommy is a cunning strategist and a ruthless businessman.</p>
+        </div>
+
+        <div class="card" id="polly">
+            <h2>Polly Gray</h2>
+            <p>Played by Helen McCrory</p>
+            <p class="description">A senior member of the Peaky Blinders and the Shelby family, Polly is a savvy businesswoman and a formidable ally to have.</p>
+        </div>
+
+
+        <div class="card" id="ari">
+            <h2>Aristocrats Shelby</h2>
+            <p>Played by Paul Anderson</p>
+            <p class="description">A member of the Shelby family and the Peaky Blinders, Polly is a hot-headed and impulsive young man with a thirst for violence.</p>
+
+
+        </div>
+
+
+    </div>
+    <script>
+
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.backgroundColor = 'whitesmoke';
+
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.backgroundColor = 'lightgray';
+
+
+
+            });
+
+
+
+        });
+
+
+
+
+    </script>
+
+    <a href="HtmlPage2.html">Back to main</a>
+
+</body>
+</html>

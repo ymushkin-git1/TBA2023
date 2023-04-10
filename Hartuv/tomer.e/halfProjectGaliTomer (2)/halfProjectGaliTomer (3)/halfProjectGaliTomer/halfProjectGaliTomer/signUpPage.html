@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>דף הרשמה</title>
+    <link href="signUpCSS.css" rel="stylesheet" />
+    <script src="signUpJS.js"></script>
+</head>
+<body>
+    <form method="get" onsubmit="return checkValues()">
+        <table>
+            <tr><td><br /><br /><br /></td></tr>
+            <tr><td><div class="must">*שדה חובה<br /><br /></div></td></tr>
+            <tr>
+                <td>שם</td>
+                <td><input id="idname" name="idname" type="text" /></td>
+                <td><div id="nameAlert"></div></td>
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td><input id="lastName" name="lastName" type="text" /></td>
+                <td><div id="lastNameAlert"></div></td>
+            </tr>
+            <tr>
+                <td>שם משתמש</td>
+                <td><input id="mistamesh" name="mistamesh" type="text" /></td>
+                <td><div id="mistameshAlert"></div></td>
+            </tr>
+            <tr>
+                <td>מספר טלפון*</td>
+                <td><input id="phon" name="phon" type="text" /></td>
+                <td><div id="phonAlert"></div></td>
+            </tr>
+            <tr>
+                <td>שנת לידה</td>
+                <td><input id="age" name="age" type="number" /></td>
+                <td><div id="ageAlert"></div></td>
+            </tr>
+            <tr>
+                <td>תושב.ת ישראל*</td>
+                <td><input id="localY" name="local" type="radio" value="yes" />כן<br />
+                <input id="localN" name="local" type="radio" value="no" />לא</td>
+                <td><div id="localAlert"></div></td>
+            </tr>
+            <tr>
+                <td>סיסמא*</td>
+                <td><input id="password" name="password" type="password" /></td>
+                <td><div id="passwordAlert"></div></td>
+            </tr>
+            <tr>
+                <td>אימות סיסמא</td>
+                <td><input id="password2" name="password2" type="password" /></td>
+                <td><div id="password2Alert"></div></td>
+            </tr>
+            <tr>
+                <td>מגדר</td>
+                <td>
+                    <select id="gender" name="gender">
+                        <option>זכר</option>
+                        <option>נקבה</option>
+                        <option>אחר</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>כתובת</td>
+                <td><textarea id="addres" name="addres"></textarea></td>
+            </tr>
+            <tr>
+                <td>דואר אימייל</td>
+                <td><input id="email" name="email" type="text" /></td>
+                <td><div id="emailAlert"></div></td>
+            </tr>
+            <tr>
+                <td><button type="submit">שלח</button></td>
+                <td><button type="reset">אפס</button></td>
+            </tr>
+            <tr>
+                <td style="text-align:center">
+                    <a href="openPage.html">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/building-295215_1280.png" width="80" />
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

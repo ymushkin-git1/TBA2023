@@ -1,0 +1,24 @@
+﻿body{
+    background-color:darkcyan;
+    color:white;
+}
+
+h1 {
+    font-size: 80px;
+    direction: rtl;
+    margin: auto;
+    width: 25%;
+}
+h2 {
+    font-size: 30px;
+    direction: rtl;
+    margin: auto;
+    width: 15%;
+}
+
+table{
+    margin:auto;
+ width:30%;
+}
+
+

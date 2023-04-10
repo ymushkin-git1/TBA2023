@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../sheets/StyleF.css">
+</head>
+<body>
+
+    <div class="v">
+
+        <img id="bac" src="../pic/bac05.jpg" />
+        <audio id="a">
+            <source src="../audio%20and%20video/2001%20A%20Space%20Odyssey%20Opening%20in%201080%20HD.mp3#t=10" type="audio/mpeg" />
+        </audio>
+        <div class="d">
+            <h1 class="h">Wait a minute!, before entering the site you must answer a few questions...</h1>
+            <form action="home.html" onsubmit="return c()">
+                <h1 class="q">First name:</h1>
+                <input type="text" placeholder="Jhon" class="inp" name="name" id="name" />
+                <p class="e" id="e1"></p>
+                <h1 class="q">Last name:</h1>
+                <input type="text" placeholder="Doe" class="inp" name="lname" id="lname" />
+                <p class="e" id="e2"></p>
+                <h1 class="q">Age:</h1>
+                <input type="number" placeholder="XXX" class="inp" name="age" id="age" />
+                <p class="e" id="e3"></p>
+                <h1 class="q">Birthday date:</h1>
+                <input type="date" class="inp" name="date" id="date" />
+                <p class="e" id="e4"></p>
+                <h1 class="q">Gender:</h1>
+                <select class="inp" name="gen" id="gen">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="a">Alien</option>
+                    <option value="r">Robot</option>
+                    <option value="u">Invisible Pink Unicorn</option>
+                </select>
+                <h1 class="q">Area in the country (Israel):</h1>
+                <select class="inp" name="ar" id="ar">
+                    <option value="op">Select:</option>
+                    <option value="m">North</option>
+                    <option value="f">Center</option>
+                    <option value="a">South</option>
+                    <option value="r">Out of the Country</option>
+                </select>
+                <p class="e" id="e5"></p>
+                <h1 class="q">Email:</h1>
+                <input type="email" placeholder="alienarereal11@gmail.com" class="inp" name="email" id="email" />
+                <p class="e" id="e6"></p>
+                <h1 class="q">Nickname:</h1>
+                <input type="text" placeholder="Agent Mothman" class="inp" name="nickname" id="nickname" />
+                <p class="e" id="e7"></p>
+                <h1 class="q">Password:</h1>
+                <input type="password" placeholder="you cant see that" class="inp" name="pass" id="pass" />
+                <p class="e" id="e8"></p>
+                <h1 class="q">Confirm Password:</h1>
+                <input type="password" placeholder="you cant see that again" class="inp" name="pass2" id="pass2" />
+                <p class="e" id="e9"></p>
+                <h1 class="q">What is your relationship with sci fi?</h1>
+                <textarea placeholder="It's not 'fiction' it's mostly true..." class="inp" name="lsf" id="lsp"></textarea></br>
+                <h1 class="q" id="tu">Terms of use:</h1>
+                <input type="radio" class="c" name="c1" id="c1"><span class="p">I will not copy from the site</span></br>
+                <input type="radio" class="c" name="c2" id="c2"><span class="p">I will not abuse it</span></br>
+                <input type="radio" class="c" name="c3" id="c3"><span class="p">I will give Ela Galya the maximum score</span></br></br>
+                <p class="e" id="e10"></p>
+                <input type="submit" class="b" value="Finish!">
+                <button class="b" id="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script src="../sheets/form.js"></script>
+</body>
+</html>

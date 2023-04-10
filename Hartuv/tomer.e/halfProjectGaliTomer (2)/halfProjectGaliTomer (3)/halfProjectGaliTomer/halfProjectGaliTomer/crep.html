@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="franceResCSS.css" rel="stylesheet" />
+    <script>
+        function finish() {
+            if (level1.checked == true && level2.checked == true) {
+                if (level3.checked == true && level4.checked == true) {
+                    if (level5.checked == true && level6.checked == true) {
+                        if (level7.checked) {
+                            alert("כל הכבוד ושיהיה בתיאבון!!")
+                        }
+                    }
+                }
+            }
+        }
+        function sumbit() {
+            if (bikoret.value.length > 1) {
+                alert("תודה על הביקורת! מקוות שנהנתם.ן")
+            }
+           
+        }
+    </script>
+    <title>קרפ</title>
+</head>
+    <body>
+    <form method="get" onsubmit="return finish()">
+        <table>
+            <tr>
+                <td colspan="2"><h1>קרפ צרפתי</h1></td>
+            </tr>
+            <tr>
+                <td><h2>המרכיבים ל2-4 מנות</h2></td>
+                <td>
+                    <img src="https://heninthekitchen.com/wp-content/uploads/2019/02/IMG_0498-2.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>כוס קמח</li>
+                        <li>כוס חלב/ מים</li>
+                        <li>כף שמן</li>
+                        <li>2 שקיות סוכר וניל</li>
+                        <li>כפית תמצית וניל</li>
+                        <li>תוספות: שוקולד / ריבה / שמנת מתוקה מוקצפת השף הלבן / גבינה לבנה תנובה / גלידה / אגוזים קצוצים</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="https://happykitchen.co.il/wp-content/uploads/2019/02/%D7%A7%D7%A8%D7%A4-%D7%A6%D7%A8%D7%A4%D7%AA%D7%99.jpg" width="200" />
+                    <img src="https://adikosh.co.il/wp-content/uploads/2020/04/IMG-6152.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td><h2>הוראות הכנה</h2></td>
+                <td>
+                    <img src="https://www.chef-lavan.co.il/uploads/f_584b04449a8ac_1481311300.jpg" width="200"/>
+                </td>
+            </tr>
+            <tr>
+                <td><input id="level1" name="level1" type="checkbox" />מערבבים את כל המרכיבים ביחד עד לקבלת תערובת נוזלית, קצת סמיכה וללא גושים.</td>
+                <td rowspan="8">
+                    <img src="https://imaot.co.il/images/Uploads/RecipeImages/1885351312021.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td><input id="level2" name="level2" type="checkbox" />מניחים גוש קטן של חמאה או מעט שמן ומחממים את המחבת לחום בינוני.</td>
+            </tr>
+            <tr>
+                <td><input id="level3" name="level3" type="checkbox" />יוצקים כחצי מצקת מבלילת הקרפ (בהתאם לגודל המחבת) אל המחבת ומסובבים אותה במהירות ליצירת קרפ דק ורחב.</td>
+            </tr>
+            <tr>
+                <td><input id="level4" name="level4" type="checkbox" />לאחר כחצי דקה, כששולי הקרפ מתייבשים ומתמצקים, הופכים את הקרפ בעזרת מרית ומטגנים את צדו השני.</td>
+            </tr>
+            <tr>
+                <td><input id="level5" name="level5" type="checkbox" />מוציאים מהמחבת ומניחים על צלחת.</td>
+            </tr>
+            <tr>
+                <td><input id="level6" name="level6" type="checkbox" />חוזרים על טיגון קרפים נוספים עד לסיום הבלילה.</td>
+            </tr>
+            <tr>
+                <td><input id="level7" name="level7" type="checkbox" />מגישים עם ריבה, מיפל, גלידה, שוקולד, אגוזים, גלידה, גבינת תנובה או קצפת.</td>
+            </tr>
+            <tr>
+                <td><button onclick="finish()">סיימתי!</button></td>
+            </tr>
+            <tr>
+                <td><h2>בתיאבון!</h2></td>
+            </tr>
+            <tr>
+                <td>רוצים.ות לתת חוות דעת על המתכון?</td>
+            </tr>
+            <tr>
+                <td><textarea id="bikoret" name="bikoret"></textarea></td>
+            </tr>
+            <tr>
+                <td><button onclick="sumbit()">שלח</button></td>
+            </tr>
+            <tr>
+                <td><a href="crep.html">
+                    <img src="https://emojigraph.org/media/openmoji/top-arrow_1f51d.png" width="80" /></a>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="tafrit">
+                        <a href="maroco.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/T414101_400_400.png" width="80" />
+                        </a>
+                        <a href="openPage.html">
+                            <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/building-295215_1280.png" width="80" />
+                        </a>
+                        <a href="france.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/J471871_400_400.png" width="80" />
+                        </a>
+                        <a href="italyPage.html">
+                            <img src="https://www.yo-yoo.co.il/flags/images/707910.png" width="80" />
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

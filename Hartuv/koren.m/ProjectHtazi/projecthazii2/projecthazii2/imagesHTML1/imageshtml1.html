@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="image1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image6.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image7.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="ExitIMAGES"><a href="../HtmlPage1.html">Exit Images</a></div>
+    <div class="ExitHome"><a href="../MainPage.html">Exit Home</a></div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 8) {
+                counter = 1;
+            }
+        }, 2500);
+    </script>
+
+</body>
+</html>

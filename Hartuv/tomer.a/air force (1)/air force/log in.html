@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JavaScript.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style>
+        .body2 {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_wLveEgPVfZxvXS8WjllgYUvag4uF2rzhfQ&usqp=CAU);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="body2">
+    <form method="get" onsubmit="return checkAllFields()">
+        <div class="signup1">
+
+            <label class="details" for="username"><b>שם משתמש/username</b></label>
+            <input class="inputbox" type="text" placeholder="שם משתמש/username" name="uname" required><br />
+
+            <label class="details" for="psw"><b>password/סיסמא</b></label>
+            <input class="inputbox" type="password" placeholder="סיסמא/password" name="psw" required><br />
+            <button class="" type="submit">Login</button><br />
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember">remember me /לזכור אותי
+            </label><br />
+
+            <a href="sign up.html">sign up/הרשמה</a><br />
+
+            <span>שכחת סיסמא Forgot <a href="password.html">password?</a></span>
+        </div>
+
+       
+    </form>
+ 
+
+   
+
+</body>
+</html>

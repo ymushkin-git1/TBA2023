@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../heder.css" rel="stylesheet" />
+    <title>Nutrition Content of protien snacks</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="NavigationBar">
+        <div id="NavigationBar1">
+            <a href="homepage.html">HOME</a>
+            <a href="recepie.html">RECPIE</a>
+            <a href="snacks.html">SNAKS</a>
+            <a href="food.html">FOOD</a>
+            <a href="sleep.html">SLEEP</a>
+            <a href="muscle.html">MUSCLE</a>
+            <a href="workouts.html">WORKOUTS</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+     </div>
+        
+    <!--------------------------------------->
+
+    <h1>Nutrition Content of Foods</h1>
+    <label>
+        Select a food:
+        <select id="food-select">
+            5
+            <option value="Allin">All - in</option>
+            <option value="warriorcrunch">warrior crunch</option>
+            <option value="gotnuva">go tnuva</option>
+            <option value="myprotein">my protein</option>
+            <option value="quest">quest</option>
+            <option value="Trust">Trust</option>
+            <option value="SnickersHiProtein">Snickers-HiProtein</option>
+            <option value="PureProtein">PureProtein</option>
+            <option value="LennyandLarrys">LennyandLarrys</option>
+        </select>
+    </label>
+    <br>
+    <table id="food-table">
+        <tr>
+            <th>Food(serving size)</th>
+            <th>Calories (kcal)</th>
+            <th>Protein (g)</th>
+            <th>Carbs (g)</th>
+            <th>Fat (g)</th>
+        </tr>
+        
+    </table>
+   
+    <script>
+// ערכים תזונתיים
+var foodData = {
+            Allin: {
+                calories: 338,
+                protein: 38,
+                carbs: 30,
+                fat: 9
+            },
+            warriorcrunch: {
+                calories: 240,
+                protein: 20,
+                carbs: 24,
+                fat: 11
+            },
+            gotnuva: {
+                calories: 235,
+                protein: 20,
+                carbs: 13,
+                fat: 11
+            },
+            myprotein: {
+                calories: 290,
+                protein: 23,
+                carbs: 27,
+                fat: 10
+            },
+            quest: {
+                calories: 240,
+                protein: 20,
+                carbs: 24,
+                fat: 7
+
+            },
+            Trust: {
+                 calories: 211,
+                 protein: 20,
+                 carbs: 18,
+                 fat: 7.8
+
+            },
+            SnickersHiProtein: {
+                 calories: 213,
+                 protein: 20,
+                 carbs: 20,
+                 fat: 7
+
+            },
+            PureProtein: {
+                calories: 190,
+                protein: 20,
+                carbs: 16,
+                fat: 6
+
+            },
+            LennyandLarrys: {
+                calories: 220,
+                protein: 18,
+                carbs: 18,
+                fat: 12
+
+            },
+
+};
+
+var select = document.getElementById("food-select");
+var table = document.getElementById("food-table");
+
+select.addEventListener("change", function () {
+            // לנקות טאבל
+            while (table.rows.length > 1) {
+                table.deleteRow(-1);
+            }
+
+            // להשיג אוכל שהוקלק
+            var food = select.value;
+            var foodInfo = foodData[food];
+
+            // ראו חדש לאוכל הנבחר
+            var row = table.insertRow(-1);
+            var foodCell = row.insertCell(0);
+            var caloriesCell = row.insertCell(1);
+            var proteinCell = row.insertCell(2);
+            var carbsCell = row.insertCell(3);
+            var fat = row.insertCell(4);
+
+            foodCell.innerHTML = food;
+            caloriesCell.innerHTML = foodInfo.calories;
+            proteinCell.innerHTML = foodInfo.protein;
+            carbsCell.innerHTML = foodInfo.carbs;
+            fat.innerHTML = foodInfo.fat;
+});</script>
+    
+</body>
+
+</html>

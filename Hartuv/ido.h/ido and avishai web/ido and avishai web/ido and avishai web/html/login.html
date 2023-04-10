@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../heder.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('../img/lock.jpg');
+        }
+    </style>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+            background-color:papayawhip;
+        }
+    </style>
+    <script>
+        function checklength () {
+
+            document.getElementbyid("message").innerHTML = "";
+            document.getElementbyid("message2").innerHTML = "";
+            document.getElementbyid("message3").innerHTML = "";
+            document.getElementbyid("message4").innerHTML = "";
+            var returnValue=true;
+
+            var result = new Date(document.getElementById("age").value);
+            if (result.getFullYear() < 1900 || result.getFullYear() > 2022) {
+                document.getElementById("message").innerHTML = "Invalid age";
+                returnValue = false;
+            }
+            
+            
+            result = document.getElementbyid ("username").value;
+            if(result.length<3){
+                document.getElementbyid("message2").innerHTML = "username length must be more then 3 charactres";
+                var returnValue=false;
+            
+            }
+            result = document.getElementbyid ("email").value;
+            if(result.length<4){
+                document.getElementbyid("message3").innerHTML = "email length must be more then 4 charactres";
+                var returnValue=false;
+            
+
+            }
+
+            var pw1 = document.getElementById("psw1").value;
+            var pw2 = document.getElementById("psw2").value;
+            if (pw1 != pw2) {
+                document.getElementById("message4").innerHTML = "Paswords are not the same";
+                returnValue = false;
+            }
+    </script>
+
+</head>
+<body>
+    <!--HEADER-->
+    <div class="NavigationBar">
+        <div id="NavigationBar1">
+            <a href="homepage.html">HOME</a>
+            <a href="recepie.html">RECPIE</a>
+            <a href="snacks.html">SNAKS</a>
+            <a href="food.html">FOOD</a>
+            <a href="sleep.html">SLEEP</a>
+            <a href="muscle.html">MUSCLE</a>
+            <a href="workouts.html">WORKOUTS</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div>
+
+    <!--------------------------------------->
+
+
+   
+    <div class="center">
+        <h1>sign up</h1>
+        <div class="leftbox">
+            <form onsubmit="return checkLength()">
+                <input type="text" placeholder="full name" required class="input-box" id="name" onkeydown="check_input()" />
+                <div style="color:red" id="msg"></div>
+                <p>enter youer age</p>
+                <input type="date" placeholder="enter your age" class="input-box" id="age" required />
+                <div style="color:red" id="message"></div>
+
+
+                <p>select your gender</p>
+                <input type="radio" id="female" vlaue="female" name="gender" />
+                <label for="female">female </label>
+                <input type="radio" id="male" value="male" name="gender" />
+                <label for="male">male</label>
+                <input type="radio" id="other" vlaue="other" name="gender" />
+                <label for="other">other</label>
+
+                <input type="text" placeholder="username" required class="input-box" id="username" />
+                <div style="color:red" id="message2"></div>
+                <input type="email" placeholder="enter your email address" required class="input-box" id="email" />
+                <div style="color:red" id="message3"></div>
+
+                <input type="password" placeholder="enter your password" required class="input-box" id="psw1" />
+                <div style="color:red" id="message4"></div>
+                <input type="text" placeholder="confirm your password" required class="input-box" id="psw2" />
+
+                <input type="checkbox" id="terms" class="checkbox" />
+                <label for="terms" required>i agree to the terms & service</label>
+
+                <button type="submit">sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

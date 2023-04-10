@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Your Workout</title>
+    <link rel="StyleSheet" href="StyleSheet1.css">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="NavigationBar">
+        <div id="NavigationBar1">
+            <a href="FrontPage.html" id="MainPage">Fit&Health</a>
+            <a href="Chest.html">Chest</a>
+            <a href="Back.html">Back</a>
+            <a href="Triceps.html">Triceps</a>
+            <a href="Biceps.html">Biceps</a>
+            <a href="Shoulders.html">Shoulders</a>
+            <a href="Legs.html">Legs</a>
+            <a href="YourWorkout.html">Your Workout</a>
+
+
+        </div>
+        <div id="NavigationBar2">
+            <a href="LoginPage.html" id="LoginPage">Login</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div style="color: red; text-align: center; font-size: 50px; text-align: center; "> YOUR WORKOUT EXCERCISES:</div>
+    <br />
+    <div id="exerciseDisplay"></div>
+    <br />
+    <br />
+    <div style="color:red; text-align: center;"> Click "Excercises" To Open:</div>
+    <br />
+    <div id="centerbuttons">
+        <button id="collapseButton" class="buttonsyourworkout">Exercises</button>
+        <div id="collapseContent" style="display: none;">
+            <div class="YourWorkoutMuscles"> Triceps:</div>
+            <button id="closeGripBenchPress">Close-grip Bench Press</button>
+            <button id="ropeTricepPushdown">Rope Tricep Pushdown</button>
+            <button id="isolatedTricepsExtension">Isolated Triceps Extension</button>
+            <button id="skullcrushers">Skullcrushers</button>
+            <button id="diamondPressUp">The Diamond Press-up</button>
+            <button id="dips">Dips</button>
+            <br />
+            <div class="YourWorkoutMuscles"> Chest:</div>
+            <div style="color: red;"> Upper Chest</div>
+            <button id="closeGripBenchPress">Incline Bench Press</button>
+            <button id="ropeTricepPushdown">Incline Dumbbell Press</button>
+            <button id="isolatedTricepsExtension">Decline Push-Up</button>
+            <button id="skullcrushers">Low to High Cable Chest Fly</button>
+            <button id="diamondPressUp">Close Grip Push-Up</button>
+            <div style="color: red;">Mid Chest</div>
+            <button id="diamondPressUp">Bench Press</button>
+            <button id="diamondPressUp">Cable Fly</button>
+            <button id="diamondPressUp">Dumbell Fly</button>
+            <button id="diamondPressUp">Close Grip Bench Press</button>
+            <div style="color: red;"> Lower Chest</div>
+            <button id="diamondPressUp">Incline PushUp</button>
+            <button id="diamondPressUp">Cable Crossover</button>
+            <button id="diamondPressUp">Parallel-bar dips</button>
+            <div class="YourWorkoutMuscles">Biceps:</div>
+            <button id="diamondPressUp">Incline Dumbbell Curl</button>
+            <button id="diamondPressUp">Hammer Curl</button>
+            <button id="diamondPressUp">Cable Curl</button>
+            <button id="diamondPressUp">EZ-Bar Preacher Curl</button>
+            <button id="diamondPressUp">Concentration Curl</button>
+            <button id="diamondPressUp">Chin-Up</button>
+            <div class="YourWorkoutMuscles">Back:</div>
+            <div style="color: red;">Upper/Outer Lats</div>
+            <button id="diamondPressUp">Pullup (wide grip)</button>
+            <button id="diamondPressUp">Bentover Barbell Row (wide grip)</button>
+            <button id="diamondPressUp">Dumbbell Row</button>
+            <div style="color: red;">Lower Lats</div>
+            <button id="diamondPressUp">Reverse-Grip Pulldown</button>
+            <button id="diamondPressUp">Underhanded Bent Over Row</button>
+            <div style="color: red;">Middle Back</div>
+            <button id="diamondPressUp">One-Arm Dumbbell Row</button>
+            <button id="diamondPressUp">Close-Grip Seated Cable Row</button>
+            <div style="color: red;">Lower Back</div>
+            <button id="diamondPressUp">Back Extension</button>
+            <button id="diamondPressUp">Stiff-Legged Deadlift</button>
+            <div class="YourWorkoutMuscles">Shoulders:</div>
+            <button id="diamondPressUp">Barbell Overhead Shoulder Press</button>
+            <button id="diamondPressUp">Seated Dumbbell Shoulder Press</button>
+            <button id="diamondPressUp">Front Raise</button>
+            <button id="diamondPressUp">Reverse Pec Deck Fly</button>
+            <button id="diamondPressUp">Dumbbell Lateral Raise</button>
+            <button id="diamondPressUp">One-Arm Cable Lateral Raise</button>
+            <button id="diamondPressUp">Cable Face Pull</button>
+            <div class="YourWorkoutMuscles">Legs:</div>
+            <button id="diamondPressUp">Barbell Squat</button>
+            <button id="diamondPressUp">Leg Press</button>
+            <button id="diamondPressUp">Dumbbell Walking Lunge</button>
+            <button id="diamondPressUp">Leg Extensions</button>
+            <button id="diamondPressUp">Romanian Deadlift</button>
+            <button id="diamondPressUp">Lying Leg Curls</button>
+            <button id="diamondPressUp">Goblet Squat</button>
+            <button id="diamondPressUp">Hack Squat</button>
+            <button id="diamondPressUp">Barbell Glute Bridge</button>
+            <button id="diamondPressUp">Standing Calf Raises</button>
+
+        </div>
+      
+        <!--<div id="exerciseDisplay"></div>-->
+        <br />
+        <button class="buttonsyourworkout" onclick="resetyourworkout()" id="resetButton">RESET</button>
+        <br />
+        <img src="images/yourworkoutphoto.jpg" style="width: 100%; height: 1000px" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../StyleSheetOfAll.css" rel="stylesheet" />
+</head>
+<body>
+    <ul>
+        <li class="menu">
+            <a href="SHOP.html">SHOP</a>
+        </li>
+        <li class="menu">
+            <a href="DISCOVER.html">DISCOVER</a>
+        </li>
+        <li class="menu" style="display:inline-block">
+            <a href="sign up.html">SIGN UP</a>
+        </li>
+        <li>
+            <a style="padding: 10px 30px; width: 7%; display: inline-block" href="../firstPage.html">
+                <img src="../images/LEGO logo my site.png" style="width:50px;height:50px;" />
+            </a>
+        </li>
+
+
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form onsubmit="return CheckValiues()">
+
+        <table style="font-family: Corbel; color: black;">
+            <tr>
+                <td class="tb">
+                    <div name="Name">
+                        Name:
+                    </div>
+                    <input name="FName" type="text" id="FName" placeholder="your name" />
+                </td>
+                <td class="tb">
+                    <div id="FND"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div name="LName">
+                        Family name:
+                    </div>
+                    <input name="FName" type="text" id="LName" placeholder="your family name" />
+                </td>
+                <td class="tb">
+                    <div id="LND"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div name="Gander">
+                        Gander:
+                    </div>
+                    <input type="radio" name="Gander" id="male" />male
+                    <input type="radio" name="Gander" id="female" />female
+                    <input type="radio" name="Gander" id="other" />other
+                </td>
+                <td class="tb">
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div name="Email">
+                        Email:
+                    </div>
+                    <input type="email" name="Email" id="Email" placeholder="$$$$$$.$$@gmail.com" />
+                </td>
+                <td class="tb">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tb">
+                    <div>
+                        Password:
+                    </div>
+                    <input type="password" id="pass1" />
+                </td>
+                <td class="tb">
+                    <div id="P1D"></div>
+                </td>
+                <td>
+                    <div id="P_A"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div>
+                        Pass Authentication:
+                    </div>
+                    <input type="password" id="pass2" />
+                </td>
+                <td class="tb">
+                    <div id="P2D"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div>
+                        kind of LEGO you like:
+                    </div>
+                    <select name="favorit">
+                        <optgroup label="basic lego">
+                            <option value="Technic">LEGO Technic</option>
+                            <option value="LEGO Harry Potter">LEGO Harry Potter</option>
+                            <option value="Marvel">LEGO Marvel</option>
+                            <option value="City">LEGO City</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        what do you do with the sets you buy:
+                    </div>
+                    <input type="checkbox" name="actionset" id="ch1" />play<br />
+                    <input type="checkbox" name="actionset" id="ch2" />save in a colection<br />
+                    <input type="checkbox" name="actionset" id="ch3" />give my children/grandsons<br />
+                </td>
+                <td>
+                    <div id="checkback"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div>
+                        Please enter your feedback here
+                    </div>
+                    <textarea rows="5" cols="30" name="feadback" id="feadbacK">
+                        Enter answer here...
+                    </textarea>
+                </td>
+                <td class="tb"></td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="5" cols="30" name="feadback" id="feadbacK">
+                        Enter answer here...
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div>
+                        Please enter your date of birth
+                    </div>
+                    <input type="date" id="DaTe" />
+                </td>
+                <td class="tb"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        describe your favorit lego brick
+                    </div>
+                    <textarea rows="5" cols="30" name="feadback" id="feadbacK">
+                        Enter description here...
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        where do you want the sets will be sent to:
+                    </div>
+                    <select name="orderCountry">
+                        <option value="israel">israel</option>
+                        <option value="germany">germany</option>
+                        <option value="irland">irland</option>
+                        <option value="australia">australia</option>
+                        <option value="england">england</option>
+                        <optgroup label="USA">
+                            <option value="new york">new york</option>
+                            <option value="washington">washington</option>
+                            <option value="california">california</option>
+                            <option value="arizona">arizona</option>
+                            <option value="colorado">colorado</option>
+                            <option value="hawaii">hawaii</option>
+                            <option value="lousiana">lousiana</option>
+                            <option value="virginia">virginia</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <div>
+                        who is going to use this lego:
+                    </div>
+                    <select name="favorit">
+                        <optgroup label="who is going to use this lego">
+                            <option value="my kids/grandsons">my kids/grandsons</option>
+                            <option value="me(adoult)">me(adoult)</option>
+                            <option value="me(kid)">me(kid)</option>
+                            <option value="my friend">my friend</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="tb">
+                    <br /><br /><br />
+                    <button type="submit">Sign up</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

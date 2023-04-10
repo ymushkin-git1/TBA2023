@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Peaky Blinders</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+
+
+        #descriptionContainer {
+            width: 650px;
+            height: 450px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: whitesmoke;
+            color: #fff;
+            font-family: "Arabic Typesetting", sans-serif;
+            text-shadow: 2px 2px #333;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+
+        div {
+            color: whitesmoke;
+            border-color : black;
+
+
+
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .text {
+            color: #f0e68c;
+            font-size: 70px;
+            font-family: "Arial", sans-serif;
+            text-shadow: 2px 2px #333;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+        div{
+            font-size: 40px;
+
+
+        }
+
+    </style>
+</head>
+<body style="background-image: url(https://www.teahub.io/photos/full/60-609425_peaky-blinders-wallpapers-group-peaky-blinders-wallpaper-4k.jpg) ">
+    >
+
+
+
+ 
+    <div>
+        <p class="text">PEAKY BLINDERS</p>
+    </div>
+
+    <div  id="descriptionContainer"></div>
+    <button style="font-size: 40px;" id="changeBtn">next</button>
+    <script src="script.js"></script>
+
+
+    <script>
+
+        const descriptions = [
+            "Peaky Blinders is a British television crime drama set in 1920s Birmingham, England. The series follows the exploits of the Shelby crime family, who were one of the most notorious gangs in the city.",
+            "The Peaky Blinders, who got their name from the razor blades they sewed into the peaks of their caps, were known for their violent and cunning nature. The series explores their rise to power and their attempts to maintain it against rival gangs and the police.",
+            "The series features an impressive cast of actors, including Cillian Murphy as Thomas Shelby, the leader of the Peaky Blinders, and Helen McCrory as Aunt Polly, Thomas's right-hand woman. The show has been praised for its intense action, intricate plotting, and strong character development."
+        ];
+
+        const descriptionContainer = document.getElementById("descriptionContainer");
+        const changeBtn = document.getElementById("changeBtn");
+
+        let currentDescription = 0;
+
+        function showDescription() {
+            descriptionContainer.innerHTML = `<p>${descriptions[currentDescription]}</p>`;
+        }
+
+        function changeDescription() {
+            currentDescription++;
+            if (currentDescription >= descriptions.length) {
+                currentDescription = 0;
+            }
+            showDescription();
+        }
+
+        changeBtn.addEventListener("click", changeDescription);
+
+        showDescription();
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <h2 >
+        <a style="color:whitesmoke" href="HtmlPage2.html">Back to main</a>
+
+    </h2>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+
+
+
+        body {
+            background-image: url(cybersafe.jpg);
+            background-size: cover;
+            font-family: Georgia, serif;
+        }
+
+        .content .main-text a:hover {
+            transform: scale(1.2);
+            border: 1px solid #fff;
+            background: transparent;
+            color: whitesmoke;
+            transition: .4s;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 170px;
+        }
+
+        .hero {
+            height: 100%;
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        nav ul li.active a {
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        .hero header .logo h2 a {
+            font-family: Georgia, serif;
+            display: block;
+            font-size: 32px;
+            font-weight: 600;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .hero header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 30px;
+            font-family: Georgia, serif;
+        }
+
+        nav ul li {
+            color: whitesmoke;
+            list-style: none;
+            display: inline-block;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: whitesmoke;
+                margin-left: 60px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+
+        .content {
+            padding-top: 250px;
+            margin-left: 50px;
+        }
+
+            .content .main-text {
+                position: relative;
+                z-index: 2;
+                margin-bottom: 50px;
+            }
+
+                .content .main-text h1 {
+                    font-size: 80px;
+                    align-items: center;
+                    line-height: 1;
+                    color: whitesmoke;
+                    margin: 0px 0px 45px;
+                }
+
+                .content .main-text p {
+                    max-width: 100%;
+                    width: 480px;
+                    color: whitesmoke;
+                    line-height: 1.8;
+                    font-size: 15px;
+                    margin-top: 50px;
+                }
+
+                .content .main-text a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: black;
+                    background: white;
+                    border: 1px solid white;
+                    padding: 6px 15px;
+                    line-height: 1.4;
+                    border-radius: 30px;
+                    font-size: 14px;
+                }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet3.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="active"><a href="website.html">HOME</a></li>
+            <li><a href="our-team.html">OUR TEAM</a></li>
+            <li><a href="resources.html">SAFETY TIPS</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+            <li><a href="HtmlPage2.html">REGISTER</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form onsubmit="return checkall()" >
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter your first name" id="fname" name="fname">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last name</span>
+                        <input type="text" placeholder="Enter your last name" id="lname" name="lname">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" id="uname" name="uname">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" id="email" name="email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" id="num" name="num">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" id="code" name="code">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm your password" id="code2" name="code2">
+                    </div>
+
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        
+                            <button class="button" type="submit" > register </button>
+                        <div id="div1"></div>
+                        
+
+                    </p>
+                </div>
+                <div class="button">
+                    <input type="reset" name="reset1" value="reset">
+                </div>
+                <div class="button">
+                </div>
+            </form>
+           
+</body>
+</html>

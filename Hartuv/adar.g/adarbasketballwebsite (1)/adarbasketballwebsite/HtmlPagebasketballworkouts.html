@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>אימוני כדורסל</title>
+    <style>
+        @import url('stylesheet1.css');
+        body {
+            background-image: url('https://ronsport.com/wp-content/uploads/2022/12/basketball-on-dark-background-2021-08-26-23-03-02-utc-1-1280x580.jpg');
+            background-repeat: no-repeat;
+            background-size:155%;
+            color: white;
+            direction:rtl;
+        }
+       
+
+    </style>
+    <script>
+        function avregeshoting() { 
+         var avrege = (make.value / shoting.value) * 100;
+            div18.innerHTML = "האחוזים שלך בסשן קליעות הזה הם " + avrege + "%";
+        }
+    </script>
+</head>
+<body>
+    <table style="position:fixed;align-items:center; width:100%">
+        <tr>
+            <td>
+                <div class="maintitle">
+                    AG baketball website
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li><a href="htmlpagehomepage.html">home page</a></li>
+                    <li><a href="HtmlPageaboutme.html">about</a></li>
+                    <li><a href="HtmlPagebasketballworkouts.html">basketball workouts</a></li>
+                    <li><a href="HtmlPageworkout.html">fitnes workout</a></li>
+                    <li><a href="HtmlPagefood.html">diet</a></li>
+                    <li><a href="HtmlPagescausal.html">how to build your day</a></li>
+                    <li><a href="todolist.html">to do list</a></li>
+                    <li><a href="HtmlPagelogin.html">register</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <p style="background-color:black; color:red">אימוני כדורסל:</p>
+
+    <a href="#shot">אימוני קליעה</a><br />
+    <a href="#ball">אימון שליטה בכדור</a><br />
+    <a href="#skils">אימון סקילס</a><br />
+    <p>
+        יש פה אימונים מותאמים לכל רמות הכדורסל בין מתחילים עד מקצוענים. <br />
+        באימונים לא תצטרכו הרבה ציוד אך הייתי ממליץ לקנות קונוסים וכדור טניס.
+    </p>
+    <table>
+        <tr>
+            <td class="nameworkout" id="shot">אימון כדורסל 1: קליעות</td>
+        </tr>
+        <tr>
+            <td class="workuot">
+                1. חימום דינמי <br />
+                1. קליעות ממטר מהסל מכל עמדה: 5 קליעות רצוף <br />
+                3. ריצה מהפינה לחצי פינה לקליעה ומהחצי פינה לפינה לקליעה: 4 קליעות רצוף <br />
+                4. מכל עמדה חצי מרחק: 3 קליעות רצוף <br />
+                5. מכל עמדה שלשות: 2 קליעות רצוף <br />
+                6. מכל עמדה כדרור פול אפ: 3 קליעות רצוף מכל יד <br />
+                7. סטאפ באק מהחצי פינות: 4 קליעות <br />
+                8. סנאצ' באק מהחצי פינות: 4 קליעות רצוף <br />
+                9. אחד על אחד רק קליעות, לוזר עד 11 <br />
+             <div>
+                 <span>כמה זריקות זרקת באימון?</span>
+                 <input type="number" id="shoting" />
+             </div>
+             <div>
+                 <span>כמה קליעות קלעת באימון?</span>
+                 <input type="number" id="make" />
+                 <button onclick="avregeshoting()">חשב אחוז קליעה</button>
+             </div>
+             <div id="div18"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="nameworkout" id="ball">אימון כדורסל 2: שליטה בכדור</td>
+        </tr>
+        <tr>
+            <td class="workuot">
+                1. 3 כדרורים רגילים ואז כדרור 1 חזק שבאותו זמן שאתה מכדרר חזק אתה עושה סנאצ' עם כדור טניס: דקה <br />
+                2. אותו דבר רק עם קרוס: דקה <br />
+                3. אותו דבר רק עם בין הרגליים: דקה <br />
+                4. אותו דבר רק עם מאחורי הגב: דקה <br />
+                5. הלוך חזור עד העונשין: בין הרגלים קרוס; בין הרגליים מאחורי הגב דאבל קרוס; דאבל בין הרגלים דאבל קרוס <br />
+                6. כדרור עם 2 כדורים באותו זמן חזק: דקה <br />
+                7. כדרור עם 2 כדורים כדור כדור: דקה <br />
+                8. כדרור עם 2 כדורים כדור אחד קרוס כדור אחד בין הרגלים: חצי דקה <br />
+                9. פריסטייל כדרור: 2 דקות
+            </td>
+        </tr>
+        <tr>
+            <td class="nameworkout" id="skils">אימון כדורסל 3: סקילס</td>
+        </tr>
+        <tr>
+            <td class="workuot">
+                1. חימום דינמי <br />
+                2. עליה על הפיק וקליה חצי מרחק: 8 קליעות כל צד <br />
+                3. עליה על הפיק וסיומת ליאפ עם מגה/סיבסוב/יורו סטאפ/צ'רבייק: 3 קליעות כל צד וכל סוג <br />
+                4. לא לעלות על הפיק וקליה חצי מרחק: 8 קליעות כל צד <br />
+                5. לא לעלות על הפיק וסיומת ליאפ עם מגה/סיבסוב/יורו סטאפ/צ'רבייק: 3 קליעות כל צד וכל סוג <br />
+                6. פריסטייל סיומות ומהלכים: 5 דקות <br />
+                7. אחד על אחד 3 כדרורים: עד 7 <br />
+                8. אחד על אחד 5 כדרורים: עד 7 <br />
+                9. אחד על אחד רגיל לנסות לעבוד על דברים שאתה לא טוב בהם: עד 15 <br />
+                
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

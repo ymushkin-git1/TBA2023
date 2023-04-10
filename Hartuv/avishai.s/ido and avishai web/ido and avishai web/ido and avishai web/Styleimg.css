@@ -1,0 +1,62 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* Full height */
+    height: 50%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Images used */
+.img1 {
+    background-image: url('img/hal.jpg');
+}
+
+.img2 {
+    background-image: url('img/fit.jpg');
+}
+
+.img3 {
+    background-image: url('img/bannafit.jpg');
+}
+
+.img4 {
+    background-image: url('img/nutr.jpg');
+}
+
+.img5 {
+    background-image: url('img/bolt.jpg.jpeg');
+}
+
+.img6 {
+    background-image: url('img/stay.jpg');
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: burlywood; /* Fallback color */
+    background-color: burlywood; /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    border: 10px solid #ff0000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+

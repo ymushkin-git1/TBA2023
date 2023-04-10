@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<style>
+    .* {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100VH;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.spectruminteriors.co.in/wp-content/uploads/2020/12/Office-Interior-12.jpeg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-top: -1px;
+    }
+
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        direction: ltr;
+    }
+
+    .title {
+        font-size: 70px;
+        color: white;
+        position: absolute;
+        top: 13.5%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: Garamond;
+    }
+
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+    .contect {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+
+        .contect h1 {
+            font-size: 70px;
+            margin-top: 80px;
+        }
+
+        .contect p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+
+    button {
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        top: 80px;
+        left: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    span {
+        background: #009688;
+        height: 100%;
+        width: 0%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    button:hover span {
+        width: 100%;
+    }
+
+    button:hover {
+        border: none;
+    }
+
+    .images {
+        font-family: Aharoni;
+        font-size: large;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://imgix.bustle.com/inverse/56/f2/06/cd/5e07/4d32/91f4/b8023a93e7d7/desert-17484621920jpg.jpeg?w=2000&h=640&fit=crop&crop=faces&auto=format%2Ccompress&blend=000000&blendAlpha=45&blendMode=normal);
+        background-size: cover;
+        padding-left: 15%;
+        padding-right: 15%;
+        box-sizing: border-box;
+    }
+
+    .navbar2 {
+        height: 12%;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        flex: 1;
+        text-align: center;
+    }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+        }
+
+    .row {
+        display: flex;
+        height: 88%;
+        align-items: center;
+    }
+
+    .col {
+        flex-basis: 50%;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 100px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    button1 {
+        width: 18px;
+        color: #000;
+        font-size: 12px;
+        padding: 12px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 30px;
+    }
+
+    .card {
+        width: 200px;
+        height: 230px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-image: url(athunepic.jpg);
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+
+    .card1 {
+        background-image: url(athunepic.jpg);
+    }
+
+    .card2 {
+        background-image: url(uroguay.jpg);
+    }
+
+    .card3 {
+        background-image: url(Qatar.jpg);
+    }
+
+    .card4 {
+        background-image: url(Tokyo.jpg);
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    h5 {
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+    }
+
+</style>
+</head>
+<body style="background-color:white;">
+
+
+
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="MainPage.html">MainPage</a></li>
+                <li><a href="HtmlPage1.html">Football</a></li>
+                <li><a href="HtmlPage2.html">PingPong</a></li>
+                <li><a href="HtmlPage5.html">Basketball</a></li>
+                <li><a href="HtmlPage6.html">Tennis</a></li>
+                <li><a href="HtmlPage10.html">Volleyball</a></li>
+                <li><a href="HtmlPage8.html">AFootball</a></li>
+                <li><a href="HtmlPage4.html">Swimming</a></li>
+                <li><a href="HtmlPage9.html">IceSkating</a></li>
+            </ul>
+
+        </div>
+
+        <div class="contect">
+            <h1 style="font-size:102px"> Sport In The World</h1>
+            <p>  “You can motivate by fear, and you can motivate by reward. But both those methods are only temporary.<br /> The only lasting thing is self-motivation.” </p>
+
+            <div>
+                <div>
+                    
+                    <button type="button" onclick="window.location='sign in.html'"><span></span> sign in </button>
+                    <button type="button"  onclick="window.location='informationsport.html'"><span></span> About </button>
+                    <button type="button"onclick="window.location='signuppp.html'"><span></span> sign up </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--part 2 in the main-->
+
+    <br /><br /><br />
+  <div class="container">
+       <div class=" navbar2 ">
+              
+           <nav>
+               <ul>
+                   <li>  </li>
+               </ul>
+           </nav>
+          
+       </div>
+      <div class="row">
+          <div class="col">
+              <h1> OLIMPIC <br />&<br /> MONDIAL </h1>
+              <p>Where were the first Olympics and World Cup held and where
+              <br />
+              was the last one held</p>
+            
+          </div>
+          <div class="col">
+              <div class="card card1">
+                  <h5> The First Olimpic<br /> Athens </h5>
+              </div>
+              <div class="card card2">
+                  <h5> The First Mondial<br /> Uruguay</h5>
+              </div>
+              <div class="card card3">
+                  <h5> The last Mondial <br />Qatar</h5>
+              </div>
+              <div class="card card4">
+                  <h5> The last Olimpic<br /> Tokyo</h5>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+   
+
+</body>
+</html>

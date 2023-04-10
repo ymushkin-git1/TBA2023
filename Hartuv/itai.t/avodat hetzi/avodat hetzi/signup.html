@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<link href="sign style.css" rel="stylesheet" />
+<script src="JavaScript.js"></script>
+<body>
+
+    <div id="main">
+        <div class="h-tag">
+            <h2>TravWeb</h2>
+        </div>
+
+        <div class="login">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                <td>Enter Email Name :</td>
+                <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter First Name :</td>
+                    <td><input type="text" placeholder="Enter First name here" id="fname1" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Last Name :</td>
+                    <td><input type="text" placeholder="Enter Last name here" id="lname1" class="tb" /></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Enter Password :</td>
+                    <td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td>Verify Your Password :</td>
+                    <td><input type="password" placeholder="Enter Password here" id="pwd2" class="tb" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <form>
+                            <label for="quantity">Month (between 1 and 12):</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="12">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form>
+                            <label for="quantity">Day (between 1 and 31):</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="31">
+                        </form>
+                    </td>
+                <tr>
+                    <td>
+                        <form>
+                            <label for="quantity">Birth Year:</label>
+                            <input type="text" id="quantity" name="quantity" min="1900" max="2023">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="e" name="e" value="e">
+                        <label for="e"> I have Been To England</label><br>
+                        <input type="checkbox" id="p" name="p" value="p">
+                        <label for="p"> I have Been To Portugal</label><br>
+                        <input type="checkbox" id="t" name="t" value="t">
+                        <label for="t"> I have Been To Thailand</label>
+                    </td>
+                </tr>
+               <tr>
+                   <td>
+                       What is Your Favourite Color? <br />
+                       <input list="colors" name="colors">
+                       <datalist id="colors">
+                           <option value="Blue">
+                           <option value="White">
+                           <option value="Green">
+                           <option value="Black">
+                           <option value="Orange">
+                           <option value="Pink">
+                           <option value="Purple">
+                           <option value="Yellow">
+                           <option value="Grey">
+                           <option value="Beige">
+                           <option value="Red">
+                           <option value="Cyan">
+                       </datalist>
+                   </td>
+               </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+                        <input type="submit" value="Submit" class="btn" onClick="login()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

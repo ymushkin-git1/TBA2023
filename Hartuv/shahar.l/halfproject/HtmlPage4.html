@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @import url('StyleSheet1.css');
+        @import url('signup.css');
+    </style>
+
+    <script src="JavaScript.js"></script>
+
+
+</head>
+<body>
+    <p style="background-image: url('sign.jpg');">
+
+        <div class="topnav">
+            <a style="margin-left:120px; margin-bottom:80px;" href="HtmlPage7.html">cars </a>
+            <a style="margin-left:120px" href="HtmlPage5.html">bicycle</a>
+            <a style="margin-left:120px" href="HtmlPage8.html">basketball</a>
+            <a style="margin-left:120px" href="HtmlPage3.html">football</a>
+            <a style="margin-left:120px" href="HtmlPage2.html">skate board</a>
+            <a style="margin-left:120px" href="HtmlPage1.html">main page</a>
+            <a style="margin-left:120px" href="HtmlPage4.html">sign up</a>
+            <a style="margin-left:120px" href="HtmlPage6.html">sign in</a>
+        </div>
+        <div class="signUp">
+
+
+            <form method="get" onsubmit="return checkValues()">
+
+                <table>
+
+
+
+                    <tr>
+                        <td>
+                            first name:
+                        </td>
+                        <td>
+                            <input id="fName" type="text" name="fName" />
+                        </td>
+                       
+                        <td><div style="font-size:8px; color:red;" id="firstName"></div></td>
+
+                    </tr>
+                   
+                    
+                    <tr>
+                        <td>
+                            last name:
+                        </td>
+                        <td>
+                            <input type="text" id="lName" name="lName" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="lastName" > </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            username:
+                        </td>
+                        <td>
+                            <input type="text" id="username" name="username" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="usernameText"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            mail:
+                        </td>
+                        <td>
+                            <input type="text" id="mail" name="mail" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="mailText"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            bornyear:
+                        </td>
+                        <td>
+                            <input type="date" id="bornYear" name="bYear" />
+                        </td>
+                        <td><div id="bornYear"> </div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            gender:
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" /> male
+                            <input type="radio" name="gender" /> female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            password:
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Confirm Password:
+                        </td>
+                        <td>
+                            <input type="password" id="confirmPass" name="cPass" />
+                        </td>
+                        <td><div style="font-size:8px;color:red;" id="passwordText"> </div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            country:
+                        </td>
+                        <td>
+                            <div>
+
+                                <select name="counry">
+                                    <option>israel</option>
+                                    <option>us</option>
+                                    <option>france</option>
+                                    <option>germany</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            city:
+                        </td>
+                        <td>
+                            <input type="text" id="city" name="city" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="cityText"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            adress:
+                        </td>
+                        <td>
+                            <input type="text" id="adress" name="adress" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="adressText"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            security question:
+                        </td>
+                        <td>
+                            <select name="security">
+                                <option>what is your mom name?</option>
+                                <option>what is your pet name?</option>
+                                <option>what is your father name?</option>
+                                <option>in what city did you born?</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            answer:
+                        </td>
+                        <td>
+                            <input type="text" id="security" name="answer" />
+                        </td>
+                        <td>
+                            <div style="font-size:8px;color:red;" id="securityText"> </div>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <button type="submit">submit</button>
+
+            </form>
+        </div>
+</body>
+</html>

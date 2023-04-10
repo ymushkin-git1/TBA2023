@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script src="../script/JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+    </style>
+  
+
+</head>
+<body>
+    <div>
+        <button onclick="topFunction()" id="myBtn">Top</button>
+    </div>
+
+
+    <div class="topnav">
+        <a class="active" href="../pages/HtmlPage1.html">home</a>
+        <a href="../pages/option.html">Menu</a>
+        <a href="../pages/combo.html">Create</a>
+        <a class="b" href="../pages/login.html">log in</a>
+        <!--<b href="#sign up">sign up</b>-->
+    </div><br />
+    <div>
+        <table class="title">
+            <tr>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>est </strong></td>
+                <td></td>
+                <td style="color:saddlebrown"><strong>B</strong></td>
+                <td style="color:rosybrown"><strong>urger </strong></td>
+                <td style="color:saddlebrown"><strong>C</strong></td>
+                <td style="color:rosybrown"><strong>ombo</strong></td>
+            </tr>
+        </table>
+        <br />
+        <div class="headers">
+            Make your own burger:
+        </div><br /><br /><br />
+    </div>
+    <table>
+        <tr>
+            <td class="txt6" style="font-size:25px; "><b>Choose One Bun: </b>  </td>
+            <td class="txt6" style="font-size:25px; position:relative; left:50px;"><b>Choose vegitables: </b>  </td>
+            <td class="txt6" style="font-size:25px; position:relative; left:100px;"><b>Choose a Patty: </b>  </td>
+            <td class="txt6" style="font-size:25px; position:relative; left:150px;"><b>Choose a extra: </b>  </td>
+        </tr>
+        <tr>
+            <td class="txt6">
+                <img width="50" height="40" src="../../images/wheatbun.png" />
+                Wheat Bun<input type="radio" id="Wheatbun" name="bun" />
+            </td>
+            <td style=" position:relative; left:50px;" class="txt6">
+                <img width="50" height="40" src="../../images/lettuce.png" />
+                Lettuce<input type="radio" id="lettuce" name="lveg" />
+            </td>
+            <td style=" position:relative; left:100px;" class="txt6">
+                <img width="50" height="40" src="../../images/burger.png" />
+                Burger Patty<input type="radio" id="burger" name="patty" />
+            </td>
+            <td style=" position:relative; left:150px;" class="txt6">
+                <img width="50" height="40" src="../../images/sunnysideup.png" />
+                Sunny Side Up<input type="radio" id="egg" name="extra" />
+            </td>
+        </tr>
+        <tr>
+            <td class="txt6">
+                <img width="50" height="40" src="../../images/wholewheatbun.png" />
+                Whole-Wheat Bun<input type="radio" id="WWheatbun" name="bun" />
+            </td>
+            <td style=" position:relative; left:50px;" class="txt6">
+                <img width="50" height="40" src="../../images/tomato.png" />
+                Tomato<input type="radio" id="tomato" name="tveg" />
+            </td>
+            <td style=" position:relative; left:100px;" class="txt6">
+                <img width="50" height="40" src="../../images/vegburger.png" />
+                Veggie Burger<input type="radio" id="vegburger" name="patty" />
+            </td>
+            <td>
+                <button onclick="checkRadio()" class="txt6" style="position:relative; left:400px;">click here to create</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="txt6">
+                <img width="50" height="40" src="../../images/briochebun.png" />
+                Brioche Bun<input type="radio" id="Briochebun" name="bun" />
+            </td>
+            <td style=" position:relative; left:50px;" class="txt6">
+                <img width="50" height="40" src="../../images/pickles.png" />
+                Pickles <input type="radio" id="pickle" name="pveg" />
+            </td>
+        </tr>
+    </table>
+    <div>
+    </div>
+    <table style="position:relative; left:300px">
+        <tr>
+            <td>
+                <div>
+
+                    <img id="divbun" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divextra" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divveg" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divveg3" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divveg2" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divburg" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <img id="divbun2" />
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
+

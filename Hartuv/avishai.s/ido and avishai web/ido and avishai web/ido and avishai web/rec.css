@@ -1,0 +1,11 @@
+﻿.food {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+    .food img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }

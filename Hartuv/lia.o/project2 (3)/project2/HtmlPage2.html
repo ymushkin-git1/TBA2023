@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="signin-form" action="signin.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Sign In">
+    </form>
+
+    <script>
+        // Get the Sign In button
+        var signInButton = document.querySelector("#signin-form input[type='submit']");
+
+        // Listen for a click event on the button
+        signInButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            // perform the validation of the inputs here.
+            // if validation passed then redirect the user to the menu page
+            window.location.href =
+                <a href="manupage.html">manupage.html</a>
+        });
+    </script>
+    This JavaScript code will listen for a click event on the "Sign In" button, then it will prevent the form from submitting to the server and it will redirect the user to the "menu.html" page.
+    You can also add some validation logic to check if the user name and password are correct before redirecting the user.
+    Please note that this is a simple example, you should handle the validation and security measures like the password encryption on the server side.
+
+
+
+
+
+</body>
+</html>

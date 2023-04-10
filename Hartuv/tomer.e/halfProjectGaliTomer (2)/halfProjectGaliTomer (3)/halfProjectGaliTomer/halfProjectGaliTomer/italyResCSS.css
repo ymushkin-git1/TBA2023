@@ -1,0 +1,28 @@
+﻿body {
+    direction: rtl;
+    background-color: #ECC1F4;
+    color: blueviolet;
+    font-size: larger;
+    font-family: 'Guttman Frank'
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 3px #440650;
+}
+.tafrit {
+    border-radius: 500px;
+    background-color: cadetblue;
+    border: double;
+    font-weight: 200;
+    text-align: center;
+}
+ul {
+    list-style-image: url('https://www.lev-hamisrad.co.il/ProductsImages/thumbs/M150399_40_40.png');
+    list-style-position: inside;
+}
+h3 {
+    color: #A22C74;
+}
+table{
+    width:100%;
+}

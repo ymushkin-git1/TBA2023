@@ -1,0 +1,136 @@
+﻿body {
+    margin: 0;
+    font-family: Monospace;
+    background-color: bisque;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: peru;
+}
+
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: wavy;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: lightsteelblue;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: saddlebrown;
+            color: white;
+        }
+
+    .topnav .b {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav .b:hover {
+            background-color: lightsteelblue;
+            color: black;
+        }
+
+.title {
+    font-family: Courier New, monospace;
+    font-size: 140px;
+    text-align: center;
+    
+}
+
+/*.links {
+    font-family: Courier New, monospace;
+    font-size: 23px;
+    text-align: center;
+    border: solid;
+}*/
+.headers {
+    font-family: Franklin Gothic Medium;
+    font-size: 90px;
+    text-align: center;
+}
+.txt1 {
+    font-family: Century Gothic;
+    font-size: 20px;
+    text-align: left;
+
+}
+.txt2 {
+    font-family: Century Gothic;
+    font-size: 50px;
+    text-align: center;
+}
+.title2 {
+    font-family: Verdana;
+    font-size:40px;
+}
+.title3 {
+    font-family: Courier New, monospace;
+    font-size: 80px;
+    text-align: left;
+}
+.container {
+    position: relative;
+    width: 28%;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color:tan ;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.text2 {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+.txt3 {
+    font-family: Arial Black;
+    font-size: 33px;
+}
+.txt4 {
+    color: #353735;
+    font-family: Arial;
+    font-size: 20px;
+}
+.txt5 {
+    font-family: Arial Black;
+    font-size: 20px;
+}
+.txt6 {
+    font-family: Consolas;
+    font-size: 18px;
+}
+
+

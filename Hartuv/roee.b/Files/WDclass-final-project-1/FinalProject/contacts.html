@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="contact.js"></script> 
+    <link href="main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>contacts</title>
+</head>
+<body class="body">
+    <div class="topnav">
+        <a href="contacts.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <!--<a href="signup.html">signup</a>-->
+        <div class="dropdown">
+            <button class="dropbtn" ; style="border:none">posts</button>
+            <div class="dropdown-content">
+                <a href="compose.html">compose a new entry</a>
+                <a href="viewPosts.html">view old posts</a>
+            </div>
+        </div>
+        <a href="homePage.html">Home</a>
+        <div id="title1">
+            <div style="padding-top:10px">
+                <img width="70px" height="70px" src="images/code (2).png" />
+            </div>
+        </div>
+    </div>
+    <p style="padding-left:20px;max-width: 300px;color: white;line-height: 2">Share your story with the world through the Personal Blog Project. Our personalized platform empowers self-expression. Contact us at:<br>blogProjectBusiness@gmail.com</p>
+    <div class="footer-padding"></div>
+    <div class="footer">
+        <p>Made by royi barboyy</p>
+    </div>
+    <hr>
+    <br>
+    <div class="contact-form">
+        <h1>send us a message!</h1>
+        <form method="post" style="display: flex;align-items: center;flex-direction: column;" onsubmit="return verify()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <p id="error-1" style="color: red;"></p>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            <p id="error-2" style="color: red;"></p>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" ></textarea>
+            <p id="error-3" style="color: red;"></p>
+            <br><br>
+            <button type="submit" >submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

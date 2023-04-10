@@ -1,0 +1,18 @@
+﻿body {
+    direction: rtl;
+    color: #A45656;
+    font-weight:600;
+}
+table {
+    font-family: 'Guttman Yad-Brush';
+    font-size: medium;
+    width:70%;
+}
+html {
+    background: url('signUpImg.png');
+    background-size: cover;
+}
+.must{
+    color: red;
+    font-size:small;
+}

@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>גלידה</title>
+    <link href="italyResCSS.css" rel="stylesheet" />
+    <script>
+        function finish() {
+            if (level1.checked == true && level2.checked == true) {
+                if (level3.checked == true && level4.checked == true) {
+                    if (level5.checked == true) { 
+                            alert("כל הכבוד ושיהיה בתיאבון!!")
+                    }
+                }
+            }
+        }
+        function sumbit() {
+            if (bikoret.value.length > 1) {
+                alert("תודה על הביקורת! מקוות שנהנתם.ן")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td><h1>גלידה ביתית</h1></td>
+            </tr>
+            <tr>
+                <td width="80%"><h2>מרכיבים</h2></td>
+                <td>
+                    <img src="https://www.myms.co.il/wp-content/uploads/2019/10/%D7%9C%D7%94-%D7%95%D7%99%D7%98%D7%94-10.jpg" width="200" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>לגלידה בסיסית</h3>
+                    <ul>
+                        <li>500 מ"ל (2 מכלים) שמנת מתוקה, קרה מאוד</li>
+                        <li>400 גרם (1 פחית) חלב מרוכז ממותק</li>
+                    </ul>
+                    <h3>לגלידת שוקולד</h3>
+                    <ul>
+                        <li>2 כפות אבקת קקאו</li>
+                        <li>100 גרם נטיפי שוקולד צ'יפס עלית </li>
+                    </ul>
+                    <h3>לגלידת חמאת בוטנים ושוקולד צ'יפס:</h3>
+                    <ul>
+                        <li>2 כפות חמאת בוטנים חלקה</li>
+                        <li>100 גרם נטיפי שוקולד צ'יפס עלית</li>
+                        <li>100 גרם בוטנים קלויים, לא מלוחים, קצוצים דק מאוד</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="https://style-ltd.s3.eu-central-1.amazonaws.com/files/560/FILE-20190314-100212F32T34VHXL.jpg" width="200" />
+                    <img src="https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_380,w_500/533790" width="200" />
+                    <img src="https://atmo.ams3.cdn.digitaloceanspaces.com/rimgs/uiB5RhH5CnHX7dmXSUxJp72ioAHCsZhM9vFSSsdg.jpg" width="200" />
+                    <img src="https://lirp.cdn-website.com/e25f7f77/dms3rep/multi/opt/2-640w.jpg" width="200" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><h2>אופן הכנה</h2></td>
+
+                <td>
+                    <img src="https://jetlek.co.il/wp-content/uploads/sites/495/2022/02/%D7%92%D7%9C%D7%99%D7%93%D7%94-%D7%90%D7%99%D7%98%D7%9C%D7%A7%D7%99%D7%AA-%D7%90%D7%99%D7%9B%D7%95%D7%AA%D7%99%D7%AA-e1645347037816.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level1" name="level1" type="checkbox" />
+                    בקערה מקציפים שמנת מתוקה עד שמתקבלת קצפת יציבה מאוד.
+                </td>
+                <td rowspan="6">
+                    <img src="https://media.reshet.tv/image/upload/t_grid-item-large/v1611569631/shutterstock_642062308_huxdjt.webp" width="200" />
+                    <img src="https://jetlek.co.il/wp-content/uploads/sites/495/2022/09/ice-cream-pink-background-corn-with-chocolate-poring.jpg" width="200" />
+                    <img src="https://imageproxy.wolt.com/menu/menu-images/5eba53766c3394aa641aec1a/4753f77a-98fa-11ea-aefb-0a5864726b09_______m.jpeg" width="200" />
+                    <img src="https://storage.hidabroot.org/articles/42711_tumb_360Xauto.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level2" name="level2" type="checkbox" />
+                    מוסיפים פנימה חלב מרוכז ומערבבים בעדינות עם מרית עד שמתקבלת תערובת אחידה.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level3" name="level3" type="checkbox" />
+                    לגלידת שוקולד – מוסיפים פנימה אבקת קקאו ושוקולד קצוץ ומערבבים עד שמתקבלת תערובת אחידה.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level4" name="level4" type="checkbox" />
+                    לגלידת חמאת בוטנים ושוקולד צ’יפס – מוסיפים פנימה חמאת בוטנים, שוקולד קצוץ ובוטנים ומערבבים בעדינות עד לפיזור אחיד של התוספות.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level5" name="level5" type="checkbox" />
+                    מקפיאים את הגלידה במשך לפחות 3 שעות ומגישים.
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="finish()">סיימתי!</button></td>
+            </tr>
+            <tr>
+                <td><h2>בתיאבון!</h2></td>
+                <td><div id="div1"></div></td>
+            </tr>
+            <tr>
+                <td>רוצים.ות לתת חוות דעת על המתכון?</td>
+            </tr>
+            <tr>
+                <td><textarea id="bikoret" name="bikoret"></textarea></td>
+            </tr>
+            <tr>
+                <td><button onclick="sumbit()">שלח</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="iceCream.html">
+                        <img src="https://emojigraph.org/media/openmoji/top-arrow_1f51d.png" width="80" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="tafrit">
+                        <a href="maroco.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/T414101_400_400.png" width="80" />
+                        </a>
+                        <a href="openPage.html">
+                            <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/building-295215_1280.png" width="80" />
+                        </a>
+                        <a href="france.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/J471871_400_400.png" width="80" />
+                        </a>
+                        <a href="italyPage.html">
+                            <img src="https://www.yo-yoo.co.il/flags/images/707910.png" width="80" />
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

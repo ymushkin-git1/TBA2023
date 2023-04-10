@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body class="body3">
+    <form method="get" onsubmit="return check()">
+        <div class="signup1">
+            <div class="title">הרשמה/regestrtion</div>
+
+            <label class="details" for="username"><b>first name/שם ראשון</b></label>
+            <input class="inputbox" id="firstname" type="text" placeholder="first name/שם ראשון" name="username">
+            <div id="msg1" style="color:red"></div><br />
+
+
+
+            <label class="details" for="text"><b>last name/שם אחרון</b></label>
+            <input class="inputbox" id="lastname" type="text" placeholder="last name/שם אחרון" name="username">
+            <div id="msg2" style="color:red"></div><br />
+
+
+            <label class="details" for="username"><b>שם משתמש/username</b></label>
+            <input class="inputbox" type="text" placeholder="שם משתמש/username">
+            <div id="msg3" style="color:red"></div><br />
+
+
+
+            <label class="details" for="email"><b>email/אימייל</b></label>
+            <input class="inputbox" id="email" type="text" placeholder="Enter Email" name="email">
+            <div id="msg4" style="color:red"></div><br />
+
+
+
+            <label class="details" for="psw"><b>password/סיסמא</b></label>
+            <input class="inputbox" id="psw1" type="password" placeholder="Enter Password" name="psw1"><br />
+
+            <label class="details" for="psw-repeat"><b>repeat password/חזור על הסיסמא</b></label>
+            <input class="inputbox" id="psw2" type="password" placeholder="Repeat Password" name="psw2">
+            <div id="msg8" style="color:red"></div><br />
+
+            <label class="details" for="bronyear"><b>הזן שנת לידה/born year</b></label>
+            <input class="inputbox" id="bornyear" type="number" placeholder="bornyear" name="bornyear" s>
+            <div id="msg5" style="color:red"></div><br />
+
+
+            <label class="details" for="phonenumber"><b>phonenumber/מספר טלפון</b></label>
+            <input class="inputbox" type="number" placeholder="phone number/מספר טלפון" name="phone number" />
+            <div id="msg6" style="color:red"></div><br />
+
+
+            <label class="details" for="favoritcolor"><b>צבע אהוב/favorit color</b></label>
+            <input class="inputbox" type="color" placeholder="favorit color/צבע אהוב" name="color" />
+            <div id="msg7" style="color:red"></div><br />
+
+
+
+            <div class="gender">
+                <label for="male"><b>male/זכר</b></label>
+                <input type="radio" name="gender" id="dot-1">
+                <label for="male"><b>נקבה/female</b></label>
+                <input type="radio" name="gender" id="dot-2">
+                <label for="male"><b>/elseאחר</b></label>
+                <input type="radio" name="gender" id="dot-3"><br />
+            </div>
+
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <button type="reset">reset</button>
+            <button onclick="signup" type="submit">Sign Up</button>
+            <a class="a" href="HtmlPage1.html">home</a>
+        </div>
+        
+
+
+
+
+    </form>
+    
+
+
+</body>
+</html>

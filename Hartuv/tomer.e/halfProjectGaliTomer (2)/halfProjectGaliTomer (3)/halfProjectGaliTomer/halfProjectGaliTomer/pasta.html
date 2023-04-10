@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>פסטה</title>
+    <link href="italyResCSS.css" rel="stylesheet" />
+    <script>
+        function finish() {
+            if (level1.checked == true && level2.checked == true) {
+                if (level3.checked == true && level4.checked == true) {
+                    if (level5.checked == true) {
+                        alert("כל הכבוד ושיהיה בתיאבון!!")
+                    }
+                }
+            }
+        }
+        function sumbit() {
+            if (bikoret.value.length > 1) {
+                alert("תודה על הביקורת! מקוות שנהנתם.ן")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td><h1>פסטה איטלקית</h1></td>
+            </tr>
+            <tr>
+                <td width="80%"><h2>מרכיבים</h2></td>
+                <td>
+                    <img src="https://www.sugat.com/wp-content/uploads/2020/05/3006889-46-1.jpg.webp" width="200" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>לגלידה בסיסית</h3>
+                    <ul>
+                        <li>1 חבילה (500 גרם)  ספגטי</li>
+                        <li>5 כפות שמן זית</li>
+                        <li>3 שיני שום פרוסות דק</li>
+                        <li>1 צ'ילי אדום פרוס דק</li>
+                        <li>1/2 כוס זיתי קלמטה מגולענים</li>
+                        <li>1 כוס עגבניות מיובשות בשמן, קצוצות דק</li>
+                        <li>קליפה מגוררת מלימון שלם</li>
+                        <li>מלח, פלפל שחור גרוס</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-bucatinipasta-045-ls-1607552701.jpg" width="200" />
+                    <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FEdit%2F09-2022-sausage-pasta%2Fsausage-pasta-4" width="200" />
+                </td>
+            </tr>
+
+            <tr>
+                <td><h2>אופן הכנה</h2></td>
+
+                <td>
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2022/05/Pasta-alla-norma-87c54fc.jpg?quality=90&resize=556,505" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level1" name="level1" type="checkbox" />מרתיחים בסיר גדול שפע מים מומלחים ומבשלים את הספגטי לדרגת אל-דנטה לפי ההוראות שעל האריזה.
+                </td>
+                <td rowspan="6">
+                    <img src="https://static.toiimg.com/thumb/84784534.cms?imgsize=468021&width=800&height=800" width="200" />
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/06/OnePotPasta-47b5b0a-a302cf0.jpg?quality=90&resize=556,505" width="200" />
+                    <img src="https://cdn.loveandlemons.com/wp-content/uploads/2022/02/vegan-pasta.jpg" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level2" name="level2" type="checkbox" />יוצקים שמן זית למחבת גדולה ומוסיפים שום וצ'ילי. מחממים מעל להבה בינונית כדקה, עד שעולה ריח. מוסיפים פטרוזיליה ומסירים מהאש.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level3" name="level3" type="checkbox" />מוסיפים למחבת זיתים ועגבניות מיובשות ומערבבים.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level4" name="level4" type="checkbox" />מעבירים במלקחיים את הפסטה מהסיר אל המחבת (אל תסננו יותר מדי, אנחנו רוצים שחלק מהנוזלים ייכנסו לרוטב), מתבלים במלח ובפלפל ומערבבים היטב.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="level5" name="level5" type="checkbox" />מפזרים מעל קליפת לימון מגוררת ומגישים.
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="finish()">סיימתי!</button></td>
+            </tr>
+            <tr>
+                <td><h2>בתיאבון!</h2></td>
+                <td><div id="div1"></div></td>
+            </tr>
+            <tr>
+                <td>רוצים.ות לתת חוות דעת על המתכון?</td>
+            </tr>
+            <tr>
+                <td><textarea id="bikoret" name="bikoret"></textarea></td>
+            </tr>
+            <tr>
+                <td><button onclick="sumbit()">שלח</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="pasta.html">
+                        <img src="https://emojigraph.org/media/openmoji/top-arrow_1f51d.png" width="80" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="tafrit">
+                        <a href="maroco.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/T414101_400_400.png" width="80" />
+                        </a>
+                        <a href="openPage.html">
+                            <img src="https://cdn.pixabay.com/photo/2014/03/24/17/15/building-295215_1280.png" width="80" />
+                        </a>
+                        <a href="france.html">
+                            <img src="https://www.lev-hamisrad.co.il/ProductsImages/thumbs/J471871_400_400.png" width="80" />
+                        </a>
+                        <a href="italyPage.html">
+                            <img src="https://www.yo-yoo.co.il/flags/images/707910.png" width="80" />
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

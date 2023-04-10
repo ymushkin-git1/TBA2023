@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>-->
+    <style>
+        .all {
+            padding-left: 40px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(bgpic.png);
+            font-family: Georgia, serif;
+            background-image: url('images/safety-tips.jpg');
+        }
+
+        .button {
+            font-size: 18px;
+            padding: 5x;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 50px;
+        }
+
+        /*   making the bar become dark when hover over link page */
+        nav ul li.active a {
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        /*   makes the big header */
+        .hero header .logo h2 a {
+            font-family: Georgia, serif;
+            display: block;
+            font-size: 32px;
+            font-weight: 600;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        /*   makes all the small links in a row */
+        .hero header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 30px;
+            font-family: Georgia, serif;
+        }
+
+        nav ul li {
+            color: whitesmoke;
+            list-style: none;
+            display: inline-block;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: whitesmoke;
+                margin-left: 60px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+        .container {
+        }
+
+            .container h2 {
+                width: 100%;
+                color: whitesmoke;
+                font-size: 36px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .container .row100 {
+                position: relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(autofit,minmax(300px,1fr));
+            }
+
+                .container .row100 .col {
+                    position: relative;
+                    width: 100%;
+                    padding: 0 10px;
+                    margin: 30px 0 10px;
+                    transition: 0.5s;
+                }
+
+                .container .row100 .inputbox {
+                    position: relative;
+                    width: 100%;
+                    height: 40px;
+                    color: whitesmoke;
+                }
+
+                    .container .row100 .inputbox input,
+                    .container .row100 .inputbox .texterea textarea {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        box-shadow: none;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                        padding: 0 10px;
+                        z-index: 1;
+                        color: #000;
+                    }
+
+                    .container .row100 .inputbox .text {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        line-height: 40px;
+                        font-size: 18px;
+                        padding: 0 10px;
+                        display: block;
+                        transition: 0.5s;
+                        pointer-events: none;
+                    }
+
+                    .container .row100 .inputbox input:focus + .text,
+                    .container .row100 .inputbox input:valid + .text {
+                        top: -35px;
+                        left: -10px;
+                    }
+
+                    .container .row100 .inputbox .line {
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: whitesmoke;
+                        transition: 0.5s;
+                        border-radius: 2px;
+                        pointer-events: none;
+                    }
+
+                    .container .row100 .inputbox input:focus ∼ .line,
+                    .container .row100 .inputbox input:valid ∼ .line {
+                        height: 100%;
+                    }
+
+                    .container .row100 .inputbox.texterea {
+                        position: relative;
+                        width: 100%;
+                        height: 100px;
+                        padding: 10px 0;
+                    }
+
+                        .container .row100 .inputbox .texterea textarea {
+                            height: 100%;
+                            resize: none;
+                        }
+
+                    .container .row100 .inputbox textarea:focus + .text,
+                    .container .row100 .inputbox textarea:valid + .text {
+                        top: -35px;
+                        left: -10px;
+                    }
+
+                    .container .row100 .inputbox textarea:focus + .text,
+                    .container .row100 .inputbox textarea:valid + .text {
+                        top: -35px;
+                        left: -10px;
+                    }
+
+                    .container .row100 .inputbox input:focus ∼ .line,
+                    .container .row100 .inputbox input:valid ∼ .line {
+                        height: 100%;
+                    }
+
+        textarea {
+            background: transparent;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class=logo>
+                    <h2><a href="index.html">Cyber Security</a></h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="website.html">HOME</a></li>
+                        <li class="active"><a href="our-team.html">OUR TEAM</a></li>
+                        <li><a href="resources.html">SAFETY TIPS</a></li>
+                        <li><a href="contact-us.html">CONTACT US</a></li>
+                        <li><a href="HtmlPage2.html">REGISTER</a></li>
+                        <li><a href="login.html">LOG IN</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container">
+            <div class-"all">
+                <h2><br><br><br><br>GET IN TOUCH!</h2>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text">First Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Last Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text">Email</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputbox1">
+                            <textarea rows="10" placeholder="Type a message here..." required="required" style="width:98%;"></textarea>
+                            <!--<span class="text1">Type a message here...</span>
+                            <span class="line1"></span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <form>
+                            <input class="button" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+</body>
+</html>

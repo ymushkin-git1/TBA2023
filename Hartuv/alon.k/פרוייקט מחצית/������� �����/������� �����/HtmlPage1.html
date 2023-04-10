@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta/>
+    <title></title>
+    <style>
+
+
+
+
+
+
+
+        #registration-form {
+            background-color: darkgray;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <form id="registration-form">
+        <p class="form-group">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+
+        </p>
+
+        <p class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" class="form-control" required>
+
+        </p>
+
+        <p class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" class="form-control" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+        </p>
+
+
+
+        <p class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+
+        </p>
+        <p class="form-group">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+
+
+        </p>
+
+
+
+
+        <p class="form-group">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </p>
+
+
+
+
+        <p class="form-group">
+
+            <label for="password-verification">Verify Password:</label>
+            <input type="password" id="password-verification" name="password-verification" class="form-control" required>
+        </p>
+
+
+        <p class="form-group">
+
+
+
+            <button id="myButton">Submit</button>
+            <script>
+                if (username == "" || password == "" || email == "" || country == "") {
+                    alert("All fields are required to fill out.");
+
+                }
+
+                else {
+
+                    document.getElementById("myButton").onclick = function () {
+                        location.href = "HtmlPage2.html";
+
+
+
+                    }
+
+
+
+
+            </script>
+
+
+        <p>
+            <a href="HtmlPage2.html">submit</a>
+
+        </p>
+
+        </p>
+
+
+
+    </form>
+
+     
+
+</body>
+</html>

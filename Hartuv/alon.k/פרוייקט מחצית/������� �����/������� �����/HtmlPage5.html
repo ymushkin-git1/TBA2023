@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Peaky Blinders Characters</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #characterContainer {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .character {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            
+        }
+        body {
+            text-align: center;
+        }
+
+        div {
+            color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body  style="background-image: url(https://wallpapers.com/images/hd/peaky-blinders-men-and-vintage-car-3d521comr919q58s.jpg) ">>
+    <h1 style="color: #f0e68c">Peaky Blinders Characters</h1>
+    <div  style=" font-size: 33px;" id="characterContainer"></div>
+    <button  style=" font-size: 30px;" id="prevBtn">Prev</button>
+    <button style=" font-size: 30px;" id="nextBtn">Next</button>
+    <script src="script.js"></script>
+
+
+    <script>
+
+        const characters = [
+            { 
+                name: "Thomas Shelby",
+                description: "The leader of the Peaky Blinders gang, Thomas is a ruthless but calculating man who is always looking for ways to expand his power and influence."
+                    
+            },
+            {
+                name: "Polly Gray",
+                description: "Aunt Polly is Thomas's right-hand woman, who is fiercely loyal to the family and is not afraid to get her hands dirty."
+            },
+            {
+                name: "John Shelby",
+                description: "John is Thomas's younger brother, who is known for his hot-headedness and his willingness to fight for the Peaky Blinders."
+            },
+            {
+                name: "Arthur Shelby",
+                description: "Arthur is Thomas's older brother, who is known for his brute strength and his tendency to solve problems with violence."
+            }
+        ];
+
+        const characterContainer = document.getElementById("characterContainer");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        let currentCharacter = 0;
+
+        function showCharacter() {
+            const character = characters[currentCharacter];
+            characterContainer.innerHTML = `
+    <h2>${character.name}</h2>
+    <p>${character.description}</p>
+  `;
+        }
+
+        function prevCharacter() {
+            currentCharacter--;
+            if (currentCharacter < 0) {
+                currentCharacter = characters.length - 1;
+            }
+            showCharacter();
+        }
+
+        function nextCharacter() {
+            currentCharacter++;
+            if (currentCharacter >= characters.length) {
+                currentCharacter = 0;
+            }
+            showCharacter();
+        }
+
+        prevBtn.addEventListener("click", prevCharacter);
+        nextBtn.addEventListener("click", nextCharacter);
+
+        showCharacter();
+    </script>
+
+
+    <p style="font-size:x-large">
+        <a style=" color: lavender;" href="HtmlPage2.html"> Back to main</a>
+    </p>
+   
+</body>
+</html>

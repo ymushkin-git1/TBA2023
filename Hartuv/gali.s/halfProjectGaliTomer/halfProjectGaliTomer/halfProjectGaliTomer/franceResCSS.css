@@ -1,0 +1,29 @@
+﻿body {
+    direction: rtl;
+    background-color: aliceblue;
+    color: darkcyan;
+    font-size: larger; 
+    font-family: 'Guttman Yad-Brush';
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 3px lightslategrey;
+    font-style:italic;
+}
+h2{
+    color:cadetblue;
+}
+ul {
+    list-style-image: url('https://www.lev-hamisrad.co.il/ProductsImages/thumbs/J471871_40_40.png');
+    list-style-position:inside;
+}
+table{
+    width:100%;
+}
+.tafrit {
+    border-radius: 500px;
+    background-color: cadetblue;
+    border: double;
+    font-weight: 200;
+    text-align: center;
+}

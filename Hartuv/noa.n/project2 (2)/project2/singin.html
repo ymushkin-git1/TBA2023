@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sign in</title>
+</head>
+<body style="background-color: lightgray ">
+    <form style="text-align:center; " action="signin.php" method="post">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username"><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password"><br />
+
+
+    </form>
+    <div style="text-align: center; font-size:15px" onclick="window.location='manupage.html'">
+
+        <button style="text-align:center; font-size: 15px " onclick="alert('Hello, ' + document.getElementById('username').value + '!')"> sign in </button>
+
+    </div>
+
+    <form style="text-align:center">
+        <a style="font-size:25px;text-align:center" href="manupage.html">back to manu page</a>
+    </form>
+
+
+</body>
+</html>

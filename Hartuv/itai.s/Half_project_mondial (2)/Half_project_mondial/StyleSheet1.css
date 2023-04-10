@@ -1,0 +1,89 @@
+﻿ul {
+    list-style-type: none;
+    padding: 0;
+    right: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    
+}
+
+li {
+    float: left;
+    font-size: 15px;
+    
+}
+
+    li a {
+        text-decoration: none;
+        display: block;
+        padding: 24px 16px;
+        width: auto;
+        /*color: powderblue;*/
+        text-align:start;
+        color:red;
+       
+    }
+
+    /*    li a:hover:not(.active) {
+            background-color: white;
+            
+        }*/
+
+        li a:hover {
+            text-decoration: underline;color:black;
+        }
+
+/*body {
+    
+    background-image:url('Football - 101791.mp4');
+    background-size:cover;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+}*/
+/*.content {*/
+    /*position: fixed;*/
+    /*background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: auto;
+    padding: 20px;
+    
+    float: left;
+    right:150px;
+}*/
+
+.content2 {
+    /*position: fixed;*/
+    /*background: rgba(0, 0, 0, 0.5);*/
+    /*color: #f1f1f1;*/
+    color: black;
+    width: 70%;
+    margin-top: 5em;
+    font-size: 19px;
+}
+
+body {
+    /*background-color: cadetblue;*/
+    direction: rtl;
+    background-image: url(pexels-deepu-b-iyer-40465.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+

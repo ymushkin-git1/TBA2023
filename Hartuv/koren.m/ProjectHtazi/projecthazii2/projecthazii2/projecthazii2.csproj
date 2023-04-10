@@ -1,0 +1,216 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D96D9447-0B8E-4DED-AF8B-E18278590F4E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>projecthazii2</RootNamespace>
+    <AssemblyName>projecthazii2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1f8ac17f26f1fb2b0f341b4e4524ef55.jpg" />
+    <Content Include="8ad5725fc4ead9638827a33fc8dfb3e7.jpg" />
+    <Content Include="athunepic.jpg" />
+    <Content Include="backgroundimaggsignin.png" />
+    <Content Include="backroundimage.jpg" />
+    <Content Include="backroundvideo.mp4" />
+    <Content Include="html video.mp4" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlPage10.html" />
+    <Content Include="HtmlPage2.html" />
+    <Content Include="HtmlPage4.html" />
+    <Content Include="HtmlPage5.html" />
+    <Content Include="HtmlPage6.html" />
+    <Content Include="HtmlPage8.html" />
+    <Content Include="HtmlPage9.html" />
+    <Content Include="imagesHTML10\imageshtml10.html" />
+    <Content Include="imagesHTML10\pic1html10.jpg" />
+    <Content Include="imagesHTML10\pic2html10.jpg" />
+    <Content Include="imagesHTML10\pic3html10.jpg" />
+    <Content Include="imagesHTML10\pic4html10.jpg" />
+    <Content Include="imagesHTML10\pic5html10.jpg" />
+    <Content Include="imagesHTML10\StyleSheet1.css" />
+    <Content Include="imagesHTML1\image1.jpg" />
+    <Content Include="imagesHTML1\image2.jpg" />
+    <Content Include="imagesHTML1\image3.jpg" />
+    <Content Include="imagesHTML1\image4.jpg" />
+    <Content Include="imagesHTML1\image5.jpg" />
+    <Content Include="imagesHTML1\image6.jpg" />
+    <Content Include="imagesHTML1\image7.jpg" />
+    <Content Include="imagesHTML1\image8.jpg" />
+    <Content Include="imagesHTML1\imageshtml1.html" />
+    <Content Include="imagesHTML1\StyleSheet1.css" />
+    <Content Include="imagesHTML2\imageshtml2.html" />
+    <Content Include="imagesHTML2\pic1HTML2.jpg" />
+    <Content Include="imagesHTML2\pic2HTML2.jpg" />
+    <Content Include="imagesHTML2\pic3HTML2.jpg" />
+    <Content Include="imagesHTML2\pic4HTML2.jpg" />
+    <Content Include="imagesHTML2\pic5HTML2.jpg" />
+    <Content Include="imagesHTML2\StyleSheet1.css" />
+    <Content Include="imagesHTML4\imageshtml4.html" />
+    <Content Include="imagesHTML4\pic1html4.jpg" />
+    <Content Include="imagesHTML4\pic2html4.jpg" />
+    <Content Include="imagesHTML4\pic3html4.jpg" />
+    <Content Include="imagesHTML4\pic4html4.jpg" />
+    <Content Include="imagesHTML4\pic5html4.jpg" />
+    <Content Include="imagesHTML4\StyleSheet1.css" />
+    <Content Include="imagesHTML5\imageshtml5.html" />
+    <Content Include="imagesHTML5\pic1html5.jpg" />
+    <Content Include="imagesHTML5\pic2html5.jpg" />
+    <Content Include="imagesHTML5\pic3html5.jpg" />
+    <Content Include="imagesHTML5\pic4html5.jpg" />
+    <Content Include="imagesHTML5\pic5html5.jpg" />
+    <Content Include="imagesHTML5\StyleSheet1.css" />
+    <Content Include="imagesHTML6\imageshtml6.html" />
+    <Content Include="imagesHTML6\pic1html6.jpg" />
+    <Content Include="imagesHTML6\pic2html6.jpg" />
+    <Content Include="imagesHTML6\pic3html6.jpg" />
+    <Content Include="imagesHTML6\pic4html6.jpg" />
+    <Content Include="imagesHTML6\pic5html6.jpg" />
+    <Content Include="imagesHTML6\StyleSheet1.css" />
+    <Content Include="imagesHTML8\imageshtml8.html" />
+    <Content Include="imagesHTML8\pic1html8.jpg" />
+    <Content Include="imagesHTML8\pic2html8.jpg" />
+    <Content Include="imagesHTML8\pic3html8.jpg" />
+    <Content Include="imagesHTML8\pic4html8.jpg" />
+    <Content Include="imagesHTML8\pic5html8.jpg" />
+    <Content Include="imagesHTML8\StyleSheet1.css" />
+    <Content Include="imagesHTML9\imageshtml9.html" />
+    <Content Include="imagesHTML9\pic1html9.jpg" />
+    <Content Include="imagesHTML9\pic2html9.jpg" />
+    <Content Include="imagesHTML9\pic3html9.jpg" />
+    <Content Include="imagesHTML9\pic4html9.jpg" />
+    <Content Include="imagesHTML9\pic5html9.jpg" />
+    <Content Include="imagesHTML9\StyleSheet1.css" />
+    <Content Include="informationsport.html" />
+    <Content Include="JavaScript.js" />
+    <Content Include="MainPage.html" />
+    <Content Include="olimpic icon.png" />
+    <Content Include="pexels-rostislav-uzunov-8303104.mp4" />
+    <Content Include="Pinterest.html" />
+    <Content Include="Qatar.jpg" />
+    <Content Include="sign in image.png" />
+    <Content Include="sign in.html" />
+    <Content Include="signuppp.html" />
+    <Content Include="snow.mp4" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="StyleSheetsignup.css" />
+    <Content Include="sunset.mp4" />
+    <Content Include="Tokyo.jpg" />
+    <Content Include="uroguay.jpg" />
+    <Content Include="video %281%29.mp4" />
+    <Content Include="video.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52937</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

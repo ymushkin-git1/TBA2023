@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Football</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+
+
+
+    <style>
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            direction: ltr;
+        }
+
+        .title {
+            font-size: 70px;
+            color: white;
+            position: absolute;
+            top: 13.5%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: Garamond;
+        }
+
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            .navbar ul li::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #009688;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+
+            .navbar ul li:hover::after {
+                width: 100%;
+            }
+
+
+
+
+        .button1 {
+            position: absolute;
+            top: 20%;
+            left: 50.1%;
+            transform: translate(-50%,-50%);
+        }
+
+        .btn {
+            border: 2px solid white;
+            padding: 7.5px 20px;
+            text-decoration: none;
+            transition: 0.5s ease;
+            background-color: deepskyblue;
+            color:black;
+            margin: 7px;
+        }
+
+            .btn:hover {
+                background-color: blue;
+                color: black;
+            }
+
+
+        .title {
+            font-size: 70px;
+            color: black;
+            position: absolute;
+            top: 13.5%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            height: 114.6vh;
+        }
+
+
+
+
+        .class {
+            border: 2px solid black;
+            outline: 5px dotted blue;
+            background:white;
+        }
+
+        body {
+            background-color:white;
+            direction:rtl;
+        }
+        .background {
+            background-image: url();
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .information{
+            top:20%;
+        }
+
+
+        .btn2 {
+            top: 50%;
+            background-color: #A2D9CE;
+            color: azure;
+            border: double #4b0f1b;
+            border-radius: 5px;
+            padding: 8px;
+            transition: background 0.5s;
+        }
+        .btn2:hover{
+            font-weight:500;
+            background:#211d6f;
+            color:#fff;
+        }
+        .btn-bikoret {
+            background-color: #D5DBDB;
+            border:2px double;
+            color: #283747;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+       .f{
+           font-family:Aharoni;
+           font-size:20px;
+       }
+
+    </style>
+</head>
+
+<body style="background-color: #A2D9CE;">
+
+    <div class="navbar">
+        <ul>
+            <li><a href="MainPage.html">MainPage</a></li>
+            <li><a href="HtmlPage1.html">Football</a></li>
+            <li><a href="HtmlPage2.html">PingPong</a></li>
+            <li><a href="HtmlPage5.html">Basketball</a></li>
+            <li><a href="HtmlPage6.html">Tennis</a></li>
+            <li><a href="HtmlPage10.html">Volleyball</a></li>
+            <li><a href="HtmlPage8.html">AFootball</a></li>
+            <li><a href="HtmlPage4.html">Swimming</a></li>
+            <li><a href="HtmlPage9.html">IceSkating</a></li>
+        </ul>
+    </div>
+    <header class="background">
+
+       <br /><br />
+            <div style="font-size:55px; color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="title"> כדורגל</div>
+            <div class="button1">
+                <a href="imagesHTML1/imageshtml1.html" class="btn">Images</a>
+            </div>
+            <br />
+            <div style="margin-top:150px;" class="class1"><h1 style="color:black;">מידע כללי</h1></div>
+            <div class="information" style="font-family:Aharoni; color:black; font-size:larger;border:2px solid;">
+                כדורגל הוא ענף הספורט הפופולרי ביותר .
+
+                החלו לשחק כדורגל כבר בתחילת המאה ה-20.
+                במהלך השנים התפתחו מספר קבוצות.
+
+                הליגה הבכירה, ליגת , הוקמה על ידי נציגי שלטון המנדט הבריטי,
+                והעונה הראשונה ששוחקה במלואה הייתה עונת 1931/1932 בליגה הארצית.
+                ליגה ב' הייתה אז הליגה השנייה בחשיבותה בכדורגל , ושיחקו במסגרתה החל מעונת 1937
+
+                בשנות ה-30 הוקמה נבחרת ארץ ישראל שהפכה לאחר קום המדינה לנבחרת ישראל.
+                בתחילה הייתה הנבחרת חלשה ביותר, והטורניר המשמעותי הראשון בו השתתפה היה מוקדמות מונדיאל 1934,
+                בו הובסה 2–11 בסיכום שני משחקים מול מצרים. ברבות השנים התפתח הכדורגל הישראלי,
+                כדורגלנים ישראלים הפכו בורג מרכזי במועדונים בכירים בכדורגל העולמי,
+                ובדומה לרבות ממדינות העולם, היה הכדורגל לענף הספורט המוביל בארץ מבחינת עניין הקהל.
+
+                מסגרות הליגה בכדורגל הישראלי כוללות את ליגת העל הבכירה (בעבר "ליגה א'" ובהמשך "הליגה הלאומית"),
+                ואחריה הליגה הלאומית וליגות המשנה א', ב' וג',
+                שמפוצלות לפי אזורים.
+                בעבר התקיימה הליגה הארצית, אך בתום עונת 2008/2009 בוטלה,
+                וקבוצותיה פוצלו בין הליגה הלאומית לליגה א', במקביל להרחבת מספר הקבוצות המשחקות בכל ליגה.
+                הקבוצות שמסיימות במקומות הראשונים בליגת העל מעפילות למסגרות האירופיות הבינלאומיות: ליגת האלופות,
+                הליגה האירופית והליגה האזורית, אותן מנהלת אופ"א. בליגות הנמוכות יותר,
+                הקבוצות שמסיימות ראשונות מעפילות לליגה הבאה בדרג, במקביל לקבוצות שמסיימות במקומות האחרונים,
+                שיורדות לליגה בדרג נמוך יותר. לצד הליגות מתקיימים טורנירים בשיטת נוקאאוט, שבסופם מוענק גביע למנצחת:
+                גביע המדינה וגביע הטוטו. הקבוצה שזוכה בגביע המדינה אף מעפילה למוקדמות הליגה האזורית של אופ"א.
+                בנוסף, מאז 1999 מתקיימת ליגת כדורגל נשים ישראלית וכן נבחרת נשים שערכה את משחקה הראשון ב-1977.
+
+                על הפעלת הליגות והגביעים אחראית ההתאחדות לכדורגל בישראל,
+                שנוסדה ב-1928, בתקופת המנדט הבריטי, והצטרפה ב-1929 לארגון פיפ"א העולמי.
+                ההתאחדות אחראית גם על נבחרת ישראל הבוגרת ועל הנבחרות הצעירות וכן משבצת את השופטים למשחקים השונים ומפקחת על הקבוצות השונות,
+                לרבות קיום מוסד משפטי האחראי לפיקוח ואכיפת משמעת.
+                החל מעונת 2014/15 מוקנית האחריות לניהול ליגות הכדורגל המקצועניות (ליגת העל והליגה הלאומית)
+                כמו גם גביע הטוטו ומפעל אלוף האלופים למנהלת הליגות לכדורגל אשר קיבלה זיכיון לניהול מפעלים אלו,
+                כמו גם לניהול המסחרי והכלכלי של הכדורגל המקצועני בישראל, מההתאחדות לכדורגל בישראל.
+
+                הנבחרת הישראלית הגיעה פעם אחת למונדיאל (מקסיקו 1970) ופעמיים לאולימפיאדה (טורנירי הכדורגל באולימפיאדת מקסיקו סיטי (1968),
+                וכדורגל באולימפיאדת מונטריאול (1976)). במסגרת הקבוצתית, הגיעו הקבוצות הישראליות,
+                ובעיקר מכבי תל אביב, הפועל תל אביב ומכבי חיפה, למספר הישגים במסגרת הבינלאומית האירופית והאסיאתית.
+            </div>
+        </p><br />
+
+
+
+
+        <div style="margin-top:70px;" class="class1"><h1 style="color:black;">היסטוריית הכדורגל</h1></div>
+        <div class="information" style="font-family:Aharoni; color:black; font-size:larger;border:2px solid">
+            במשך ההיסטוריה היו קיימים מספר משחקים שעיקרם היה בעיטת כדור במספר רב של תרבויות.
+            לפי פיפ"א,
+            הגרסה המוקדמת ביותר של המשחק הייתה תרגיל אימון הדורש דיוק ומיומנות בן המאה השנייה או השלישית לפני הספירה
+            בסין בשם קוג'ו.
+            [13] בנוסף, המשחק הרומי הקדום הרפסטום גם כן מזכיר במידת מה את הכדורגל.
+            היו מספר וריאציות למשחקי כדור דומים בתקופת ימי הביניים, אך החוקים היו שונים מזמן לזמן וממקום למקום.
+
+            החוקים המודרניים של הכדורגל עוצבו תוך ניסיון לאחד את צורות המשחק השונות שהונהגו בבתי ספר באנגליה באמצע המאה ה-19.
+            גרסה ראשונית של חוקים אלו נכתבה בשנת 1848 באוניברסיטת קיימברידג' על ידי נציגים ממספר בתי ספר ואוניברסיטאות באנגליה ונקראה "חוקי קיימברידג'".
+            לקובץ חוקים זה הייתה השפעה רבה על התפתחות הכללים למשחקי הכדור השונים,
+            ובהם הכדורגל. עם זאת,
+            החוקים לא אומצו על ידי כלל קבוצות הכדורגל באנגליה מיד.
+            בשנות ה-50 של המאה ה-19 מועדונים רבים,
+            שלאו דווקא היו קשורים למוסדות חינוך אלו או אחרים, נוסדו ברחבי המדינות דוברות האנגלית ואימצו לעצמם חוקים משלהם,
+            אשר ברבות הימים תרמו אף הם לעיצוב החוקים המקובלים כיום.
+            אולי הבולט ביותר מבין מועדונים אלו הוא מועדון הכדורגל שפילד,
+            שנוסד על ידי תלמידים לשעבר בשנת 1857,[14] ושהקמתו הובילה להקמת התאחדות הכדורגל של שפילד עשור לאחר מכן.
+            עוד השפיעו החוקים שניסח ג'ון צ'ארלס ת'רינג, ממחברי "חוקי קיימברידג'" המקוריים, בשנת 1862.[15
+
+            הניסיונות המתמשכים הללו הובילו לייסודה של התאחדות הכדורגל האנגלית אשר נודעה בקיצור ה,
+            בשנת 1863, בפגישתה הראשונה ב-26 באוקטובר במסבאת הבונים החופשיים בלונדון.
+            בפגישה נכחו מספר נציגים של המועדונים הבולטים באזור לונדון רבתי באותה תקופה,
+            וכן נציג בודד ממועדוני בתי הספר.
+            לאחר הפגישה הראשונה הוזמנו נציגים נוספים ממועדוני בתי הספר,
+            אך מלבד ת'רינג - רובם סירבו להזמנה.
+            חברי ההתאחדות נפגשו במסבאה חמש פעמים נוספות במהלך החודשים הבאים וחיברו את קובץ החוקים הראשון של ההתאחדות.
+            מחלוקות על חוקים מסוימים, כמו האיסור על השימוש בידיים לאחיזת הכדור בזמן ריצה,
+            הובילו לפיצול ומספר חברים בהתאחדות הכדורגל הקימו את איגוד הרוגבי.
+            המועדונים שנותרו, תחת הנהגתו של אבנעזר קוב מורלי,
+            המשיכו בעבודתם ואישרו את שלושה עשר החוקים המקוריים של המשחק.
+            הגרסה הסופית שהתקבלה הייתה דומה מעט לחוקי "הכדורגל הוויקטוריאני" ששוחק באותה העת באוסטרליה,
+            על אף שבזה כן היה ניתן לאחוז בכדור בידיים,
+            ובין השאר נקבע כי לא יהיה משקוף לשער המשחק, אלא רק קורות.
+
+        </div>
+        <br /><br /><br />
+        <div class="f">
+            למדת משהו חדש מהדף?
+        </div>
+        <textarea class="btn-bikoret" id="bikoret" name="bikoret"></textarea>
+        <button class="w3-button w3-black" onclick="f()">שלח</button>
+        <br /><br />
+        <a class="btn2" href="MainPage.html">לעמוד הבית לחצו פה</a><br />
+    </header>
+
+     
+       
+    
+    <script>
+        function f() {
+            if (bikoret.value.length > 1) {
+                alert("תודה על המשוב!");
+            }
+
+            else (length == 0) {
+                alert("The text should be a minimum of 2 characters")
+            }
+            
+        }
+    </script>
+</body>
+</html>

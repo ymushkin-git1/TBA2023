@@ -1,0 +1,18 @@
+﻿body {
+    direction: rtl;
+    color: wheat;
+    font-family:'Guttman Mantova-Decor';
+    font-size:17px;
+}
+html {
+    background-image: url('marocoimg.png');
+    background-size: cover;
+}
+table {
+    width: 100%;
+}
+.a {
+    background-color: darkkhaki;
+    font-family:Algerian;
+    font-size: large;
+}
