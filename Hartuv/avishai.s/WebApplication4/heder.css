@@ -1,0 +1,45 @@
+﻿.NavigationBar {
+    font-size: 20px;
+    list-style-type: none;
+    position: sticky;
+    background-color:black;
+    overflow: hidden;
+    top: 0;
+}
+
+    .NavigationBar a {
+        color: snow;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        float: left;
+        position: sticky;
+    }
+
+        .NavigationBar a:hover {
+            background-color: white;
+            color: burlywood;
+        }
+body {
+    margin: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid burlywood;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: burlywood;
+}
+
+
+

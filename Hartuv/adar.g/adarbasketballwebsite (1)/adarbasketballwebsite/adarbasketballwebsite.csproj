@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="basketballadar.jpg" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="HtmlPageaboutme.html" />
     <Content Include="HtmlPagebasketballworkouts.html" />
     <Content Include="HtmlPagefood.html" />
@@ -79,6 +80,7 @@
     <Content Include="JavaScriptregister.js" />
     <Content Include="StyleSheet1.css" />
     <Content Include="StyleSheet2.css" />
+    <Content Include="f1.css" />
     <Content Include="StyleSheetaboutme.css" />
     <Content Include="StyleSheet3.css" />
     <Content Include="todolist.html" />

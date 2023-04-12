@@ -1,0 +1,36 @@
+﻿h1 {
+    text-align: center;
+    border: thin #e33a3a;
+    color: #e33a3a;
+    width: 450px;
+    font-size: 60px;
+}
+
+div {
+    color: midnightblue;
+}
+
+
+body {
+    background: linear-gradient(#b8f2ff, #33cbff);
+}
+
+h4 {
+    color: darkslategray;
+}
+
+.btn {
+    top: 50%;
+    background-color: #b72929;
+    color: azure;
+    border: double #4b0f1b;
+    border-radius: 5px;
+    padding: 8px;
+    transition: background 0.5s;
+}
+
+    .btn:hover {
+        font-weight: 500;
+        background: #211d6f;
+        color: #fff;
+    }
