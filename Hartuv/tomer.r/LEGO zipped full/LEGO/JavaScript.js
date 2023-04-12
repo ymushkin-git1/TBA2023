@@ -2,7 +2,7 @@
     var resault = CheckEmail();
     resault = FNamet() && resault;
     resault = LNamet() && resault;
-    resault = passequal && resault;
+    resault = passequal() && resault;
     resault = checkboxses() && resault;
     return resault;
 }

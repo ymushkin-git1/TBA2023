@@ -138,7 +138,7 @@ form .button {
     margin: 35px 0
 }
 
-    form .button input {
+    form .button input, form .button {
         height: 100%;
         width: 100%;
         border-radius: 5px;

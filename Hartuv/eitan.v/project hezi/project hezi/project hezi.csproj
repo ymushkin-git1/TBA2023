@@ -75,7 +75,7 @@
     <Content Include="images\avatar-e.jpg" />
     <Content Include="images\learn-more-img.jpg" />
     <Content Include="images\safety-tips.jpg" />
-    <Content Include="JavaScript.js" />
+    <Content Include="script.js" />
     <Content Include="login.html" />
     <Content Include="resources.html" />
     <Content Include="our-team.html" />
