@@ -217,7 +217,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cobra Warrior Exercise 2019 Israeli Air Force 02-09-19.mp4.crdownload" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -226,7 +225,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="רגעי תקיפת הכור הגרעיני הסורי בדיר א-זור בשנת 2007.mp4" />
-    <Content Include="תיעוד כך תקפה ישראל את הכור הגרעיני בסוריה - תקיפת הכור הגרעיני הסורי.mp4.crdownload" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="vid\" />
